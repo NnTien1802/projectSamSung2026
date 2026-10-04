@@ -1,0 +1,168 @@
+[
+  {
+    "case_id": "short_consistent_article",
+    "expected_chunk_policy": "short",
+    "passed": true,
+    "failures": [],
+    "result": {
+      "module": "Module 2 - Headline Integrity",
+      "input": {
+        "title": "Giá vàng hôm nay tăng mạnh, chuyên gia lý giải nguyên nhân",
+        "lead_available": true,
+        "content_chars": 271
+      },
+      "clickbait": {
+        "probability_clickbait": 0.020172119140625,
+        "threshold": 0.61,
+        "prediction": 0,
+        "label": "NORMAL"
+      },
+      "headline_consistency": {
+        "probability_consistent": 0.66455078125,
+        "threshold": 0.45,
+        "prediction": 1,
+        "label": "CONSISTENT",
+        "branches": {
+          "description": {
+            "weight": 0.5,
+            "probability_consistent": 0.5185546875
+          },
+          "max_mil": {
+            "weight": 0.5,
+            "probability_consistent": 0.810546875,
+            "article_token_count": 69,
+            "chunk_count": 1,
+            "chunk_starts": [
+              0
+            ],
+            "chunk_scores": [
+              1.455078125
+            ],
+            "max_chunk_index": 0,
+            "max_chunk_start_token": 0
+          }
+        }
+      },
+      "overall_integrity_score": null,
+      "elapsed_seconds": 0.31072521209716797,
+      "model_versions": {
+        "clickbait": "final_title_only_v1",
+        "consistency": "final_hybrid_v1"
+      }
+    }
+  },
+  {
+    "case_id": "missing_optional_lead",
+    "expected_chunk_policy": "short",
+    "passed": true,
+    "failures": [],
+    "result": {
+      "module": "Module 2 - Headline Integrity",
+      "input": {
+        "title": "Thành phố triển khai thêm nhiều tuyến xe buýt mới",
+        "lead_available": false,
+        "content_chars": 221
+      },
+      "clickbait": {
+        "probability_clickbait": 0.002071380615234375,
+        "threshold": 0.61,
+        "prediction": 0,
+        "label": "NORMAL"
+      },
+      "headline_consistency": {
+        "probability_consistent": 0.708251953125,
+        "threshold": 0.45,
+        "prediction": 1,
+        "label": "CONSISTENT",
+        "branches": {
+          "description": {
+            "weight": 0.5,
+            "probability_consistent": 0.5166015625
+          },
+          "max_mil": {
+            "weight": 0.5,
+            "probability_consistent": 0.89990234375,
+            "article_token_count": 54,
+            "chunk_count": 1,
+            "chunk_starts": [
+              0
+            ],
+            "chunk_scores": [
+              2.1953125
+            ],
+            "max_chunk_index": 0,
+            "max_chunk_start_token": 0
+          }
+        }
+      },
+      "overall_integrity_score": null,
+      "elapsed_seconds": 0.03013157844543457,
+      "model_versions": {
+        "clickbait": "final_title_only_v1",
+        "consistency": "final_hybrid_v1"
+      }
+    }
+  },
+  {
+    "case_id": "very_long_article_six_chunk_sampling",
+    "expected_chunk_policy": "six_chunks",
+    "passed": true,
+    "failures": [],
+    "result": {
+      "module": "Module 2 - Headline Integrity",
+      "input": {
+        "title": "Kế hoạch mới được triển khai theo nhiều giai đoạn",
+        "lead_available": true,
+        "content_chars": 43198
+      },
+      "clickbait": {
+        "probability_clickbait": 0.002300262451171875,
+        "threshold": 0.61,
+        "prediction": 0,
+        "label": "NORMAL"
+      },
+      "headline_consistency": {
+        "probability_consistent": 0.751220703125,
+        "threshold": 0.45,
+        "prediction": 1,
+        "label": "CONSISTENT",
+        "branches": {
+          "description": {
+            "weight": 0.5,
+            "probability_consistent": 0.51318359375
+          },
+          "max_mil": {
+            "weight": 0.5,
+            "probability_consistent": 0.9892578125,
+            "article_token_count": 10080,
+            "chunk_count": 6,
+            "chunk_starts": [
+              0,
+              2016,
+              4032,
+              5952,
+              7968,
+              9984
+            ],
+            "chunk_scores": [
+              4.5234375,
+              4.5234375,
+              4.5234375,
+              3.86328125,
+              3.86328125,
+              4.03125
+            ],
+            "max_chunk_index": 0,
+            "max_chunk_start_token": 0
+          }
+        }
+      },
+      "overall_integrity_score": null,
+      "elapsed_seconds": 0.046553611755371094,
+      "model_versions": {
+        "clickbait": "final_title_only_v1",
+        "consistency": "final_hybrid_v1"
+      }
+    }
+  }
+]

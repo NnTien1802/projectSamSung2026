@@ -1,0 +1,27 @@
+{
+  "model_name": "vinai/phobert-base-v2",
+  "input_mode": "title_abstract_article",
+  "text_fields": [
+    "title_segmented",
+    "abstract_segmented",
+    "article_segmented"
+  ],
+  "field_separator": " . ",
+  "pilot_mode": false,
+  "epochs": 2,
+  "max_length": 256,
+  "stride": 64,
+  "max_chunks_per_document": 4,
+  "document_batch_size": 12,
+  "validation_document_batch_size": 16,
+  "gradient_accumulation_steps": 1,
+  "effective_document_batch_size": 12,
+  "encoder_lr": 2e-05,
+  "head_lr": 0.0001,
+  "weight_decay": 0.01,
+  "warmup_ratio": 0.1,
+  "freeze_bottom_layers": 6,
+  "gradient_checkpointing": false,
+  "num_workers": 2,
+  "random_seed": 20260918
+}

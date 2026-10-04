@@ -1,0 +1,21 @@
+{
+  "stage": "11_baseline_title_description",
+  "model_name": "bert-base-multilingual-cased",
+  "input": "headline_used_in_pair + anchor_description",
+  "train_rows": 306004,
+  "validation_rows": 57426,
+  "test_loaded": false,
+  "max_length": 160,
+  "batch_size": 8,
+  "gradient_accumulation": 4,
+  "effective_batch_size": 32,
+  "epochs": 1,
+  "learning_rate": 2e-05,
+  "weight_decay": 0.01,
+  "warmup_ratio": 0.06,
+  "seed": 20260920,
+  "amp": true,
+  "device": "cuda",
+  "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "smoke_test": false
+}

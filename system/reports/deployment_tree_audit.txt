@@ -1,0 +1,662 @@
+
+ProjectSamSung V1 - Deployment Tree Audit
+Python: 3.10.5 (tags/v3.10.5:f377153, Jun  6 2022, 16:14:13) [MSC v.1929 64 bit (AMD64)]
+
+====================================================================================================
+A. CURRENT PROJECT TREE
+====================================================================================================
+PROJECT ROOT: C:\projectSamSung_v1
+TREE: depth <= 5, <= 80 children/dir, include_data=False
+
+docs/
+  release_v1/
+    evidence/
+      backend_tests.txt  [2.35 KB]
+      frontend_build.txt  [584.00 B]
+      model_lock_verify.txt  [133.00 B]
+      module1_regression.txt  [1.60 KB]
+      module23_regression.txt  [8.93 KB]
+    screenshots/
+      react_input_bottom.png  [33.94 KB]
+      react_input_top.png  [29.30 KB]
+      react_results.png  [48.07 KB]
+    Checklist_release_v1.md  [2.75 KB]
+    Kich_ban_demo.md  [4.27 KB]
+    manifest_docs_sha256.json  [1.36 KB]
+    README_Buoc22.md  [3.28 KB]
+    Tai_lieu_ky_thuat_ProjectSamSung_V1.docx  [89.29 KB]
+  thesis/
+    00_outline.md  [41.24 KB]
+    00_outline_v2.md  [68.57 KB]
+    01_report_evidence_pack.md  [419.48 KB]
+  .gitkeep  [0.00 B]
+  API_V1.md  [2.76 KB]
+  Tai_lieu_ky_thuat_ProjectSamSung_V1.docx  [89.29 KB]
+frontend/
+  src/
+    api.ts  [4.57 KB]
+    App.tsx  [18.41 KB]
+    demo_cases.ts  [3.37 KB]
+    main.tsx  [229.00 B]
+    presentation.ts  [977.00 B]
+    style.css  [11.82 KB]
+  .gitignore  [45.00 B]
+  .gitkeep  [0.00 B]
+  index.html  [492.00 B]
+  package-lock.json  [61.13 KB]
+  package.json  [581.00 B]
+  tsconfig.app.json  [508.00 B]
+  tsconfig.app.tsbuildinfo  [122.00 B]
+  tsconfig.json  [103.00 B]
+  tsconfig.node.json  [277.00 B]
+  tsconfig.node.tsbuildinfo  [47.00 B]
+  vite.config.ts  [383.00 B]
+module1/
+  models/
+    module1_baselines/
+      baseline1_logistic_regression.joblib  [438.12 KB]
+      baseline1_word_tfidf.joblib  [1.41 MB]
+      baseline2_char_tfidf.joblib  [1.06 MB]
+      baseline2_linear_svm.joblib  [841.15 KB]
+    module1_phobert_mil/
+      tokenizer/
+        added_tokens.json  [25.00 B]
+        bpe.codes  [1.08 MB]
+        tokenizer_config.json  [1.23 KB]
+        vocab.txt  [874.34 KB]
+      best_model.pt  [515.06 MB]
+    module1_phobert_mil_all_fields/
+      tokenizer/
+        added_tokens.json  [25.00 B]
+        bpe.codes  [1.08 MB]
+        tokenizer_config.json  [1.23 KB]
+        vocab.txt  [874.34 KB]
+      best_model.pt  [515.06 MB]
+    module1_phobert_mil_all_fields_4chunks/
+      tokenizer/
+        added_tokens.json  [25.00 B]
+        bpe.codes  [1.08 MB]
+        tokenizer_config.json  [1.23 KB]
+        vocab.txt  [874.34 KB]
+      best_model.pt  [515.06 MB]
+    module1_phobert_mil_full/
+      tokenizer/
+        added_tokens.json  [25.00 B]
+        bpe.codes  [1.08 MB]
+        tokenizer_config.json  [1.23 KB]
+        vocab.txt  [874.34 KB]
+      best_model.pt  [515.06 MB]
+    module1_phobert_word_detector_v1/
+      tokenizer/
+        added_tokens.json  [25.00 B]
+        bpe.codes  [1.08 MB]
+        tokenizer_config.json  [1.23 KB]
+        vocab.txt  [874.34 KB]
+      best_model.pt  [515.06 MB]
+  results/
+    module1_baselines/
+      baseline1_validation_metrics.json  [1.63 KB]
+      baseline1_validation_predictions.csv  [2.24 MB]
+      baseline2_validation_metrics.json  [1.62 KB]
+      baseline2_validation_predictions.csv  [2.26 MB]
+      baseline_comparison.json  [3.62 KB]
+    module1_correction_reranker_v1/
+      official_test/
+        official_correction_test_errors.csv  [689.41 KB]
+        official_correction_test_metrics.json  [3.36 KB]
+      validation_reranking_errors.csv  [560.39 KB]
+      validation_reranking_summary.json  [14.22 KB]
+    module1_phobert_mil/
+      validation_metrics.json  [913.00 B]
+    module1_phobert_mil_all_fields/
+      test_evaluation/
+        official_test_metrics.json  [1.29 KB]
+        test_error_analysis.json  [1.09 KB]
+        test_predictions.csv  [3.02 MB]
+      threshold_tuning/
+        best_threshold.json  [4.30 KB]
+        threshold_sweep.csv  [15.40 KB]
+        validation_chunk_coverage_analysis.json  [3.72 KB]
+        validation_chunk_coverage_details.csv  [6.98 MB]
+        validation_probabilities.csv  [2.17 MB]
+      best_validation_metrics.json  [1.19 KB]
+      training_config.json  [689.00 B]
+      training_history.json  [2.58 KB]
+    module1_phobert_mil_all_fields_4chunks/
+      chunk_localization/
+        validation_chunk_localization_details.csv  [4.22 MB]
+        validation_chunk_localization_metrics.json  [7.89 KB]
+      test_evaluation/
+        official_test_metrics.json  [1.29 KB]
+        test_error_analysis.json  [1.07 KB]
+        test_predictions.csv  [3.03 MB]
+      threshold_tuning/
+        best_threshold.json  [4.33 KB]
+        threshold_sweep.csv  [15.51 KB]
+        validation_probabilities.csv  [2.17 MB]
+      best_validation_metrics.json  [1.19 KB]
+      training_config.json  [689.00 B]
+      training_history.json  [2.58 KB]
+    module1_phobert_mil_full/
+      test_evaluation/
+        official_test_metrics.json  [1.16 KB]
+        test_error_analysis.json  [1.02 KB]
+        test_predictions.csv  [2.97 MB]
+      threshold_tuning/
+        best_threshold.json  [3.69 KB]
+        threshold_sweep.csv  [15.72 KB]
+        validation_failure_analysis.json  [1.78 KB]
+        validation_probabilities.csv  [2.12 MB]
+      best_validation_metrics.json  [1.02 KB]
+      training_config.json  [553.00 B]
+      training_history.json  [2.21 KB]
+    module1_phobert_word_detector_v1/
+      all_chunks_threshold_tuning/
+        best_threshold.json  [3.40 KB]
+        threshold_sweep.csv  [12.61 KB]
+      all_chunks_validation/
+        validation_all_chunks_metrics_at_locked_threshold.json  [1.80 KB]
+        validation_word_probabilities_all_chunks.npz  [7.78 MB]
+      official_test/
+        official_word_test_metrics.json  [2.02 KB]
+        official_word_test_probabilities.npz  [7.81 MB]
+      threshold_tuning/
+        best_threshold.json  [3.42 KB]
+        threshold_sweep.csv  [12.71 KB]
+      best_validation_metrics.json  [1.59 KB]
+      best_validation_word_probabilities.npz  [7.53 MB]
+      training_config.json  [598.00 B]
+      training_history.json  [3.42 KB]
+  scripts/
+    01_download_raw.py  [1.66 KB]
+    02_eda_vietnews.py  [14.59 KB]
+    03_eda_tokenization.py  [13.90 KB]
+    04_generate_spelling_dataset.py  [34.09 KB]
+    04_generate_spelling_dataset_v02.py  [39.16 KB]
+    05_validate_spelling_dataset.py  [30.10 KB]
+    06_mine_real_error_patterns.py  [21.49 KB]
+    07_filter_real_error_patterns.py  [19.04 KB]
+    08_build_trusted_error_lookup.py  [16.24 KB]
+    09_generate_hybrid_spelling_dataset.py  [53.52 KB]
+    10_inspect_duplicate_source.py  [4.74 KB]
+    12_split_spelling_dataset.py  [16.82 KB]
+    13_train_classical_baselines.py  [26.59 KB]
+    14_train_phobert_mil.py  [48.32 KB]
+    15_tune_phobert_threshold.py  [42.01 KB]
+    16_evaluate_phobert_test.py  [42.00 KB]
+    17_analyze_validation_failures.py  [12.03 KB]
+    18_train_phobert_mil_all_fields.py  [50.08 KB]
+    19_tune_phobert_all_fields_threshold.py  [42.08 KB]
+    20_evaluate_phobert_all_fields_test.py  [43.62 KB]
+    21_analyze_validation_chunk_coverage.py  [42.12 KB]
+    22_train_phobert_mil_all_fields_4chunks.py  [50.10 KB]
+    23_tune_phobert_all_fields_4chunks_threshold.py  [42.10 KB]
+    24_evaluate_phobert_all_fields_4chunks_test.py  [43.64 KB]
+    25_evaluate_mil_chunk_localization.py  [57.35 KB]
+    26_build_word_localization_dataset.py  [22.56 KB]
+    27_train_phobert_word_detector.py  [67.34 KB]
+    28_tune_word_detector_threshold.py  [16.83 KB]
+    29_evaluate_word_detector_all_chunks_validation.py  [49.67 KB]
+    30_tune_word_detector_all_chunks_threshold.py  [16.88 KB]
+    31_build_word_localization_test.py  [22.56 KB]
+    32_evaluate_word_detector_all_chunks_test.py  [52.41 KB]
+    33_predict_spelling_errors.py  [38.96 KB]
+    34_build_correction_lookup.py  [27.96 KB]
+    35_contextual_correction_reranker.py  [48.96 KB]
+    36_predict_spelling_errors_with_correction.py  [62.80 KB]
+    37_evaluate_correction_official_test.py  [55.04 KB]
+module2/
+  inference/
+    02_inventory_consistency_artifacts.py  [15.92 KB]
+    03_map_consistency_regression_sources.py  [19.23 KB]
+    04_regression_check_unified_pipeline.py  [37.04 KB]
+    05_diagnose_mil_aggregation.py  [21.23 KB]
+    06_diagnose_mil_chunk_positions.py  [26.76 KB]
+    07_inspect_original_mil_chunk_policy.py  [8.95 KB]
+    08_lock_unified_module2_pipeline.py  [29.82 KB]
+    09_smoke_test_locked_module2.py  [30.47 KB]
+    __init__.py  [0.00 B]
+    headline_integrity_pipeline.py  [40.17 KB]
+    sample_input.json  [701.00 B]
+  models/
+    clickbait/
+      mbert_title_only_v1/
+        best_model.pt  [678.54 MB]
+    consistency/
+      baseline_title_description_mbert/
+        best_model.pt  [678.54 MB]
+      full_article_max_mil_mbert/
+        best_model.pt  [678.54 MB]
+  results/
+    clickbait/
+      compare_title_vs_title_lead_v1/
+        comparison_by_category.csv  [1.99 KB]
+        comparison_by_source.csv  [1.12 KB]
+        comparison_report.json  [3.90 KB]
+        error_overlap.csv  [139.00 B]
+        paired_bootstrap_macro_f1.csv  [633.91 KB]
+        validation_sample_comparison.parquet  [111.82 KB]
+      diagnostic_baselines_v1/
+        baseline_summary.csv  [1.71 KB]
+        diagnostic_report.json  [4.96 KB]
+        validation_predictions.parquet  [23.64 KB]
+      eda_v1/
+        category_label_stats.csv  [1.52 KB]
+        eda_report.json  [5.45 KB]
+        length_stats.csv  [1.50 KB]
+        source_label_stats.csv  [768.00 B]
+        split_summary.csv  [192.00 B]
+        surface_feature_stats.csv  [1.63 KB]
+        train_extreme_length_examples.csv  [12.48 KB]
+        train_lexical_cue_stats.csv  [2.28 KB]
+      final_title_only_v1/
+        experiment_summary/
+          dataset_summary.csv  [253.00 B]
+          FINAL_EXPERIMENT_CARD.md  [3.43 KB]
+          final_experiment_summary.json  [14.15 KB]
+          model_comparison.csv  [1.21 KB]
+        final_model_lock.json  [2.27 KB]
+        official_test_by_category.csv  [1.61 KB]
+        official_test_by_source.csv  [986.00 B]
+        official_test_metrics.json  [1.48 KB]
+        official_test_predictions.parquet  [107.95 KB]
+      mbert_title_lead_v1/
+        run_config.json  [699.00 B]
+        threshold_search.csv  [8.24 KB]
+        training_history.csv  [983.00 B]
+        validation_metrics.json  [1.69 KB]
+        validation_predictions.parquet  [8.67 KB]
+      mbert_title_only_v1/
+        run_config.json  [616.00 B]
+        threshold_search.csv  [8.21 KB]
+        training_history.csv  [975.00 B]
+        validation_metrics.json  [1.36 KB]
+        validation_predictions.parquet  [8.84 KB]
+    consistency/
+      baseline_a_b_comparison/
+        by_category.csv  [1.23 KB]
+        by_negative_tier.csv  [212.00 B]
+        comparison_summary.json  [1007.00 B]
+        error_overlap.csv  [179.00 B]
+        model_disagreements.csv  [1.79 MB]
+      baseline_title_article_head_mbert/
+        run_config.json  [451.00 B]
+        threshold_search.csv  [6.73 KB]
+        training_history.csv  [282.00 B]
+        validation_metrics.json  [1.16 KB]
+        validation_predictions.parquet  [1.54 MB]
+      baseline_title_description_mbert/
+        error_analysis/
+          analysis_report.json  [1.11 KB]
+          by_category.csv  [1.50 KB]
+          by_negative_rank.csv  [280.00 B]
+          by_negative_similarity.csv  [292.00 B]
+          by_negative_tier.csv  [160.00 B]
+          error_samples.csv  [76.94 KB]
+          overall.csv  [286.00 B]
+        run_config.json  [561.00 B]
+        threshold_search.csv  [6.73 KB]
+        training_history.csv  [315.00 B]
+        validation_metrics.json  [1.31 KB]
+        validation_predictions.parquet  [1.54 MB]
+      candidate_analysis_v1/
+        analysis_report.json  [1.79 KB]
+        category_distribution.csv  [928.00 B]
+        manual_review_fulltext.csv  [1.02 MB]
+        manual_review_sample.csv  [831.25 KB]
+        rank_distribution.csv  [326.00 B]
+        similarity_distribution.csv  [337.00 B]
+      description_mil_fusion_v1/
+        error_overlap.csv  [175.00 B]
+        fusion_report.json  [2.67 KB]
+        fusion_search.csv  [141.93 KB]
+        holdout_by_category.csv  [1.58 KB]
+        holdout_negative_by_tier.csv  [225.00 B]
+        holdout_predictions.parquet  [2.25 MB]
+      final_dataset_validation_v1/
+        category_stats.csv  [3.11 KB]
+        negative_tier_stats.csv  [810.00 B]
+        split_stats.csv  [541.00 B]
+        train_join_review_sample.csv  [71.24 KB]
+        validation_report.json  [8.78 KB]
+      final_hybrid_v1/
+        experiment_summary/
+          dataset_summary.csv  [203.00 B]
+          FINAL_EXPERIMENT_CARD.md  [1.16 KB]
+          final_experiment_summary.json  [6.59 KB]
+          model_comparison.csv  [630.00 B]
+        final_model_lock.json  [510.00 B]
+        official_test_by_category.csv  [1.00 KB]
+        official_test_metrics.json  [2.14 KB]
+        official_test_negative_by_tier.csv  [121.00 B]
+        official_test_predictions.parquet  [4.26 MB]
+      full_article_chunk_diagnostic/
+        diagnostic_report.json  [1.72 KB]
+        fusion_search.csv  [461.37 KB]
+        validation_chunk_scores.parquet  [2.03 MB]
+      full_article_max_mil_mbert/
+        run_config.json  [743.00 B]
+        threshold_search.csv  [6.74 KB]
+        training_history.csv  [282.00 B]
+        validation_metrics.json  [1.27 KB]
+        validation_predictions.parquet  [1.53 MB]
+      fusion_a_b_diagnostic/
+        fusion_search.csv  [141.94 KB]
+        holdout_by_category.csv  [1.04 KB]
+        holdout_metrics.json  [2.04 KB]
+        holdout_predictions.parquet  [1.48 MB]
+      manual_annotation_analysis_v1/
+        analysis_report.json  [1.54 KB]
+        by_category.csv  [843.00 B]
+        by_rank_bucket.csv  [232.00 B]
+        by_similarity.csv  [602.00 B]
+        by_similarity_rank.csv  [1.09 KB]
+        overall.csv  [91.00 B]
+    eda/
+      raw_dataset_eda.json  [8.90 KB]
+      vianli_eda.json  [2.25 KB]
+      vianli_label_by_split.csv  [109.00 B]
+      viclickbait_category_distribution.csv  [357.00 B]
+      viclickbait_eda.json  [2.51 KB]
+      viclickbait_label_distribution.csv  [52.00 B]
+      viclickbait_source_distribution.csv  [133.00 B]
+      viet_online_news_category_distribution.csv  [546.00 B]
+      viet_online_news_eda.json  [3.25 KB]
+    integration/
+      mil_chunk_position_diagnostic_v1/
+        chunk_position_diagnostic.csv  [17.58 KB]
+        chunk_position_diagnostic.json  [4.17 KB]
+      mil_diagnostic_v1/
+        mil_aggregation_diagnostic.csv  [7.76 KB]
+        mil_aggregation_diagnostic.json  [2.74 KB]
+      regression_v1/
+        clickbait_regression_samples.csv  [4.84 KB]
+        consistency_regression_samples.csv  [150.15 KB]
+        regression_report.json  [1.81 KB]
+      unified_module2_v1/
+        smoke_test/
+          smoke_test_outputs.json  [4.66 KB]
+          smoke_test_report.json  [1.37 KB]
+        artifact_manifest.json  [1.08 KB]
+        UNIFIED_MODULE2_CARD.md  [1.62 KB]
+        unified_module2_lock.json  [2.91 KB]
+  scripts/
+    clickbait/
+      03_prepare_clickbait_dataset.py  [41.95 KB]
+      04_eda_clickbait_processed.py  [39.54 KB]
+      05_train_diagnostic_baselines.py  [27.18 KB]
+      06_train_mbert_title_only.py  [39.31 KB]
+      07_train_mbert_title_lead.py  [40.79 KB]
+      08_compare_mbert_title_vs_title_lead.py  [34.58 KB]
+      09_lock_final_clickbait_model.py  [14.74 KB]
+      10_evaluate_final_clickbait_test.py  [31.96 KB]
+      11_finalize_clickbait_experiment.py  [46.48 KB]
+    consistency/
+      03_prepare_articles.py  [41.22 KB]
+      04_build_positive_pairs.py  [20.39 KB]
+      05_mine_hard_negative_candidates.py  [42.37 KB]
+      06_analyze_candidate_quality.py  [28.62 KB]
+      06b_prepare_manual_review_fulltext.py  [7.16 KB]
+      07_analyze_manual_annotations.py  [14.89 KB]
+      08_build_negative_pairs.py  [37.19 KB]
+      09_build_consistency_dataset.py  [39.52 KB]
+      10_validate_consistency_dataset.py  [47.52 KB]
+      11_train_baseline_title_description.py  [48.13 KB]
+      12_analyze_baseline_title_description.py  [18.81 KB]
+      13_train_baseline_title_article_head.py  [40.76 KB]
+      14_compare_baselines_a_b.py  [19.30 KB]
+      15_diagnostic_fusion_a_b.py  [24.86 KB]
+      16_full_article_chunk_diagnostic.py  [47.79 KB]
+      17_prepare_mil_chunk_cache.py  [24.43 KB]
+      18_train_full_article_max_mil.py  [59.92 KB]
+      19_compare_and_fuse_description_mil.py  [32.74 KB]
+      20_prepare_test_mil_chunk_cache.py  [17.88 KB]
+      21_evaluate_final_hybrid_test.py  [51.09 KB]
+      22_finalize_consistency_experiment.py  [25.36 KB]
+    01_download_datasets.py  [10.23 KB]
+    02_eda_raw_datasets.py  [57.29 KB]
+system/
+  backend/
+    app/
+      adapters/
+        __init__.py  [0.00 B]
+        _source.py  [970.00 B]
+        clickbait.py  [408.00 B]
+        headline_consistency.py  [1007.00 B]
+        spelling.py  [4.14 KB]
+      api/
+        __init__.py  [69.00 B]
+        experimental_segmenter.py  [2.75 KB]
+        main.py  [4.95 KB]
+        schemas.py  [1.65 KB]
+        service.py  [5.62 KB]
+      services/
+        __init__.py  [0.00 B]
+        model_registry.py  [1.18 KB]
+      __init__.py  [0.00 B]
+    tests/
+      test_adapters.py  [1.76 KB]
+      test_api_m1_pyvi_v1.py  [7.01 KB]
+      test_api_v1.py  [6.61 KB]
+  release/
+    tokenizers/
+      mbert_v1/
+        tokenizer.json  [2.78 MB]
+        tokenizer_config.json  [367.00 B]
+    environment_v1.json  [4.13 KB]
+    model_inventory_v1.json  [2.29 KB]
+    model_lock_config.json  [2.40 KB]
+    model_lock_manifest_v1.json  [6.39 KB]
+  reports/
+    api_patch_backups/
+      pre_pyvi_v1_20260924_025552_028155/
+        main.py  [4.65 KB]
+        schemas.py  [1.36 KB]
+        service.py  [4.02 KB]
+    final_validation_v1/
+      backend_tests.txt  [2.35 KB]
+      frontend_build.txt  [584.00 B]
+      http_smoke_api.txt  [331.00 B]
+      http_smoke_pyvi.txt  [144.00 B]
+      model_lock_verify.txt  [133.00 B]
+      module1_regression.txt  [1.64 KB]
+      module23_regression.txt  [9.17 KB]
+    frontend_patch_backups/
+      pre_polish_v1_20260924_032559_467256/
+        frontend/
+          src/
+    gpu_profile_v1/
+      combined.json  [3.87 KB]
+      headline.json  [2.55 KB]
+      m1.json  [2.02 KB]
+      summary.json  [8.05 KB]
+    m1_preprocessing_audit_v1/
+      audit.json  [6.49 KB]
+      origin_trace_v1.json  [5.90 KB]
+      prediction_drift_pyvi.json  [20.61 KB]
+      prediction_drift_underthesea.json  [16.85 KB]
+      prediction_drift_v1.json  [16.85 KB]
+      segmenter_benchmark_pyvi.json  [5.63 KB]
+      segmenter_benchmark_underthesea.json  [5.87 KB]
+      segmenter_benchmark_v1.json  [5.87 KB]
+      underthesea_restored_final.json  [20.39 KB]
+      underthesea_surface_diagnostic_v1.json  [27.01 KB]
+      underthesea_surface_restored_v1.json  [20.39 KB]
+    module1_regression_v1/
+      reference_v1.json  [6.73 KB]
+      regression_details.csv  [3.06 KB]
+      regression_report.json  [1.03 KB]
+    project_inventory_v1/
+      files.csv  [139.33 KB]
+      summary.json  [13.85 KB]
+      tree.txt  [17.51 KB]
+    deployment_tree_audit.txt  [7.95 KB]
+  scripts/
+    01_model_release.py  [13.59 KB]
+    02_audit_project_structure.py  [8.18 KB]
+    03_backup_module1.py  [7.54 KB]
+    04_backup_module2_before_split.py  [8.90 KB]
+    05_smoke_test_adapters.py  [2.36 KB]
+    06_regression_test_module1.py  [14.82 KB]
+    07_profile_gpu_memory.py  [11.24 KB]
+    08_create_project_v1.py  [14.32 KB]
+    09_smoke_test_http_api.py  [2.37 KB]
+    10_audit_m1_segmentation.py  [6.51 KB]
+    11_trace_m1_segmentation_origin.py  [8.15 KB]
+    12_benchmark_m1_segmenters.py  [12.75 KB]
+    13_measure_m1_segmentation_drift.py  [11.24 KB]
+    14_diagnose_underthesea_surface.py  [8.61 KB]
+    15_evaluate_underthesea_surface_restored.py  [16.53 KB]
+    16_smoke_m1_pyvi_http.py  [1.30 KB]
+    17_audit_deployment_tree.py  [15.93 KB]
+    model_lock_config.template.json  [1.91 KB]
+    README.md  [996.00 B]
+    SYSTEM_DESIGN_V1.md  [13.52 KB]
+tools/
+  projectSamSung_frontend_polish_v1/
+    overlay/
+      frontend/
+        src/
+          api.ts  [4.57 KB]
+          App.tsx  [18.41 KB]
+          demo_cases.ts  [3.37 KB]
+          presentation.ts  [977.00 B]
+          style.css  [11.82 KB]
+    install_patch.py  [3.74 KB]
+    README_VI.md  [3.72 KB]
+  projectSamSung_m1_pyvi_patch_v1/
+    overlay/
+      system/
+        backend/
+          app/
+          tests/
+        scripts/
+          16_smoke_m1_pyvi_http.py  [1.30 KB]
+    install_patch.py  [4.35 KB]
+    README_VI.md  [4.06 KB]
+.dockerignore  [2.42 KB]
+.gitignore  [129.00 B]
+docker-compose.yml  [319.00 B]
+Dockerfile  [1.16 KB]
+environment-v1.txt  [188.00 B]
+PROJECT_V1_CREATE_REPORT.json  [462.00 B]
+README_DOCKER_V1.md  [1.06 KB]
+README_V1.md  [1.41 KB]
+README_VI.md  [4.24 KB]
+requirements-frozen.txt  [3.12 KB]
+requirements-remaining.txt  [3.08 KB]
+requirements-v1-locked.txt  [3.12 KB]
+requirements_api_v1.txt  [212.00 B]
+requirements_docker.txt  [415.00 B]
+
+====================================================================================================
+B. DEPLOYMENT-CRITICAL FILE DISCOVERY
+====================================================================================================
+
+[Dockerfile] 1 match(es)
+  - Dockerfile (1.16 KB)
+
+[.dockerignore] 1 match(es)
+  - .dockerignore (2.42 KB)
+
+[requirements_docker.txt] 1 match(es)
+  - requirements_docker.txt (415.00 B)
+
+[docker-compose.yml] 1 match(es)
+  - docker-compose.yml (319.00 B)
+
+[main.py] 3 match(es)
+  - system\backend\app\api\main.py (4.95 KB)
+  - system\reports\api_patch_backups\pre_pyvi_v1_20260924_025552_028155\main.py (4.65 KB)
+  - tools\projectSamSung_m1_pyvi_patch_v1\overlay\system\backend\app\api\main.py (4.95 KB)
+
+[model_registry.py] 1 match(es)
+  - system\backend\app\services\model_registry.py (1.18 KB)
+
+[spelling.py] 1 match(es)
+  - system\backend\app\adapters\spelling.py (4.14 KB)
+
+[headline_integrity_pipeline.py] 1 match(es)
+  - module2\inference\headline_integrity_pipeline.py (40.17 KB)
+
+[best_model.pt] 8 match(es)
+  - module1\models\module1_phobert_mil\best_model.pt (515.06 MB)
+  - module1\models\module1_phobert_mil_all_fields\best_model.pt (515.06 MB)
+  - module1\models\module1_phobert_mil_all_fields_4chunks\best_model.pt (515.06 MB)
+  - module1\models\module1_phobert_mil_full\best_model.pt (515.06 MB)
+  - module1\models\module1_phobert_word_detector_v1\best_model.pt (515.06 MB)
+  - module2\models\clickbait\mbert_title_only_v1\best_model.pt (678.54 MB)
+  - module2\models\consistency\baseline_title_description_mbert\best_model.pt (678.54 MB)
+  - module2\models\consistency\full_article_max_mil_mbert\best_model.pt (678.54 MB)
+
+[final_model_lock.json] 2 match(es)
+  - module2\results\clickbait\final_title_only_v1\final_model_lock.json (2.27 KB)
+  - module2\results\consistency\final_hybrid_v1\final_model_lock.json (510.00 B)
+
+====================================================================================================
+C. MODULE 1 REFACTOR SUMMARY
+====================================================================================================
+
+Candidate: module1/
+  Files: 122
+  Total size: 2.78 GB
+  Python files: 37
+  Model files: 5
+  Tokenizer files: 20
+    MODEL: module1\models\module1_phobert_mil\best_model.pt (515.06 MB)
+    MODEL: module1\models\module1_phobert_mil_all_fields\best_model.pt (515.06 MB)
+    MODEL: module1\models\module1_phobert_mil_all_fields_4chunks\best_model.pt (515.06 MB)
+    MODEL: module1\models\module1_phobert_mil_full\best_model.pt (515.06 MB)
+    MODEL: module1\models\module1_phobert_word_detector_v1\best_model.pt (515.06 MB)
+
+====================================================================================================
+D. STALE / ABSOLUTE PATH REFERENCES
+====================================================================================================
+.dockerignore:32
+  PATTERN: module1_phobert_mil_full
+  LINE   : !models/module1_phobert_mil_full
+.dockerignore:33
+  PATTERN: module1_phobert_mil_full
+  LINE   : !models/module1_phobert_mil_full/**
+PROJECT_V1_CREATE_REPORT.json:3
+  PATTERN: C:[\\/]+1_projectSamSung
+  LINE   : "source": "C:\\1_projectSamSung",
+PROJECT_V1_CREATE_REPORT.json:4
+  PATTERN: C:[\\/]+projectSamSung_v1
+  LINE   : "destination": "C:\\projectSamSung_v1",
+README_DOCKER_V1.md:5
+  PATTERN: C:[\\/]+projectSamSung_v1
+  LINE   : C:\projectSamSung_v1
+README_DOCKER_V1.md:32
+  PATTERN: C:[\\/]+projectSamSung_v1
+  LINE   : cd /d C:\projectSamSung_v1
+README_V1.md:3
+  PATTERN: C:[\\/]+1_projectSamSung
+  LINE   : Deployment/integration workspace created from `C:\1_projectSamSung`.
+README_V1.md:24
+  PATTERN: C:[\\/]+1_projectSamSung
+  LINE   : C:\1_projectSamSung\.venv\Scripts\python.exe system\scripts\01_model_release.py verify
+README_V1.md:25
+  PATTERN: C:[\\/]+1_projectSamSung
+  LINE   : C:\1_projectSamSung\.venv\Scripts\python.exe -m unittest discover -s system\backend\tests -v
+README_V1.md:26
+  PATTERN: C:[\\/]+1_projectSamSung
+  LINE   : C:\1_projectSamSung\.venv\Scripts\python.exe system\scripts\05_smoke_test_adapters.py --device cuda
+README_V1.md:27
+  PATTERN: C:[\\/]+1_projectSamSung
+  LINE   : C:\1_projectSamSung\.venv\Scripts\python.exe system\scripts\06_regression_test_module1.py --device cuda
+README_V1.md:28
+  PATTERN: C:[\\/]+1_projectSamSung
+  LINE   : C:\1_projectSamSung\.venv\Scripts\python.exe module2_headline_integrity\inference\04_regression_check_unified_pipeline.py
+README_VI.md:11
+  PATTERN: C:[\\/]+1_projectSamSung
+Traceback (most recent call last):
+  File "C:\projectSamSung_v1\system\scripts\17_audit_deployment_tree.py", line 583, in <module>
+    raise SystemExit(main())
+  File "C:\projectSamSung_v1\system\scripts\17_audit_deployment_tree.py", line 573, in main
+    scan_stale_references(root, args.include_data)
+  File "C:\projectSamSung_v1\system\scripts\17_audit_deployment_tree.py", line 361, in scan_stale_references
+    print(f"  LINE   : {line[:300]}")
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python310\lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+UnicodeEncodeError: 'charmap' codec can't encode character '\u1ea3' in position 13: character maps to <undefined>

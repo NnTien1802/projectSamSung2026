@@ -1,0 +1,16 @@
+{
+  "architecture": "description_mbert + full_article_max_mil_mbert",
+  "status": "FROZEN_BEFORE_TEST_EVALUATION",
+  "description_weight": 0.5,
+  "mil_weight": 0.5,
+  "decision_threshold": 0.45,
+  "model_name": "bert-base-multilingual-cased",
+  "chunk_policy": {
+    "chunk_tokens": 120,
+    "chunk_overlap": 24,
+    "max_chunks": 6,
+    "sampling": "uniform positions across full article"
+  },
+  "selection_source": "validation calibration/holdout Steps 15-19",
+  "test_tuning_allowed": false
+}

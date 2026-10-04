@@ -1,0 +1,67 @@
+{
+  "release_id": "news_quality_models_v1",
+  "notes": "Three logical modules, with the existing frozen Module 2 unified pipeline retained and wrapped, not edited.",
+  "models": {
+    "spelling": {
+      "model_family": "vinai/phobert-base-v2; MIL",
+      "checkpoint": "models/module1_phobert_mil_full/best_model.pt",
+      "threshold_file": "results/module1_phobert_mil_full/threshold_tuning/best_threshold.json",
+      "inference_entrypoint": null,
+      "tokenizer_snapshot_or_revision": "vinai/phobert-base-v2",
+      "locked_parameters": {
+        "max_length": 256,
+        "stride": 64,
+        "max_chunks": 3,
+        "threshold": 0.57
+      },
+      "test_reference": {
+        "macro_f1": 0.91473,
+        "accuracy": 0.914824,
+        "test_n": 28764
+      },
+      "additional_files": [
+        "models/module1_phobert_mil_full/tokenizer"
+      ]
+    },
+    "clickbait": {
+      "model_family": "mBERT title-only",
+      "checkpoint": "module2_headline_integrity/models/clickbait/mbert_title_only_v1/best_model.pt",
+      "threshold_file": null,
+      "inference_entrypoint": "module2_headline_integrity/inference/headline_integrity_pipeline.py",
+      "tokenizer_snapshot_or_revision": "bert-base-multilingual-cased",
+      "locked_parameters": {
+        "threshold": 0.61
+      },
+      "test_reference": {
+        "macro_f1": 0.79883,
+        "accuracy": 0.832031,
+        "test_n": 512
+      },
+      "additional_files": [
+        "system/release/tokenizers/mbert_v1"
+      ]
+    },
+    "headline_consistency": {
+      "model_family": "mBERT description + full article MAX-MIL",
+      "checkpoint": "module2_headline_integrity/models/consistency/full_article_max_mil_mbert/best_model.pt",
+      "threshold_file": null,
+      "inference_entrypoint": "module2_headline_integrity/inference/headline_integrity_pipeline.py",
+      "tokenizer_snapshot_or_revision": "bert-base-multilingual-cased",
+      "locked_parameters": {
+        "threshold": 0.45
+      },
+      "test_reference": {
+        "macro_f1": 0.939591,
+        "accuracy": 0.939591
+      },
+      "additional_files": [
+        "module2_headline_integrity/models/consistency/baseline_title_description_mbert/best_model.pt",
+        "system/release/tokenizers/mbert_v1"
+      ]
+    }
+  },
+  "shared_files": [],
+  "expected_sha256": {
+    "module2_headline_integrity/inference/headline_integrity_pipeline.py": "ac3137209f676c2e1e279a967ab642b20b05c8cc64a1c0edb741be052045ace9"
+  }
+}

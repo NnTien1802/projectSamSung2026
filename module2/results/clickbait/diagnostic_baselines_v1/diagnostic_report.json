@@ -1,0 +1,152 @@
+{
+  "stage": "05_train_diagnostic_baselines",
+  "task": "2A_clickbait_detection",
+  "dataset": "viclickbait_v1",
+  "train_rows": 2390,
+  "validation_rows": 512,
+  "test_loaded": false,
+  "baselines": [
+    {
+      "model": "majority",
+      "macro_f1_05": 0.4074074074074074,
+      "accuracy_05": 0.6875,
+      "precision_clickbait_05": 0.0,
+      "recall_clickbait_05": 0.0,
+      "f1_clickbait_05": 0.0,
+      "roc_auc": 0.5,
+      "average_precision": 0.3125,
+      "tuned_threshold": 0.4999999999999998,
+      "macro_f1_tuned": 0.4074074074074074,
+      "accuracy_tuned": 0.6875,
+      "precision_clickbait_tuned": 0.0,
+      "recall_clickbait_tuned": 0.0,
+      "f1_clickbait_tuned": 0.0,
+      "confusion_matrix_tuned": {
+        "tn": 352,
+        "fp": 0,
+        "fn": 160,
+        "tp": 0
+      }
+    },
+    {
+      "model": "source_only",
+      "macro_f1_05": 0.6153072269977714,
+      "accuracy_05": 0.654296875,
+      "precision_clickbait_05": 0.455026455026455,
+      "recall_clickbait_05": 0.5375,
+      "f1_clickbait_05": 0.49283667621776506,
+      "roc_auc": 0.6847212357954545,
+      "average_precision": 0.4823611470349379,
+      "tuned_threshold": 0.5099999999999998,
+      "macro_f1_tuned": 0.6279470987281004,
+      "accuracy_tuned": 0.697265625,
+      "precision_clickbait_tuned": 0.5190839694656488,
+      "recall_clickbait_tuned": 0.425,
+      "f1_clickbait_tuned": 0.46735395189003437,
+      "confusion_matrix_tuned": {
+        "tn": 289,
+        "fp": 63,
+        "fn": 92,
+        "tp": 68
+      }
+    },
+    {
+      "model": "source_category",
+      "macro_f1_05": 0.6431970500041813,
+      "accuracy_05": 0.658203125,
+      "precision_clickbait_05": 0.46963562753036436,
+      "recall_clickbait_05": 0.725,
+      "f1_clickbait_05": 0.5700245700245701,
+      "roc_auc": 0.7110440340909091,
+      "average_precision": 0.5503939698061331,
+      "tuned_threshold": 0.5099999999999998,
+      "macro_f1_tuned": 0.6534686971235195,
+      "accuracy_tuned": 0.671875,
+      "precision_clickbait_tuned": 0.4829059829059829,
+      "recall_clickbait_tuned": 0.70625,
+      "f1_clickbait_tuned": 0.5736040609137056,
+      "confusion_matrix_tuned": {
+        "tn": 231,
+        "fp": 121,
+        "fn": 47,
+        "tp": 113
+      }
+    },
+    {
+      "model": "surface_features",
+      "macro_f1_05": 0.7152838798684071,
+      "accuracy_05": 0.744140625,
+      "precision_clickbait_05": 0.5767195767195767,
+      "recall_clickbait_05": 0.68125,
+      "f1_clickbait_05": 0.6246418338108882,
+      "roc_auc": 0.779403409090909,
+      "average_precision": 0.6072744374337427,
+      "tuned_threshold": 0.4999999999999998,
+      "macro_f1_tuned": 0.7152838798684071,
+      "accuracy_tuned": 0.744140625,
+      "precision_clickbait_tuned": 0.5767195767195767,
+      "recall_clickbait_tuned": 0.68125,
+      "f1_clickbait_tuned": 0.6246418338108882,
+      "confusion_matrix_tuned": {
+        "tn": 272,
+        "fp": 80,
+        "fn": 51,
+        "tp": 109
+      }
+    },
+    {
+      "model": "tfidf_title",
+      "macro_f1_05": 0.7315945670775297,
+      "accuracy_05": 0.763671875,
+      "precision_clickbait_05": 0.6114285714285714,
+      "recall_clickbait_05": 0.66875,
+      "f1_clickbait_05": 0.6388059701492538,
+      "roc_auc": 0.8238813920454545,
+      "average_precision": 0.6865930902240073,
+      "tuned_threshold": 0.5199999999999998,
+      "macro_f1_tuned": 0.7418611351195621,
+      "accuracy_tuned": 0.78125,
+      "precision_clickbait_tuned": 0.6578947368421053,
+      "recall_clickbait_tuned": 0.625,
+      "f1_clickbait_tuned": 0.6410256410256411,
+      "confusion_matrix_tuned": {
+        "tn": 300,
+        "fp": 52,
+        "fn": 60,
+        "tp": 100
+      }
+    },
+    {
+      "model": "tfidf_title_lead",
+      "macro_f1_05": 0.755619196389829,
+      "accuracy_05": 0.78515625,
+      "precision_clickbait_05": 0.6436781609195402,
+      "recall_clickbait_05": 0.7,
+      "f1_clickbait_05": 0.6706586826347305,
+      "roc_auc": 0.8568181818181819,
+      "average_precision": 0.7442995947129062,
+      "tuned_threshold": 0.45999999999999985,
+      "macro_f1_tuned": 0.7569583469204955,
+      "accuracy_tuned": 0.775390625,
+      "precision_clickbait_tuned": 0.6066350710900474,
+      "recall_clickbait_tuned": 0.8,
+      "f1_clickbait_tuned": 0.6900269541778976,
+      "confusion_matrix_tuned": {
+        "tn": 269,
+        "fp": 83,
+        "fn": 32,
+        "tp": 128
+      }
+    }
+  ],
+  "comparisons": {
+    "tfidf_title_lead_minus_title_macro_f1": 0.015097211800933374,
+    "source_only_macro_f1": 0.6279470987281004,
+    "surface_only_macro_f1": 0.7152838798684071
+  },
+  "interpretation_policy": {
+    "source_models": "Diagnostic only. Publisher identity will not be used as a production model input.",
+    "surface_models": "Diagnostic only. Used to measure possible shallow shortcuts.",
+    "test_policy": "TEST remains locked until final architecture and threshold are frozen."
+  }
+}

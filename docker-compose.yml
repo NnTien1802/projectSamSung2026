@@ -1,0 +1,31 @@
+services:
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: projectsamsung-api:v1
+    ports:
+      - "8000:8000"
+    environment:
+      SAMSUNG_DEVICE: cuda
+      HF_HOME: /opt/hf-cache
+      HF_HUB_DISABLE_TELEMETRY: "1"
+    volumes:
+      - projectsamsung-hf-cache:/opt/hf-cache
+    gpus: all
+    restart: unless-stopped
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    image: projectsamsung-frontend:v1
+    ports:
+      - "80:80"
+    depends_on:
+      - api
+    restart: unless-stopped
+
+volumes:
+  projectsamsung-hf-cache:
+    external: true

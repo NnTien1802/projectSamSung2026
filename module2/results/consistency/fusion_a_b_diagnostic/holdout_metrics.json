@@ -1,0 +1,71 @@
+{
+  "stage": "15_diagnostic_fusion_a_b",
+  "test_used": false,
+  "internal_protocol": {
+    "split_unit": "anchor_article_uid",
+    "calibration_anchors": 14356,
+    "holdout_anchors": 14357,
+    "calibration_pairs": 28712,
+    "holdout_pairs": 28714
+  },
+  "calibration": {
+    "baseline_a_threshold": 0.44000000000000006,
+    "baseline_b_threshold": 0.45000000000000007,
+    "fusion_alpha_a": 0.5,
+    "fusion_alpha_b": 0.5,
+    "fusion_threshold": 0.4600000000000001,
+    "fusion_macro_f1": 0.9249787966790574
+  },
+  "holdout": {
+    "baseline_a": {
+      "threshold": 0.44000000000000006,
+      "accuracy": 0.8971233544612384,
+      "precision": 0.9078034475359417,
+      "recall": 0.8840286968029533,
+      "f1": 0.8957583456842403,
+      "macro_f1": 0.8971057111714429,
+      "roc_auc": 0.9661835296575112,
+      "average_precision": 0.9695071841193982,
+      "confusion_matrix": {
+        "tn": 13068,
+        "fp": 1289,
+        "fn": 1665,
+        "tp": 12692
+      }
+    },
+    "baseline_b": {
+      "threshold": 0.45000000000000007,
+      "accuracy": 0.8610085672494253,
+      "precision": 0.8670679886685553,
+      "recall": 0.8527547537786445,
+      "f1": 0.8598518102328194,
+      "macro_f1": 0.8609990977522426,
+      "roc_auc": 0.9409527176114737,
+      "average_precision": 0.9438579468027632,
+      "confusion_matrix": {
+        "tn": 12480,
+        "fp": 1877,
+        "fn": 2114,
+        "tp": 12243
+      }
+    },
+    "fusion": {
+      "threshold": 0.4600000000000001,
+      "accuracy": 0.9253325903740336,
+      "precision": 0.9222153080273802,
+      "recall": 0.9290241693947203,
+      "f1": 0.9256072172102706,
+      "macro_f1": 0.9253315728109519,
+      "roc_auc": 0.9778331794748883,
+      "average_precision": 0.9780880878837955,
+      "confusion_matrix": {
+        "tn": 13232,
+        "fp": 1125,
+        "fn": 1019,
+        "tp": 13338
+      }
+    },
+    "fusion_minus_a_macro_f1": 0.02822586163950902
+  },
+  "warning": "This is a validation diagnostic. It is not a final test result."
+}

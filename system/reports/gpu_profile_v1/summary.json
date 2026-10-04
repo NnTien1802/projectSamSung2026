@@ -1,0 +1,280 @@
+{
+  "timestamp_utc": "2026-09-23T16:02:33.611368+00:00",
+  "device": "cuda",
+  "stages": {
+    "m1": {
+      "status": "PASS",
+      "exit_code": 0,
+      "report": "C:\\1_projectSamSung\\system\\reports\\gpu_profile_v1\\m1.json",
+      "loads": [
+        {
+          "name": "M1_PhoBERT",
+          "load_seconds": 4.75,
+          "memory_after_load": {
+            "gpu": {
+              "allocated_mb": 540.52,
+              "reserved_mb": 597.69,
+              "peak_allocated_mb": 540.52,
+              "free_vram_mb": 6853.49,
+              "total_vram_mb": 8585.22
+            },
+            "process_ram_mb": 1954.28
+          }
+        }
+      ],
+      "calls": [
+        {
+          "name": "M1_short",
+          "repeat_count": 3,
+          "latency_mean_ms": 11.26,
+          "latency_min_ms": 10.36,
+          "latency_max_ms": 12.76,
+          "memory_after_calls": {
+            "gpu": {
+              "allocated_mb": 549.04,
+              "reserved_mb": 601.88,
+              "peak_allocated_mb": 564.13,
+              "free_vram_mb": 6817.84,
+              "total_vram_mb": 8585.22
+            },
+            "process_ram_mb": 2532.97
+          },
+          "prediction": 0,
+          "chunk_count": 2
+        },
+        {
+          "name": "M1_long",
+          "repeat_count": 3,
+          "latency_mean_ms": 14.23,
+          "latency_min_ms": 13.46,
+          "latency_max_ms": 14.87,
+          "memory_after_calls": {
+            "gpu": {
+              "allocated_mb": 549.04,
+              "reserved_mb": 622.85,
+              "peak_allocated_mb": 568.53,
+              "free_vram_mb": 6796.87,
+              "total_vram_mb": 8585.22
+            },
+            "process_ram_mb": 2533.47
+          },
+          "prediction": 0,
+          "chunk_count": 3
+        }
+      ]
+    },
+    "headline": {
+      "status": "PASS",
+      "exit_code": 0,
+      "report": "C:\\1_projectSamSung\\system\\reports\\gpu_profile_v1\\headline.json",
+      "loads": [
+        {
+          "name": "M2_M3_shared_mBERT_pipeline",
+          "load_seconds": 8.69,
+          "memory_after_load": {
+            "gpu": {
+              "allocated_mb": 2135.12,
+              "reserved_mb": 2262.83,
+              "peak_allocated_mb": 2135.12,
+              "free_vram_mb": 5188.35,
+              "total_vram_mb": 8585.22
+            },
+            "process_ram_mb": 3075.38
+          }
+        }
+      ],
+      "calls": [
+        {
+          "name": "M2_clickbait",
+          "repeat_count": 3,
+          "latency_mean_ms": 9.82,
+          "latency_min_ms": 9.08,
+          "latency_max_ms": 10.74,
+          "memory_after_calls": {
+            "gpu": {
+              "allocated_mb": 2143.64,
+              "reserved_mb": 2283.8,
+              "peak_allocated_mb": 2148.63,
+              "free_vram_mb": 5135.93,
+              "total_vram_mb": 8585.22
+            },
+            "process_ram_mb": 3579.45
+          },
+          "prediction": 0,
+          "chunk_count": null
+        },
+        {
+          "name": "M3_short",
+          "repeat_count": 3,
+          "latency_mean_ms": 20.58,
+          "latency_min_ms": 20.41,
+          "latency_max_ms": 20.88,
+          "memory_after_calls": {
+            "gpu": {
+              "allocated_mb": 2143.64,
+              "reserved_mb": 2290.09,
+              "peak_allocated_mb": 2151.1,
+              "free_vram_mb": 5129.63,
+              "total_vram_mb": 8585.22
+            },
+            "process_ram_mb": 3686.19
+          },
+          "prediction": 1,
+          "chunk_count": 1
+        },
+        {
+          "name": "M3_long",
+          "repeat_count": 3,
+          "latency_mean_ms": 24.24,
+          "latency_min_ms": 23.81,
+          "latency_max_ms": 24.47,
+          "memory_after_calls": {
+            "gpu": {
+              "allocated_mb": 2143.64,
+              "reserved_mb": 2311.06,
+              "peak_allocated_mb": 2166.63,
+              "free_vram_mb": 5108.66,
+              "total_vram_mb": 8585.22
+            },
+            "process_ram_mb": 3659.47
+          },
+          "prediction": 1,
+          "chunk_count": 6
+        }
+      ]
+    },
+    "combined": {
+      "status": "PASS",
+      "exit_code": 0,
+      "report": "C:\\1_projectSamSung\\system\\reports\\gpu_profile_v1\\combined.json",
+      "loads": [
+        {
+          "name": "M1_PhoBERT",
+          "load_seconds": 4.51,
+          "memory_after_load": {
+            "gpu": {
+              "allocated_mb": 540.52,
+              "reserved_mb": 597.69,
+              "peak_allocated_mb": 540.52,
+              "free_vram_mb": 6853.49,
+              "total_vram_mb": 8585.22
+            },
+            "process_ram_mb": 1955.74
+          }
+        },
+        {
+          "name": "M2_M3_shared_mBERT_pipeline",
+          "load_seconds": 5.7,
+          "memory_after_load": {
+            "gpu": {
+              "allocated_mb": 2684.82,
+              "reserved_mb": 2841.64,
+              "peak_allocated_mb": 2684.82,
+              "free_vram_mb": 4578.08,
+              "total_vram_mb": 8585.22
+            },
+            "process_ram_mb": 3358.02
+          }
+        }
+      ],
+      "calls": [
+        {
+          "name": "M1_short",
+          "repeat_count": 3,
+          "latency_mean_ms": 11.23,
+          "latency_min_ms": 10.58,
+          "latency_max_ms": 12.48,
+          "memory_after_calls": {
+            "gpu": {
+              "allocated_mb": 549.04,
+              "reserved_mb": 601.88,
+              "peak_allocated_mb": 564.13,
+              "free_vram_mb": 6817.84,
+              "total_vram_mb": 8585.22
+            },
+            "process_ram_mb": 2534.17
+          },
+          "prediction": 0,
+          "chunk_count": 2
+        },
+        {
+          "name": "M1_long",
+          "repeat_count": 3,
+          "latency_mean_ms": 13.55,
+          "latency_min_ms": 13.01,
+          "latency_max_ms": 14.02,
+          "memory_after_calls": {
+            "gpu": {
+              "allocated_mb": 549.04,
+              "reserved_mb": 622.85,
+              "peak_allocated_mb": 568.53,
+              "free_vram_mb": 6796.87,
+              "total_vram_mb": 8585.22
+            },
+            "process_ram_mb": 2534.56
+          },
+          "prediction": 0,
+          "chunk_count": 3
+        },
+        {
+          "name": "M2_clickbait",
+          "repeat_count": 3,
+          "latency_mean_ms": 9.79,
+          "latency_min_ms": 9.41,
+          "latency_max_ms": 10.02,
+          "memory_after_calls": {
+            "gpu": {
+              "allocated_mb": 2684.82,
+              "reserved_mb": 2862.61,
+              "peak_allocated_mb": 2689.81,
+              "free_vram_mb": 4557.11,
+              "total_vram_mb": 8585.22
+            },
+            "process_ram_mb": 3463.95
+          },
+          "prediction": 0,
+          "chunk_count": null
+        },
+        {
+          "name": "M3_short",
+          "repeat_count": 3,
+          "latency_mean_ms": 21.39,
+          "latency_min_ms": 20.51,
+          "latency_max_ms": 22.53,
+          "memory_after_calls": {
+            "gpu": {
+              "allocated_mb": 2684.82,
+              "reserved_mb": 2864.71,
+              "peak_allocated_mb": 2692.27,
+              "free_vram_mb": 4555.01,
+              "total_vram_mb": 8585.22
+            },
+            "process_ram_mb": 3442.64
+          },
+          "prediction": 1,
+          "chunk_count": 1
+        },
+        {
+          "name": "M3_long",
+          "repeat_count": 3,
+          "latency_mean_ms": 25.91,
+          "latency_min_ms": 25.52,
+          "latency_max_ms": 26.4,
+          "memory_after_calls": {
+            "gpu": {
+              "allocated_mb": 2684.82,
+              "reserved_mb": 2885.68,
+              "peak_allocated_mb": 2708.07,
+              "free_vram_mb": 4534.04,
+              "total_vram_mb": 8585.22
+            },
+            "process_ram_mb": 3443.79
+          },
+          "prediction": 1,
+          "chunk_count": 6
+        }
+      ]
+    }
+  },
+  "overall_status": "PASS"
+}

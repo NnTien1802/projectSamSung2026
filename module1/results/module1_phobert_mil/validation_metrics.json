@@ -1,0 +1,38 @@
+{
+  "accuracy": 0.88325,
+  "error_precision": 0.9172563962983125,
+  "error_recall": 0.8425,
+  "error_f1": 0.8782903309877509,
+  "macro_f1": 0.8830558068582761,
+  "roc_auc": 0.9342431250000001,
+  "average_precision": 0.9489627219911394,
+  "confusion_matrix": {
+    "tn": 1848,
+    "fp": 152,
+    "fn": 315,
+    "tp": 1685
+  },
+  "severity_recall": {
+    "minor": {
+      "count": 997,
+      "recall": 0.7512537612838516
+    },
+    "moderate": {
+      "count": 717,
+      "recall": 0.9218967921896792
+    },
+    "severe": {
+      "count": 286,
+      "recall": 0.9615384615384616
+    }
+  },
+  "validation_loss": 0.3250795068740845,
+  "epoch_training_seconds": 277.5986969470978,
+  "documents_per_second": 72.04644769572322,
+  "pilot_mode": true,
+  "max_length": 256,
+  "stride": 64,
+  "max_chunks_per_document": 3,
+  "document_batch_size": 6,
+  "gradient_accumulation_steps": 2
+}

@@ -1,0 +1,41 @@
+MODULE 1 REGRESSION ù no training, validation-only, single-model GPU loading
+Device: cuda
+Fixed samples: 24; labels: {0: 12, 1: 12}
+
+Comparing NEW spelling adapter with frozen original reference...
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+  adapter   01/24 | p=0.109314 chunks=1
+  adapter   02/24 | p=0.049591 chunks=3
+  adapter   03/24 | p=0.100708 chunks=1
+  adapter   04/24 | p=0.045868 chunks=2
+  adapter   05/24 | p=0.044434 chunks=2
+  adapter   06/24 | p=0.048950 chunks=3
+  adapter   07/24 | p=0.177612 chunks=1
+  adapter   08/24 | p=0.073547 chunks=1
+  adapter   09/24 | p=0.148315 chunks=1
+  adapter   10/24 | p=0.091064 chunks=1
+  adapter   11/24 | p=0.136597 chunks=1
+  adapter   12/24 | p=0.833984 chunks=1
+  adapter   13/24 | p=0.998047 chunks=2
+  adapter   14/24 | p=0.998047 chunks=3
+  adapter   15/24 | p=0.998047 chunks=1
+  adapter   16/24 | p=0.993652 chunks=2
+  adapter   17/24 | p=0.998047 chunks=2
+  adapter   18/24 | p=0.994629 chunks=2
+  adapter   19/24 | p=0.998047 chunks=1
+  adapter   20/24 | p=0.998047 chunks=1
+  adapter   21/24 | p=0.998047 chunks=1
+  adapter   22/24 | p=0.998047 chunks=1
+  adapter   23/24 | p=0.998047 chunks=1
+  adapter   24/24 | p=0.998047 chunks=1
+
+REGRESSION SUMMARY
+sample_count: 24
+mean_absolute_error: 0.0
+max_absolute_error: 0.0
+prediction_mismatches: 0
+chunk_count_mismatches: 0
+failed_samples: 0
+result: PASS
+REPORT: C:\projectSamSung_v1\system\reports\module1_regression_v1\regression_report.json
+DETAIL: C:\projectSamSung_v1\system\reports\module1_regression_v1\regression_details.csv

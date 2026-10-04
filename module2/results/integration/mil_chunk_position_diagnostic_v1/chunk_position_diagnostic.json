@@ -1,0 +1,146 @@
+{
+  "stage": "integration_step_05_mil_chunk_position_diagnostic",
+  "validation_only": true,
+  "training_performed": false,
+  "test_used": false,
+  "chunk_tokens": 120,
+  "chunk_overlap": 24,
+  "chunk_step": 96,
+  "max_chunks": 6,
+  "tolerance": 0.005,
+  "samples": 24,
+  "policies": {
+    "current_step96_floor": {
+      "mean_abs_error": 0.01540965944392761,
+      "median_abs_error": 7.739663124084473e-05,
+      "p95_abs_error": 0.046285414695739664,
+      "max_abs_error": 0.2949603497982025,
+      "within_tolerance": 20,
+      "total": 24,
+      "pass": false
+    },
+    "step96_round": {
+      "mean_abs_error": 9.746089441856365e-05,
+      "median_abs_error": 2.6168301701545715e-05,
+      "p95_abs_error": 0.0003473803400993347,
+      "max_abs_error": 0.0005197525024414062,
+      "within_tolerance": 24,
+      "total": 24,
+      "pass": true
+    },
+    "step96_ceil": {
+      "mean_abs_error": 9.048218392611166e-05,
+      "median_abs_error": 2.4079810827970505e-05,
+      "p95_abs_error": 0.0003473803400993347,
+      "max_abs_error": 0.0005197525024414062,
+      "within_tolerance": 24,
+      "total": 24,
+      "pass": true
+    },
+    "direct_uniform_maxstart_floor": {
+      "mean_abs_error": 0.019908260830561623,
+      "median_abs_error": 0.0008042752742767334,
+      "p95_abs_error": 0.1177027862519024,
+      "max_abs_error": 0.22952121496200562,
+      "within_tolerance": 16,
+      "total": 24,
+      "pass": false
+    },
+    "direct_uniform_maxstart_round": {
+      "mean_abs_error": 0.020898308881442052,
+      "median_abs_error": 0.0011760565685107992,
+      "p95_abs_error": 0.10011038444936263,
+      "max_abs_error": 0.22952121496200562,
+      "within_tolerance": 16,
+      "total": 24,
+      "pass": false
+    },
+    "direct_uniform_fullrange_floor": {
+      "mean_abs_error": 0.006717902714929845,
+      "median_abs_error": 0.0004342794418334961,
+      "p95_abs_error": 0.055996621400117755,
+      "max_abs_error": 0.06567749287933111,
+      "within_tolerance": 20,
+      "total": 24,
+      "pass": false
+    },
+    "step120_floor": {
+      "mean_abs_error": 0.020645623168093135,
+      "median_abs_error": 0.0004342794418334961,
+      "p95_abs_error": 0.11211589090526092,
+      "max_abs_error": 0.20149749517440796,
+      "within_tolerance": 15,
+      "total": 24,
+      "pass": false
+    },
+    "step120_round": {
+      "mean_abs_error": 0.020612674401490932,
+      "median_abs_error": 0.0004342794418334961,
+      "p95_abs_error": 0.11211589090526092,
+      "max_abs_error": 0.20149749517440796,
+      "within_tolerance": 15,
+      "total": 24,
+      "pass": false
+    }
+  },
+  "ranking": [
+    {
+      "rank": 1,
+      "policy": "step96_ceil",
+      "mean_abs_error": 9.048218392611166e-05,
+      "max_abs_error": 0.0005197525024414062,
+      "pass": true
+    },
+    {
+      "rank": 2,
+      "policy": "step96_round",
+      "mean_abs_error": 9.746089441856365e-05,
+      "max_abs_error": 0.0005197525024414062,
+      "pass": true
+    },
+    {
+      "rank": 3,
+      "policy": "direct_uniform_fullrange_floor",
+      "mean_abs_error": 0.006717902714929845,
+      "max_abs_error": 0.06567749287933111,
+      "pass": false
+    },
+    {
+      "rank": 4,
+      "policy": "current_step96_floor",
+      "mean_abs_error": 0.01540965944392761,
+      "max_abs_error": 0.2949603497982025,
+      "pass": false
+    },
+    {
+      "rank": 5,
+      "policy": "direct_uniform_maxstart_floor",
+      "mean_abs_error": 0.019908260830561623,
+      "max_abs_error": 0.22952121496200562,
+      "pass": false
+    },
+    {
+      "rank": 6,
+      "policy": "step120_round",
+      "mean_abs_error": 0.020612674401490932,
+      "max_abs_error": 0.20149749517440796,
+      "pass": false
+    },
+    {
+      "rank": 7,
+      "policy": "step120_floor",
+      "mean_abs_error": 0.020645623168093135,
+      "max_abs_error": 0.20149749517440796,
+      "pass": false
+    },
+    {
+      "rank": 8,
+      "policy": "direct_uniform_maxstart_round",
+      "mean_abs_error": 0.020898308881442052,
+      "max_abs_error": 0.22952121496200562,
+      "pass": false
+    }
+  ],
+  "best_policy": "step96_ceil",
+  "best_policy_pass": true
+}

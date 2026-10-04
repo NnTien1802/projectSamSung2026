@@ -1,0 +1,92 @@
+{
+  "stage": "19_description_mil_fusion",
+  "dataset": "headline_consistency_v1",
+  "analysis_split": "validation",
+  "test_used": false,
+  "internal_protocol": {
+    "split_unit": "anchor_article_uid",
+    "calibration_anchors": 14356,
+    "holdout_anchors": 14357,
+    "calibration_pairs": 28712,
+    "holdout_pairs": 28714
+  },
+  "calibration": {
+    "description_threshold": 0.44000000000000006,
+    "mil_threshold": 0.37000000000000005,
+    "fusion_description_weight": 0.5,
+    "fusion_mil_weight": 0.5,
+    "fusion_threshold": 0.45000000000000007,
+    "fusion_macro_f1": 0.9389798949018551
+  },
+  "holdout": {
+    "description": {
+      "threshold": 0.44000000000000006,
+      "accuracy": 0.8971233544612384,
+      "precision_consistent": 0.9078034475359417,
+      "recall_consistent": 0.8840286968029533,
+      "f1_consistent": 0.8957583456842403,
+      "macro_f1": 0.8971057111714429,
+      "roc_auc": 0.9661835296575112,
+      "average_precision": 0.9695071841193982,
+      "confusion_matrix": {
+        "tn": 13068,
+        "fp": 1289,
+        "fn": 1665,
+        "tp": 12692
+      }
+    },
+    "mil": {
+      "threshold": 0.37000000000000005,
+      "accuracy": 0.8986905342341714,
+      "precision_consistent": 0.8912508544087492,
+      "recall_consistent": 0.9081980915232988,
+      "f1_consistent": 0.8996446682995826,
+      "macro_f1": 0.8986813756743509,
+      "roc_auc": 0.9655854681531162,
+      "average_precision": 0.9652584268704383,
+      "confusion_matrix": {
+        "tn": 12766,
+        "fp": 1591,
+        "fn": 1318,
+        "tp": 13039
+      }
+    },
+    "fusion": {
+      "threshold": 0.45000000000000007,
+      "accuracy": 0.9378003761231455,
+      "precision_consistent": 0.9324389404884761,
+      "recall_consistent": 0.9439994427805252,
+      "f1_consistent": 0.9381835802298214,
+      "macro_f1": 0.9377979857975571,
+      "roc_auc": 0.9839671443689069,
+      "average_precision": 0.9836726163067558,
+      "confusion_matrix": {
+        "tn": 13375,
+        "fp": 982,
+        "fn": 804,
+        "tp": 13553
+      }
+    },
+    "fusion_minus_description_macro_f1": 0.040692274626114244,
+    "fusion_minus_mil_macro_f1": 0.03911661012320622
+  },
+  "error_overlap_description_vs_mil": {
+    "BOTH_CORRECT": {
+      "count": 23719,
+      "rate": 0.82604304520443
+    },
+    "A_ONLY_CORRECT": {
+      "count": 2041,
+      "rate": 0.07108030925680853
+    },
+    "C_ONLY_CORRECT": {
+      "count": 2086,
+      "rate": 0.0726474890297416
+    },
+    "BOTH_WRONG": {
+      "count": 868,
+      "rate": 0.03022915650901999
+    }
+  },
+  "warning": "Validation diagnostic only. No test examples or test predictions were used."
+}

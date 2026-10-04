@@ -1,0 +1,104 @@
+{
+  "timestamp_utc": "2026-09-23T19:12:11.638492+00:00",
+  "validation_path": "C:\\projectSamSung_v1\\data\\processed\\vn_newsspell_v1\\validation.jsonl",
+  "validation_rows_scanned": 60,
+  "paired_rows": 60,
+  "label_counts": {
+    "0": 30,
+    "1": 30
+  },
+  "natural_equals_segmented_unjoined": 60,
+  "natural_equals_segmented_unjoined_rate": 1.0,
+  "natural_equals_segmented_original": 0,
+  "underscore_joined_units_median": 105.0,
+  "mismatch_excerpts": [],
+  "builder_evidence": [
+    {
+      "file": "scripts/04_generate_spelling_dataset.py",
+      "exists": true,
+      "total_matching_lines": 6,
+      "total_context_windows": 3,
+      "shown_windows": 3,
+      "windows": [
+        {
+          "start_line": 150,
+          "end_line": 156,
+          "source": "  150:     Không dùng để xác định spelling label.\n  151:     \"\"\"\n  152: \n  153:     return text.replace(\n  154:         \"_\",\n  155:         \" \"\n  156:     )"
+        },
+        {
+          "start_line": 1098,
+          "end_line": 1113,
+          "source": " 1098:             error_types,\n 1099: \n 1100:         # -----------------------------\n 1101:         # Segmented representation\n 1102:         # -----------------------------\n 1103: \n 1104:         \"title_segmented\":\n 1105:             fields[\"title\"],\n 1106: \n 1107:         \"abstract_segmented\":\n 1108:             fields[\"abstract\"],\n 1109: \n 1110:         \"article_segmented\":\n 1111:             fields[\"article\"],\n 1112: \n 1113:         # -----------------------------"
+        },
+        {
+          "start_line": 1124,
+          "end_line": 1130,
+          "source": " 1124:                 fields[\"abstract\"]\n 1125:             ),\n 1126: \n 1127:         \"article_natural\":\n 1128:             to_natural(\n 1129:                 fields[\"article\"]\n 1130:             ),"
+        }
+      ]
+    },
+    {
+      "file": "scripts/04_generate_spelling_dataset_v02.py",
+      "exists": true,
+      "total_matching_lines": 8,
+      "total_context_windows": 4,
+      "shown_windows": 4,
+      "windows": [
+        {
+          "start_line": 152,
+          "end_line": 161,
+          "source": "  152:     VD:\n  153:         người_dân -> người dân\n  154: \n  155:     Không thay đổi representation segmented gốc.\n  156:     \"\"\"\n  157: \n  158:     return text.replace(\"_\", \" \")\n  159: \n  160: \n  161: def create_article_id(article):"
+        },
+        {
+          "start_line": 1291,
+          "end_line": 1306,
+          "source": " 1291:             error_types,\n 1292: \n 1293:         # ----------------------------------------------------\n 1294:         # Segmented representation\n 1295:         # ----------------------------------------------------\n 1296: \n 1297:         \"title_segmented\":\n 1298:             fields[\"title\"],\n 1299: \n 1300:         \"abstract_segmented\":\n 1301:             fields[\"abstract\"],\n 1302: \n 1303:         \"article_segmented\":\n 1304:             fields[\"article\"],\n 1305: \n 1306:         # ----------------------------------------------------"
+        },
+        {
+          "start_line": 1317,
+          "end_line": 1323,
+          "source": " 1317:                 fields[\"abstract\"]\n 1318:             ),\n 1319: \n 1320:         \"article_natural\":\n 1321:             to_natural(\n 1322:                 fields[\"article\"]\n 1323:             ),"
+        },
+        {
+          "start_line": 1811,
+          "end_line": 1817,
+          "source": " 1811:             \"protect_probable_proper_nouns\":\n 1812:                 True,\n 1813: \n 1814:             \"preserve_underscore_segmentation\":\n 1815:                 True,\n 1816:         },\n 1817:     }"
+        }
+      ]
+    },
+    {
+      "file": "scripts/09_generate_hybrid_spelling_dataset.py",
+      "exists": true,
+      "total_matching_lines": 7,
+      "total_context_windows": 4,
+      "shown_windows": 4,
+      "windows": [
+        {
+          "start_line": 166,
+          "end_line": 172,
+          "source": "  166: \n  167: def to_natural(text):\n  168: \n  169:     return text.replace(\n  170:         \"_\",\n  171:         \" \"\n  172:     )"
+        },
+        {
+          "start_line": 1764,
+          "end_line": 1783,
+          "source": " 1764:             error_sources,\n 1765: \n 1766:         # ----------------------------------------------------\n 1767:         # Segmented representation\n 1768:         # ----------------------------------------------------\n 1769: \n 1770:         \"title_segmented\":\n 1771:             fields[\n 1772:                 \"title\"\n 1773:             ],\n 1774: \n 1775:         \"abstract_segmented\":\n 1776:             fields[\n 1777:                 \"abstract\"\n 1778:             ],\n 1779: \n 1780:         \"article_segmented\":\n 1781:             fields[\n 1782:                 \"article\"\n 1783:             ],"
+        },
+        {
+          "start_line": 1800,
+          "end_line": 1806,
+          "source": " 1800:                 ]\n 1801:             ),\n 1802: \n 1803:         \"article_natural\":\n 1804:             to_natural(\n 1805:                 fields[\n 1806:                     \"article\""
+        },
+        {
+          "start_line": 2469,
+          "end_line": 2475,
+          "source": " 2469:             \"error_density\":\n 2470:                 ERROR_DENSITY,\n 2471: \n 2472:             \"preserve_underscore_segmentation\":\n 2473:                 True,\n 2474: \n 2475:             \"protect_probable_proper_nouns\":"
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "Exact match after underscore removal shows paired text alignment but DOES NOT identify the algorithm or tokenizer version.",
+    "This script does not install a segmenter or claim preprocessing parity.",
+    "The original scripts are read, never executed; model weights and test data are not accessed."
+  ]
+}

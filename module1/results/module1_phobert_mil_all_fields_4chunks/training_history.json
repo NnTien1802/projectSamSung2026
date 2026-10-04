@@ -1,0 +1,98 @@
+[
+  {
+    "accuracy": 0.9404074820944301,
+    "error_precision": 0.9480721613017333,
+    "error_recall": 0.9318545302830124,
+    "error_f1": 0.9398933931827745,
+    "macro_f1": 0.9404031224049559,
+    "roc_auc": 0.9837805994368027,
+    "average_precision": 0.984902089452868,
+    "confusion_matrix": {
+      "tn": 13647,
+      "fp": 734,
+      "fn": 980,
+      "tp": 13401
+    },
+    "severity_recall": {
+      "minor": {
+        "count": 7132,
+        "recall": 0.8820807627593943
+      },
+      "moderate": {
+        "count": 5067,
+        "recall": 0.9733570159857904
+      },
+      "severe": {
+        "count": 2182,
+        "recall": 0.998166819431714
+      }
+    },
+    "validation_loss": 0.18829213378684714,
+    "validation_seconds": 683.1025471687317,
+    "epoch": 1,
+    "average_train_loss": 0.26187553347759984,
+    "epoch_training_seconds": 3557.283493757248,
+    "documents_per_second": 64.68531406164686,
+    "pilot_mode": false,
+    "input_mode": "title_abstract_article",
+    "text_fields": [
+      "title_segmented",
+      "abstract_segmented",
+      "article_segmented"
+    ],
+    "field_separator": " . ",
+    "max_length": 256,
+    "stride": 64,
+    "max_chunks_per_document": 4,
+    "document_batch_size": 12,
+    "gradient_accumulation_steps": 1
+  },
+  {
+    "accuracy": 0.9484736805507267,
+    "error_precision": 0.9494111908577799,
+    "error_recall": 0.9474306376468952,
+    "error_f1": 0.9484198802728665,
+    "macro_f1": 0.948473624493199,
+    "roc_auc": 0.9875623727834225,
+    "average_precision": 0.9884537120374675,
+    "confusion_matrix": {
+      "tn": 13655,
+      "fp": 726,
+      "fn": 756,
+      "tp": 13625
+    },
+    "severity_recall": {
+      "minor": {
+        "count": 7132,
+        "recall": 0.9061974200785193
+      },
+      "moderate": {
+        "count": 5067,
+        "recall": 0.9830274324057627
+      },
+      "severe": {
+        "count": 2182,
+        "recall": 0.9995417048579285
+      }
+    },
+    "validation_loss": 0.1723101823127754,
+    "validation_seconds": 680.1349186897278,
+    "epoch": 2,
+    "average_train_loss": 0.16844563045630073,
+    "epoch_training_seconds": 3534.329840660095,
+    "documents_per_second": 65.10541188114583,
+    "pilot_mode": false,
+    "input_mode": "title_abstract_article",
+    "text_fields": [
+      "title_segmented",
+      "abstract_segmented",
+      "article_segmented"
+    ],
+    "field_separator": " . ",
+    "max_length": 256,
+    "stride": 64,
+    "max_chunks_per_document": 4,
+    "document_batch_size": 12,
+    "gradient_accumulation_steps": 1
+  }
+]

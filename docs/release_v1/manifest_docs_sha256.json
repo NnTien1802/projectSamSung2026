@@ -1,0 +1,19 @@
+{
+  "bundle": "projectSamSung V1 – release documentation only",
+  "date": "2026-09-24",
+  "model_artifacts_included": false,
+  "sha256": {
+    "Checklist_release_v1.md": "30dbd8f8b085715de4522d035e328a3a891d0137e5b768490bf243ef007bd838",
+    "Kich_ban_demo.md": "105413faa90bf02551db2c7dedae7793e18f43cec29304a9f81c2cc86e3172b9",
+    "README_Buoc22.md": "9eb3658899ec81957e53dc697ed12d26c6e0aae798df4a08844bc211fe73f9db",
+    "Tai_lieu_ky_thuat_ProjectSamSung_V1.docx": "bccf709172554b200678dcb0cbd9f3441c50d04e74f35fafacb716a432568c6c",
+    "evidence/backend_tests.txt": "4ac474e0834bb970d2091e1c7a673773c7aab95301d068ac8dd9bd7919af92e9",
+    "evidence/frontend_build.txt": "084e2ad86f37eed35d787bbcc1798b95b76d544ccf512248ee992d0c85729646",
+    "evidence/model_lock_verify.txt": "19b4dbe1a3552a8f108796cdad6f8c67ae8e5df9de2efaed1752aa991910e035",
+    "evidence/module1_regression.txt": "5d4e6e033488a7bc70f62653cdb8f1cf1037dce45792946a90fb2e4da6d9cc2d",
+    "evidence/module23_regression.txt": "da4e7387edea3802d2932a99d4d3d487843aaeb8e3b3d7804d5857d37b103242",
+    "screenshots/react_input_bottom.png": "4e4db30b1a35fc699f31323aa374a23b94771f894633ae5b93106b6f53a76f0c",
+    "screenshots/react_input_top.png": "0997d263b008b2fc46b617d8c18528af0ba721d79ada2de7a86182316329a49d",
+    "screenshots/react_results.png": "5736c8a527def09a7095a339f29cebc7ee225ef3c5ac41e6968cf4b6fc8ae15c"
+  }
+}

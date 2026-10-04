@@ -1,0 +1,21 @@
+{
+  "generated_utc": "2026-09-23T20:38:47.480708+00:00",
+  "device": "cuda",
+  "reference": "system/reports/module1_regression_v1/reference_v1.json",
+  "hashes": {
+    "evaluation_source_sha256": "c9d7f687699a279bcbe598eca29326da692e038264944ae090e2eb1c36a4b90d",
+    "checkpoint_sha256": "abe5b00f7cfb5dda18dde5975519a1b064ebf5d6b3961e2cf4f868722dca4a90",
+    "threshold_json_sha256": "cd7ebdb5cbea61c11e8c505b9046ca175ef5d75d0296926382136b3a370f634e",
+    "validation_jsonl_sha256": "b5bc41add814942749e1d49e67167a744a066ee5e75386a64d58572650de4405"
+  },
+  "threshold": 0.57,
+  "sample_count": 24,
+  "probability_tolerance": 0.005,
+  "mean_absolute_error": 0.0,
+  "max_absolute_error": 0.0,
+  "prediction_mismatches": 0,
+  "chunk_count_mismatches": 0,
+  "failed_samples": 0,
+  "result": "PASS",
+  "note": "Validation reference from original evaluation code, not the official held-out test. Adapter reuses the same source architecture/collator; this is numeric routing parity, not an independent implementation or accuracy benchmark."
+}

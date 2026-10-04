@@ -1,0 +1,58 @@
+{
+  "stage": "integration_step_03_regression",
+  "module": "Module 2 - Headline Integrity",
+  "validation_only": true,
+  "training_performed": false,
+  "threshold_search_performed": false,
+  "model_selection_performed": false,
+  "probability_tolerance": 0.005,
+  "clickbait": {
+    "passed": true,
+    "samples": 32,
+    "probability_error": {
+      "mean_abs_error": 0.00028571486473083496,
+      "median_abs_error": 0.0,
+      "p95_abs_error": 0.00146484375,
+      "max_abs_error": 0.00244140625
+    },
+    "prediction_mismatches": 0,
+    "elapsed_seconds": 0.6228601932525635
+  },
+  "consistency": {
+    "passed": true,
+    "samples": 24,
+    "description": {
+      "passed": true,
+      "probability_error": {
+        "mean_abs_error": 4.474322001139323e-05,
+        "median_abs_error": 0.0,
+        "p95_abs_error": 0.000244140625,
+        "max_abs_error": 0.00048828125
+      }
+    },
+    "max_mil": {
+      "passed": true,
+      "probability_error": {
+        "mean_abs_error": 8.328755696614583e-05,
+        "median_abs_error": 0.0,
+        "p95_abs_error": 0.00048828125,
+        "max_abs_error": 0.00048828125
+      },
+      "token_count_mismatches": 0,
+      "chunk_count_mismatches": 0
+    },
+    "fusion": {
+      "passed": true,
+      "probability_error": {
+        "mean_abs_error": 6.210803985595703e-05,
+        "median_abs_error": 0.0,
+        "p95_abs_error": 0.000244140625,
+        "max_abs_error": 0.000335693359375
+      },
+      "prediction_mismatches": 0
+    },
+    "elapsed_seconds": 0.6611294746398926
+  },
+  "overall_pass": true,
+  "interpretation": "PASS means the unified inference pipeline reproduces saved development-time probabilities and decisions within the fixed numerical tolerance. FAIL must be investigated; tolerance should not be loosened automatically."
+}

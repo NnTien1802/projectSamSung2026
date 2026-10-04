@@ -1,0 +1,27 @@
+﻿split,category,n,normal,clickbait,clickbait_rate
+train,Other,774,576,198,0.2558139534883721
+train,Thể thao,225,165,60,0.26666666666666666
+train,Sức khỏe & Đời sống,166,68,98,0.5903614457831325
+train,Quốc tế,163,121,42,0.25766871165644173
+train,Giải trí & Showbiz,159,46,113,0.710691823899371
+train,Công nghệ & Khoa học,157,95,62,0.39490445859872614
+train,Kinh doanh & Kinh tế,149,102,47,0.31543624161073824
+train,Tin tức tổng hợp,135,130,5,0.037037037037037035
+train,Chính trị & An ninh,125,109,16,0.128
+train,Giáo dục & Học đường,116,91,25,0.21551724137931033
+train,Xe & Vận tải,103,65,38,0.36893203883495146
+train,Du lịch & Ẩm thực,73,40,33,0.4520547945205479
+train,Văn hóa & Nghệ thuật,45,37,8,0.17777777777777778
+validation,Other,173,119,54,0.31213872832369943
+validation,Thể thao,47,36,11,0.23404255319148937
+validation,Quốc tế,41,34,7,0.17073170731707318
+validation,Giải trí & Showbiz,38,12,26,0.6842105263157895
+validation,Công nghệ & Khoa học,35,25,10,0.2857142857142857
+validation,Tin tức tổng hợp,33,32,1,0.030303030303030304
+validation,Kinh doanh & Kinh tế,28,19,9,0.32142857142857145
+validation,Sức khỏe & Đời sống,27,16,11,0.4074074074074074
+validation,Chính trị & An ninh,25,19,6,0.24
+validation,Du lịch & Ẩm thực,20,11,9,0.45
+validation,Xe & Vận tải,19,12,7,0.3684210526315789
+validation,Giáo dục & Học đường,17,10,7,0.4117647058823529
+validation,Văn hóa & Nghệ thuật,9,7,2,0.2222222222222222

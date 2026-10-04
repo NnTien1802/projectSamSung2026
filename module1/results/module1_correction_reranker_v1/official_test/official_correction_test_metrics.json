@@ -1,0 +1,115 @@
+{
+  "dataset": "test",
+  "official_test": true,
+  "test_used_for_tuning": false,
+  "training_performed": false,
+  "candidate_source": "train_only",
+  "candidate_top_k": 5,
+  "reranker": "vinai/phobert-base-v2 masked language model",
+  "reranked_methods": [
+    "component"
+  ],
+  "exact_lookup_reranked": false,
+  "locked_lambda": 1.75,
+  "lambda_source": "validation",
+  "context_window_words_each_side": 8,
+  "max_length": 256,
+  "mlm_batch_size": 24,
+  "documents": 14382,
+  "metrics": {
+    "total_error_words": 34014,
+    "covered": 33310,
+    "uncovered": 704,
+    "coverage": 0.979302640089375,
+    "top1_correct": 30991,
+    "top3_correct": 32055,
+    "top5_correct": 32185,
+    "top1_accuracy": 0.911124830951961,
+    "top3_accuracy": 0.9424060680896101,
+    "top5_accuracy": 0.9462280237549244,
+    "top1_when_covered": 0.9303812668868208,
+    "exact_total": 29097,
+    "exact_top1_accuracy": 0.9499948448293638,
+    "exact_top3_accuracy": 0.9836752929855311,
+    "exact_top5_accuracy": 0.9874213836477987,
+    "component_total": 4213,
+    "component_top1_accuracy": 0.7949204842155234,
+    "component_top3_accuracy": 0.8148587704723474,
+    "component_top5_accuracy": 0.8198433420365535,
+    "component_rank_changed": 1266,
+    "severity": {
+      "minor": {
+        "total": 8213,
+        "covered": 8007,
+        "top1": 7454,
+        "top3": 7718,
+        "top5": 7756,
+        "coverage": 0.9749178132229392,
+        "top1_accuracy": 0.9075855351272373,
+        "top3_accuracy": 0.9397296968221113,
+        "top5_accuracy": 0.9443565079751614
+      },
+      "moderate": {
+        "total": 13858,
+        "covered": 13592,
+        "top1": 12598,
+        "top3": 13063,
+        "top5": 13118,
+        "coverage": 0.98080531101169,
+        "top1_accuracy": 0.909077789002742,
+        "top3_accuracy": 0.9426324144898254,
+        "top5_accuracy": 0.9466012411603406
+      },
+      "severe": {
+        "total": 11943,
+        "covered": 11711,
+        "top1": 10939,
+        "top3": 11274,
+        "top5": 11311,
+        "coverage": 0.9805743950431215,
+        "top1_accuracy": 0.9159340199279913,
+        "top3_accuracy": 0.943983923637277,
+        "top5_accuracy": 0.9470819727036758
+      }
+    },
+    "field": {
+      "abstract": {
+        "total": 2203,
+        "covered": 2169,
+        "top1": 2004,
+        "top3": 2081,
+        "top5": 2089,
+        "coverage": 0.9845665002269632,
+        "top1_accuracy": 0.9096686336813437,
+        "top3_accuracy": 0.9446209714026328,
+        "top5_accuracy": 0.9482523831139356
+      },
+      "article": {
+        "total": 31035,
+        "covered": 30394,
+        "top1": 28317,
+        "top3": 29265,
+        "top5": 29386,
+        "coverage": 0.9793458997905591,
+        "top1_accuracy": 0.9124214596423393,
+        "top3_accuracy": 0.9429676172063799,
+        "top5_accuracy": 0.9468664411148703
+      },
+      "title": {
+        "total": 776,
+        "covered": 747,
+        "top1": 670,
+        "top3": 709,
+        "top5": 710,
+        "coverage": 0.9626288659793815,
+        "top1_accuracy": 0.8634020618556701,
+        "top3_accuracy": 0.913659793814433,
+        "top5_accuracy": 0.9149484536082474
+      }
+    }
+  },
+  "mlm_sequences": 12487,
+  "mlm_scoring_seconds": 25.390894889831543,
+  "evaluation_seconds": 0.3127422332763672,
+  "error_analysis_rows": 3023
+}

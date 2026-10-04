@@ -1,0 +1,2 @@
+M1 RAW HTTP SMOKE PASS; mode=pyvi_experimental; threshold=0.57
+Experimental preprocessing is NOT equivalent to frozen reference segmentation.

@@ -1,0 +1,416 @@
+{
+  "generated_utc": "2026-09-23T14:54:58.592079+00:00",
+  "project_root": "C:\\1_projectSamSung",
+  "file_count": 736,
+  "total_scanned_size_bytes": 27680250930,
+  "release_id": "news_quality_models_v1",
+  "locked_manifest_files_expected": 12,
+  "locked_manifest_files_missing": [],
+  "missing_other_protected_paths": [],
+  "status_count": {
+    "REVIEW": 74,
+    "REVIEW_INTERIM": 81,
+    "KEEP_RESEARCH": 62,
+    "REVIEW_MODEL": 26,
+    "LOCKED_KEEP": 16,
+    "KEEP": 11,
+    "REVIEW_RESULTS": 177,
+    "ARCHIVE_REVIEW": 289
+  },
+  "top_level": [
+    {
+      "directory": "data",
+      "files": 78,
+      "size_bytes": 11220485366
+    },
+    {
+      "directory": "module2_headline_integrity",
+      "files": 237,
+      "size_bytes": 7517541757
+    },
+    {
+      "directory": "module3_plagiarism_detection",
+      "files": 289,
+      "size_bytes": 6165076153
+    },
+    {
+      "directory": "models",
+      "files": 29,
+      "size_bytes": 2714466787
+    },
+    {
+      "directory": "results",
+      "files": 55,
+      "size_bytes": 58386161
+    },
+    {
+      "directory": "system",
+      "files": 11,
+      "size_bytes": 2974392
+    },
+    {
+      "directory": "scripts",
+      "files": 37,
+      "size_bytes": 1320314
+    }
+  ],
+  "largest_files": [
+    {
+      "path": "data/interim/vn_newsspell_hybrid_v03_full/vn_newsspell_all.jsonl",
+      "size_bytes": 2110683582,
+      "status": "REVIEW_INTERIM"
+    },
+    {
+      "path": "data/interim/vn_newsspell_hybrid_v02_full/vn_newsspell_all.jsonl",
+      "size_bytes": 2109827714,
+      "status": "REVIEW_INTERIM"
+    },
+    {
+      "path": "data/processed/vn_newsspell_v1/train.jsonl",
+      "size_bytes": 1691964677,
+      "status": "KEEP_RESEARCH"
+    },
+    {
+      "path": "data/processed/vn_newsspell_wordloc_v1/train.jsonl",
+      "size_bytes": 1160691417,
+      "status": "KEEP_RESEARCH"
+    },
+    {
+      "path": "data/interim/vn_newsspell_hybrid_v03_full/vn_newsspell_noisy.jsonl",
+      "size_bytes": 1098384250,
+      "status": "REVIEW_INTERIM"
+    },
+    {
+      "path": "data/interim/vn_newsspell_hybrid_v02_full/vn_newsspell_noisy.jsonl",
+      "size_bytes": 1097525010,
+      "status": "REVIEW_INTERIM"
+    },
+    {
+      "path": "module3_plagiarism_detection/models/verification/vit5_paraphrase_generator_v1/model.safetensors",
+      "size_bytes": 903834408,
+      "status": "ARCHIVE_REVIEW"
+    },
+    {
+      "path": "module2_headline_integrity/data/raw/consistency/viet_online_news/processed/train.csv",
+      "size_bytes": 825371506,
+      "status": "KEEP_RESEARCH"
+    },
+    {
+      "path": "module3_plagiarism_detection/data/processed/semantic_verifier_dataset_v1/train.parquet",
+      "size_bytes": 712083907,
+      "status": "ARCHIVE_REVIEW"
+    },
+    {
+      "path": "module2_headline_integrity/models/clickbait/mbert_title_lead_v1/best_model.pt",
+      "size_bytes": 711502810,
+      "status": "REVIEW_MODEL"
+    },
+    {
+      "path": "module2_headline_integrity/models/clickbait/mbert_title_only_v1/best_model.pt",
+      "size_bytes": 711502810,
+      "status": "LOCKED_KEEP"
+    },
+    {
+      "path": "module2_headline_integrity/models/consistency/full_article_max_mil_mbert/best_model.pt",
+      "size_bytes": 711502810,
+      "status": "LOCKED_KEEP"
+    },
+    {
+      "path": "module2_headline_integrity/models/consistency/baseline_title_article_head_mbert/best_model.pt",
+      "size_bytes": 711502746,
+      "status": "REVIEW_MODEL"
+    },
+    {
+      "path": "module2_headline_integrity/models/consistency/baseline_title_description_mbert/best_model.pt",
+      "size_bytes": 711502746,
+      "status": "LOCKED_KEEP"
+    },
+    {
+      "path": "models/module1_phobert_word_detector_v1/best_model.pt",
+      "size_bytes": 540081882,
+      "status": "REVIEW_MODEL"
+    },
+    {
+      "path": "models/module1_phobert_mil_all_fields/best_model.pt",
+      "size_bytes": 540081370,
+      "status": "REVIEW_MODEL"
+    },
+    {
+      "path": "models/module1_phobert_mil_all_fields_4chunks/best_model.pt",
+      "size_bytes": 540081370,
+      "status": "REVIEW_MODEL"
+    },
+    {
+      "path": "models/module1_phobert_mil_full/best_model.pt",
+      "size_bytes": 540081242,
+      "status": "LOCKED_KEEP"
+    },
+    {
+      "path": "models/module1_phobert_mil/best_model.pt",
+      "size_bytes": 540081114,
+      "status": "REVIEW_MODEL"
+    },
+    {
+      "path": "module2_headline_integrity/data/raw/consistency/viet_online_news/raw/merged_data_vietnamnet.csv",
+      "size_bytes": 515204140,
+      "status": "KEEP_RESEARCH"
+    },
+    {
+      "path": "module2_headline_integrity/data/raw/consistency/viet_online_news/raw/merged_data_thanhnien.csv",
+      "size_bytes": 462757876,
+      "status": "KEEP_RESEARCH"
+    },
+    {
+      "path": "module2_headline_integrity/data/interim/consistency/mil_chunk_cache_mbert_v1/train_chunk_ids.npy",
+      "size_bytes": 440645888,
+      "status": "REVIEW_INTERIM"
+    },
+    {
+      "path": "module3_plagiarism_detection/data/processed/positive_queries_v1_clean/train.parquet",
+      "size_bytes": 353838943,
+      "status": "ARCHIVE_REVIEW"
+    },
+    {
+      "path": "module3_plagiarism_detection/data/processed/verifier_pair_dataset_v1/train_group_manifest.parquet",
+      "size_bytes": 344615701,
+      "status": "ARCHIVE_REVIEW"
+    },
+    {
+      "path": "module3_plagiarism_detection/data/processed/verifier_clean_core_v1/train_query_negative_candidates.parquet",
+      "size_bytes": 339652073,
+      "status": "ARCHIVE_REVIEW"
+    },
+    {
+      "path": "module3_plagiarism_detection/data/processed/verifier_clean_core_v1/train_positive_queries.parquet",
+      "size_bytes": 326906100,
+      "status": "ARCHIVE_REVIEW"
+    },
+    {
+      "path": "data/raw/vietnews/train/data-00000-of-00001.arrow",
+      "size_bytes": 325456080,
+      "status": "KEEP_RESEARCH"
+    },
+    {
+      "path": "module3_plagiarism_detection/data/processed/negative_hardness_strata_v1/train_negative_query_examples.parquet",
+      "size_bytes": 324411078,
+      "status": "ARCHIVE_REVIEW"
+    },
+    {
+      "path": "module2_headline_integrity/data/interim/consistency/articles_v1/train.parquet",
+      "size_bytes": 320133004,
+      "status": "REVIEW_INTERIM"
+    },
+    {
+      "path": "module2_headline_integrity/data/raw/consistency/viet_online_news/raw/merged_data_tuoitre.csv",
+      "size_bytes": 280726479,
+      "status": "KEEP_RESEARCH"
+    },
+    {
+      "path": "module3_plagiarism_detection/data/interim/positive_queries_v1/train.parquet",
+      "size_bytes": 234924870,
+      "status": "ARCHIVE_REVIEW"
+    },
+    {
+      "path": "module3_plagiarism_detection/data/processed/verifier_pair_dataset_v1/train.parquet",
+      "size_bytes": 226440321,
+      "status": "ARCHIVE_REVIEW"
+    },
+    {
+      "path": "data/processed/vn_newsspell_v1/test.jsonl",
+      "size_bytes": 213517057,
+      "status": "KEEP_RESEARCH"
+    },
+    {
+      "path": "data/processed/vn_newsspell_v1/validation.jsonl",
+      "size_bytes": 212795274,
+      "status": "KEEP_RESEARCH"
+    },
+    {
+      "path": "module2_headline_integrity/data/raw/consistency/viet_online_news/processed/dev.csv",
+      "size_bytes": 177500621,
+      "status": "KEEP_RESEARCH"
+    },
+    {
+      "path": "module2_headline_integrity/data/raw/consistency/viet_online_news/processed/test.csv",
+      "size_bytes": 177057656,
+      "status": "KEEP_RESEARCH"
+    },
+    {
+      "path": "module3_plagiarism_detection/data/interim/retrieval/tfidf_word_v1/validation_doc_matrix.npz",
+      "size_bytes": 159651622,
+      "status": "ARCHIVE_REVIEW"
+    },
+    {
+      "path": "module3_plagiarism_detection/data/processed/hard_negative_safety_screen_v1/train_screened_candidates.parquet",
+      "size_bytes": 158964623,
+      "status": "ARCHIVE_REVIEW"
+    },
+    {
+      "path": "data/raw/vi_spelling_correction/train/data-00000-of-00001.arrow",
+      "size_bytes": 147699248,
+      "status": "KEEP_RESEARCH"
+    },
+    {
+      "path": "data/processed/vn_newsspell_wordloc_v1/test.jsonl",
+      "size_bytes": 146584449,
+      "status": "KEEP_RESEARCH"
+    },
+    {
+      "path": "data/processed/vn_newsspell_wordloc_v1/validation.jsonl",
+      "size_bytes": 145870065,
+      "status": "KEEP_RESEARCH"
+    },
+    {
+      "path": "module3_plagiarism_detection/data/interim/hard_negative_candidates/title_tfidf_same_category_v1/train_candidates.parquet",
+      "size_bytes": 141522451,
+      "status": "ARCHIVE_REVIEW"
+    },
+    {
+      "path": "module2_headline_integrity/data/interim/consistency/candidate_pairs_v1/train.parquet",
+      "size_bytes": 140383748,
+      "status": "REVIEW_INTERIM"
+    },
+    {
+      "path": "module3_plagiarism_detection/data/processed/semantic_verifier_dataset_v1/validation.parquet",
+      "size_bytes": 136637559,
+      "status": "ARCHIVE_REVIEW"
+    },
+    {
+      "path": "module3_plagiarism_detection/data/processed/hard_queries_v1/train_noisy_copy.parquet",
+      "size_bytes": 120317080,
+      "status": "ARCHIVE_REVIEW"
+    },
+    {
+      "path": "module3_plagiarism_detection/results/verification/semantic_verifier_dataset_audit_v1/lexical_sample_metrics.parquet",
+      "size_bytes": 118950415,
+      "status": "ARCHIVE_REVIEW"
+    },
+    {
+      "path": "module3_plagiarism_detection/data/interim/corpus_v1/all_manifest.parquet",
+      "size_bytes": 104717569,
+      "status": "ARCHIVE_REVIEW"
+    },
+    {
+      "path": "module2_headline_integrity/data/interim/consistency/mil_chunk_cache_mbert_v1/validation_chunk_ids.npy",
+      "size_bytes": 82693568,
+      "status": "REVIEW_INTERIM"
+    },
+    {
+      "path": "module2_headline_integrity/data/interim/consistency/mil_chunk_cache_mbert_v1/test_chunk_ids.npy",
+      "size_bytes": 82621568,
+      "status": "REVIEW_INTERIM"
+    },
+    {
+      "path": "module3_plagiarism_detection/data/processed/positive_queries_v1_clean/validation.parquet",
+      "size_bytes": 75044604,
+      "status": "ARCHIVE_REVIEW"
+    },
+    {
+      "path": "data/raw/vietnews/test/data-00000-of-00001.arrow",
+      "size_bytes": 74546048,
+      "status": "KEEP_RESEARCH"
+    },
+    {
+      "path": "module2_headline_integrity/data/raw/consistency/viet_online_news/processed/news_metadata.csv",
+      "size_bytes": 74023953,
+      "status": "KEEP_RESEARCH"
+    },
+    {
+      "path": "module3_plagiarism_detection/data/interim/corpus_v1/train_manifest.parquet",
+      "size_bytes": 73415793,
+      "status": "ARCHIVE_REVIEW"
+    },
+    {
+      "path": "data/raw/vietnews/validation/data-00000-of-00001.arrow",
+      "size_bytes": 73406360,
+      "status": "KEEP_RESEARCH"
+    },
+    {
+      "path": "data/interim/vn_newsspell_hybrid_v01/vn_newsspell_all.jsonl",
+      "size_bytes": 70460792,
+      "status": "REVIEW_INTERIM"
+    },
+    {
+      "path": "data/interim/vn_newsspell_hybrid_v02/vn_newsspell_all.jsonl",
+      "size_bytes": 70454310,
+      "status": "REVIEW_INTERIM"
+    },
+    {
+      "path": "data/interim/vn_newsspell_v01/vn_newsspell_all.jsonl",
+      "size_bytes": 69709816,
+      "status": "REVIEW_INTERIM"
+    },
+    {
+      "path": "data/interim/vn_newsspell_v02/vn_newsspell_all.jsonl",
+      "size_bytes": 69398826,
+      "status": "REVIEW_INTERIM"
+    },
+    {
+      "path": "data/interim/vn_newsspell_v03/vn_newsspell_all.jsonl",
+      "size_bytes": 69398252,
+      "status": "REVIEW_INTERIM"
+    },
+    {
+      "path": "module2_headline_integrity/data/interim/consistency/articles_v1/validation.parquet",
+      "size_bytes": 68750649,
+      "status": "REVIEW_INTERIM"
+    },
+    {
+      "path": "module2_headline_integrity/data/interim/consistency/articles_v1/test.parquet",
+      "size_bytes": 68562804,
+      "status": "REVIEW_INTERIM"
+    },
+    {
+      "path": "module3_plagiarism_detection/data/processed/verifier_pair_dataset_v1/validation_group_manifest.parquet",
+      "size_bytes": 63372580,
+      "status": "ARCHIVE_REVIEW"
+    },
+    {
+      "path": "module3_plagiarism_detection/data/processed/verifier_clean_core_v1/validation_query_negative_candidates.parquet",
+      "size_bytes": 60641521,
+      "status": "ARCHIVE_REVIEW"
+    },
+    {
+      "path": "module3_plagiarism_detection/data/interim/retrieval/visp_multilingual_e5_base_zero_shot_v1/validation_document_embeddings.npy",
+      "size_bytes": 60303488,
+      "status": "ARCHIVE_REVIEW"
+    },
+    {
+      "path": "module3_plagiarism_detection/data/interim/retrieval/visp_multilingual_e5_base_zero_shot_v1/validation_query_embeddings.npy",
+      "size_bytes": 60303488,
+      "status": "ARCHIVE_REVIEW"
+    },
+    {
+      "path": "module3_plagiarism_detection/data/processed/light_rewrite_queries_v1/train.parquet",
+      "size_bytes": 59594379,
+      "status": "ARCHIVE_REVIEW"
+    },
+    {
+      "path": "module3_plagiarism_detection/data/processed/verifier_clean_core_v1/validation_positive_queries.parquet",
+      "size_bytes": 59462222,
+      "status": "ARCHIVE_REVIEW"
+    },
+    {
+      "path": "module3_plagiarism_detection/data/processed/negative_hardness_strata_v1/validation_negative_query_examples.parquet",
+      "size_bytes": 59394652,
+      "status": "ARCHIVE_REVIEW"
+    },
+    {
+      "path": "module3_plagiarism_detection/data/interim/cross_split_passage_leakage/cross_split_passage_leakage_audit_v1/near_passage_suspects.parquet",
+      "size_bytes": 59327912,
+      "status": "ARCHIVE_REVIEW"
+    },
+    {
+      "path": "module3_plagiarism_detection/data/interim/cross_split_near_duplicate_audit/cross_split_document_near_duplicate_audit_v1/train_validation_candidates.parquet",
+      "size_bytes": 55784148,
+      "status": "ARCHIVE_REVIEW"
+    }
+  ],
+  "excluded_directory_count": {
+    ".venv": 1,
+    ".cache": 2,
+    "__pycache__": 2
+  },
+  "scan_errors": [],
+  "notice": "Classification is preliminary. KEEP/ARCHIVE_REVIEW/CLEANUP_CANDIDATE are not deletion permissions. No data was deleted or moved."
+}

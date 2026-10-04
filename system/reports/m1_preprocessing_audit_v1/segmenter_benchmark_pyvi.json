@@ -1,0 +1,106 @@
+{
+  "created_utc": "2026-09-23T19:30:39.668226+00:00",
+  "validation_path": "C:\\projectSamSung_v1\\data\\processed\\vn_newsspell_v1\\validation.jsonl",
+  "scanned": 60,
+  "sample_count": 60,
+  "labels": {
+    "0": 30,
+    "1": 30
+  },
+  "candidate_results": [
+    {
+      "candidate": "pyvi",
+      "overall": {
+        "aligned_samples": 60,
+        "unalignable_candidate_surface": 0,
+        "invalid_reference_surface": 0,
+        "exceptions": 0,
+        "original_space_join_prf": {
+          "precision": 0.97596,
+          "recall": 0.93176,
+          "f1": 0.95335
+        },
+        "reference_join_count": 8148,
+        "predicted_join_count": 7779,
+        "exact_join_boundary_rate_aligned": 0.0,
+        "exact_segmented_text_rate_aligned": 0.0,
+        "extra_joins_not_at_original_spaces": 2
+      },
+      "by_label": {
+        "0": {
+          "aligned_samples": 30,
+          "unalignable_candidate_surface": 0,
+          "invalid_reference_surface": 0,
+          "exceptions": 0,
+          "original_space_join_prf": {
+            "precision": 0.97617,
+            "recall": 0.93495,
+            "f1": 0.95512
+          },
+          "reference_join_count": 4074,
+          "predicted_join_count": 3902,
+          "exact_join_boundary_rate_aligned": 0.0,
+          "exact_segmented_text_rate_aligned": 0.0,
+          "extra_joins_not_at_original_spaces": 1
+        },
+        "1": {
+          "aligned_samples": 30,
+          "unalignable_candidate_surface": 0,
+          "invalid_reference_surface": 0,
+          "exceptions": 0,
+          "original_space_join_prf": {
+            "precision": 0.97575,
+            "recall": 0.92857,
+            "f1": 0.95158
+          },
+          "reference_join_count": 4074,
+          "predicted_join_count": 3877,
+          "exact_join_boundary_rate_aligned": 0.0,
+          "exact_segmented_text_rate_aligned": 0.0,
+          "extra_joins_not_at_original_spaces": 1
+        }
+      },
+      "mean_seconds_per_document": 0.0051,
+      "mismatch_examples": [
+        {
+          "variant_id": "0000e2af609a08cda405_clean",
+          "label": 0,
+          "reference_excerpt": "Công_ty CP Đầu_tư Năm_Bảy_Bảy ( công_ty 577 , mã CK : NBB ) vừa công_bố nội_dung tờ_trình của hội_đồng_quản_trị gửi đại_hội_đồng cổ_đông ( ĐHĐCĐ ) thường_niên dự_kiến diễn ra ngày ",
+          "candidate_excerpt": "Công_ty CP Đầu_tư Năm_Bảy_Bảy ( công_ty 577 , mã CK : NBB ) vừa công_bố nội_dung tờ_trình của hội_đồng quản_trị gửi đại_hội_đồng cổ_đông ( ĐHĐCĐ ) thường_niên dự_kiến diễn ra ngày "
+        },
+        {
+          "variant_id": "0000e2af609a08cda405_noisy_0",
+          "label": 1,
+          "reference_excerpt": "Công_ty CP Đầu_tư Năm_Bảy_Bảy ( công_ty 577 , mã CK : NBB ) vừa công_bố nội_dung tờ_trình của hội_đồng_quản_trị gửi đại_hội_đồng cổ_đông ( ĐHĐCĐ ) thường_niên dự_kiến diễn ra ngày ",
+          "candidate_excerpt": "Công_ty CP Đầu_tư Năm_Bảy_Bảy ( công_ty 577 , mã CK : NBB ) vừa công_bố nội_dung tờ_trình của hội_đồng quản_trị gửi đại_hội_đồng cổ_đông ( ĐHĐCĐ ) thường_niên dự_kiến diễn ra ngày "
+        },
+        {
+          "variant_id": "00095cb1403c8d31b245_clean",
+          "label": 0,
+          "reference_excerpt": "Vụ đình_công bắt_đầu từ sáng 26/3 khi hàng nghìn công_nhân diễu_hành trong khuôn_viên của Công_ty Pouyuen ( Khu_công_nghiệp Tân_Tạo , phường Tân_Tạo , quận Bình_Tân ) bày_tỏ không ",
+          "candidate_excerpt": "Vụ đình_công bắt_đầu_từ sáng 26 / 3 khi hàng nghìn công_nhân diễu_hành trong khuôn_viên của Công_ty Pouyuen ( Khu công_nghiệp Tân_Tạo , phường Tân_Tạo , quận Bình_Tân ) bày_tỏ khôn"
+        },
+        {
+          "variant_id": "00095cb1403c8d31b245_noisy_0",
+          "label": 1,
+          "reference_excerpt": "Vụ đình_công bắt_đầu từ sáng 26/3 khi hàng nghìn công_nhân diễu_hành trong khuôn_viên của Công_ty Pouyuen ( Khu_công_nghiệp Tân_Tạo , phường Tân_Tạo , quận Bình_Tân ) bày_tỏ không ",
+          "candidate_excerpt": "Vụ đình_công bắt_đầu_từ sáng 26 / 3 khi hàng nghìn công_nhân diễu_hành trong khuôn_viên của Công_ty Pouyuen ( Khu công_nghiệp Tân_Tạo , phường Tân_Tạo , quận Bình_Tân ) bày_tỏ khôn"
+        },
+        {
+          "variant_id": "000d0f7fd068da45a652_clean",
+          "label": 0,
+          "reference_excerpt": "Ngày 19/7 , Cơ_quan CSĐT Công_an huyện Quỳnh_Phụ , tỉnh Thái_Bình cho biết , đơn_vị vừa tiến_hành bắt_giữ , ra quyết_định tạm giữ hình_sự đối_với Nguyễn_Văn_Ca ( SN 1989 , trú tại ",
+          "candidate_excerpt": "Ngày 19 / 7 , Cơ_quan CSĐT Công_an huyện Quỳnh_Phụ , tỉnh Thái_Bình cho biết , đơn_vị vừa tiến_hành bắt_giữ , ra quyết_định tạm giữ hình_sự đối_với Nguyễn_Văn_Ca ( SN 1989 , trú tạ"
+        }
+      ],
+      "runtime_errors": [],
+      "status": "MEASURED"
+    }
+  ],
+  "limits": [
+    "Exact join parity to an upstream-segmented dataset is not guaranteed by a high average boundary F1.",
+    "No test data, checkpoint, training, threshold search or numerical model inference is involved.",
+    "Only examples with identical Unicode surface after removing spaces and underscores are scored.",
+    "Sources may contain errors; both labels are displayed separately."
+  ]
+}

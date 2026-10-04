@@ -1,0 +1,5 @@
+Python: 3.10.5 (tags/v3.10.5:f377153, Jun  6 2022, 16:14:13) [MSC v.1929 64 bit (AMD64)]
+PyTorch: 2.14.0+cu132
+Transformers: 5.16.1
+CUDA: 13.2
+GPU: NVIDIA GeForce RTX 4060 Laptop GPU

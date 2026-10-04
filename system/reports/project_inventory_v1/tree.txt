@@ -1,0 +1,578 @@
+PROJECT ROOT: C:\1_projectSamSung
+TREE (depth <= 4, <= 75 children per directory):
+data/
+  interim/
+    real_error_patterns_v01/
+      mining_summary.json
+      real_error_pairs.csv
+      real_error_pairs.json
+    real_error_patterns_v02/
+      contextual_patterns.csv
+      filter_summary.json
+      filtered_error_patterns.csv
+      high_confidence_patterns.csv
+      hybrid_error_lookup.json
+      informal_patterns.csv
+    real_error_patterns_v03/
+      rejected_from_training.csv
+      trusted_error_lookup.json
+      trusted_error_patterns.csv
+      trusted_error_summary.json
+    vn_newsspell_hybrid_v01/
+      error_samples.csv
+      generation_summary.json
+      vn_newsspell_all.jsonl
+      vn_newsspell_noisy.jsonl
+    vn_newsspell_hybrid_v02/
+      error_samples.csv
+      generation_summary.json
+      vn_newsspell_all.jsonl
+      vn_newsspell_noisy.jsonl
+    vn_newsspell_hybrid_v02_full/
+      error_samples.csv
+      generation_summary.json
+      vn_newsspell_all.jsonl
+      vn_newsspell_noisy.jsonl
+    vn_newsspell_hybrid_v03_full/
+      error_samples.csv
+      generation_summary.json
+      vn_newsspell_all.jsonl
+      vn_newsspell_noisy.jsonl
+    vn_newsspell_v01/
+      error_samples.csv
+      generation_summary.json
+      vn_newsspell_all.jsonl
+      vn_newsspell_noisy.jsonl
+    vn_newsspell_v02/
+      error_samples.csv
+      generation_summary.json
+      vn_newsspell_all.jsonl
+      vn_newsspell_noisy.jsonl
+    vn_newsspell_v03/
+      error_samples.csv
+      generation_summary.json
+      vn_newsspell_all.jsonl
+      vn_newsspell_noisy.jsonl
+    vietnews_article_lengths.csv
+    vietnews_eda_report.json
+    vietnews_tokenization_eda.json
+  processed/
+    vn_newsspell_correction_v1/
+      correction_lookup.json
+      validation_correction_errors.csv
+      validation_summary.json
+    vn_newsspell_v1/
+      split_summary.json
+      test.jsonl
+      train.jsonl
+      validation.jsonl
+    vn_newsspell_wordloc_v1/
+      dataset_summary.json
+      test.jsonl
+      test_dataset_summary.json
+      train.jsonl
+      validation.jsonl
+  raw/
+    vi_spelling_correction/
+      test/
+          ... (depth limit)
+      train/
+          ... (depth limit)
+      dataset_dict.json
+    vietnews/
+      test/
+          ... (depth limit)
+      train/
+          ... (depth limit)
+      validation/
+          ... (depth limit)
+      dataset_dict.json
+    vsec/
+      train/
+          ... (depth limit)
+      dataset_dict.json
+  demo_article.json
+models/
+  module1_baselines/
+    baseline1_logistic_regression.joblib
+    baseline1_word_tfidf.joblib
+    baseline2_char_tfidf.joblib
+    baseline2_linear_svm.joblib
+  module1_phobert_mil/
+    tokenizer/
+      added_tokens.json
+      bpe.codes
+      tokenizer_config.json
+      vocab.txt
+    best_model.pt
+  module1_phobert_mil_all_fields/
+    tokenizer/
+      added_tokens.json
+      bpe.codes
+      tokenizer_config.json
+      vocab.txt
+    best_model.pt
+  module1_phobert_mil_all_fields_4chunks/
+    tokenizer/
+      added_tokens.json
+      bpe.codes
+      tokenizer_config.json
+      vocab.txt
+    best_model.pt
+  module1_phobert_mil_full/
+    tokenizer/
+      added_tokens.json
+      bpe.codes
+      tokenizer_config.json
+      vocab.txt
+    best_model.pt
+  module1_phobert_word_detector_v1/
+    tokenizer/
+      added_tokens.json
+      bpe.codes
+      tokenizer_config.json
+      vocab.txt
+    best_model.pt
+module2_headline_integrity/
+  data/
+    interim/
+      consistency/
+          ... (depth limit)
+    processed/
+      clickbait/
+          ... (depth limit)
+      consistency/
+          ... (depth limit)
+    raw/
+      clickbait/
+          ... (depth limit)
+      consistency/
+          ... (depth limit)
+      download_manifest.json
+  inference/
+    02_inventory_consistency_artifacts.py
+    03_map_consistency_regression_sources.py
+    04_regression_check_unified_pipeline.py
+    05_diagnose_mil_aggregation.py
+    06_diagnose_mil_chunk_positions.py
+    07_inspect_original_mil_chunk_policy.py
+    08_lock_unified_module2_pipeline.py
+    09_smoke_test_locked_module2.py
+    __init__.py
+    headline_integrity_pipeline.py
+    sample_input.json
+  models/
+    clickbait/
+      mbert_title_lead_v1/
+          ... (depth limit)
+      mbert_title_only_v1/
+          ... (depth limit)
+    consistency/
+      baseline_title_article_head_mbert/
+          ... (depth limit)
+      baseline_title_description_mbert/
+          ... (depth limit)
+      full_article_max_mil_mbert/
+          ... (depth limit)
+  results/
+    clickbait/
+      compare_title_vs_title_lead_v1/
+          ... (depth limit)
+      diagnostic_baselines_v1/
+          ... (depth limit)
+      eda_v1/
+          ... (depth limit)
+      final_title_only_v1/
+          ... (depth limit)
+      mbert_title_lead_v1/
+          ... (depth limit)
+      mbert_title_only_v1/
+          ... (depth limit)
+    consistency/
+      baseline_a_b_comparison/
+          ... (depth limit)
+      baseline_title_article_head_mbert/
+          ... (depth limit)
+      baseline_title_description_mbert/
+          ... (depth limit)
+      candidate_analysis_v1/
+          ... (depth limit)
+      description_mil_fusion_v1/
+          ... (depth limit)
+      final_dataset_validation_v1/
+          ... (depth limit)
+      final_hybrid_v1/
+          ... (depth limit)
+      full_article_chunk_diagnostic/
+          ... (depth limit)
+      full_article_max_mil_mbert/
+          ... (depth limit)
+      fusion_a_b_diagnostic/
+          ... (depth limit)
+      manual_annotation_analysis_v1/
+          ... (depth limit)
+    eda/
+      raw_dataset_eda.json
+      vianli_eda.json
+      vianli_label_by_split.csv
+      viclickbait_category_distribution.csv
+      viclickbait_eda.json
+      viclickbait_label_distribution.csv
+      viclickbait_source_distribution.csv
+      viet_online_news_category_distribution.csv
+      viet_online_news_eda.json
+    integration/
+      mil_chunk_position_diagnostic_v1/
+          ... (depth limit)
+      mil_diagnostic_v1/
+          ... (depth limit)
+      regression_v1/
+          ... (depth limit)
+      unified_module2_v1/
+          ... (depth limit)
+  scripts/
+    clickbait/
+      03_prepare_clickbait_dataset.py
+      04_eda_clickbait_processed.py
+      05_train_diagnostic_baselines.py
+      06_train_mbert_title_only.py
+      07_train_mbert_title_lead.py
+      08_compare_mbert_title_vs_title_lead.py
+      09_lock_final_clickbait_model.py
+      10_evaluate_final_clickbait_test.py
+      11_finalize_clickbait_experiment.py
+    consistency/
+      03_prepare_articles.py
+      04_build_positive_pairs.py
+      05_mine_hard_negative_candidates.py
+      06_analyze_candidate_quality.py
+      06b_prepare_manual_review_fulltext.py
+      07_analyze_manual_annotations.py
+      08_build_negative_pairs.py
+      09_build_consistency_dataset.py
+      10_validate_consistency_dataset.py
+      11_train_baseline_title_description.py
+      12_analyze_baseline_title_description.py
+      13_train_baseline_title_article_head.py
+      14_compare_baselines_a_b.py
+      15_diagnostic_fusion_a_b.py
+      16_full_article_chunk_diagnostic.py
+      17_prepare_mil_chunk_cache.py
+      18_train_full_article_max_mil.py
+      19_compare_and_fuse_description_mil.py
+      20_prepare_test_mil_chunk_cache.py
+      21_evaluate_final_hybrid_test.py
+      22_finalize_consistency_experiment.py
+    01_download_datasets.py
+    02_eda_raw_datasets.py
+module3_plagiarism_detection/
+  data/
+    interim/
+      corpus_v1/
+          ... (depth limit)
+      cross_split_near_duplicate_audit/
+          ... (depth limit)
+      cross_split_passage_leakage/
+          ... (depth limit)
+      hard_negative_candidates/
+          ... (depth limit)
+      positive_queries_v1/
+          ... (depth limit)
+      retrieval/
+          ... (depth limit)
+      verification/
+          ... (depth limit)
+    processed/
+      cross_split_leakage_registry_v1/
+          ... (depth limit)
+      hard_negative_safety_screen_v1/
+          ... (depth limit)
+      hard_queries_v1/
+          ... (depth limit)
+      light_rewrite_queries_v1/
+          ... (depth limit)
+      light_rewrite_queries_v2/
+          ... (depth limit)
+      light_rewrite_queries_v3/
+          ... (depth limit)
+      negative_hardness_strata_v1/
+          ... (depth limit)
+      negative_safety_guard_v1/
+          ... (depth limit)
+      paraphrase/
+          ... (depth limit)
+      paraphrase_generation_seed_v1/
+          ... (depth limit)
+      paraphrase_generator_corpus_v1/
+          ... (depth limit)
+      positive_queries_v1_clean/
+          ... (depth limit)
+      semantic_verifier_dataset_v1/
+          ... (depth limit)
+      verifier_clean_core_v1/
+          ... (depth limit)
+      verifier_pair_dataset_v1/
+          ... (depth limit)
+  models/
+    candidate_mining/
+      title_tfidf_same_category_v1/
+          ... (depth limit)
+    retrieval/
+      tfidf_word_v1/
+          ... (depth limit)
+      visp_tfidf_word_v1/
+          ... (depth limit)
+    verification/
+      lexical_verifier_baseline_v1/
+          ... (depth limit)
+      vit5_paraphrase_generator_v1/
+          ... (depth limit)
+  results/
+    corpus_audit_v1/
+      corpus_audit_report.json
+      exact_title_overlaps.csv
+      namsyntax_longest_text_samples.csv
+      namsyntax_sample.csv
+    cross_split_near_duplicate_audit/
+      cross_split_document_near_duplicate_audit_v1/
+          ... (depth limit)
+    cross_split_passage_leakage/
+      cross_split_leakage_registry_v1/
+          ... (depth limit)
+      cross_split_passage_leakage_audit_v1/
+          ... (depth limit)
+    hard_negative_mining/
+      hard_negative_safe_top1_audit_v1/
+          ... (depth limit)
+      hard_negative_safety_screen_v1/
+          ... (depth limit)
+      title_tfidf_same_category_v1/
+          ... (depth limit)
+    paraphrase/
+      retrieval/
+          ... (depth limit)
+      visp_audit_v1/
+          ... (depth limit)
+      visp_pair_graph_audit_v1/
+          ... (depth limit)
+    passage_unit_diagnostic_v1/
+      passage_samples.csv
+      passage_unit_report.json
+      passage_unit_summary.csv
+    positive_query_overlap_diagnostic_v1/
+      cross_split_query_overlaps.csv
+      overlap_diagnostic.json
+      train_duplicate_queries.csv
+      validation_duplicate_queries.csv
+    primary_corpus_profile_v1/
+      duplicate_normalized_titles.csv
+      longest_train_validation_articles.csv
+      primary_corpus_profile.json
+    retrieval/
+      tfidf_word_v1/
+          ... (depth limit)
+    verification/
+      hard_negative_semantic_e5_audit_v1/
+          ... (depth limit)
+      lexical_verifier_baseline_v1/
+          ... (depth limit)
+      light_rewrite_queries_v1/
+          ... (depth limit)
+      light_rewrite_queries_v2/
+          ... (depth limit)
+      light_rewrite_queries_v3/
+          ... (depth limit)
+      light_rewrite_v3_frozen_lexical_eval_v1/
+          ... (depth limit)
+      negative_hardness_strata_v1/
+          ... (depth limit)
+      paraphrase_generation_data_v1/
+          ... (depth limit)
+      safe_paraphrase_candidate_selection_v1/
+          ... (depth limit)
+      safe_paraphrase_candidate_selection_v2/
+          ... (depth limit)
+      semantic_verifier_dataset_audit_v1/
+          ... (depth limit)
+      semantic_verifier_dataset_v1/
+          ... (depth limit)
+      verifier_clean_core_v1/
+          ... (depth limit)
+      verifier_pair_dataset_v1/
+          ... (depth limit)
+      vit5_paraphrase_generation_qa_v1/
+          ... (depth limit)
+      vit5_paraphrase_generator_v1/
+          ... (depth limit)
+  scripts/
+    retrieval/
+      06_run_tfidf_retrieval_baseline.py
+      07_analyze_tfidf_errors.py
+      08_build_noisy_copy_challenge.py
+      09_evaluate_tfidf_noisy_copy.py
+      13_evaluate_visp_tfidf_retrieval.py
+      14_evaluate_visp_e5_dense_zero_shot.py
+      15_analyze_visp_dense_errors.py
+      16_audit_tfidf_errors_near_duplicates.py
+      17_build_negative_safety_guard.py
+      18_mine_same_event_candidates_title_tfidf.py
+      19_screen_hard_negative_candidates.py
+      20_audit_safe_hard_negative_shortlist.py
+      21_audit_cross_split_document_near_duplicates.py
+      22_audit_cross_split_passage_leakage.py
+      23_build_cross_split_leakage_registry.py
+    verification/
+      10_audit_visp_paraphrase_corpus.py
+      11_audit_visp_pair_graph.py
+      12_build_visp_component_split.py
+      24_build_verifier_clean_core.py
+      25_audit_hard_negatives_semantic_e5.py
+      26_build_negative_hardness_strata.py
+      27_build_verifier_pair_dataset.py
+      28_train_lexical_verifier_baseline.py
+      29_build_light_rewrite_challenge.py
+      29b_build_light_rewrite_challenge_v2.py
+      29c_build_strict_light_rewrite_v3.py
+      30_evaluate_frozen_lexical_verifier_light_rewrite_v3.py
+      31_prepare_paraphrase_generation_data.py
+      32_train_vit5_paraphrase_generator.py
+      33_audit_vit5_paraphrase_generation.py
+      34_select_safe_paraphrase_candidates.py
+      34b_select_safe_paraphrase_candidates_v2.py
+      35_build_unified_semantic_verifier_dataset.py
+      36_audit_semantic_verifier_dataset_v1.py
+    01_audit_candidate_corpora.py
+    02_profile_primary_corpus.py
+    03_build_source_split.py
+    04_diagnose_passage_units.py
+    05_build_positive_queries.py
+    05a_diagnose_positive_query_overlap.py
+    05b_clean_positive_queries.py
+results/
+  module1_baselines/
+    baseline1_validation_metrics.json
+    baseline1_validation_predictions.csv
+    baseline2_validation_metrics.json
+    baseline2_validation_predictions.csv
+    baseline_comparison.json
+  module1_correction_reranker_v1/
+    official_test/
+      official_correction_test_errors.csv
+      official_correction_test_metrics.json
+    validation_reranking_errors.csv
+    validation_reranking_summary.json
+  module1_phobert_mil/
+    validation_metrics.json
+  module1_phobert_mil_all_fields/
+    test_evaluation/
+      official_test_metrics.json
+      test_error_analysis.json
+      test_predictions.csv
+    threshold_tuning/
+      best_threshold.json
+      threshold_sweep.csv
+      validation_chunk_coverage_analysis.json
+      validation_chunk_coverage_details.csv
+      validation_probabilities.csv
+    best_validation_metrics.json
+    training_config.json
+    training_history.json
+  module1_phobert_mil_all_fields_4chunks/
+    chunk_localization/
+      validation_chunk_localization_details.csv
+      validation_chunk_localization_metrics.json
+    test_evaluation/
+      official_test_metrics.json
+      test_error_analysis.json
+      test_predictions.csv
+    threshold_tuning/
+      best_threshold.json
+      threshold_sweep.csv
+      validation_probabilities.csv
+    best_validation_metrics.json
+    training_config.json
+    training_history.json
+  module1_phobert_mil_full/
+    test_evaluation/
+      official_test_metrics.json
+      test_error_analysis.json
+      test_predictions.csv
+    threshold_tuning/
+      best_threshold.json
+      threshold_sweep.csv
+      validation_failure_analysis.json
+      validation_probabilities.csv
+    best_validation_metrics.json
+    training_config.json
+    training_history.json
+  module1_phobert_word_detector_v1/
+    all_chunks_threshold_tuning/
+      best_threshold.json
+      threshold_sweep.csv
+    all_chunks_validation/
+      validation_all_chunks_metrics_at_locked_threshold.json
+      validation_word_probabilities_all_chunks.npz
+    official_test/
+      official_word_test_metrics.json
+      official_word_test_probabilities.npz
+    threshold_tuning/
+      best_threshold.json
+      threshold_sweep.csv
+    best_validation_metrics.json
+    best_validation_word_probabilities.npz
+    training_config.json
+    training_history.json
+  demo_full_prediction.json
+scripts/
+  01_download_raw.py
+  02_eda_vietnews.py
+  03_eda_tokenization.py
+  04_generate_spelling_dataset.py
+  04_generate_spelling_dataset_v02.py
+  05_validate_spelling_dataset.py
+  06_mine_real_error_patterns.py
+  07_filter_real_error_patterns.py
+  08_build_trusted_error_lookup.py
+  09_generate_hybrid_spelling_dataset.py
+  10_inspect_duplicate_source.py
+  12_split_spelling_dataset.py
+  13_train_classical_baselines.py
+  14_train_phobert_mil.py
+  15_tune_phobert_threshold.py
+  16_evaluate_phobert_test.py
+  17_analyze_validation_failures.py
+  18_train_phobert_mil_all_fields.py
+  19_tune_phobert_all_fields_threshold.py
+  20_evaluate_phobert_all_fields_test.py
+  21_analyze_validation_chunk_coverage.py
+  22_train_phobert_mil_all_fields_4chunks.py
+  23_tune_phobert_all_fields_4chunks_threshold.py
+  24_evaluate_phobert_all_fields_4chunks_test.py
+  25_evaluate_mil_chunk_localization.py
+  26_build_word_localization_dataset.py
+  27_train_phobert_word_detector.py
+  28_tune_word_detector_threshold.py
+  29_evaluate_word_detector_all_chunks_validation.py
+  30_tune_word_detector_all_chunks_threshold.py
+  31_build_word_localization_test.py
+  32_evaluate_word_detector_all_chunks_test.py
+  33_predict_spelling_errors.py
+  34_build_correction_lookup.py
+  35_contextual_correction_reranker.py
+  36_predict_spelling_errors_with_correction.py
+  37_evaluate_correction_official_test.py
+system/
+  release/
+    tokenizers/
+      mbert_v1/
+          ... (depth limit)
+    environment_v1.json
+    model_inventory_v1.json
+    model_lock_config.json
+    model_lock_manifest_v1.json
+  scripts/
+    01_model_release.py
+    02_audit_project_structure.py
+    model_lock_config.template.json
+    README.md
+    SYSTEM_DESIGN_V1.md

@@ -1,0 +1,737 @@
+﻿path,size_bytes,status,reason,suffix,root_dir
+data/demo_article.json,286,REVIEW,inspect use/dependencies; no automatic deletion,.json,data
+data/interim/real_error_patterns_v01/mining_summary.json,492,REVIEW_INTERIM,derived data: verify dependencies and backups before removal,.json,data
+data/interim/real_error_patterns_v01/real_error_pairs.csv,2637320,REVIEW_INTERIM,derived data: verify dependencies and backups before removal,.csv,data
+data/interim/real_error_patterns_v01/real_error_pairs.json,6977238,REVIEW_INTERIM,derived data: verify dependencies and backups before removal,.json,data
+data/interim/real_error_patterns_v02/contextual_patterns.csv,1161980,REVIEW_INTERIM,derived data: verify dependencies and backups before removal,.csv,data
+data/interim/real_error_patterns_v02/filter_summary.json,767,REVIEW_INTERIM,derived data: verify dependencies and backups before removal,.json,data
+data/interim/real_error_patterns_v02/filtered_error_patterns.csv,6805524,REVIEW_INTERIM,derived data: verify dependencies and backups before removal,.csv,data
+data/interim/real_error_patterns_v02/high_confidence_patterns.csv,3593105,REVIEW_INTERIM,derived data: verify dependencies and backups before removal,.csv,data
+data/interim/real_error_patterns_v02/hybrid_error_lookup.json,4613460,REVIEW_INTERIM,derived data: verify dependencies and backups before removal,.json,data
+data/interim/real_error_patterns_v02/informal_patterns.csv,123996,REVIEW_INTERIM,derived data: verify dependencies and backups before removal,.csv,data
+data/interim/real_error_patterns_v03/rejected_from_training.csv,3712552,REVIEW_INTERIM,derived data: verify dependencies and backups before removal,.csv,data
+data/interim/real_error_patterns_v03/trusted_error_lookup.json,2459127,REVIEW_INTERIM,derived data: verify dependencies and backups before removal,.json,data
+data/interim/real_error_patterns_v03/trusted_error_patterns.csv,1126814,REVIEW_INTERIM,derived data: verify dependencies and backups before removal,.csv,data
+data/interim/real_error_patterns_v03/trusted_error_summary.json,905,REVIEW_INTERIM,derived data: verify dependencies and backups before removal,.json,data
+data/interim/vietnews_article_lengths.csv,7208061,REVIEW_INTERIM,derived data: verify dependencies and backups before removal,.csv,data
+data/interim/vietnews_eda_report.json,4815,REVIEW_INTERIM,derived data: verify dependencies and backups before removal,.json,data
+data/interim/vietnews_tokenization_eda.json,912,REVIEW_INTERIM,derived data: verify dependencies and backups before removal,.json,data
+data/interim/vn_newsspell_hybrid_v01/error_samples.csv,224465,REVIEW_INTERIM,derived data: verify dependencies and backups before removal,.csv,data
+data/interim/vn_newsspell_hybrid_v01/generation_summary.json,1576,REVIEW_INTERIM,derived data: verify dependencies and backups before removal,.json,data
+data/interim/vn_newsspell_hybrid_v01/vn_newsspell_all.jsonl,70460792,REVIEW_INTERIM,derived data: verify dependencies and backups before removal,.jsonl,data
+data/interim/vn_newsspell_hybrid_v01/vn_newsspell_noisy.jsonl,36662021,REVIEW_INTERIM,derived data: verify dependencies and backups before removal,.jsonl,data
+data/interim/vn_newsspell_hybrid_v02/error_samples.csv,374518,REVIEW_INTERIM,derived data: verify dependencies and backups before removal,.csv,data
+data/interim/vn_newsspell_hybrid_v02/generation_summary.json,1804,REVIEW_INTERIM,derived data: verify dependencies and backups before removal,.json,data
+data/interim/vn_newsspell_hybrid_v02/vn_newsspell_all.jsonl,70454310,REVIEW_INTERIM,derived data: verify dependencies and backups before removal,.jsonl,data
+data/interim/vn_newsspell_hybrid_v02/vn_newsspell_noisy.jsonl,36655539,REVIEW_INTERIM,derived data: verify dependencies and backups before removal,.jsonl,data
+data/interim/vn_newsspell_hybrid_v02_full/error_samples.csv,374518,REVIEW_INTERIM,derived data: verify dependencies and backups before removal,.csv,data
+data/interim/vn_newsspell_hybrid_v02_full/generation_summary.json,1851,REVIEW_INTERIM,derived data: verify dependencies and backups before removal,.json,data
+data/interim/vn_newsspell_hybrid_v02_full/vn_newsspell_all.jsonl,2109827714,REVIEW_INTERIM,derived data: verify dependencies and backups before removal,.jsonl,data
+data/interim/vn_newsspell_hybrid_v02_full/vn_newsspell_noisy.jsonl,1097525010,REVIEW_INTERIM,derived data: verify dependencies and backups before removal,.jsonl,data
+data/interim/vn_newsspell_hybrid_v03_full/error_samples.csv,374518,REVIEW_INTERIM,derived data: verify dependencies and backups before removal,.csv,data
+data/interim/vn_newsspell_hybrid_v03_full/generation_summary.json,2554,REVIEW_INTERIM,derived data: verify dependencies and backups before removal,.json,data
+data/interim/vn_newsspell_hybrid_v03_full/vn_newsspell_all.jsonl,2110683582,REVIEW_INTERIM,derived data: verify dependencies and backups before removal,.jsonl,data
+data/interim/vn_newsspell_hybrid_v03_full/vn_newsspell_noisy.jsonl,1098384250,REVIEW_INTERIM,derived data: verify dependencies and backups before removal,.jsonl,data
+data/interim/vn_newsspell_v01/error_samples.csv,66480,REVIEW_INTERIM,derived data: verify dependencies and backups before removal,.csv,data
+data/interim/vn_newsspell_v01/generation_summary.json,1491,REVIEW_INTERIM,derived data: verify dependencies and backups before removal,.json,data
+data/interim/vn_newsspell_v01/vn_newsspell_all.jsonl,69709816,REVIEW_INTERIM,derived data: verify dependencies and backups before removal,.jsonl,data
+data/interim/vn_newsspell_v01/vn_newsspell_noisy.jsonl,36016045,REVIEW_INTERIM,derived data: verify dependencies and backups before removal,.jsonl,data
+data/interim/vn_newsspell_v02/error_samples.csv,131541,REVIEW_INTERIM,derived data: verify dependencies and backups before removal,.csv,data
+data/interim/vn_newsspell_v02/generation_summary.json,1538,REVIEW_INTERIM,derived data: verify dependencies and backups before removal,.json,data
+data/interim/vn_newsspell_v02/vn_newsspell_all.jsonl,69398826,REVIEW_INTERIM,derived data: verify dependencies and backups before removal,.jsonl,data
+data/interim/vn_newsspell_v02/vn_newsspell_noisy.jsonl,35705055,REVIEW_INTERIM,derived data: verify dependencies and backups before removal,.jsonl,data
+data/interim/vn_newsspell_v03/error_samples.csv,131521,REVIEW_INTERIM,derived data: verify dependencies and backups before removal,.csv,data
+data/interim/vn_newsspell_v03/generation_summary.json,1538,REVIEW_INTERIM,derived data: verify dependencies and backups before removal,.json,data
+data/interim/vn_newsspell_v03/vn_newsspell_all.jsonl,69398252,REVIEW_INTERIM,derived data: verify dependencies and backups before removal,.jsonl,data
+data/interim/vn_newsspell_v03/vn_newsspell_noisy.jsonl,35704481,REVIEW_INTERIM,derived data: verify dependencies and backups before removal,.jsonl,data
+data/processed/vn_newsspell_correction_v1/correction_lookup.json,12367222,KEEP_RESEARCH,raw/final datasets; retain for reproducibility or archive,.json,data
+data/processed/vn_newsspell_correction_v1/validation_correction_errors.csv,287408,KEEP_RESEARCH,raw/final datasets; retain for reproducibility or archive,.csv,data
+data/processed/vn_newsspell_correction_v1/validation_summary.json,932,KEEP_RESEARCH,raw/final datasets; retain for reproducibility or archive,.json,data
+data/processed/vn_newsspell_v1/split_summary.json,3531,KEEP_RESEARCH,raw/final datasets; retain for reproducibility or archive,.json,data
+data/processed/vn_newsspell_v1/test.jsonl,213517057,KEEP_RESEARCH,raw/final datasets; retain for reproducibility or archive,.jsonl,data
+data/processed/vn_newsspell_v1/train.jsonl,1691964677,KEEP_RESEARCH,raw/final datasets; retain for reproducibility or archive,.jsonl,data
+data/processed/vn_newsspell_v1/validation.jsonl,212795274,KEEP_RESEARCH,raw/final datasets; retain for reproducibility or archive,.jsonl,data
+data/processed/vn_newsspell_wordloc_v1/dataset_summary.json,19071,KEEP_RESEARCH,raw/final datasets; retain for reproducibility or archive,.json,data
+data/processed/vn_newsspell_wordloc_v1/test.jsonl,146584449,KEEP_RESEARCH,raw/final datasets; retain for reproducibility or archive,.jsonl,data
+data/processed/vn_newsspell_wordloc_v1/test_dataset_summary.json,9598,KEEP_RESEARCH,raw/final datasets; retain for reproducibility or archive,.json,data
+data/processed/vn_newsspell_wordloc_v1/train.jsonl,1160691417,KEEP_RESEARCH,raw/final datasets; retain for reproducibility or archive,.jsonl,data
+data/processed/vn_newsspell_wordloc_v1/validation.jsonl,145870065,KEEP_RESEARCH,raw/final datasets; retain for reproducibility or archive,.jsonl,data
+data/raw/vi_spelling_correction/dataset_dict.json,29,KEEP_RESEARCH,raw/final datasets; retain for reproducibility or archive,.json,data
+data/raw/vi_spelling_correction/test/data-00000-of-00001.arrow,16432808,KEEP_RESEARCH,raw/final datasets; retain for reproducibility or archive,.arrow,data
+data/raw/vi_spelling_correction/test/dataset_info.json,1246,KEEP_RESEARCH,raw/final datasets; retain for reproducibility or archive,.json,data
+data/raw/vi_spelling_correction/test/state.json,261,KEEP_RESEARCH,raw/final datasets; retain for reproducibility or archive,.json,data
+data/raw/vi_spelling_correction/train/data-00000-of-00001.arrow,147699248,KEEP_RESEARCH,raw/final datasets; retain for reproducibility or archive,.arrow,data
+data/raw/vi_spelling_correction/train/dataset_info.json,1246,KEEP_RESEARCH,raw/final datasets; retain for reproducibility or archive,.json,data
+data/raw/vi_spelling_correction/train/state.json,262,KEEP_RESEARCH,raw/final datasets; retain for reproducibility or archive,.json,data
+data/raw/vietnews/dataset_dict.json,43,KEEP_RESEARCH,raw/final datasets; retain for reproducibility or archive,.json,data
+data/raw/vietnews/test/data-00000-of-00001.arrow,74546048,KEEP_RESEARCH,raw/final datasets; retain for reproducibility or archive,.arrow,data
+data/raw/vietnews/test/dataset_info.json,1140,KEEP_RESEARCH,raw/final datasets; retain for reproducibility or archive,.json,data
+data/raw/vietnews/test/state.json,261,KEEP_RESEARCH,raw/final datasets; retain for reproducibility or archive,.json,data
+data/raw/vietnews/train/data-00000-of-00001.arrow,325456080,KEEP_RESEARCH,raw/final datasets; retain for reproducibility or archive,.arrow,data
+data/raw/vietnews/train/dataset_info.json,1140,KEEP_RESEARCH,raw/final datasets; retain for reproducibility or archive,.json,data
+data/raw/vietnews/train/state.json,262,KEEP_RESEARCH,raw/final datasets; retain for reproducibility or archive,.json,data
+data/raw/vietnews/validation/data-00000-of-00001.arrow,73406360,KEEP_RESEARCH,raw/final datasets; retain for reproducibility or archive,.arrow,data
+data/raw/vietnews/validation/dataset_info.json,1140,KEEP_RESEARCH,raw/final datasets; retain for reproducibility or archive,.json,data
+data/raw/vietnews/validation/state.json,267,KEEP_RESEARCH,raw/final datasets; retain for reproducibility or archive,.json,data
+data/raw/vsec/dataset_dict.json,21,KEEP_RESEARCH,raw/final datasets; retain for reproducibility or archive,.json,data
+data/raw/vsec/train/data-00000-of-00001.arrow,10121640,KEEP_RESEARCH,raw/final datasets; retain for reproducibility or archive,.arrow,data
+data/raw/vsec/train/dataset_info.json,1941,KEEP_RESEARCH,raw/final datasets; retain for reproducibility or archive,.json,data
+data/raw/vsec/train/state.json,262,KEEP_RESEARCH,raw/final datasets; retain for reproducibility or archive,.json,data
+models/module1_baselines/baseline1_logistic_regression.joblib,448635,REVIEW_MODEL,non-release checkpoint; keep if research provenance is needed,.joblib,models
+models/module1_baselines/baseline1_word_tfidf.joblib,1483237,REVIEW_MODEL,non-release checkpoint; keep if research provenance is needed,.joblib,models
+models/module1_baselines/baseline2_char_tfidf.joblib,1107698,REVIEW_MODEL,non-release checkpoint; keep if research provenance is needed,.joblib,models
+models/module1_baselines/baseline2_linear_svm.joblib,861340,REVIEW_MODEL,non-release checkpoint; keep if research provenance is needed,.joblib,models
+models/module1_phobert_mil/best_model.pt,540081114,REVIEW_MODEL,non-release checkpoint; keep if research provenance is needed,.pt,models
+models/module1_phobert_mil/tokenizer/added_tokens.json,25,REVIEW_MODEL,non-release checkpoint; keep if research provenance is needed,.json,models
+models/module1_phobert_mil/tokenizer/bpe.codes,1135173,REVIEW_MODEL,non-release checkpoint; keep if research provenance is needed,.codes,models
+models/module1_phobert_mil/tokenizer/tokenizer_config.json,1261,REVIEW_MODEL,non-release checkpoint; keep if research provenance is needed,.json,models
+models/module1_phobert_mil/tokenizer/vocab.txt,895321,REVIEW_MODEL,non-release checkpoint; keep if research provenance is needed,.txt,models
+models/module1_phobert_mil_all_fields/best_model.pt,540081370,REVIEW_MODEL,non-release checkpoint; keep if research provenance is needed,.pt,models
+models/module1_phobert_mil_all_fields/tokenizer/added_tokens.json,25,REVIEW_MODEL,non-release checkpoint; keep if research provenance is needed,.json,models
+models/module1_phobert_mil_all_fields/tokenizer/bpe.codes,1135173,REVIEW_MODEL,non-release checkpoint; keep if research provenance is needed,.codes,models
+models/module1_phobert_mil_all_fields/tokenizer/tokenizer_config.json,1261,REVIEW_MODEL,non-release checkpoint; keep if research provenance is needed,.json,models
+models/module1_phobert_mil_all_fields/tokenizer/vocab.txt,895321,REVIEW_MODEL,non-release checkpoint; keep if research provenance is needed,.txt,models
+models/module1_phobert_mil_all_fields_4chunks/best_model.pt,540081370,REVIEW_MODEL,non-release checkpoint; keep if research provenance is needed,.pt,models
+models/module1_phobert_mil_all_fields_4chunks/tokenizer/added_tokens.json,25,REVIEW_MODEL,non-release checkpoint; keep if research provenance is needed,.json,models
+models/module1_phobert_mil_all_fields_4chunks/tokenizer/bpe.codes,1135173,REVIEW_MODEL,non-release checkpoint; keep if research provenance is needed,.codes,models
+models/module1_phobert_mil_all_fields_4chunks/tokenizer/tokenizer_config.json,1261,REVIEW_MODEL,non-release checkpoint; keep if research provenance is needed,.json,models
+models/module1_phobert_mil_all_fields_4chunks/tokenizer/vocab.txt,895321,REVIEW_MODEL,non-release checkpoint; keep if research provenance is needed,.txt,models
+models/module1_phobert_mil_full/best_model.pt,540081242,LOCKED_KEEP,SHA-256 manifest: do not edit/move/delete,.pt,models
+models/module1_phobert_mil_full/tokenizer/added_tokens.json,25,LOCKED_KEEP,SHA-256 manifest: do not edit/move/delete,.json,models
+models/module1_phobert_mil_full/tokenizer/bpe.codes,1135173,LOCKED_KEEP,SHA-256 manifest: do not edit/move/delete,.codes,models
+models/module1_phobert_mil_full/tokenizer/tokenizer_config.json,1261,LOCKED_KEEP,SHA-256 manifest: do not edit/move/delete,.json,models
+models/module1_phobert_mil_full/tokenizer/vocab.txt,895321,LOCKED_KEEP,SHA-256 manifest: do not edit/move/delete,.txt,models
+models/module1_phobert_word_detector_v1/best_model.pt,540081882,REVIEW_MODEL,non-release checkpoint; keep if research provenance is needed,.pt,models
+models/module1_phobert_word_detector_v1/tokenizer/added_tokens.json,25,REVIEW_MODEL,non-release checkpoint; keep if research provenance is needed,.json,models
+models/module1_phobert_word_detector_v1/tokenizer/bpe.codes,1135173,REVIEW_MODEL,non-release checkpoint; keep if research provenance is needed,.codes,models
+models/module1_phobert_word_detector_v1/tokenizer/tokenizer_config.json,1260,REVIEW_MODEL,non-release checkpoint; keep if research provenance is needed,.json,models
+models/module1_phobert_word_detector_v1/tokenizer/vocab.txt,895321,REVIEW_MODEL,non-release checkpoint; keep if research provenance is needed,.txt,models
+module2_headline_integrity/data/interim/consistency/articles_v1/article_index.parquet,54486883,REVIEW_INTERIM,derived data: verify dependencies and backups before removal,.parquet,module2_headline_integrity
+module2_headline_integrity/data/interim/consistency/articles_v1/excluded_cross_split_titles.csv,24908,REVIEW_INTERIM,derived data: verify dependencies and backups before removal,.csv,module2_headline_integrity
+module2_headline_integrity/data/interim/consistency/articles_v1/prepare_report.json,2944,REVIEW_INTERIM,derived data: verify dependencies and backups before removal,.json,module2_headline_integrity
+module2_headline_integrity/data/interim/consistency/articles_v1/test.parquet,68562804,REVIEW_INTERIM,derived data: verify dependencies and backups before removal,.parquet,module2_headline_integrity
+module2_headline_integrity/data/interim/consistency/articles_v1/train.parquet,320133004,REVIEW_INTERIM,derived data: verify dependencies and backups before removal,.parquet,module2_headline_integrity
+module2_headline_integrity/data/interim/consistency/articles_v1/validation.parquet,68750649,REVIEW_INTERIM,derived data: verify dependencies and backups before removal,.parquet,module2_headline_integrity
+module2_headline_integrity/data/interim/consistency/candidate_pairs_v1/group_stats.csv,4899,REVIEW_INTERIM,derived data: verify dependencies and backups before removal,.csv,module2_headline_integrity
+module2_headline_integrity/data/interim/consistency/candidate_pairs_v1/mining_report.json,1548,REVIEW_INTERIM,derived data: verify dependencies and backups before removal,.json,module2_headline_integrity
+module2_headline_integrity/data/interim/consistency/candidate_pairs_v1/test.parquet,25124713,REVIEW_INTERIM,derived data: verify dependencies and backups before removal,.parquet,module2_headline_integrity
+module2_headline_integrity/data/interim/consistency/candidate_pairs_v1/train.parquet,140383748,REVIEW_INTERIM,derived data: verify dependencies and backups before removal,.parquet,module2_headline_integrity
+module2_headline_integrity/data/interim/consistency/candidate_pairs_v1/validation.parquet,25104634,REVIEW_INTERIM,derived data: verify dependencies and backups before removal,.parquet,module2_headline_integrity
+module2_headline_integrity/data/interim/consistency/mil_chunk_cache_mbert_v1/cache_report.json,2533,REVIEW_INTERIM,derived data: verify dependencies and backups before removal,.json,module2_headline_integrity
+module2_headline_integrity/data/interim/consistency/mil_chunk_cache_mbert_v1/test_article_index.parquet,1176809,REVIEW_INTERIM,derived data: verify dependencies and backups before removal,.parquet,module2_headline_integrity
+module2_headline_integrity/data/interim/consistency/mil_chunk_cache_mbert_v1/test_cache_report.json,525,REVIEW_INTERIM,derived data: verify dependencies and backups before removal,.json,module2_headline_integrity
+module2_headline_integrity/data/interim/consistency/mil_chunk_cache_mbert_v1/test_chunk_counts.npy,28816,REVIEW_INTERIM,derived data: verify dependencies and backups before removal,.npy,module2_headline_integrity
+module2_headline_integrity/data/interim/consistency/mil_chunk_cache_mbert_v1/test_chunk_ids.npy,82621568,REVIEW_INTERIM,derived data: verify dependencies and backups before removal,.npy,module2_headline_integrity
+module2_headline_integrity/data/interim/consistency/mil_chunk_cache_mbert_v1/test_chunk_lengths.npy,344384,REVIEW_INTERIM,derived data: verify dependencies and backups before removal,.npy,module2_headline_integrity
+module2_headline_integrity/data/interim/consistency/mil_chunk_cache_mbert_v1/test_chunk_starts.npy,688640,REVIEW_INTERIM,derived data: verify dependencies and backups before removal,.npy,module2_headline_integrity
+module2_headline_integrity/data/interim/consistency/mil_chunk_cache_mbert_v1/train_article_index.parquet,5921348,REVIEW_INTERIM,derived data: verify dependencies and backups before removal,.parquet,module2_headline_integrity
+module2_headline_integrity/data/interim/consistency/mil_chunk_cache_mbert_v1/train_chunk_counts.npy,153130,REVIEW_INTERIM,derived data: verify dependencies and backups before removal,.npy,module2_headline_integrity
+module2_headline_integrity/data/interim/consistency/mil_chunk_cache_mbert_v1/train_chunk_ids.npy,440645888,REVIEW_INTERIM,derived data: verify dependencies and backups before removal,.npy,module2_headline_integrity
+module2_headline_integrity/data/interim/consistency/mil_chunk_cache_mbert_v1/train_chunk_lengths.npy,1836152,REVIEW_INTERIM,derived data: verify dependencies and backups before removal,.npy,module2_headline_integrity
+module2_headline_integrity/data/interim/consistency/mil_chunk_cache_mbert_v1/train_chunk_starts.npy,3672176,REVIEW_INTERIM,derived data: verify dependencies and backups before removal,.npy,module2_headline_integrity
+module2_headline_integrity/data/interim/consistency/mil_chunk_cache_mbert_v1/validation_article_index.parquet,1177748,REVIEW_INTERIM,derived data: verify dependencies and backups before removal,.parquet,module2_headline_integrity
+module2_headline_integrity/data/interim/consistency/mil_chunk_cache_mbert_v1/validation_chunk_counts.npy,28841,REVIEW_INTERIM,derived data: verify dependencies and backups before removal,.npy,module2_headline_integrity
+module2_headline_integrity/data/interim/consistency/mil_chunk_cache_mbert_v1/validation_chunk_ids.npy,82693568,REVIEW_INTERIM,derived data: verify dependencies and backups before removal,.npy,module2_headline_integrity
+module2_headline_integrity/data/interim/consistency/mil_chunk_cache_mbert_v1/validation_chunk_lengths.npy,344684,REVIEW_INTERIM,derived data: verify dependencies and backups before removal,.npy,module2_headline_integrity
+module2_headline_integrity/data/interim/consistency/mil_chunk_cache_mbert_v1/validation_chunk_starts.npy,689240,REVIEW_INTERIM,derived data: verify dependencies and backups before removal,.npy,module2_headline_integrity
+module2_headline_integrity/data/interim/consistency/negative_pairs_v1/build_report.json,5338,REVIEW_INTERIM,derived data: verify dependencies and backups before removal,.json,module2_headline_integrity
+module2_headline_integrity/data/interim/consistency/negative_pairs_v1/headline_reuse_stats.csv,228,REVIEW_INTERIM,derived data: verify dependencies and backups before removal,.csv,module2_headline_integrity
+module2_headline_integrity/data/interim/consistency/negative_pairs_v1/test.parquet,3702401,REVIEW_INTERIM,derived data: verify dependencies and backups before removal,.parquet,module2_headline_integrity
+module2_headline_integrity/data/interim/consistency/negative_pairs_v1/train.parquet,20551295,REVIEW_INTERIM,derived data: verify dependencies and backups before removal,.parquet,module2_headline_integrity
+module2_headline_integrity/data/interim/consistency/negative_pairs_v1/validation.parquet,3717343,REVIEW_INTERIM,derived data: verify dependencies and backups before removal,.parquet,module2_headline_integrity
+module2_headline_integrity/data/interim/consistency/positive_pairs_v1/build_report.json,904,REVIEW_INTERIM,derived data: verify dependencies and backups before removal,.json,module2_headline_integrity
+module2_headline_integrity/data/interim/consistency/positive_pairs_v1/test.parquet,3536584,REVIEW_INTERIM,derived data: verify dependencies and backups before removal,.parquet,module2_headline_integrity
+module2_headline_integrity/data/interim/consistency/positive_pairs_v1/train.parquet,15528522,REVIEW_INTERIM,derived data: verify dependencies and backups before removal,.parquet,module2_headline_integrity
+module2_headline_integrity/data/interim/consistency/positive_pairs_v1/validation.parquet,3535454,REVIEW_INTERIM,derived data: verify dependencies and backups before removal,.parquet,module2_headline_integrity
+module2_headline_integrity/data/processed/clickbait/viclickbait_v1/duplicate_title_groups.csv,1148,KEEP_RESEARCH,raw/final datasets; retain for reproducibility or archive,.csv,module2_headline_integrity
+module2_headline_integrity/data/processed/clickbait/viclickbait_v1/prepare_report.json,2232,KEEP_RESEARCH,raw/final datasets; retain for reproducibility or archive,.json,module2_headline_integrity
+module2_headline_integrity/data/processed/clickbait/viclickbait_v1/test.parquet,146368,KEEP_RESEARCH,raw/final datasets; retain for reproducibility or archive,.parquet,module2_headline_integrity
+module2_headline_integrity/data/processed/clickbait/viclickbait_v1/train.parquet,654307,KEEP_RESEARCH,raw/final datasets; retain for reproducibility or archive,.parquet,module2_headline_integrity
+module2_headline_integrity/data/processed/clickbait/viclickbait_v1/validation.parquet,147195,KEEP_RESEARCH,raw/final datasets; retain for reproducibility or archive,.parquet,module2_headline_integrity
+module2_headline_integrity/data/processed/consistency/headline_consistency_v1/dataset_manifest.json,2613,KEEP_RESEARCH,raw/final datasets; retain for reproducibility or archive,.json,module2_headline_integrity
+module2_headline_integrity/data/processed/consistency/headline_consistency_v1/dataset_stats.csv,195,KEEP_RESEARCH,raw/final datasets; retain for reproducibility or archive,.csv,module2_headline_integrity
+module2_headline_integrity/data/processed/consistency/headline_consistency_v1/test.parquet,5240941,KEEP_RESEARCH,raw/final datasets; retain for reproducibility or archive,.parquet,module2_headline_integrity
+module2_headline_integrity/data/processed/consistency/headline_consistency_v1/train.parquet,30401555,KEEP_RESEARCH,raw/final datasets; retain for reproducibility or archive,.parquet,module2_headline_integrity
+module2_headline_integrity/data/processed/consistency/headline_consistency_v1/validation.parquet,5264211,KEEP_RESEARCH,raw/final datasets; retain for reproducibility or archive,.parquet,module2_headline_integrity
+module2_headline_integrity/data/raw/clickbait/viclickbait_2025/README.md,1870,KEEP_RESEARCH,raw/final datasets; retain for reproducibility or archive,.md,module2_headline_integrity
+module2_headline_integrity/data/raw/clickbait/viclickbait_2025/clickbait_dataset_vietnamese.csv,1769245,KEEP_RESEARCH,raw/final datasets; retain for reproducibility or archive,.csv,module2_headline_integrity
+module2_headline_integrity/data/raw/clickbait/viclickbait_2025/clickbait_dataset_vietnamese.jsonl,2225898,KEEP_RESEARCH,raw/final datasets; retain for reproducibility or archive,.jsonl,module2_headline_integrity
+module2_headline_integrity/data/raw/consistency/vianli/.gitattributes,2461,KEEP_RESEARCH,raw/final datasets; retain for reproducibility or archive,,module2_headline_integrity
+module2_headline_integrity/data/raw/consistency/vianli/README.md,2295,KEEP_RESEARCH,raw/final datasets; retain for reproducibility or archive,.md,module2_headline_integrity
+module2_headline_integrity/data/raw/consistency/vianli/vianli_dev.jsonl,364351,KEEP_RESEARCH,raw/final datasets; retain for reproducibility or archive,.jsonl,module2_headline_integrity
+module2_headline_integrity/data/raw/consistency/vianli/vianli_test.jsonl,364606,KEEP_RESEARCH,raw/final datasets; retain for reproducibility or archive,.jsonl,module2_headline_integrity
+module2_headline_integrity/data/raw/consistency/vianli/vianli_train.jsonl,2892868,KEEP_RESEARCH,raw/final datasets; retain for reproducibility or archive,.jsonl,module2_headline_integrity
+module2_headline_integrity/data/raw/consistency/viet_online_news/.gitattributes,2952,KEEP_RESEARCH,raw/final datasets; retain for reproducibility or archive,,module2_headline_integrity
+module2_headline_integrity/data/raw/consistency/viet_online_news/LICENSE,0,KEEP_RESEARCH,raw/final datasets; retain for reproducibility or archive,,module2_headline_integrity
+module2_headline_integrity/data/raw/consistency/viet_online_news/README.md,4227,KEEP_RESEARCH,raw/final datasets; retain for reproducibility or archive,.md,module2_headline_integrity
+module2_headline_integrity/data/raw/consistency/viet_online_news/processed/dev.csv,177500621,KEEP_RESEARCH,raw/final datasets; retain for reproducibility or archive,.csv,module2_headline_integrity
+module2_headline_integrity/data/raw/consistency/viet_online_news/processed/news_metadata.csv,74023953,KEEP_RESEARCH,raw/final datasets; retain for reproducibility or archive,.csv,module2_headline_integrity
+module2_headline_integrity/data/raw/consistency/viet_online_news/processed/test.csv,177057656,KEEP_RESEARCH,raw/final datasets; retain for reproducibility or archive,.csv,module2_headline_integrity
+module2_headline_integrity/data/raw/consistency/viet_online_news/processed/train.csv,825371506,KEEP_RESEARCH,raw/final datasets; retain for reproducibility or archive,.csv,module2_headline_integrity
+module2_headline_integrity/data/raw/consistency/viet_online_news/raw/merged_data_thanhnien.csv,462757876,KEEP_RESEARCH,raw/final datasets; retain for reproducibility or archive,.csv,module2_headline_integrity
+module2_headline_integrity/data/raw/consistency/viet_online_news/raw/merged_data_tuoitre.csv,280726479,KEEP_RESEARCH,raw/final datasets; retain for reproducibility or archive,.csv,module2_headline_integrity
+module2_headline_integrity/data/raw/consistency/viet_online_news/raw/merged_data_vietnamnet.csv,515204140,KEEP_RESEARCH,raw/final datasets; retain for reproducibility or archive,.csv,module2_headline_integrity
+module2_headline_integrity/data/raw/download_manifest.json,1426,KEEP_RESEARCH,raw/final datasets; retain for reproducibility or archive,.json,module2_headline_integrity
+module2_headline_integrity/inference/02_inventory_consistency_artifacts.py,16300,KEEP,frozen unified pipeline/regression provenance,.py,module2_headline_integrity
+module2_headline_integrity/inference/03_map_consistency_regression_sources.py,19687,KEEP,frozen unified pipeline/regression provenance,.py,module2_headline_integrity
+module2_headline_integrity/inference/04_regression_check_unified_pipeline.py,37934,KEEP,frozen unified pipeline/regression provenance,.py,module2_headline_integrity
+module2_headline_integrity/inference/05_diagnose_mil_aggregation.py,21741,KEEP,frozen unified pipeline/regression provenance,.py,module2_headline_integrity
+module2_headline_integrity/inference/06_diagnose_mil_chunk_positions.py,27402,KEEP,frozen unified pipeline/regression provenance,.py,module2_headline_integrity
+module2_headline_integrity/inference/07_inspect_original_mil_chunk_policy.py,9165,KEEP,frozen unified pipeline/regression provenance,.py,module2_headline_integrity
+module2_headline_integrity/inference/08_lock_unified_module2_pipeline.py,30536,KEEP,frozen unified pipeline/regression provenance,.py,module2_headline_integrity
+module2_headline_integrity/inference/09_smoke_test_locked_module2.py,31197,KEEP,frozen unified pipeline/regression provenance,.py,module2_headline_integrity
+module2_headline_integrity/inference/__init__.py,0,KEEP,frozen unified pipeline/regression provenance,.py,module2_headline_integrity
+module2_headline_integrity/inference/headline_integrity_pipeline.py,41129,LOCKED_KEEP,SHA-256 manifest: do not edit/move/delete,.py,module2_headline_integrity
+module2_headline_integrity/inference/sample_input.json,701,KEEP,frozen unified pipeline/regression provenance,.json,module2_headline_integrity
+module2_headline_integrity/models/clickbait/mbert_title_lead_v1/best_model.pt,711502810,REVIEW_MODEL,non-release checkpoint; keep if research provenance is needed,.pt,module2_headline_integrity
+module2_headline_integrity/models/clickbait/mbert_title_only_v1/best_model.pt,711502810,LOCKED_KEEP,SHA-256 manifest: do not edit/move/delete,.pt,module2_headline_integrity
+module2_headline_integrity/models/consistency/baseline_title_article_head_mbert/best_model.pt,711502746,REVIEW_MODEL,non-release checkpoint; keep if research provenance is needed,.pt,module2_headline_integrity
+module2_headline_integrity/models/consistency/baseline_title_description_mbert/best_model.pt,711502746,LOCKED_KEEP,SHA-256 manifest: do not edit/move/delete,.pt,module2_headline_integrity
+module2_headline_integrity/models/consistency/full_article_max_mil_mbert/best_model.pt,711502810,LOCKED_KEEP,SHA-256 manifest: do not edit/move/delete,.pt,module2_headline_integrity
+module2_headline_integrity/results/clickbait/compare_title_vs_title_lead_v1/comparison_by_category.csv,2040,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.csv,module2_headline_integrity
+module2_headline_integrity/results/clickbait/compare_title_vs_title_lead_v1/comparison_by_source.csv,1144,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.csv,module2_headline_integrity
+module2_headline_integrity/results/clickbait/compare_title_vs_title_lead_v1/comparison_report.json,3997,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.json,module2_headline_integrity
+module2_headline_integrity/results/clickbait/compare_title_vs_title_lead_v1/error_overlap.csv,139,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.csv,module2_headline_integrity
+module2_headline_integrity/results/clickbait/compare_title_vs_title_lead_v1/paired_bootstrap_macro_f1.csv,649127,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.csv,module2_headline_integrity
+module2_headline_integrity/results/clickbait/compare_title_vs_title_lead_v1/validation_sample_comparison.parquet,114506,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.parquet,module2_headline_integrity
+module2_headline_integrity/results/clickbait/diagnostic_baselines_v1/baseline_summary.csv,1752,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.csv,module2_headline_integrity
+module2_headline_integrity/results/clickbait/diagnostic_baselines_v1/diagnostic_report.json,5076,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.json,module2_headline_integrity
+module2_headline_integrity/results/clickbait/diagnostic_baselines_v1/validation_predictions.parquet,24212,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.parquet,module2_headline_integrity
+module2_headline_integrity/results/clickbait/eda_v1/category_label_stats.csv,1556,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.csv,module2_headline_integrity
+module2_headline_integrity/results/clickbait/eda_v1/eda_report.json,5580,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.json,module2_headline_integrity
+module2_headline_integrity/results/clickbait/eda_v1/length_stats.csv,1537,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.csv,module2_headline_integrity
+module2_headline_integrity/results/clickbait/eda_v1/source_label_stats.csv,768,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.csv,module2_headline_integrity
+module2_headline_integrity/results/clickbait/eda_v1/split_summary.csv,192,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.csv,module2_headline_integrity
+module2_headline_integrity/results/clickbait/eda_v1/surface_feature_stats.csv,1665,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.csv,module2_headline_integrity
+module2_headline_integrity/results/clickbait/eda_v1/train_extreme_length_examples.csv,12779,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.csv,module2_headline_integrity
+module2_headline_integrity/results/clickbait/eda_v1/train_lexical_cue_stats.csv,2330,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.csv,module2_headline_integrity
+module2_headline_integrity/results/clickbait/final_title_only_v1/experiment_summary/FINAL_EXPERIMENT_CARD.md,3509,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.md,module2_headline_integrity
+module2_headline_integrity/results/clickbait/final_title_only_v1/experiment_summary/dataset_summary.csv,253,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.csv,module2_headline_integrity
+module2_headline_integrity/results/clickbait/final_title_only_v1/experiment_summary/final_experiment_summary.json,14487,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.json,module2_headline_integrity
+module2_headline_integrity/results/clickbait/final_title_only_v1/experiment_summary/model_comparison.csv,1237,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.csv,module2_headline_integrity
+module2_headline_integrity/results/clickbait/final_title_only_v1/final_model_lock.json,2327,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.json,module2_headline_integrity
+module2_headline_integrity/results/clickbait/final_title_only_v1/official_test_by_category.csv,1651,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.csv,module2_headline_integrity
+module2_headline_integrity/results/clickbait/final_title_only_v1/official_test_by_source.csv,986,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.csv,module2_headline_integrity
+module2_headline_integrity/results/clickbait/final_title_only_v1/official_test_metrics.json,1515,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.json,module2_headline_integrity
+module2_headline_integrity/results/clickbait/final_title_only_v1/official_test_predictions.parquet,110541,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.parquet,module2_headline_integrity
+module2_headline_integrity/results/clickbait/mbert_title_lead_v1/run_config.json,699,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.json,module2_headline_integrity
+module2_headline_integrity/results/clickbait/mbert_title_lead_v1/threshold_search.csv,8437,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.csv,module2_headline_integrity
+module2_headline_integrity/results/clickbait/mbert_title_lead_v1/training_history.csv,983,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.csv,module2_headline_integrity
+module2_headline_integrity/results/clickbait/mbert_title_lead_v1/validation_metrics.json,1726,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.json,module2_headline_integrity
+module2_headline_integrity/results/clickbait/mbert_title_lead_v1/validation_predictions.parquet,8881,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.parquet,module2_headline_integrity
+module2_headline_integrity/results/clickbait/mbert_title_only_v1/run_config.json,616,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.json,module2_headline_integrity
+module2_headline_integrity/results/clickbait/mbert_title_only_v1/threshold_search.csv,8408,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.csv,module2_headline_integrity
+module2_headline_integrity/results/clickbait/mbert_title_only_v1/training_history.csv,975,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.csv,module2_headline_integrity
+module2_headline_integrity/results/clickbait/mbert_title_only_v1/validation_metrics.json,1392,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.json,module2_headline_integrity
+module2_headline_integrity/results/clickbait/mbert_title_only_v1/validation_predictions.parquet,9055,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.parquet,module2_headline_integrity
+module2_headline_integrity/results/consistency/baseline_a_b_comparison/by_category.csv,1259,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.csv,module2_headline_integrity
+module2_headline_integrity/results/consistency/baseline_a_b_comparison/by_negative_tier.csv,212,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.csv,module2_headline_integrity
+module2_headline_integrity/results/consistency/baseline_a_b_comparison/comparison_summary.json,1007,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.json,module2_headline_integrity
+module2_headline_integrity/results/consistency/baseline_a_b_comparison/error_overlap.csv,179,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.csv,module2_headline_integrity
+module2_headline_integrity/results/consistency/baseline_a_b_comparison/model_disagreements.csv,1875188,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.csv,module2_headline_integrity
+module2_headline_integrity/results/consistency/baseline_title_article_head_mbert/run_config.json,451,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.json,module2_headline_integrity
+module2_headline_integrity/results/consistency/baseline_title_article_head_mbert/threshold_search.csv,6893,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.csv,module2_headline_integrity
+module2_headline_integrity/results/consistency/baseline_title_article_head_mbert/training_history.csv,282,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.csv,module2_headline_integrity
+module2_headline_integrity/results/consistency/baseline_title_article_head_mbert/validation_metrics.json,1190,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.json,module2_headline_integrity
+module2_headline_integrity/results/consistency/baseline_title_article_head_mbert/validation_predictions.parquet,1619466,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.parquet,module2_headline_integrity
+module2_headline_integrity/results/consistency/baseline_title_description_mbert/error_analysis/analysis_report.json,1136,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.json,module2_headline_integrity
+module2_headline_integrity/results/consistency/baseline_title_description_mbert/error_analysis/by_category.csv,1532,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.csv,module2_headline_integrity
+module2_headline_integrity/results/consistency/baseline_title_description_mbert/error_analysis/by_negative_rank.csv,280,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.csv,module2_headline_integrity
+module2_headline_integrity/results/consistency/baseline_title_description_mbert/error_analysis/by_negative_similarity.csv,292,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.csv,module2_headline_integrity
+module2_headline_integrity/results/consistency/baseline_title_description_mbert/error_analysis/by_negative_tier.csv,160,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.csv,module2_headline_integrity
+module2_headline_integrity/results/consistency/baseline_title_description_mbert/error_analysis/error_samples.csv,78784,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.csv,module2_headline_integrity
+module2_headline_integrity/results/consistency/baseline_title_description_mbert/error_analysis/overall.csv,286,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.csv,module2_headline_integrity
+module2_headline_integrity/results/consistency/baseline_title_description_mbert/run_config.json,561,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.json,module2_headline_integrity
+module2_headline_integrity/results/consistency/baseline_title_description_mbert/threshold_search.csv,6889,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.csv,module2_headline_integrity
+module2_headline_integrity/results/consistency/baseline_title_description_mbert/training_history.csv,315,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.csv,module2_headline_integrity
+module2_headline_integrity/results/consistency/baseline_title_description_mbert/validation_metrics.json,1345,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.json,module2_headline_integrity
+module2_headline_integrity/results/consistency/baseline_title_description_mbert/validation_predictions.parquet,1619072,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.parquet,module2_headline_integrity
+module2_headline_integrity/results/consistency/candidate_analysis_v1/analysis_report.json,1830,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.json,module2_headline_integrity
+module2_headline_integrity/results/consistency/candidate_analysis_v1/category_distribution.csv,928,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.csv,module2_headline_integrity
+module2_headline_integrity/results/consistency/candidate_analysis_v1/manual_review_fulltext.csv,1069967,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.csv,module2_headline_integrity
+module2_headline_integrity/results/consistency/candidate_analysis_v1/manual_review_sample.csv,851202,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.csv,module2_headline_integrity
+module2_headline_integrity/results/consistency/candidate_analysis_v1/rank_distribution.csv,326,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.csv,module2_headline_integrity
+module2_headline_integrity/results/consistency/candidate_analysis_v1/similarity_distribution.csv,337,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.csv,module2_headline_integrity
+module2_headline_integrity/results/consistency/description_mil_fusion_v1/error_overlap.csv,175,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.csv,module2_headline_integrity
+module2_headline_integrity/results/consistency/description_mil_fusion_v1/fusion_report.json,2739,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.json,module2_headline_integrity
+module2_headline_integrity/results/consistency/description_mil_fusion_v1/fusion_search.csv,145340,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.csv,module2_headline_integrity
+module2_headline_integrity/results/consistency/description_mil_fusion_v1/holdout_by_category.csv,1613,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.csv,module2_headline_integrity
+module2_headline_integrity/results/consistency/description_mil_fusion_v1/holdout_negative_by_tier.csv,225,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.csv,module2_headline_integrity
+module2_headline_integrity/results/consistency/description_mil_fusion_v1/holdout_predictions.parquet,2355880,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.parquet,module2_headline_integrity
+module2_headline_integrity/results/consistency/final_dataset_validation_v1/category_stats.csv,3184,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.csv,module2_headline_integrity
+module2_headline_integrity/results/consistency/final_dataset_validation_v1/negative_tier_stats.csv,810,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.csv,module2_headline_integrity
+module2_headline_integrity/results/consistency/final_dataset_validation_v1/split_stats.csv,541,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.csv,module2_headline_integrity
+module2_headline_integrity/results/consistency/final_dataset_validation_v1/train_join_review_sample.csv,72953,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.csv,module2_headline_integrity
+module2_headline_integrity/results/consistency/final_dataset_validation_v1/validation_report.json,8991,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.json,module2_headline_integrity
+module2_headline_integrity/results/consistency/final_hybrid_v1/experiment_summary/FINAL_EXPERIMENT_CARD.md,1192,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.md,module2_headline_integrity
+module2_headline_integrity/results/consistency/final_hybrid_v1/experiment_summary/dataset_summary.csv,203,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.csv,module2_headline_integrity
+module2_headline_integrity/results/consistency/final_hybrid_v1/experiment_summary/final_experiment_summary.json,6752,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.json,module2_headline_integrity
+module2_headline_integrity/results/consistency/final_hybrid_v1/experiment_summary/model_comparison.csv,630,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.csv,module2_headline_integrity
+module2_headline_integrity/results/consistency/final_hybrid_v1/final_model_lock.json,510,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.json,module2_headline_integrity
+module2_headline_integrity/results/consistency/final_hybrid_v1/official_test_by_category.csv,1027,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.csv,module2_headline_integrity
+module2_headline_integrity/results/consistency/final_hybrid_v1/official_test_metrics.json,2194,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.json,module2_headline_integrity
+module2_headline_integrity/results/consistency/final_hybrid_v1/official_test_negative_by_tier.csv,121,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.csv,module2_headline_integrity
+module2_headline_integrity/results/consistency/final_hybrid_v1/official_test_predictions.parquet,4470756,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.parquet,module2_headline_integrity
+module2_headline_integrity/results/consistency/full_article_chunk_diagnostic/diagnostic_report.json,1758,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.json,module2_headline_integrity
+module2_headline_integrity/results/consistency/full_article_chunk_diagnostic/fusion_search.csv,472440,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.csv,module2_headline_integrity
+module2_headline_integrity/results/consistency/full_article_chunk_diagnostic/validation_chunk_scores.parquet,2124589,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.parquet,module2_headline_integrity
+module2_headline_integrity/results/consistency/full_article_max_mil_mbert/run_config.json,743,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.json,module2_headline_integrity
+module2_headline_integrity/results/consistency/full_article_max_mil_mbert/threshold_search.csv,6902,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.csv,module2_headline_integrity
+module2_headline_integrity/results/consistency/full_article_max_mil_mbert/training_history.csv,282,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.csv,module2_headline_integrity
+module2_headline_integrity/results/consistency/full_article_max_mil_mbert/validation_metrics.json,1304,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.json,module2_headline_integrity
+module2_headline_integrity/results/consistency/full_article_max_mil_mbert/validation_predictions.parquet,1608012,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.parquet,module2_headline_integrity
+module2_headline_integrity/results/consistency/fusion_a_b_diagnostic/fusion_search.csv,145344,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.csv,module2_headline_integrity
+module2_headline_integrity/results/consistency/fusion_a_b_diagnostic/holdout_by_category.csv,1061,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.csv,module2_headline_integrity
+module2_headline_integrity/results/consistency/fusion_a_b_diagnostic/holdout_metrics.json,2087,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.json,module2_headline_integrity
+module2_headline_integrity/results/consistency/fusion_a_b_diagnostic/holdout_predictions.parquet,1555909,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.parquet,module2_headline_integrity
+module2_headline_integrity/results/consistency/manual_annotation_analysis_v1/analysis_report.json,1580,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.json,module2_headline_integrity
+module2_headline_integrity/results/consistency/manual_annotation_analysis_v1/by_category.csv,843,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.csv,module2_headline_integrity
+module2_headline_integrity/results/consistency/manual_annotation_analysis_v1/by_rank_bucket.csv,232,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.csv,module2_headline_integrity
+module2_headline_integrity/results/consistency/manual_annotation_analysis_v1/by_similarity.csv,602,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.csv,module2_headline_integrity
+module2_headline_integrity/results/consistency/manual_annotation_analysis_v1/by_similarity_rank.csv,1116,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.csv,module2_headline_integrity
+module2_headline_integrity/results/consistency/manual_annotation_analysis_v1/overall.csv,91,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.csv,module2_headline_integrity
+module2_headline_integrity/results/eda/raw_dataset_eda.json,9117,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.json,module2_headline_integrity
+module2_headline_integrity/results/eda/vianli_eda.json,2304,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.json,module2_headline_integrity
+module2_headline_integrity/results/eda/vianli_label_by_split.csv,109,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.csv,module2_headline_integrity
+module2_headline_integrity/results/eda/viclickbait_category_distribution.csv,357,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.csv,module2_headline_integrity
+module2_headline_integrity/results/eda/viclickbait_eda.json,2572,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.json,module2_headline_integrity
+module2_headline_integrity/results/eda/viclickbait_label_distribution.csv,52,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.csv,module2_headline_integrity
+module2_headline_integrity/results/eda/viclickbait_source_distribution.csv,133,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.csv,module2_headline_integrity
+module2_headline_integrity/results/eda/viet_online_news_category_distribution.csv,546,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.csv,module2_headline_integrity
+module2_headline_integrity/results/eda/viet_online_news_eda.json,3331,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.json,module2_headline_integrity
+module2_headline_integrity/results/integration/mil_chunk_position_diagnostic_v1/chunk_position_diagnostic.csv,18001,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.csv,module2_headline_integrity
+module2_headline_integrity/results/integration/mil_chunk_position_diagnostic_v1/chunk_position_diagnostic.json,4271,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.json,module2_headline_integrity
+module2_headline_integrity/results/integration/mil_diagnostic_v1/mil_aggregation_diagnostic.csv,7947,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.csv,module2_headline_integrity
+module2_headline_integrity/results/integration/mil_diagnostic_v1/mil_aggregation_diagnostic.json,2801,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.json,module2_headline_integrity
+module2_headline_integrity/results/integration/regression_v1/clickbait_regression_samples.csv,4957,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.csv,module2_headline_integrity
+module2_headline_integrity/results/integration/regression_v1/consistency_regression_samples.csv,153755,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.csv,module2_headline_integrity
+module2_headline_integrity/results/integration/regression_v1/regression_report.json,1855,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.json,module2_headline_integrity
+module2_headline_integrity/results/integration/unified_module2_v1/UNIFIED_MODULE2_CARD.md,1659,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.md,module2_headline_integrity
+module2_headline_integrity/results/integration/unified_module2_v1/artifact_manifest.json,1105,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.json,module2_headline_integrity
+module2_headline_integrity/results/integration/unified_module2_v1/smoke_test/smoke_test_outputs.json,4770,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.json,module2_headline_integrity
+module2_headline_integrity/results/integration/unified_module2_v1/smoke_test/smoke_test_report.json,1402,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.json,module2_headline_integrity
+module2_headline_integrity/results/integration/unified_module2_v1/unified_module2_lock.json,2983,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.json,module2_headline_integrity
+module2_headline_integrity/scripts/01_download_datasets.py,10472,REVIEW,inspect use/dependencies; no automatic deletion,.py,module2_headline_integrity
+module2_headline_integrity/scripts/02_eda_raw_datasets.py,58665,REVIEW,inspect use/dependencies; no automatic deletion,.py,module2_headline_integrity
+module2_headline_integrity/scripts/clickbait/03_prepare_clickbait_dataset.py,42954,REVIEW,inspect use/dependencies; no automatic deletion,.py,module2_headline_integrity
+module2_headline_integrity/scripts/clickbait/04_eda_clickbait_processed.py,40490,REVIEW,inspect use/dependencies; no automatic deletion,.py,module2_headline_integrity
+module2_headline_integrity/scripts/clickbait/05_train_diagnostic_baselines.py,27828,REVIEW,inspect use/dependencies; no automatic deletion,.py,module2_headline_integrity
+module2_headline_integrity/scripts/clickbait/06_train_mbert_title_only.py,40255,REVIEW,inspect use/dependencies; no automatic deletion,.py,module2_headline_integrity
+module2_headline_integrity/scripts/clickbait/07_train_mbert_title_lead.py,41772,REVIEW,inspect use/dependencies; no automatic deletion,.py,module2_headline_integrity
+module2_headline_integrity/scripts/clickbait/08_compare_mbert_title_vs_title_lead.py,35409,REVIEW,inspect use/dependencies; no automatic deletion,.py,module2_headline_integrity
+module2_headline_integrity/scripts/clickbait/09_lock_final_clickbait_model.py,15093,REVIEW,inspect use/dependencies; no automatic deletion,.py,module2_headline_integrity
+module2_headline_integrity/scripts/clickbait/10_evaluate_final_clickbait_test.py,32725,REVIEW,inspect use/dependencies; no automatic deletion,.py,module2_headline_integrity
+module2_headline_integrity/scripts/clickbait/11_finalize_clickbait_experiment.py,47600,REVIEW,inspect use/dependencies; no automatic deletion,.py,module2_headline_integrity
+module2_headline_integrity/scripts/consistency/03_prepare_articles.py,42206,REVIEW,inspect use/dependencies; no automatic deletion,.py,module2_headline_integrity
+module2_headline_integrity/scripts/consistency/04_build_positive_pairs.py,20880,REVIEW,inspect use/dependencies; no automatic deletion,.py,module2_headline_integrity
+module2_headline_integrity/scripts/consistency/05_mine_hard_negative_candidates.py,43383,REVIEW,inspect use/dependencies; no automatic deletion,.py,module2_headline_integrity
+module2_headline_integrity/scripts/consistency/06_analyze_candidate_quality.py,29311,REVIEW,inspect use/dependencies; no automatic deletion,.py,module2_headline_integrity
+module2_headline_integrity/scripts/consistency/06b_prepare_manual_review_fulltext.py,7336,REVIEW,inspect use/dependencies; no automatic deletion,.py,module2_headline_integrity
+module2_headline_integrity/scripts/consistency/07_analyze_manual_annotations.py,15250,REVIEW,inspect use/dependencies; no automatic deletion,.py,module2_headline_integrity
+module2_headline_integrity/scripts/consistency/08_build_negative_pairs.py,38087,REVIEW,inspect use/dependencies; no automatic deletion,.py,module2_headline_integrity
+module2_headline_integrity/scripts/consistency/09_build_consistency_dataset.py,40469,REVIEW,inspect use/dependencies; no automatic deletion,.py,module2_headline_integrity
+module2_headline_integrity/scripts/consistency/10_validate_consistency_dataset.py,48660,REVIEW,inspect use/dependencies; no automatic deletion,.py,module2_headline_integrity
+module2_headline_integrity/scripts/consistency/11_train_baseline_title_description.py,49282,REVIEW,inspect use/dependencies; no automatic deletion,.py,module2_headline_integrity
+module2_headline_integrity/scripts/consistency/12_analyze_baseline_title_description.py,19264,REVIEW,inspect use/dependencies; no automatic deletion,.py,module2_headline_integrity
+module2_headline_integrity/scripts/consistency/13_train_baseline_title_article_head.py,41742,REVIEW,inspect use/dependencies; no automatic deletion,.py,module2_headline_integrity
+module2_headline_integrity/scripts/consistency/14_compare_baselines_a_b.py,19767,REVIEW,inspect use/dependencies; no automatic deletion,.py,module2_headline_integrity
+module2_headline_integrity/scripts/consistency/15_diagnostic_fusion_a_b.py,25461,REVIEW,inspect use/dependencies; no automatic deletion,.py,module2_headline_integrity
+module2_headline_integrity/scripts/consistency/16_full_article_chunk_diagnostic.py,48934,REVIEW,inspect use/dependencies; no automatic deletion,.py,module2_headline_integrity
+module2_headline_integrity/scripts/consistency/17_prepare_mil_chunk_cache.py,25019,REVIEW,inspect use/dependencies; no automatic deletion,.py,module2_headline_integrity
+module2_headline_integrity/scripts/consistency/18_train_full_article_max_mil.py,61355,REVIEW,inspect use/dependencies; no automatic deletion,.py,module2_headline_integrity
+module2_headline_integrity/scripts/consistency/19_compare_and_fuse_description_mil.py,33526,REVIEW,inspect use/dependencies; no automatic deletion,.py,module2_headline_integrity
+module2_headline_integrity/scripts/consistency/20_prepare_test_mil_chunk_cache.py,18309,REVIEW,inspect use/dependencies; no automatic deletion,.py,module2_headline_integrity
+module2_headline_integrity/scripts/consistency/21_evaluate_final_hybrid_test.py,52317,REVIEW,inspect use/dependencies; no automatic deletion,.py,module2_headline_integrity
+module2_headline_integrity/scripts/consistency/22_finalize_consistency_experiment.py,25969,REVIEW,inspect use/dependencies; no automatic deletion,.py,module2_headline_integrity
+module3_plagiarism_detection/data/interim/corpus_v1/all_manifest.parquet,104717569,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.parquet,module3_plagiarism_detection
+module3_plagiarism_detection/data/interim/corpus_v1/split_report.json,6252,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.json,module3_plagiarism_detection
+module3_plagiarism_detection/data/interim/corpus_v1/test_manifest.parquet,15993149,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.parquet,module3_plagiarism_detection
+module3_plagiarism_detection/data/interim/corpus_v1/train_manifest.parquet,73415793,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.parquet,module3_plagiarism_detection
+module3_plagiarism_detection/data/interim/corpus_v1/validation_manifest.parquet,15980867,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.parquet,module3_plagiarism_detection
+module3_plagiarism_detection/data/interim/cross_split_near_duplicate_audit/cross_split_document_near_duplicate_audit_v1/document_level_suspects.parquet,206142,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.parquet,module3_plagiarism_detection
+module3_plagiarism_detection/data/interim/cross_split_near_duplicate_audit/cross_split_document_near_duplicate_audit_v1/train_validation_candidates.parquet,55784148,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.parquet,module3_plagiarism_detection
+module3_plagiarism_detection/data/interim/cross_split_passage_leakage/cross_split_passage_leakage_audit_v1/exact_cross_split_passage_hashes.parquet,588651,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.parquet,module3_plagiarism_detection
+module3_plagiarism_detection/data/interim/cross_split_passage_leakage/cross_split_passage_leakage_audit_v1/near_passage_suspects.parquet,59327912,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.parquet,module3_plagiarism_detection
+module3_plagiarism_detection/data/interim/hard_negative_candidates/title_tfidf_same_category_v1/train_candidates.parquet,141522451,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.parquet,module3_plagiarism_detection
+module3_plagiarism_detection/data/interim/hard_negative_candidates/title_tfidf_same_category_v1/validation_candidates.parquet,24644261,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.parquet,module3_plagiarism_detection
+module3_plagiarism_detection/data/interim/positive_queries_v1/generation_report.json,1436,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.json,module3_plagiarism_detection
+module3_plagiarism_detection/data/interim/positive_queries_v1/passage_policy.json,440,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.json,module3_plagiarism_detection
+module3_plagiarism_detection/data/interim/positive_queries_v1/train.parquet,234924870,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.parquet,module3_plagiarism_detection
+module3_plagiarism_detection/data/interim/positive_queries_v1/validation.parquet,50142644,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.parquet,module3_plagiarism_detection
+module3_plagiarism_detection/data/interim/retrieval/tfidf_word_v1/validation_doc_index.parquet,5143806,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.parquet,module3_plagiarism_detection
+module3_plagiarism_detection/data/interim/retrieval/tfidf_word_v1/validation_doc_matrix.npz,159651622,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.npz,module3_plagiarism_detection
+module3_plagiarism_detection/data/interim/retrieval/visp_multilingual_e5_base_zero_shot_v1/validation_document_embeddings.npy,60303488,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.npy,module3_plagiarism_detection
+module3_plagiarism_detection/data/interim/retrieval/visp_multilingual_e5_base_zero_shot_v1/validation_document_index.parquet,2884983,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.parquet,module3_plagiarism_detection
+module3_plagiarism_detection/data/interim/retrieval/visp_multilingual_e5_base_zero_shot_v1/validation_query_embeddings.npy,60303488,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.npy,module3_plagiarism_detection
+module3_plagiarism_detection/data/interim/retrieval/visp_tfidf_word_v1/validation_doc_index.parquet,2885514,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.parquet,module3_plagiarism_detection
+module3_plagiarism_detection/data/interim/retrieval/visp_tfidf_word_v1/validation_doc_matrix.npz,4959798,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.npz,module3_plagiarism_detection
+module3_plagiarism_detection/data/interim/verification/hard_negative_semantic_e5_audit_v1/train_hard_negative_scored.parquet,21609814,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.parquet,module3_plagiarism_detection
+module3_plagiarism_detection/data/interim/verification/hard_negative_semantic_e5_audit_v1/validation_hard_negative_scored.parquet,3567755,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.parquet,module3_plagiarism_detection
+module3_plagiarism_detection/data/interim/verification/lexical_verifier_baseline_v1/train_features.parquet,50713169,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.parquet,module3_plagiarism_detection
+module3_plagiarism_detection/data/interim/verification/lexical_verifier_baseline_v1/validation_features.parquet,9285065,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.parquet,module3_plagiarism_detection
+module3_plagiarism_detection/data/interim/verification/safe_paraphrase_candidate_selection_v1/raw_sentence_candidates.parquet,871546,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.parquet,module3_plagiarism_detection
+module3_plagiarism_detection/data/interim/verification/safe_paraphrase_candidate_selection_v1/scored_sentence_candidates.parquet,1097213,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.parquet,module3_plagiarism_detection
+module3_plagiarism_detection/data/interim/verification/safe_paraphrase_candidate_selection_v1/selected_sentence_candidates.parquet,510209,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.parquet,module3_plagiarism_detection
+module3_plagiarism_detection/data/interim/verification/safe_paraphrase_candidate_selection_v1/validation_query_selection.parquet,799895,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.parquet,module3_plagiarism_detection
+module3_plagiarism_detection/data/interim/verification/safe_paraphrase_candidate_selection_v2/scored_sentence_candidates_v2.parquet,1521323,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.parquet,module3_plagiarism_detection
+module3_plagiarism_detection/data/interim/verification/safe_paraphrase_candidate_selection_v2/selected_sentence_candidates_v2.parquet,449379,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.parquet,module3_plagiarism_detection
+module3_plagiarism_detection/data/interim/verification/safe_paraphrase_candidate_selection_v2/validation_query_selection_v2.parquet,754025,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.parquet,module3_plagiarism_detection
+module3_plagiarism_detection/data/processed/cross_split_leakage_registry_v1/article_exposure_registry.parquet,7604397,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.parquet,module3_plagiarism_detection
+module3_plagiarism_detection/data/processed/cross_split_leakage_registry_v1/components_block_only.parquet,16213084,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.parquet,module3_plagiarism_detection
+module3_plagiarism_detection/data/processed/cross_split_leakage_registry_v1/components_exact_plus_block.parquet,16188111,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.parquet,module3_plagiarism_detection
+module3_plagiarism_detection/data/processed/cross_split_leakage_registry_v1/components_exact_plus_block_review.parquet,16136378,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.parquet,module3_plagiarism_detection
+module3_plagiarism_detection/data/processed/cross_split_leakage_registry_v1/exact_passage_hash_fanout.parquet,205345,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.parquet,module3_plagiarism_detection
+module3_plagiarism_detection/data/processed/cross_split_leakage_registry_v1/localized_pair_registry.parquet,14015262,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.parquet,module3_plagiarism_detection
+module3_plagiarism_detection/data/processed/hard_negative_safety_screen_v1/train_safe_top1_per_source.parquet,22370185,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.parquet,module3_plagiarism_detection
+module3_plagiarism_detection/data/processed/hard_negative_safety_screen_v1/train_screened_candidates.parquet,158964623,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.parquet,module3_plagiarism_detection
+module3_plagiarism_detection/data/processed/hard_negative_safety_screen_v1/validation_safe_top1_per_source.parquet,4312198,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.parquet,module3_plagiarism_detection
+module3_plagiarism_detection/data/processed/hard_negative_safety_screen_v1/validation_screened_candidates.parquet,28327122,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.parquet,module3_plagiarism_detection
+module3_plagiarism_detection/data/processed/hard_queries_v1/noisy_copy_report.json,813,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.json,module3_plagiarism_detection
+module3_plagiarism_detection/data/processed/hard_queries_v1/train_noisy_copy.parquet,120317080,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.parquet,module3_plagiarism_detection
+module3_plagiarism_detection/data/processed/hard_queries_v1/validation_noisy_copy.parquet,25951758,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.parquet,module3_plagiarism_detection
+module3_plagiarism_detection/data/processed/light_rewrite_queries_v1/train.parquet,59594379,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.parquet,module3_plagiarism_detection
+module3_plagiarism_detection/data/processed/light_rewrite_queries_v1/validation.parquet,11576873,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.parquet,module3_plagiarism_detection
+module3_plagiarism_detection/data/processed/light_rewrite_queries_v2/train.parquet,27268006,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.parquet,module3_plagiarism_detection
+module3_plagiarism_detection/data/processed/light_rewrite_queries_v2/validation.parquet,5284411,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.parquet,module3_plagiarism_detection
+module3_plagiarism_detection/data/processed/light_rewrite_queries_v3/train.parquet,14284370,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.parquet,module3_plagiarism_detection
+module3_plagiarism_detection/data/processed/light_rewrite_queries_v3/validation.parquet,2838208,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.parquet,module3_plagiarism_detection
+module3_plagiarism_detection/data/processed/negative_hardness_strata_v1/train_negative_pairs.parquet,20570756,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.parquet,module3_plagiarism_detection
+module3_plagiarism_detection/data/processed/negative_hardness_strata_v1/train_negative_query_examples.parquet,324411078,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.parquet,module3_plagiarism_detection
+module3_plagiarism_detection/data/processed/negative_hardness_strata_v1/train_semantic_review_pairs.parquet,1039476,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.parquet,module3_plagiarism_detection
+module3_plagiarism_detection/data/processed/negative_hardness_strata_v1/validation_negative_pairs.parquet,3493588,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.parquet,module3_plagiarism_detection
+module3_plagiarism_detection/data/processed/negative_hardness_strata_v1/validation_negative_query_examples.parquet,59394652,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.parquet,module3_plagiarism_detection
+module3_plagiarism_detection/data/processed/negative_hardness_strata_v1/validation_semantic_review_pairs.parquet,109176,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.parquet,module3_plagiarism_detection
+module3_plagiarism_detection/data/processed/negative_safety_guard_v1/article_pair_guard.parquet,55949,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.parquet,module3_plagiarism_detection
+module3_plagiarism_detection/data/processed/negative_safety_guard_v1/build_report.json,1384,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.json,module3_plagiarism_detection
+module3_plagiarism_detection/data/processed/negative_safety_guard_v1/guard_policy.json,1271,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.json,module3_plagiarism_detection
+module3_plagiarism_detection/data/processed/negative_safety_guard_v1/query_alternate_source_registry.parquet,111644,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.parquet,module3_plagiarism_detection
+module3_plagiarism_detection/data/processed/paraphrase/visp_component_split_v1/component_manifest.parquet,976182,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.parquet,module3_plagiarism_detection
+module3_plagiarism_detection/data/processed/paraphrase/visp_component_split_v1/split_report.json,3370,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.json,module3_plagiarism_detection
+module3_plagiarism_detection/data/processed/paraphrase/visp_component_split_v1/test.parquet,4566803,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.parquet,module3_plagiarism_detection
+module3_plagiarism_detection/data/processed/paraphrase/visp_component_split_v1/text_manifest.parquet,14522008,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.parquet,module3_plagiarism_detection
+module3_plagiarism_detection/data/processed/paraphrase/visp_component_split_v1/train.parquet,22052597,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.parquet,module3_plagiarism_detection
+module3_plagiarism_detection/data/processed/paraphrase/visp_component_split_v1/validation.parquet,4624998,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.parquet,module3_plagiarism_detection
+module3_plagiarism_detection/data/processed/paraphrase_generation_seed_v1/train.parquet,20374140,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.parquet,module3_plagiarism_detection
+module3_plagiarism_detection/data/processed/paraphrase_generation_seed_v1/validation.parquet,4085177,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.parquet,module3_plagiarism_detection
+module3_plagiarism_detection/data/processed/paraphrase_generator_corpus_v1/train.parquet,29722393,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.parquet,module3_plagiarism_detection
+module3_plagiarism_detection/data/processed/paraphrase_generator_corpus_v1/validation.parquet,6190575,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.parquet,module3_plagiarism_detection
+module3_plagiarism_detection/data/processed/positive_queries_v1_clean/cleaning_report.json,2413,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.json,module3_plagiarism_detection
+module3_plagiarism_detection/data/processed/positive_queries_v1_clean/removed_train.csv,2008099,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.csv,module3_plagiarism_detection
+module3_plagiarism_detection/data/processed/positive_queries_v1_clean/removed_validation.csv,451785,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.csv,module3_plagiarism_detection
+module3_plagiarism_detection/data/processed/positive_queries_v1_clean/same_source_duplicate_collapses.csv,1189517,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.csv,module3_plagiarism_detection
+module3_plagiarism_detection/data/processed/positive_queries_v1_clean/train.parquet,353838943,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.parquet,module3_plagiarism_detection
+module3_plagiarism_detection/data/processed/positive_queries_v1_clean/validation.parquet,75044604,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.parquet,module3_plagiarism_detection
+module3_plagiarism_detection/data/processed/semantic_verifier_dataset_v1/train.parquet,712083907,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.parquet,module3_plagiarism_detection
+module3_plagiarism_detection/data/processed/semantic_verifier_dataset_v1/validation.parquet,136637559,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.parquet,module3_plagiarism_detection
+module3_plagiarism_detection/data/processed/verifier_clean_core_v1/train_article_manifest.parquet,5297193,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.parquet,module3_plagiarism_detection
+module3_plagiarism_detection/data/processed/verifier_clean_core_v1/train_hard_negative_map.parquet,20604462,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.parquet,module3_plagiarism_detection
+module3_plagiarism_detection/data/processed/verifier_clean_core_v1/train_positive_queries.parquet,326906100,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.parquet,module3_plagiarism_detection
+module3_plagiarism_detection/data/processed/verifier_clean_core_v1/train_query_negative_candidates.parquet,339652073,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.parquet,module3_plagiarism_detection
+module3_plagiarism_detection/data/processed/verifier_clean_core_v1/validation_article_manifest.parquet,1045284,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.parquet,module3_plagiarism_detection
+module3_plagiarism_detection/data/processed/verifier_clean_core_v1/validation_hard_negative_map.parquet,3383000,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.parquet,module3_plagiarism_detection
+module3_plagiarism_detection/data/processed/verifier_clean_core_v1/validation_positive_queries.parquet,59462222,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.parquet,module3_plagiarism_detection
+module3_plagiarism_detection/data/processed/verifier_clean_core_v1/validation_query_negative_candidates.parquet,60641521,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.parquet,module3_plagiarism_detection
+module3_plagiarism_detection/data/processed/verifier_pair_dataset_v1/train.parquet,226440321,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.parquet,module3_plagiarism_detection
+module3_plagiarism_detection/data/processed/verifier_pair_dataset_v1/train_group_manifest.parquet,344615701,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.parquet,module3_plagiarism_detection
+module3_plagiarism_detection/data/processed/verifier_pair_dataset_v1/validation.parquet,40412650,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.parquet,module3_plagiarism_detection
+module3_plagiarism_detection/data/processed/verifier_pair_dataset_v1/validation_group_manifest.parquet,63372580,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.parquet,module3_plagiarism_detection
+module3_plagiarism_detection/models/candidate_mining/title_tfidf_same_category_v1/vectorizer.joblib,5413552,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.joblib,module3_plagiarism_detection
+module3_plagiarism_detection/models/retrieval/tfidf_word_v1/vectorizer.joblib,9051107,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.joblib,module3_plagiarism_detection
+module3_plagiarism_detection/models/retrieval/visp_tfidf_word_v1/vectorizer.joblib,7621348,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.joblib,module3_plagiarism_detection
+module3_plagiarism_detection/models/verification/lexical_verifier_baseline_v1/model.joblib,1649,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.joblib,module3_plagiarism_detection
+module3_plagiarism_detection/models/verification/vit5_paraphrase_generator_v1/config.json,846,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.json,module3_plagiarism_detection
+module3_plagiarism_detection/models/verification/vit5_paraphrase_generator_v1/generation_config.json,171,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.json,module3_plagiarism_detection
+module3_plagiarism_detection/models/verification/vit5_paraphrase_generator_v1/model.safetensors,903834408,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.safetensors,module3_plagiarism_detection
+module3_plagiarism_detection/models/verification/vit5_paraphrase_generator_v1/tokenizer.json,4387006,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.json,module3_plagiarism_detection
+module3_plagiarism_detection/models/verification/vit5_paraphrase_generator_v1/tokenizer_config.json,2512,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.json,module3_plagiarism_detection
+module3_plagiarism_detection/results/corpus_audit_v1/corpus_audit_report.json,2865,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.json,module3_plagiarism_detection
+module3_plagiarism_detection/results/corpus_audit_v1/exact_title_overlaps.csv,5272641,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.csv,module3_plagiarism_detection
+module3_plagiarism_detection/results/corpus_audit_v1/namsyntax_longest_text_samples.csv,108633,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.csv,module3_plagiarism_detection
+module3_plagiarism_detection/results/corpus_audit_v1/namsyntax_sample.csv,47435,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.csv,module3_plagiarism_detection
+module3_plagiarism_detection/results/cross_split_near_duplicate_audit/cross_split_document_near_duplicate_audit_v1/audit_report.json,1348,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.json,module3_plagiarism_detection
+module3_plagiarism_detection/results/cross_split_near_duplicate_audit/cross_split_document_near_duplicate_audit_v1/document_level_suspects.csv,728168,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.csv,module3_plagiarism_detection
+module3_plagiarism_detection/results/cross_split_near_duplicate_audit/cross_split_document_near_duplicate_audit_v1/top_suspicious_pairs.csv,170459,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.csv,module3_plagiarism_detection
+module3_plagiarism_detection/results/cross_split_passage_leakage/cross_split_leakage_registry_v1/component_summary.csv,718,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.csv,module3_plagiarism_detection
+module3_plagiarism_detection/results/cross_split_passage_leakage/cross_split_leakage_registry_v1/exact_passage_hash_fanout.csv,291359,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.csv,module3_plagiarism_detection
+module3_plagiarism_detection/results/cross_split_passage_leakage/cross_split_leakage_registry_v1/registry_report.json,3962,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.json,module3_plagiarism_detection
+module3_plagiarism_detection/results/cross_split_passage_leakage/cross_split_passage_leakage_audit_v1/audit_report.json,1551,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.json,module3_plagiarism_detection
+module3_plagiarism_detection/results/cross_split_passage_leakage/cross_split_passage_leakage_audit_v1/exact_passage_overlap_sample.csv,334136,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.csv,module3_plagiarism_detection
+module3_plagiarism_detection/results/cross_split_passage_leakage/cross_split_passage_leakage_audit_v1/near_passage_sample.csv,791488,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.csv,module3_plagiarism_detection
+module3_plagiarism_detection/results/hard_negative_mining/hard_negative_safe_top1_audit_v1/audit_report.json,6457,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.json,module3_plagiarism_detection
+module3_plagiarism_detection/results/hard_negative_mining/hard_negative_safe_top1_audit_v1/manual_qa_sample.csv,772176,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.csv,module3_plagiarism_detection
+module3_plagiarism_detection/results/hard_negative_mining/hard_negative_safe_top1_audit_v1/metrics_by_candidate_rank.csv,2044,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.csv,module3_plagiarism_detection
+module3_plagiarism_detection/results/hard_negative_mining/hard_negative_safe_top1_audit_v1/metrics_by_category.csv,6327,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.csv,module3_plagiarism_detection
+module3_plagiarism_detection/results/hard_negative_mining/hard_negative_safety_screen_v1/screening_by_category.csv,1838,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.csv,module3_plagiarism_detection
+module3_plagiarism_detection/results/hard_negative_mining/hard_negative_safety_screen_v1/screening_policy.json,1258,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.json,module3_plagiarism_detection
+module3_plagiarism_detection/results/hard_negative_mining/hard_negative_safety_screen_v1/screening_report.json,1345,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.json,module3_plagiarism_detection
+module3_plagiarism_detection/results/hard_negative_mining/title_tfidf_same_category_v1/candidate_counts_by_category.csv,1591,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.csv,module3_plagiarism_detection
+module3_plagiarism_detection/results/hard_negative_mining/title_tfidf_same_category_v1/config.json,665,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.json,module3_plagiarism_detection
+module3_plagiarism_detection/results/hard_negative_mining/title_tfidf_same_category_v1/mining_report.json,1176,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.json,module3_plagiarism_detection
+module3_plagiarism_detection/results/paraphrase/retrieval/visp_multilingual_e5_base_zero_shot_v1/config.json,632,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.json,module3_plagiarism_detection
+module3_plagiarism_detection/results/paraphrase/retrieval/visp_multilingual_e5_base_zero_shot_v1/error_analysis_v1/both_wrong_top1.csv,11612,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.csv,module3_plagiarism_detection
+module3_plagiarism_detection/results/paraphrase/retrieval/visp_multilingual_e5_base_zero_shot_v1/error_analysis_v1/dense_wins_top1.csv,47009,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.csv,module3_plagiarism_detection
+module3_plagiarism_detection/results/paraphrase/retrieval/visp_multilingual_e5_base_zero_shot_v1/error_analysis_v1/error_analysis.json,563,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.json,module3_plagiarism_detection
+module3_plagiarism_detection/results/paraphrase/retrieval/visp_multilingual_e5_base_zero_shot_v1/error_analysis_v1/hard_both_wrong.csv,811,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.csv,module3_plagiarism_detection
+module3_plagiarism_detection/results/paraphrase/retrieval/visp_multilingual_e5_base_zero_shot_v1/error_analysis_v1/hard_queries.csv,117333,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.csv,module3_plagiarism_detection
+module3_plagiarism_detection/results/paraphrase/retrieval/visp_multilingual_e5_base_zero_shot_v1/error_analysis_v1/tfidf_wins_top1.csv,4952,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.csv,module3_plagiarism_detection
+module3_plagiarism_detection/results/paraphrase/retrieval/visp_multilingual_e5_base_zero_shot_v1/metrics_by_difficulty.csv,903,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.csv,module3_plagiarism_detection
+module3_plagiarism_detection/results/paraphrase/retrieval/visp_multilingual_e5_base_zero_shot_v1/tfidf_vs_dense.csv,1147,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.csv,module3_plagiarism_detection
+module3_plagiarism_detection/results/paraphrase/retrieval/visp_multilingual_e5_base_zero_shot_v1/tfidf_vs_dense_paired.parquet,1819289,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.parquet,module3_plagiarism_detection
+module3_plagiarism_detection/results/paraphrase/retrieval/visp_multilingual_e5_base_zero_shot_v1/validation_metrics.json,5456,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.json,module3_plagiarism_detection
+module3_plagiarism_detection/results/paraphrase/retrieval/visp_multilingual_e5_base_zero_shot_v1/validation_predictions.parquet,1800638,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.parquet,module3_plagiarism_detection
+module3_plagiarism_detection/results/paraphrase/retrieval/visp_tfidf_word_v1/config.json,773,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.json,module3_plagiarism_detection
+module3_plagiarism_detection/results/paraphrase/retrieval/visp_tfidf_word_v1/metrics_by_difficulty.csv,981,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.csv,module3_plagiarism_detection
+module3_plagiarism_detection/results/paraphrase/retrieval/visp_tfidf_word_v1/validation_metrics.json,3268,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.json,module3_plagiarism_detection
+module3_plagiarism_detection/results/paraphrase/retrieval/visp_tfidf_word_v1/validation_predictions.parquet,1824671,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.parquet,module3_plagiarism_detection
+module3_plagiarism_detection/results/paraphrase/visp_audit_v1/visp_audit_report.json,2907,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.json,module3_plagiarism_detection
+module3_plagiarism_detection/results/paraphrase/visp_audit_v1/visp_high_lexical_overlap_samples.csv,82910,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.csv,module3_plagiarism_detection
+module3_plagiarism_detection/results/paraphrase/visp_audit_v1/visp_low_lexical_overlap_samples.csv,67996,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.csv,module3_plagiarism_detection
+module3_plagiarism_detection/results/paraphrase/visp_audit_v1/visp_sample.csv,104315,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.csv,module3_plagiarism_detection
+module3_plagiarism_detection/results/paraphrase/visp_pair_graph_audit_v1/high_degree_texts.csv,105548,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.csv,module3_plagiarism_detection
+module3_plagiarism_detection/results/paraphrase/visp_pair_graph_audit_v1/largest_components.csv,83466,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.csv,module3_plagiarism_detection
+module3_plagiarism_detection/results/paraphrase/visp_pair_graph_audit_v1/original_id_text_conflicts.csv,275814,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.csv,module3_plagiarism_detection
+module3_plagiarism_detection/results/paraphrase/visp_pair_graph_audit_v1/pair_graph_report.json,2571,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.json,module3_plagiarism_detection
+module3_plagiarism_detection/results/passage_unit_diagnostic_v1/passage_samples.csv,154846,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.csv,module3_plagiarism_detection
+module3_plagiarism_detection/results/passage_unit_diagnostic_v1/passage_unit_report.json,14995,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.json,module3_plagiarism_detection
+module3_plagiarism_detection/results/passage_unit_diagnostic_v1/passage_unit_summary.csv,1528,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.csv,module3_plagiarism_detection
+module3_plagiarism_detection/results/positive_query_overlap_diagnostic_v1/cross_split_query_overlaps.csv,11002573,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.csv,module3_plagiarism_detection
+module3_plagiarism_detection/results/positive_query_overlap_diagnostic_v1/overlap_diagnostic.json,1196,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.json,module3_plagiarism_detection
+module3_plagiarism_detection/results/positive_query_overlap_diagnostic_v1/train_duplicate_queries.csv,429643,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.csv,module3_plagiarism_detection
+module3_plagiarism_detection/results/positive_query_overlap_diagnostic_v1/validation_duplicate_queries.csv,76882,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.csv,module3_plagiarism_detection
+module3_plagiarism_detection/results/primary_corpus_profile_v1/duplicate_normalized_titles.csv,128306,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.csv,module3_plagiarism_detection
+module3_plagiarism_detection/results/primary_corpus_profile_v1/longest_train_validation_articles.csv,16522,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.csv,module3_plagiarism_detection
+module3_plagiarism_detection/results/primary_corpus_profile_v1/primary_corpus_profile.json,6024,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.json,module3_plagiarism_detection
+module3_plagiarism_detection/results/retrieval/tfidf_word_v1/config.json,791,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.json,module3_plagiarism_detection
+module3_plagiarism_detection/results/retrieval/tfidf_word_v1/error_analysis_v1/error_analysis.json,1327,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.json,module3_plagiarism_detection
+module3_plagiarism_detection/results/retrieval/tfidf_word_v1/error_analysis_v1/metrics_by_category.csv,3559,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.csv,module3_plagiarism_detection
+module3_plagiarism_detection/results/retrieval/tfidf_word_v1/error_analysis_v1/metrics_by_query_length.csv,1598,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.csv,module3_plagiarism_detection
+module3_plagiarism_detection/results/retrieval/tfidf_word_v1/error_analysis_v1/rank_gt1_errors.csv,1238610,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.csv,module3_plagiarism_detection
+module3_plagiarism_detection/results/retrieval/tfidf_word_v1/error_analysis_v1/rank_gt20_errors.csv,33345,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.csv,module3_plagiarism_detection
+module3_plagiarism_detection/results/retrieval/tfidf_word_v1/error_analysis_v1/rank_gt5_errors.csv,139234,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.csv,module3_plagiarism_detection
+module3_plagiarism_detection/results/retrieval/tfidf_word_v1/near_duplicate_error_audit_v1/audit_report.json,1556,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.json,module3_plagiarism_detection
+module3_plagiarism_detection/results/retrieval/tfidf_word_v1/near_duplicate_error_audit_v1/high_alternate_source_risk.csv,250476,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.csv,module3_plagiarism_detection
+module3_plagiarism_detection/results/retrieval/tfidf_word_v1/near_duplicate_error_audit_v1/low_alternate_source_risk.csv,351046,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.csv,module3_plagiarism_detection
+module3_plagiarism_detection/results/retrieval/tfidf_word_v1/near_duplicate_error_audit_v1/medium_alternate_source_risk.csv,165792,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.csv,module3_plagiarism_detection
+module3_plagiarism_detection/results/retrieval/tfidf_word_v1/near_duplicate_error_audit_v1/rank_gt1_near_duplicate_audit.csv,766324,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.csv,module3_plagiarism_detection
+module3_plagiarism_detection/results/retrieval/tfidf_word_v1/noisy_copy_v1/clean_vs_noisy_paired.parquet,7949170,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.parquet,module3_plagiarism_detection
+module3_plagiarism_detection/results/retrieval/tfidf_word_v1/noisy_copy_v1/evaluation_report.json,1325,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.json,module3_plagiarism_detection
+module3_plagiarism_detection/results/retrieval/tfidf_word_v1/noisy_copy_v1/metrics_by_mutation_count.csv,538,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.csv,module3_plagiarism_detection
+module3_plagiarism_detection/results/retrieval/tfidf_word_v1/noisy_copy_v1/metrics_by_mutation_type.csv,851,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.csv,module3_plagiarism_detection
+module3_plagiarism_detection/results/retrieval/tfidf_word_v1/noisy_copy_v1/validation_predictions.parquet,5413611,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.parquet,module3_plagiarism_detection
+module3_plagiarism_detection/results/retrieval/tfidf_word_v1/validation_metrics.json,1693,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.json,module3_plagiarism_detection
+module3_plagiarism_detection/results/retrieval/tfidf_word_v1/validation_predictions.parquet,8093858,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.parquet,module3_plagiarism_detection
+module3_plagiarism_detection/results/verification/hard_negative_semantic_e5_audit_v1/audit_report.json,1910,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.json,module3_plagiarism_detection
+module3_plagiarism_detection/results/verification/hard_negative_semantic_e5_audit_v1/manual_qa_instructions.json,1517,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.json,module3_plagiarism_detection
+module3_plagiarism_detection/results/verification/hard_negative_semantic_e5_audit_v1/manual_qa_sample.csv,297369,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.csv,module3_plagiarism_detection
+module3_plagiarism_detection/results/verification/hard_negative_semantic_e5_audit_v1/metrics_by_category.csv,4810,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.csv,module3_plagiarism_detection
+module3_plagiarism_detection/results/verification/hard_negative_semantic_e5_audit_v1/metrics_by_selected_rank.csv,2387,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.csv,module3_plagiarism_detection
+module3_plagiarism_detection/results/verification/lexical_verifier_baseline_v1/config.json,977,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.json,module3_plagiarism_detection
+module3_plagiarism_detection/results/verification/lexical_verifier_baseline_v1/feature_coefficients.csv,601,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.csv,module3_plagiarism_detection
+module3_plagiarism_detection/results/verification/lexical_verifier_baseline_v1/metrics_by_negative_hardness.csv,816,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.csv,module3_plagiarism_detection
+module3_plagiarism_detection/results/verification/lexical_verifier_baseline_v1/metrics_by_plagiarism_type.csv,445,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.csv,module3_plagiarism_detection
+module3_plagiarism_detection/results/verification/lexical_verifier_baseline_v1/validation_predictions.parquet,10507781,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.parquet,module3_plagiarism_detection
+module3_plagiarism_detection/results/verification/lexical_verifier_baseline_v1/validation_report.json,1938,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.json,module3_plagiarism_detection
+module3_plagiarism_detection/results/verification/light_rewrite_queries_v1/build_report.json,1927,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.json,module3_plagiarism_detection
+module3_plagiarism_detection/results/verification/light_rewrite_queries_v1/manual_qa_sample.csv,436767,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.csv,module3_plagiarism_detection
+module3_plagiarism_detection/results/verification/light_rewrite_queries_v1/operation_summary.csv,696,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.csv,module3_plagiarism_detection
+module3_plagiarism_detection/results/verification/light_rewrite_queries_v2/build_report.json,2630,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.json,module3_plagiarism_detection
+module3_plagiarism_detection/results/verification/light_rewrite_queries_v2/manual_qa_sample.csv,290786,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.csv,module3_plagiarism_detection
+module3_plagiarism_detection/results/verification/light_rewrite_queries_v2/replacement_summary.csv,6812,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.csv,module3_plagiarism_detection
+module3_plagiarism_detection/results/verification/light_rewrite_queries_v3/build_report.json,2986,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.json,module3_plagiarism_detection
+module3_plagiarism_detection/results/verification/light_rewrite_queries_v3/manual_qa_sample.csv,146239,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.csv,module3_plagiarism_detection
+module3_plagiarism_detection/results/verification/light_rewrite_queries_v3/removal_report.csv,700,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.csv,module3_plagiarism_detection
+module3_plagiarism_detection/results/verification/light_rewrite_queries_v3/replacement_summary.csv,6415,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.csv,module3_plagiarism_detection
+module3_plagiarism_detection/results/verification/light_rewrite_v3_frozen_lexical_eval_v1/evaluation_report.json,3014,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.json,module3_plagiarism_detection
+module3_plagiarism_detection/results/verification/light_rewrite_v3_frozen_lexical_eval_v1/group_probability_deltas.parquet,2758198,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.parquet,module3_plagiarism_detection
+module3_plagiarism_detection/results/verification/light_rewrite_v3_frozen_lexical_eval_v1/metrics_by_negative_hardness.csv,737,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.csv,module3_plagiarism_detection
+module3_plagiarism_detection/results/verification/light_rewrite_v3_frozen_lexical_eval_v1/metrics_by_replacement_count.csv,552,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.csv,module3_plagiarism_detection
+module3_plagiarism_detection/results/verification/light_rewrite_v3_frozen_lexical_eval_v1/rewrite_errors.csv,556,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.csv,module3_plagiarism_detection
+module3_plagiarism_detection/results/verification/light_rewrite_v3_frozen_lexical_eval_v1/validation_predictions.parquet,744719,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.parquet,module3_plagiarism_detection
+module3_plagiarism_detection/results/verification/negative_hardness_strata_v1/build_report.json,987,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.json,module3_plagiarism_detection
+module3_plagiarism_detection/results/verification/negative_hardness_strata_v1/strata_distribution.csv,885,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.csv,module3_plagiarism_detection
+module3_plagiarism_detection/results/verification/negative_hardness_strata_v1/strata_policy.json,1107,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.json,module3_plagiarism_detection
+module3_plagiarism_detection/results/verification/paraphrase_generation_data_v1/build_report.json,2213,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.json,module3_plagiarism_detection
+module3_plagiarism_detection/results/verification/paraphrase_generation_data_v1/seed_distribution.csv,332,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.csv,module3_plagiarism_detection
+module3_plagiarism_detection/results/verification/paraphrase_generation_data_v1/visp_length_distribution.csv,162,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.csv,module3_plagiarism_detection
+module3_plagiarism_detection/results/verification/safe_paraphrase_candidate_selection_v1/e5_train_calibration.json,280,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.json,module3_plagiarism_detection
+module3_plagiarism_detection/results/verification/safe_paraphrase_candidate_selection_v1/manual_qa_sample.csv,171749,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.csv,module3_plagiarism_detection
+module3_plagiarism_detection/results/verification/safe_paraphrase_candidate_selection_v1/rejection_reason_counts.csv,452,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.csv,module3_plagiarism_detection
+module3_plagiarism_detection/results/verification/safe_paraphrase_candidate_selection_v1/selection_report.json,2252,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.json,module3_plagiarism_detection
+module3_plagiarism_detection/results/verification/safe_paraphrase_candidate_selection_v1/yield_by_hardness.csv,124,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.csv,module3_plagiarism_detection
+module3_plagiarism_detection/results/verification/safe_paraphrase_candidate_selection_v2/manual_qa_sample.csv,192159,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.csv,module3_plagiarism_detection
+module3_plagiarism_detection/results/verification/safe_paraphrase_candidate_selection_v2/nli_train_calibration.json,450,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.json,module3_plagiarism_detection
+module3_plagiarism_detection/results/verification/safe_paraphrase_candidate_selection_v2/rejection_reason_counts.csv,540,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.csv,module3_plagiarism_detection
+module3_plagiarism_detection/results/verification/safe_paraphrase_candidate_selection_v2/selection_report.json,2602,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.json,module3_plagiarism_detection
+module3_plagiarism_detection/results/verification/safe_paraphrase_candidate_selection_v2/v1_v2_comparison.json,271,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.json,module3_plagiarism_detection
+module3_plagiarism_detection/results/verification/safe_paraphrase_candidate_selection_v2/yield_by_hardness.csv,128,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.csv,module3_plagiarism_detection
+module3_plagiarism_detection/results/verification/semantic_verifier_dataset_audit_v1/audit_report.json,3036,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.json,module3_plagiarism_detection
+module3_plagiarism_detection/results/verification/semantic_verifier_dataset_audit_v1/distribution_audit.csv,893,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.csv,module3_plagiarism_detection
+module3_plagiarism_detection/results/verification/semantic_verifier_dataset_audit_v1/length_summary.csv,2474,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.csv,module3_plagiarism_detection
+module3_plagiarism_detection/results/verification/semantic_verifier_dataset_audit_v1/lexical_sample_metrics.parquet,118950415,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.parquet,module3_plagiarism_detection
+module3_plagiarism_detection/results/verification/semantic_verifier_dataset_audit_v1/lexical_summary.csv,9399,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.csv,module3_plagiarism_detection
+module3_plagiarism_detection/results/verification/semantic_verifier_dataset_audit_v1/manual_qa_sample.csv,265492,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.csv,module3_plagiarism_detection
+module3_plagiarism_detection/results/verification/semantic_verifier_dataset_audit_v1/pair_group_audit.csv,209,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.csv,module3_plagiarism_detection
+module3_plagiarism_detection/results/verification/semantic_verifier_dataset_audit_v1/visp_negative_audit_summary.csv,307,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.csv,module3_plagiarism_detection
+module3_plagiarism_detection/results/verification/semantic_verifier_dataset_v1/build_report.json,3189,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.json,module3_plagiarism_detection
+module3_plagiarism_detection/results/verification/semantic_verifier_dataset_v1/distribution.csv,893,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.csv,module3_plagiarism_detection
+module3_plagiarism_detection/results/verification/semantic_verifier_dataset_v1/leakage_audit.json,282,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.json,module3_plagiarism_detection
+module3_plagiarism_detection/results/verification/semantic_verifier_dataset_v1/visp_negative_audit.csv,38732319,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.csv,module3_plagiarism_detection
+module3_plagiarism_detection/results/verification/verifier_clean_core_v1/build_report.json,2560,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.json,module3_plagiarism_detection
+module3_plagiarism_detection/results/verification/verifier_clean_core_v1/negative_coverage_by_category.csv,2336,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.csv,module3_plagiarism_detection
+module3_plagiarism_detection/results/verification/verifier_clean_core_v1/selected_negative_rank_distribution.csv,791,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.csv,module3_plagiarism_detection
+module3_plagiarism_detection/results/verification/verifier_pair_dataset_v1/build_report.json,1790,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.json,module3_plagiarism_detection
+module3_plagiarism_detection/results/verification/verifier_pair_dataset_v1/group_distribution.csv,983,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.csv,module3_plagiarism_detection
+module3_plagiarism_detection/results/verification/verifier_pair_dataset_v1/training_policy.json,1138,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.json,module3_plagiarism_detection
+module3_plagiarism_detection/results/verification/vit5_paraphrase_generation_qa_v1/generation_qa_report.json,2814,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.json,module3_plagiarism_detection
+module3_plagiarism_detection/results/verification/vit5_paraphrase_generation_qa_v1/manual_qa_sample.csv,503335,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.csv,module3_plagiarism_detection
+module3_plagiarism_detection/results/verification/vit5_paraphrase_generation_qa_v1/module3_validation_query_generation_audit.parquet,889657,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.parquet,module3_plagiarism_detection
+module3_plagiarism_detection/results/verification/vit5_paraphrase_generation_qa_v1/module3_validation_sentence_generation_audit.parquet,875215,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.parquet,module3_plagiarism_detection
+module3_plagiarism_detection/results/verification/vit5_paraphrase_generation_qa_v1/visp_validation_generation_audit.parquet,587011,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.parquet,module3_plagiarism_detection
+module3_plagiarism_detection/results/verification/vit5_paraphrase_generator_v1/token_length_report.csv,507,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.csv,module3_plagiarism_detection
+module3_plagiarism_detection/results/verification/vit5_paraphrase_generator_v1/training_config.json,886,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.json,module3_plagiarism_detection
+module3_plagiarism_detection/results/verification/vit5_paraphrase_generator_v1/training_history.csv,3912,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.csv,module3_plagiarism_detection
+module3_plagiarism_detection/results/verification/vit5_paraphrase_generator_v1/training_report.json,3046,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.json,module3_plagiarism_detection
+module3_plagiarism_detection/scripts/01_audit_candidate_corpora.py,32938,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.py,module3_plagiarism_detection
+module3_plagiarism_detection/scripts/02_profile_primary_corpus.py,26954,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.py,module3_plagiarism_detection
+module3_plagiarism_detection/scripts/03_build_source_split.py,26521,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.py,module3_plagiarism_detection
+module3_plagiarism_detection/scripts/04_diagnose_passage_units.py,36033,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.py,module3_plagiarism_detection
+module3_plagiarism_detection/scripts/05_build_positive_queries.py,30093,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.py,module3_plagiarism_detection
+module3_plagiarism_detection/scripts/05a_diagnose_positive_query_overlap.py,18172,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.py,module3_plagiarism_detection
+module3_plagiarism_detection/scripts/05b_clean_positive_queries.py,31239,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.py,module3_plagiarism_detection
+module3_plagiarism_detection/scripts/retrieval/06_run_tfidf_retrieval_baseline.py,36869,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.py,module3_plagiarism_detection
+module3_plagiarism_detection/scripts/retrieval/07_analyze_tfidf_errors.py,18804,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.py,module3_plagiarism_detection
+module3_plagiarism_detection/scripts/retrieval/08_build_noisy_copy_challenge.py,21067,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.py,module3_plagiarism_detection
+module3_plagiarism_detection/scripts/retrieval/09_evaluate_tfidf_noisy_copy.py,36753,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.py,module3_plagiarism_detection
+module3_plagiarism_detection/scripts/retrieval/13_evaluate_visp_tfidf_retrieval.py,41136,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.py,module3_plagiarism_detection
+module3_plagiarism_detection/scripts/retrieval/14_evaluate_visp_e5_dense_zero_shot.py,45826,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.py,module3_plagiarism_detection
+module3_plagiarism_detection/scripts/retrieval/15_analyze_visp_dense_errors.py,19400,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.py,module3_plagiarism_detection
+module3_plagiarism_detection/scripts/retrieval/16_audit_tfidf_errors_near_duplicates.py,40893,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.py,module3_plagiarism_detection
+module3_plagiarism_detection/scripts/retrieval/17_build_negative_safety_guard.py,30624,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.py,module3_plagiarism_detection
+module3_plagiarism_detection/scripts/retrieval/18_mine_same_event_candidates_title_tfidf.py,44681,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.py,module3_plagiarism_detection
+module3_plagiarism_detection/scripts/retrieval/19_screen_hard_negative_candidates.py,52268,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.py,module3_plagiarism_detection
+module3_plagiarism_detection/scripts/retrieval/20_audit_safe_hard_negative_shortlist.py,39376,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.py,module3_plagiarism_detection
+module3_plagiarism_detection/scripts/retrieval/21_audit_cross_split_document_near_duplicates.py,54071,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.py,module3_plagiarism_detection
+module3_plagiarism_detection/scripts/retrieval/22_audit_cross_split_passage_leakage.py,66348,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.py,module3_plagiarism_detection
+module3_plagiarism_detection/scripts/retrieval/23_build_cross_split_leakage_registry.py,51605,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.py,module3_plagiarism_detection
+module3_plagiarism_detection/scripts/verification/10_audit_visp_paraphrase_corpus.py,36556,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.py,module3_plagiarism_detection
+module3_plagiarism_detection/scripts/verification/11_audit_visp_pair_graph.py,30923,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.py,module3_plagiarism_detection
+module3_plagiarism_detection/scripts/verification/12_build_visp_component_split.py,56524,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.py,module3_plagiarism_detection
+module3_plagiarism_detection/scripts/verification/24_build_verifier_clean_core.py,41844,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.py,module3_plagiarism_detection
+module3_plagiarism_detection/scripts/verification/25_audit_hard_negatives_semantic_e5.py,53673,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.py,module3_plagiarism_detection
+module3_plagiarism_detection/scripts/verification/26_build_negative_hardness_strata.py,25631,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.py,module3_plagiarism_detection
+module3_plagiarism_detection/scripts/verification/27_build_verifier_pair_dataset.py,39014,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.py,module3_plagiarism_detection
+module3_plagiarism_detection/scripts/verification/28_train_lexical_verifier_baseline.py,61096,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.py,module3_plagiarism_detection
+module3_plagiarism_detection/scripts/verification/29_build_light_rewrite_challenge.py,41952,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.py,module3_plagiarism_detection
+module3_plagiarism_detection/scripts/verification/29b_build_light_rewrite_challenge_v2.py,58755,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.py,module3_plagiarism_detection
+module3_plagiarism_detection/scripts/verification/29c_build_strict_light_rewrite_v3.py,34817,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.py,module3_plagiarism_detection
+module3_plagiarism_detection/scripts/verification/30_evaluate_frozen_lexical_verifier_light_rewrite_v3.py,65515,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.py,module3_plagiarism_detection
+module3_plagiarism_detection/scripts/verification/31_prepare_paraphrase_generation_data.py,44003,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.py,module3_plagiarism_detection
+module3_plagiarism_detection/scripts/verification/32_train_vit5_paraphrase_generator.py,54289,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.py,module3_plagiarism_detection
+module3_plagiarism_detection/scripts/verification/33_audit_vit5_paraphrase_generation.py,33991,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.py,module3_plagiarism_detection
+module3_plagiarism_detection/scripts/verification/34_select_safe_paraphrase_candidates.py,66203,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.py,module3_plagiarism_detection
+module3_plagiarism_detection/scripts/verification/34b_select_safe_paraphrase_candidates_v2.py,86924,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.py,module3_plagiarism_detection
+module3_plagiarism_detection/scripts/verification/35_build_unified_semantic_verifier_dataset.py,76986,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.py,module3_plagiarism_detection
+module3_plagiarism_detection/scripts/verification/36_audit_semantic_verifier_dataset_v1.py,26465,ARCHIVE_REVIEW,paused plagiarism research; preserve until archived/backed up,.py,module3_plagiarism_detection
+results/demo_full_prediction.json,7052,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.json,results
+results/module1_baselines/baseline1_validation_metrics.json,1665,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.json,results
+results/module1_baselines/baseline1_validation_predictions.csv,2353909,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.csv,results
+results/module1_baselines/baseline2_validation_metrics.json,1662,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.json,results
+results/module1_baselines/baseline2_validation_predictions.csv,2374259,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.csv,results
+results/module1_baselines/baseline_comparison.json,3707,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.json,results
+results/module1_correction_reranker_v1/official_test/official_correction_test_errors.csv,705956,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.csv,results
+results/module1_correction_reranker_v1/official_test/official_correction_test_metrics.json,3442,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.json,results
+results/module1_correction_reranker_v1/validation_reranking_errors.csv,573844,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.csv,results
+results/module1_correction_reranker_v1/validation_reranking_summary.json,14557,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.json,results
+results/module1_phobert_mil/validation_metrics.json,913,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.json,results
+results/module1_phobert_mil_all_fields/best_validation_metrics.json,1223,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.json,results
+results/module1_phobert_mil_all_fields/test_evaluation/official_test_metrics.json,1319,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.json,results
+results/module1_phobert_mil_all_fields/test_evaluation/test_error_analysis.json,1119,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.json,results
+results/module1_phobert_mil_all_fields/test_evaluation/test_predictions.csv,3167115,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.csv,results
+results/module1_phobert_mil_all_fields/threshold_tuning/best_threshold.json,4407,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.json,results
+results/module1_phobert_mil_all_fields/threshold_tuning/threshold_sweep.csv,15770,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.csv,results
+results/module1_phobert_mil_all_fields/threshold_tuning/validation_chunk_coverage_analysis.json,3805,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.json,results
+results/module1_phobert_mil_all_fields/threshold_tuning/validation_chunk_coverage_details.csv,7319568,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.csv,results
+results/module1_phobert_mil_all_fields/threshold_tuning/validation_probabilities.csv,2271039,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.csv,results
+results/module1_phobert_mil_all_fields/training_config.json,689,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.json,results
+results/module1_phobert_mil_all_fields/training_history.json,2645,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.json,results
+results/module1_phobert_mil_all_fields_4chunks/best_validation_metrics.json,1221,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.json,results
+results/module1_phobert_mil_all_fields_4chunks/chunk_localization/validation_chunk_localization_details.csv,4421140,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.csv,results
+results/module1_phobert_mil_all_fields_4chunks/chunk_localization/validation_chunk_localization_metrics.json,8077,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.json,results
+results/module1_phobert_mil_all_fields_4chunks/test_evaluation/official_test_metrics.json,1320,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.json,results
+results/module1_phobert_mil_all_fields_4chunks/test_evaluation/test_error_analysis.json,1096,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.json,results
+results/module1_phobert_mil_all_fields_4chunks/test_evaluation/test_predictions.csv,3175256,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.csv,results
+results/module1_phobert_mil_all_fields_4chunks/threshold_tuning/best_threshold.json,4437,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.json,results
+results/module1_phobert_mil_all_fields_4chunks/threshold_tuning/threshold_sweep.csv,15883,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.csv,results
+results/module1_phobert_mil_all_fields_4chunks/threshold_tuning/validation_probabilities.csv,2278502,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.csv,results
+results/module1_phobert_mil_all_fields_4chunks/training_config.json,689,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.json,results
+results/module1_phobert_mil_all_fields_4chunks/training_history.json,2643,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.json,results
+results/module1_phobert_mil_full/best_validation_metrics.json,1049,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.json,results
+results/module1_phobert_mil_full/test_evaluation/official_test_metrics.json,1184,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.json,results
+results/module1_phobert_mil_full/test_evaluation/test_error_analysis.json,1044,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.json,results
+results/module1_phobert_mil_full/test_evaluation/test_predictions.csv,3118307,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.csv,results
+results/module1_phobert_mil_full/threshold_tuning/best_threshold.json,3774,LOCKED_KEEP,SHA-256 manifest: do not edit/move/delete,.json,results
+results/module1_phobert_mil_full/threshold_tuning/threshold_sweep.csv,16102,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.csv,results
+results/module1_phobert_mil_full/threshold_tuning/validation_failure_analysis.json,1821,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.json,results
+results/module1_phobert_mil_full/threshold_tuning/validation_probabilities.csv,2221320,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.csv,results
+results/module1_phobert_mil_full/training_config.json,553,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.json,results
+results/module1_phobert_mil_full/training_history.json,2267,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.json,results
+results/module1_phobert_word_detector_v1/all_chunks_threshold_tuning/best_threshold.json,3482,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.json,results
+results/module1_phobert_word_detector_v1/all_chunks_threshold_tuning/threshold_sweep.csv,12911,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.csv,results
+results/module1_phobert_word_detector_v1/all_chunks_validation/validation_all_chunks_metrics_at_locked_threshold.json,1845,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.json,results
+results/module1_phobert_word_detector_v1/all_chunks_validation/validation_word_probabilities_all_chunks.npz,8153494,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.npz,results
+results/module1_phobert_word_detector_v1/best_validation_metrics.json,1630,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.json,results
+results/module1_phobert_word_detector_v1/best_validation_word_probabilities.npz,7892413,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.npz,results
+results/module1_phobert_word_detector_v1/official_test/official_word_test_metrics.json,2067,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.json,results
+results/module1_phobert_word_detector_v1/official_test/official_word_test_probabilities.npz,8190351,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.npz,results
+results/module1_phobert_word_detector_v1/threshold_tuning/best_threshold.json,3506,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.json,results
+results/module1_phobert_word_detector_v1/threshold_tuning/threshold_sweep.csv,13011,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.csv,results
+results/module1_phobert_word_detector_v1/training_config.json,598,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.json,results
+results/module1_phobert_word_detector_v1/training_history.json,3503,REVIEW_RESULTS,keep official metrics/test reports; review diagnostic outputs,.json,results
+scripts/01_download_raw.py,1699,REVIEW,inspect use/dependencies; no automatic deletion,.py,scripts
+scripts/02_eda_vietnews.py,14939,REVIEW,inspect use/dependencies; no automatic deletion,.py,scripts
+scripts/03_eda_tokenization.py,14233,REVIEW,inspect use/dependencies; no automatic deletion,.py,scripts
+scripts/04_generate_spelling_dataset.py,34904,REVIEW,inspect use/dependencies; no automatic deletion,.py,scripts
+scripts/04_generate_spelling_dataset_v02.py,40101,REVIEW,inspect use/dependencies; no automatic deletion,.py,scripts
+scripts/05_validate_spelling_dataset.py,30827,REVIEW,inspect use/dependencies; no automatic deletion,.py,scripts
+scripts/06_mine_real_error_patterns.py,22007,REVIEW,inspect use/dependencies; no automatic deletion,.py,scripts
+scripts/07_filter_real_error_patterns.py,19494,REVIEW,inspect use/dependencies; no automatic deletion,.py,scripts
+scripts/08_build_trusted_error_lookup.py,16630,REVIEW,inspect use/dependencies; no automatic deletion,.py,scripts
+scripts/09_generate_hybrid_spelling_dataset.py,54809,REVIEW,inspect use/dependencies; no automatic deletion,.py,scripts
+scripts/10_inspect_duplicate_source.py,4852,REVIEW,inspect use/dependencies; no automatic deletion,.py,scripts
+scripts/12_split_spelling_dataset.py,17224,REVIEW,inspect use/dependencies; no automatic deletion,.py,scripts
+scripts/13_train_classical_baselines.py,27228,REVIEW,inspect use/dependencies; no automatic deletion,.py,scripts
+scripts/14_train_phobert_mil.py,49475,REVIEW,inspect use/dependencies; no automatic deletion,.py,scripts
+scripts/15_tune_phobert_threshold.py,43021,REVIEW,inspect use/dependencies; no automatic deletion,.py,scripts
+scripts/16_evaluate_phobert_test.py,43003,REVIEW,inspect use/dependencies; no automatic deletion,.py,scripts
+scripts/17_analyze_validation_failures.py,12319,REVIEW,inspect use/dependencies; no automatic deletion,.py,scripts
+scripts/18_train_phobert_mil_all_fields.py,51277,REVIEW,inspect use/dependencies; no automatic deletion,.py,scripts
+scripts/19_tune_phobert_all_fields_threshold.py,43092,REVIEW,inspect use/dependencies; no automatic deletion,.py,scripts
+scripts/20_evaluate_phobert_all_fields_test.py,44667,REVIEW,inspect use/dependencies; no automatic deletion,.py,scripts
+scripts/21_analyze_validation_chunk_coverage.py,43132,REVIEW,inspect use/dependencies; no automatic deletion,.py,scripts
+scripts/22_train_phobert_mil_all_fields_4chunks.py,51304,REVIEW,inspect use/dependencies; no automatic deletion,.py,scripts
+scripts/23_tune_phobert_all_fields_4chunks_threshold.py,43109,REVIEW,inspect use/dependencies; no automatic deletion,.py,scripts
+scripts/24_evaluate_phobert_all_fields_4chunks_test.py,44688,REVIEW,inspect use/dependencies; no automatic deletion,.py,scripts
+scripts/25_evaluate_mil_chunk_localization.py,58726,REVIEW,inspect use/dependencies; no automatic deletion,.py,scripts
+scripts/26_build_word_localization_dataset.py,23106,REVIEW,inspect use/dependencies; no automatic deletion,.py,scripts
+scripts/27_train_phobert_word_detector.py,68961,REVIEW,inspect use/dependencies; no automatic deletion,.py,scripts
+scripts/28_tune_word_detector_threshold.py,17237,REVIEW,inspect use/dependencies; no automatic deletion,.py,scripts
+scripts/29_evaluate_word_detector_all_chunks_validation.py,50863,REVIEW,inspect use/dependencies; no automatic deletion,.py,scripts
+scripts/30_tune_word_detector_all_chunks_threshold.py,17285,REVIEW,inspect use/dependencies; no automatic deletion,.py,scripts
+scripts/31_build_word_localization_test.py,23101,REVIEW,inspect use/dependencies; no automatic deletion,.py,scripts
+scripts/32_evaluate_word_detector_all_chunks_test.py,53668,REVIEW,inspect use/dependencies; no automatic deletion,.py,scripts
+scripts/33_predict_spelling_errors.py,39890,REVIEW,inspect use/dependencies; no automatic deletion,.py,scripts
+scripts/34_build_correction_lookup.py,28635,REVIEW,inspect use/dependencies; no automatic deletion,.py,scripts
+scripts/35_contextual_correction_reranker.py,50134,REVIEW,inspect use/dependencies; no automatic deletion,.py,scripts
+scripts/36_predict_spelling_errors_with_correction.py,64308,REVIEW,inspect use/dependencies; no automatic deletion,.py,scripts
+scripts/37_evaluate_correction_official_test.py,56366,REVIEW,inspect use/dependencies; no automatic deletion,.py,scripts
+system/release/environment_v1.json,4228,LOCKED_KEEP,SHA-256 manifest: do not edit/move/delete,.json,system
+system/release/model_inventory_v1.json,2344,LOCKED_KEEP,SHA-256 manifest: do not edit/move/delete,.json,system
+system/release/model_lock_config.json,2457,LOCKED_KEEP,SHA-256 manifest: do not edit/move/delete,.json,system
+system/release/model_lock_manifest_v1.json,6540,LOCKED_KEEP,SHA-256 manifest: do not edit/move/delete,.json,system
+system/release/tokenizers/mbert_v1/tokenizer.json,2919362,LOCKED_KEEP,SHA-256 manifest: do not edit/move/delete,.json,system
+system/release/tokenizers/mbert_v1/tokenizer_config.json,367,LOCKED_KEEP,SHA-256 manifest: do not edit/move/delete,.json,system
+system/scripts/01_model_release.py,13912,KEEP,release creation and verification,.py,system
+system/scripts/02_audit_project_structure.py,8379,REVIEW,inspect use/dependencies; no automatic deletion,.py,system
+system/scripts/README.md,996,REVIEW,inspect use/dependencies; no automatic deletion,.md,system
+system/scripts/SYSTEM_DESIGN_V1.md,13847,REVIEW,inspect use/dependencies; no automatic deletion,.md,system
+system/scripts/model_lock_config.template.json,1960,REVIEW,inspect use/dependencies; no automatic deletion,.json,system

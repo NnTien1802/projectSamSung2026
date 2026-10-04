@@ -1,0 +1,5 @@
+# Install into your existing project virtualenv; do NOT reinstall torch/transformers.
+fastapi>=0.115,<1
+uvicorn[standard]>=0.30,<1
+# Needed only for HTTP integration tests with FastAPI TestClient.
+httpx>=0.27,<1

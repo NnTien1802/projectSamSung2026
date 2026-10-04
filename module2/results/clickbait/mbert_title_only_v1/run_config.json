@@ -1,0 +1,26 @@
+{
+  "stage": "06_train_mbert_title_only",
+  "task": "2A_clickbait_detection",
+  "dataset": "viclickbait_v1",
+  "model": "bert-base-multilingual-cased",
+  "input": "title_only",
+  "max_length": 160,
+  "train_rows": 2390,
+  "validation_rows": 512,
+  "test_loaded": false,
+  "batch_size": 16,
+  "epochs": 5,
+  "early_stopping_patience": 2,
+  "learning_rate": 2e-05,
+  "weight_decay": 0.01,
+  "warmup_ratio": 0.1,
+  "seed": 20260921,
+  "class_counts": {
+    "normal": 1645,
+    "clickbait": 745
+  },
+  "class_weights": {
+    "normal": 0.7264437689969605,
+    "clickbait": 1.604026845637584
+  }
+}

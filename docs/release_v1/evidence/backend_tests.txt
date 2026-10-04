@@ -1,0 +1,33 @@
+C:\projectSamSung_v1\.venv\lib\site-packages\fastapi\testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.
+  from starlette.testclient import TestClient as TestClient  # noqa
+test_clickbait_routes_title_only (test_adapters.AdapterTests) ... ok
+test_consistency_routes_three_fields (test_adapters.AdapterTests) ... ok
+test_empty_description_warns (test_adapters.AdapterTests) ... ok
+test_invalid_input (test_adapters.AdapterTests) ... ok
+test_shared_pipeline (test_adapters.AdapterTests) ... ok
+test_blank_raw_rejected_and_underscore_rejected (test_api_m1_pyvi_v1.M1PyviAPITests) ... ok
+test_default_raw_input_still_skips_m1 (test_api_m1_pyvi_v1.M1PyviAPITests) ... ok
+test_explicit_raw_route_has_warning (test_api_m1_pyvi_v1.M1PyviAPITests) ... ok
+test_invalid_mode_rejected_before_inference (test_api_m1_pyvi_v1.M1PyviAPITests) ... ok
+test_presegmented_route_stays_unchanged (test_api_m1_pyvi_v1.M1PyviAPITests) ... ok
+test_raw_input_rejects_joins_without_original_space (test_api_m1_pyvi_v1.M1PyviAPITests) ... ok
+test_raw_input_rejects_unexpected_surface_change_without_model_calls (test_api_m1_pyvi_v1.M1PyviAPITests) ... ok
+test_reject_ambiguous_dual_input (test_api_m1_pyvi_v1.M1PyviAPITests) ... ok
+test_segmenter_exception_has_no_user_text (test_api_m1_pyvi_v1.M1PyviAPITests) ... ok
+test_segmenter_function_nfc_and_punctuation (test_api_m1_pyvi_v1.M1PyviAPITests) ... ok
+test_unified_explicit_opt_in_runs_three_models (test_api_m1_pyvi_v1.M1PyviAPITests) ... ok
+test_blank_and_missing_inputs_rejected (test_api_v1.APIContractTests) ... ok
+test_failed_model_does_not_leak_exception_or_article (test_api_v1.APIContractTests) ... Inference failed: RuntimeError
+ok
+test_health_and_models (test_api_v1.APIContractTests) ... ok
+test_health_before_startup_is_not_ready (test_api_v1.APIContractTests) ... ok
+test_oversized_body_field_rejected (test_api_v1.APIContractTests) ... ok
+test_single_gpu_lock_serializes_requests (test_api_v1.APIContractTests) ... ok
+test_three_individual_routes (test_api_v1.APIContractTests) ... ok
+test_unified_raw_input_skips_m1_explicitly (test_api_v1.APIContractTests) ... ok
+test_unified_with_presegmented_text_runs_all_three (test_api_v1.APIContractTests) ... ok
+
+----------------------------------------------------------------------
+Ran 25 tests in 0.357s
+
+OK

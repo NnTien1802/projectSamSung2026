@@ -1,0 +1,3 @@
+﻿selection_tier,n,correct_negative,false_positive,negative_recall
+FALLBACK,14846,13815,1031,0.9305536844941399
+PRIMARY,13867,12248,1619,0.8832479988461815

@@ -1,0 +1,58 @@
+{
+  "threshold": 0.5,
+  "word_positions": 6563152,
+  "error_words": 33920,
+  "clean_words": 6529232,
+  "word_error_rate": 0.005168248426975331,
+  "word_precision": 0.855492093711989,
+  "word_recall": 0.9538030660377359,
+  "word_f1": 0.9019766372076166,
+  "average_precision": 0.9526637751852018,
+  "covered_word_average_precision": 0.9873529641423672,
+  "roc_auc": 0.9652205551210686,
+  "tp": 32353,
+  "fp": 5465,
+  "fn": 1567,
+  "word_coverage": 0.9645296954877778,
+  "error_word_coverage": 0.9646816037735849,
+  "covered_words": 6330355,
+  "covered_error_words": 32722,
+  "documents": 14381,
+  "documents_with_any_error_word_detected": 14252,
+  "documents_with_all_error_words_detected": 13349,
+  "document_any_error_recall": 0.9910298310270496,
+  "document_all_errors_recall": 0.9282386482163967,
+  "severity_recall": {
+    "minor": {
+      "error_words": 8200,
+      "recall": 0.9602439024390244
+    },
+    "moderate": {
+      "error_words": 13752,
+      "recall": 0.9522978475858057
+    },
+    "severe": {
+      "error_words": 11968,
+      "recall": 0.9511196524064172
+    }
+  },
+  "field_recall": {
+    "title": {
+      "error_words": 825,
+      "recall": 0.9709090909090909
+    },
+    "abstract": {
+      "error_words": 2209,
+      "recall": 0.9895880488909009
+    },
+    "article": {
+      "error_words": 30886,
+      "recall": 0.9507867642297481
+    }
+  },
+  "validation_loss_per_occurrence": 0.00526822046775843,
+  "validation_seconds": 119.24005556106567,
+  "epoch": 2,
+  "average_train_loss": 0.005357698539731419,
+  "epoch_training_seconds": 2047.25492978096
+}

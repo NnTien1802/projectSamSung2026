@@ -1,0 +1,657 @@
+{
+  "created_utc": "2026-09-23T19:42:08.416730+00:00",
+  "validation_path": "C:\\projectSamSung_v1\\data\\processed\\vn_newsspell_v1\\validation.jsonl",
+  "scanned": 60,
+  "sample_count": 60,
+  "overall": {
+    "surface_changed": 46,
+    "surface_preserved": 14
+  },
+  "by_label": {
+    "0": {
+      "surface_changed": 23,
+      "surface_preserved": 7
+    },
+    "1": {
+      "surface_changed": 23,
+      "surface_preserved": 7
+    }
+  },
+  "common_changes": [
+    {
+      "operation": "replace",
+      "original_fragment": "uỷ",
+      "candidate_fragment": "ủy",
+      "count": 49
+    },
+    {
+      "operation": "replace",
+      "original_fragment": "oá",
+      "candidate_fragment": "óa",
+      "count": 34
+    },
+    {
+      "operation": "replace",
+      "original_fragment": "oẻ",
+      "candidate_fragment": "ỏe",
+      "count": 22
+    },
+    {
+      "operation": "replace",
+      "original_fragment": "oà",
+      "candidate_fragment": "òa",
+      "count": 22
+    },
+    {
+      "operation": "replace",
+      "original_fragment": "oả",
+      "candidate_fragment": "ỏa",
+      "count": 16
+    },
+    {
+      "operation": "replace",
+      "original_fragment": "uỹ",
+      "candidate_fragment": "ũy",
+      "count": 8
+    },
+    {
+      "operation": "replace",
+      "original_fragment": "uý",
+      "candidate_fragment": "úy",
+      "count": 8
+    },
+    {
+      "operation": "replace",
+      "original_fragment": "oạ",
+      "candidate_fragment": "ọa",
+      "count": 6
+    },
+    {
+      "operation": "replace",
+      "original_fragment": "uỵ",
+      "candidate_fragment": "ụy",
+      "count": 6
+    },
+    {
+      "operation": "replace",
+      "original_fragment": "Uỷ",
+      "candidate_fragment": "Ủy",
+      "count": 2
+    },
+    {
+      "operation": "replace",
+      "original_fragment": "uỳ",
+      "candidate_fragment": "ùy",
+      "count": 1
+    }
+  ],
+  "examples_by_label": {
+    "0": [
+      {
+        "variant_id": "0000e2af609a08cda405_clean",
+        "label": 0,
+        "original_visible_length": 1445,
+        "candidate_visible_length": 1445,
+        "change_count": 1,
+        "first_changes": [
+          {
+            "operation": "replace",
+            "original_fragment": "oá",
+            "candidate_fragment": "óa",
+            "original_codepoints": [
+              "U+006F LATIN SMALL LETTER O",
+              "U+00E1 LATIN SMALL LETTER A WITH ACUTE"
+            ],
+            "candidate_codepoints": [
+              "U+00F3 LATIN SMALL LETTER O WITH ACUTE",
+              "U+0061 LATIN SMALL LETTER A"
+            ],
+            "original_context": "đó,cổphiếuNBBrớtthảmkhiếngiátrịvốnhoá\"bốchơi\"hàngtrămtỉđồng.Mặcducổhiếug",
+            "candidate_context": "đó,cổphiếuNBBrớtthảmkhiếngiátrịvốnhóa\"bốchơi\"hàngtrămtỉđồng.Mặcducổhiếug"
+          }
+        ]
+      },
+      {
+        "variant_id": "00095cb1403c8d31b245_clean",
+        "label": 0,
+        "original_visible_length": 3051,
+        "candidate_visible_length": 3051,
+        "change_count": 3,
+        "first_changes": [
+          {
+            "operation": "replace",
+            "original_fragment": "uỹ",
+            "candidate_fragment": "ũy",
+            "original_codepoints": [
+              "U+0075 LATIN SMALL LETTER U",
+              "U+1EF9 LATIN SMALL LETTER Y WITH TILDE"
+            ],
+            "candidate_codepoints": [
+              "U+0169 LATIN SMALL LETTER U WITH TILDE",
+              "U+0079 LATIN SMALL LETTER Y"
+            ],
+            "original_context": "nlợingườilaođộng,khuyếnkhíchhọtíchluỹthờigianthamgiaBHXHđểcóđủđiềukiện,đ",
+            "candidate_context": "nlợingườilaođộng,khuyếnkhíchhọtíchlũythờigianthamgiaBHXHđểcóđủđiềukiện,đ"
+          },
+          {
+            "operation": "replace",
+            "original_fragment": "uỹ",
+            "candidate_fragment": "ũy",
+            "original_codepoints": [
+              "U+0075 LATIN SMALL LETTER U",
+              "U+1EF9 LATIN SMALL LETTER Y WITH TILDE"
+            ],
+            "candidate_codepoints": [
+              "U+0169 LATIN SMALL LETTER U WITH TILDE",
+              "U+0079 LATIN SMALL LETTER Y"
+            ],
+            "original_context": "ưvậy,ngườilaođộnghoàntoàncóthểtíchluỹđượcthờigianđểđủdiềukiệnnhậnlươnghư",
+            "candidate_context": "ưvậy,ngườilaođộnghoàntoàncóthểtíchlũyđượcthờigianđểđủdiềukiệnnhậnlươnghư"
+          },
+          {
+            "operation": "replace",
+            "original_fragment": "uỹ",
+            "candidate_fragment": "ũy",
+            "original_codepoints": [
+              "U+0075 LATIN SMALL LETTER U",
+              "U+1EF9 LATIN SMALL LETTER Y WITH TILDE"
+            ],
+            "candidate_codepoints": [
+              "U+0169 LATIN SMALL LETTER U WITH TILDE",
+              "U+0079 LATIN SMALL LETTER Y"
+            ],
+            "original_context": "14,Điều87quyđịnh,trườnghợpmuốntíchluỹthờigianđóngbảohiểmtheohướngtựnguyệ",
+            "candidate_context": "14,Điều87quyđịnh,trườnghợpmuốntíchlũythờigianđóngbảohiểmtheohướngtựnguyệ"
+          }
+        ]
+      },
+      {
+        "variant_id": "000d0f7fd068da45a652_clean",
+        "label": 0,
+        "original_visible_length": 1300,
+        "candidate_visible_length": 1300,
+        "change_count": 5,
+        "first_changes": [
+          {
+            "operation": "replace",
+            "original_fragment": "uỷ",
+            "candidate_fragment": "ủy",
+            "original_codepoints": [
+              "U+0075 LATIN SMALL LETTER U",
+              "U+1EF7 LATIN SMALL LETTER Y WITH HOOK ABOVE"
+            ],
+            "candidate_codepoints": [
+              "U+1EE7 LATIN SMALL LETTER U WITH HOOK ABOVE",
+              "U+0079 LATIN SMALL LETTER Y"
+            ],
+            "original_context": "Ca(SN1989,trútạithônLạiXá,xãThanhThuỷ,huyệnThanhHà,tỉnhHảiDương)đểđiềutr",
+            "candidate_context": "Ca(SN1989,trútạithônLạiXá,xãThanhThủy,huyệnThanhHà,tỉnhHảiDương)đểđiềutr"
+          },
+          {
+            "operation": "replace",
+            "original_fragment": "oá",
+            "candidate_fragment": "óa",
+            "original_codepoints": [
+              "U+006F LATIN SMALL LETTER O",
+              "U+00E1 LATIN SMALL LETTER A WITH ACUTE"
+            ],
+            "candidate_codepoints": [
+              "U+00F3 LATIN SMALL LETTER O WITH ACUTE",
+              "U+0061 LATIN SMALL LETTER A"
+            ],
+            "original_context": "atìnhtrạngcácđốitượngđãcạycửa,phákhoávàotrộmcắptàisảnvàđồthờcúngtạimộtsố",
+            "candidate_context": "atìnhtrạngcácđốitượngđãcạycửa,phákhóavàotrộmcắptàisảnvàđồthờcúngtạimộtsố"
+          },
+          {
+            "operation": "replace",
+            "original_fragment": "oá",
+            "candidate_fragment": "óa",
+            "original_codepoints": [
+              "U+006F LATIN SMALL LETTER O",
+              "U+00E1 LATIN SMALL LETTER A WITH ACUTE"
+            ],
+            "candidate_codepoints": [
+              "U+00F3 LATIN SMALL LETTER O WITH ACUTE",
+              "U+0061 LATIN SMALL LETTER A"
+            ],
+            "original_context": "ễnVănCa,lựclượngcônganthugiữ1chìakhoáôtôcùngnhiềucôngcụphươngtiệngâyán.Đ",
+            "candidate_context": "ễnVănCa,lựclượngcônganthugiữ1chìakhóaôtôcùngnhiềucôngcụphươngtiệngâyán.Đ"
+          }
+        ]
+      },
+      {
+        "variant_id": "000e710c24356edaaa19_clean",
+        "label": 0,
+        "original_visible_length": 554,
+        "candidate_visible_length": 554,
+        "change_count": 4,
+        "first_changes": [
+          {
+            "operation": "replace",
+            "original_fragment": "oả",
+            "candidate_fragment": "ỏa",
+            "original_codepoints": [
+              "U+006F LATIN SMALL LETTER O",
+              "U+1EA3 LATIN SMALL LETTER A WITH HOOK ABOVE"
+            ],
+            "candidate_codepoints": [
+              "U+1ECF LATIN SMALL LETTER O WITH HOOK ABOVE",
+              "U+0061 LATIN SMALL LETTER A"
+            ],
+            "original_context": "hhãnghàngkhôngquốcgiaIran,chobiếtthoảthuậnkéodài10nămbaogồm50máybayBoein",
+            "candidate_context": "hhãnghàngkhôngquốcgiaIran,chobiếtthỏathuậnkéodài10nămbaogồm50máybayBoein"
+          },
+          {
+            "operation": "replace",
+            "original_fragment": "oả",
+            "candidate_fragment": "ỏa",
+            "original_codepoints": [
+              "U+006F LATIN SMALL LETTER O",
+              "U+1EA3 LATIN SMALL LETTER A WITH HOOK ABOVE"
+            ],
+            "candidate_codepoints": [
+              "U+1ECF LATIN SMALL LETTER O WITH HOOK ABOVE",
+              "U+0061 LATIN SMALL LETTER A"
+            ],
+            "original_context": "ặttạiTehranđểdựlễkýkết.Ôngchobiếtthoảthuậntrịgiá16,6tỷUSDđãđượcchínhphủM",
+            "candidate_context": "ặttạiTehranđểdựlễkýkết.Ôngchobiếtthỏathuậntrịgiá16,6tỷUSDđãđượcchínhphủM"
+          },
+          {
+            "operation": "replace",
+            "original_fragment": "oả",
+            "candidate_fragment": "ỏa",
+            "original_codepoints": [
+              "U+006F LATIN SMALL LETTER O",
+              "U+1EA3 LATIN SMALL LETTER A WITH HOOK ABOVE"
+            ],
+            "candidate_codepoints": [
+              "U+1ECF LATIN SMALL LETTER O WITH HOOK ABOVE",
+              "U+0061 LATIN SMALL LETTER A"
+            ],
+            "original_context": "79.Boeinghồitháng6chobiếthãngđãkýthoảthuậndựkiếnbán100máybaychoIranAir.H",
+            "candidate_context": "79.Boeinghồitháng6chobiếthãngđãkýthỏathuậndựkiếnbán100máybaychoIranAir.H"
+          }
+        ]
+      },
+      {
+        "variant_id": "0014e4941ce07ee64a6e_clean",
+        "label": 0,
+        "original_visible_length": 818,
+        "candidate_visible_length": 818,
+        "change_count": 4,
+        "first_changes": [
+          {
+            "operation": "replace",
+            "original_fragment": "uỷ",
+            "candidate_fragment": "ủy",
+            "original_codepoints": [
+              "U+0075 LATIN SMALL LETTER U",
+              "U+1EF7 LATIN SMALL LETTER Y WITH HOOK ABOVE"
+            ],
+            "candidate_codepoints": [
+              "U+1EE7 LATIN SMALL LETTER U WITH HOOK ABOVE",
+              "U+0079 LATIN SMALL LETTER Y"
+            ],
+            "original_context": "hểtạicôngtrườngthicônghệthốngkênhthuỷlợiNgànTrươi–CẩmTrang.Theođó,vàokho",
+            "candidate_context": "hểtạicôngtrườngthicônghệthốngkênhthủylợiNgànTrươi–CẩmTrang.Theođó,vàokho"
+          },
+          {
+            "operation": "replace",
+            "original_fragment": "uỷ",
+            "candidate_fragment": "ủy",
+            "original_codepoints": [
+              "U+0075 LATIN SMALL LETTER U",
+              "U+1EF7 LATIN SMALL LETTER Y WITH HOOK ABOVE"
+            ],
+            "candidate_codepoints": [
+              "U+1EE7 LATIN SMALL LETTER U WITH HOOK ABOVE",
+              "U+0079 LATIN SMALL LETTER Y"
+            ],
+            "original_context": "họvềsanlấpmặtbằngthicôngcôngtrìnhthuỷlợiNgànTrươi–Cẩm(thuộcxãĐứcLong).Kh",
+            "candidate_context": "họvềsanlấpmặtbằngthicôngcôngtrìnhthủylợiNgànTrươi–Cẩm(thuộcxãĐứcLong).Kh"
+          },
+          {
+            "operation": "replace",
+            "original_fragment": "oả",
+            "candidate_fragment": "ỏa",
+            "original_codepoints": [
+              "U+006F LATIN SMALL LETTER O",
+              "U+1EA3 LATIN SMALL LETTER A WITH HOOK ABOVE"
+            ],
+            "candidate_codepoints": [
+              "U+1ECF LATIN SMALL LETTER O WITH HOOK ABOVE",
+              "U+0061 LATIN SMALL LETTER A"
+            ],
+            "original_context": "etảiđổđấttạicôngtrìnhthìmọingườitáhoảpháthiệnmộtthithểnamgiớitrôitừtrênx",
+            "candidate_context": "etảiđổđấttạicôngtrìnhthìmọingườitáhỏapháthiệnmộtthithểnamgiớitrôitừtrênx"
+          }
+        ]
+      },
+      {
+        "variant_id": "00170ab4db819bcae4b2_clean",
+        "label": 0,
+        "original_visible_length": 2219,
+        "candidate_visible_length": 2219,
+        "change_count": 2,
+        "first_changes": [
+          {
+            "operation": "replace",
+            "original_fragment": "oả",
+            "candidate_fragment": "ỏa",
+            "original_codepoints": [
+              "U+006F LATIN SMALL LETTER O",
+              "U+1EA3 LATIN SMALL LETTER A WITH HOOK ABOVE"
+            ],
+            "candidate_codepoints": [
+              "U+1ECF LATIN SMALL LETTER O WITH HOOK ABOVE",
+              "U+0061 LATIN SMALL LETTER A"
+            ],
+            "original_context": "iíchkháccủangườilaođộngđểđổilấysựthoảthuậnvềtìnhdụcđềubịquylà\"quấyrốitìn",
+            "candidate_context": "iíchkháccủangườilaođộngđểđổilấysựthỏathuậnvềtìnhdụcđềubịquylà\"quấyrốitìn"
+          },
+          {
+            "operation": "replace",
+            "original_fragment": "oá",
+            "candidate_fragment": "óa",
+            "original_codepoints": [
+              "U+006F LATIN SMALL LETTER O",
+              "U+00E1 LATIN SMALL LETTER A WITH ACUTE"
+            ],
+            "candidate_codepoints": [
+              "U+00F3 LATIN SMALL LETTER O WITH ACUTE",
+              "U+0061 LATIN SMALL LETTER A"
+            ],
+            "original_context": "ưavàotrongnộiquy,quychếcụthể,cụthểhoáđểngườilaođộngnhậnrõhànhviquấyrốitì",
+            "candidate_context": "ưavàotrongnộiquy,quychếcụthể,cụthểhóađểngườilaođộngnhậnrõhànhviquấyrốitì"
+          }
+        ]
+      }
+    ],
+    "1": [
+      {
+        "variant_id": "0000e2af609a08cda405_noisy_0",
+        "label": 1,
+        "original_visible_length": 1445,
+        "candidate_visible_length": 1445,
+        "change_count": 1,
+        "first_changes": [
+          {
+            "operation": "replace",
+            "original_fragment": "oá",
+            "candidate_fragment": "óa",
+            "original_codepoints": [
+              "U+006F LATIN SMALL LETTER O",
+              "U+00E1 LATIN SMALL LETTER A WITH ACUTE"
+            ],
+            "candidate_codepoints": [
+              "U+00F3 LATIN SMALL LETTER O WITH ACUTE",
+              "U+0061 LATIN SMALL LETTER A"
+            ],
+            "original_context": "đó,cổphiếuNBBrớtthảmkhiếngiátrịvốnhoá\"bốchơi\"hàngtrămtỉđồng.Mặcducổhiếug",
+            "candidate_context": "đó,cổphiếuNBBrớtthảmkhiếngiátrịvốnhóa\"bốchơi\"hàngtrămtỉđồng.Mặcducổhiếug"
+          }
+        ]
+      },
+      {
+        "variant_id": "00095cb1403c8d31b245_noisy_0",
+        "label": 1,
+        "original_visible_length": 3051,
+        "candidate_visible_length": 3051,
+        "change_count": 3,
+        "first_changes": [
+          {
+            "operation": "replace",
+            "original_fragment": "uỹ",
+            "candidate_fragment": "ũy",
+            "original_codepoints": [
+              "U+0075 LATIN SMALL LETTER U",
+              "U+1EF9 LATIN SMALL LETTER Y WITH TILDE"
+            ],
+            "candidate_codepoints": [
+              "U+0169 LATIN SMALL LETTER U WITH TILDE",
+              "U+0079 LATIN SMALL LETTER Y"
+            ],
+            "original_context": "nlợingườilaođộng,khuyếnkhíchhọtíhcluỹthờigianthamgiaBHXHđểcóđủđiềukiện,đ",
+            "candidate_context": "nlợingườilaođộng,khuyếnkhíchhọtíhclũythờigianthamgiaBHXHđểcóđủđiềukiện,đ"
+          },
+          {
+            "operation": "replace",
+            "original_fragment": "uỹ",
+            "candidate_fragment": "ũy",
+            "original_codepoints": [
+              "U+0075 LATIN SMALL LETTER U",
+              "U+1EF9 LATIN SMALL LETTER Y WITH TILDE"
+            ],
+            "candidate_codepoints": [
+              "U+0169 LATIN SMALL LETTER U WITH TILDE",
+              "U+0079 LATIN SMALL LETTER Y"
+            ],
+            "original_context": "ưvậy,ngườilaođộnghoàntoàncóthểtíchluỹđượcthờigianđểđủdiềukiệnnhậnlươnghư",
+            "candidate_context": "ưvậy,ngườilaođộnghoàntoàncóthểtíchlũyđượcthờigianđểđủdiềukiệnnhậnlươnghư"
+          },
+          {
+            "operation": "replace",
+            "original_fragment": "uỹ",
+            "candidate_fragment": "ũy",
+            "original_codepoints": [
+              "U+0075 LATIN SMALL LETTER U",
+              "U+1EF9 LATIN SMALL LETTER Y WITH TILDE"
+            ],
+            "candidate_codepoints": [
+              "U+0169 LATIN SMALL LETTER U WITH TILDE",
+              "U+0079 LATIN SMALL LETTER Y"
+            ],
+            "original_context": "14,Điều87quyđịnh,trườnghợpmuốntíchluỹthờigianđóngbảohiểmtheohướngtựnguyệ",
+            "candidate_context": "14,Điều87quyđịnh,trườnghợpmuốntíchlũythờigianđóngbảohiểmtheohướngtựnguyệ"
+          }
+        ]
+      },
+      {
+        "variant_id": "000d0f7fd068da45a652_noisy_0",
+        "label": 1,
+        "original_visible_length": 1299,
+        "candidate_visible_length": 1299,
+        "change_count": 5,
+        "first_changes": [
+          {
+            "operation": "replace",
+            "original_fragment": "uỷ",
+            "candidate_fragment": "ủy",
+            "original_codepoints": [
+              "U+0075 LATIN SMALL LETTER U",
+              "U+1EF7 LATIN SMALL LETTER Y WITH HOOK ABOVE"
+            ],
+            "candidate_codepoints": [
+              "U+1EE7 LATIN SMALL LETTER U WITH HOOK ABOVE",
+              "U+0079 LATIN SMALL LETTER Y"
+            ],
+            "original_context": "Ca(SN1989,trútạithônLạiXá,xãThanhThuỷ,huyệnThanhHà,tỉnhHảiDương)đểđiềuch",
+            "candidate_context": "Ca(SN1989,trútạithônLạiXá,xãThanhThủy,huyệnThanhHà,tỉnhHảiDương)đểđiềuch"
+          },
+          {
+            "operation": "replace",
+            "original_fragment": "oá",
+            "candidate_fragment": "óa",
+            "original_codepoints": [
+              "U+006F LATIN SMALL LETTER O",
+              "U+00E1 LATIN SMALL LETTER A WITH ACUTE"
+            ],
+            "candidate_codepoints": [
+              "U+00F3 LATIN SMALL LETTER O WITH ACUTE",
+              "U+0061 LATIN SMALL LETTER A"
+            ],
+            "original_context": "atìnhtrạngcácđốitượngđãcạycửa,phákhoávàotrộmcắptàisảnvàđồthờcúngtạimộtsố",
+            "candidate_context": "atìnhtrạngcácđốitượngđãcạycửa,phákhóavàotrộmcắptàisảnvàđồthờcúngtạimộtsố"
+          },
+          {
+            "operation": "replace",
+            "original_fragment": "oá",
+            "candidate_fragment": "óa",
+            "original_codepoints": [
+              "U+006F LATIN SMALL LETTER O",
+              "U+00E1 LATIN SMALL LETTER A WITH ACUTE"
+            ],
+            "candidate_codepoints": [
+              "U+00F3 LATIN SMALL LETTER O WITH ACUTE",
+              "U+0061 LATIN SMALL LETTER A"
+            ],
+            "original_context": "ễnVănCa,lựclượngcônganthugiữ1chìakhoáôtôcùngnhiềucôngcụphươngtiệngâyán.Đ",
+            "candidate_context": "ễnVănCa,lựclượngcônganthugiữ1chìakhóaôtôcùngnhiềucôngcụphươngtiệngâyán.Đ"
+          }
+        ]
+      },
+      {
+        "variant_id": "000e710c24356edaaa19_noisy_0",
+        "label": 1,
+        "original_visible_length": 554,
+        "candidate_visible_length": 554,
+        "change_count": 4,
+        "first_changes": [
+          {
+            "operation": "replace",
+            "original_fragment": "oả",
+            "candidate_fragment": "ỏa",
+            "original_codepoints": [
+              "U+006F LATIN SMALL LETTER O",
+              "U+1EA3 LATIN SMALL LETTER A WITH HOOK ABOVE"
+            ],
+            "candidate_codepoints": [
+              "U+1ECF LATIN SMALL LETTER O WITH HOOK ABOVE",
+              "U+0061 LATIN SMALL LETTER A"
+            ],
+            "original_context": "hhãnghàngkhôngquốcgiaIran,chobiếtthoảthuậnkéodài10nămbaogồm50máybayBoein",
+            "candidate_context": "hhãnghàngkhôngquốcgiaIran,chobiếtthỏathuậnkéodài10nămbaogồm50máybayBoein"
+          },
+          {
+            "operation": "replace",
+            "original_fragment": "oả",
+            "candidate_fragment": "ỏa",
+            "original_codepoints": [
+              "U+006F LATIN SMALL LETTER O",
+              "U+1EA3 LATIN SMALL LETTER A WITH HOOK ABOVE"
+            ],
+            "candidate_codepoints": [
+              "U+1ECF LATIN SMALL LETTER O WITH HOOK ABOVE",
+              "U+0061 LATIN SMALL LETTER A"
+            ],
+            "original_context": "ặttạiTehranđểdựlễkýkết.Nôgchobiếtthoảthuậntrịgiá16,6tỷUSDđãđượcchínhphủM",
+            "candidate_context": "ặttạiTehranđểdựlễkýkết.Nôgchobiếtthỏathuậntrịgiá16,6tỷUSDđãđượcchínhphủM"
+          },
+          {
+            "operation": "replace",
+            "original_fragment": "oả",
+            "candidate_fragment": "ỏa",
+            "original_codepoints": [
+              "U+006F LATIN SMALL LETTER O",
+              "U+1EA3 LATIN SMALL LETTER A WITH HOOK ABOVE"
+            ],
+            "candidate_codepoints": [
+              "U+1ECF LATIN SMALL LETTER O WITH HOOK ABOVE",
+              "U+0061 LATIN SMALL LETTER A"
+            ],
+            "original_context": "79.Boeinghồitháng6chobiếthãngđãkýthoảthuậndựkiếnbán100máybaychoIranAir.H",
+            "candidate_context": "79.Boeinghồitháng6chobiếthãngđãkýthỏathuậndựkiếnbán100máybaychoIranAir.H"
+          }
+        ]
+      },
+      {
+        "variant_id": "0014e4941ce07ee64a6e_noisy_0",
+        "label": 1,
+        "original_visible_length": 818,
+        "candidate_visible_length": 818,
+        "change_count": 4,
+        "first_changes": [
+          {
+            "operation": "replace",
+            "original_fragment": "uỷ",
+            "candidate_fragment": "ủy",
+            "original_codepoints": [
+              "U+0075 LATIN SMALL LETTER U",
+              "U+1EF7 LATIN SMALL LETTER Y WITH HOOK ABOVE"
+            ],
+            "candidate_codepoints": [
+              "U+1EE7 LATIN SMALL LETTER U WITH HOOK ABOVE",
+              "U+0079 LATIN SMALL LETTER Y"
+            ],
+            "original_context": "hểtạicôngtrườngthicônghệthốngkênhthuỷlợiNgànTrươi–CẩmTrang.Theođó,vàokho",
+            "candidate_context": "hểtạicôngtrườngthicônghệthốngkênhthủylợiNgànTrươi–CẩmTrang.Theođó,vàokho"
+          },
+          {
+            "operation": "replace",
+            "original_fragment": "uỷ",
+            "candidate_fragment": "ủy",
+            "original_codepoints": [
+              "U+0075 LATIN SMALL LETTER U",
+              "U+1EF7 LATIN SMALL LETTER Y WITH HOOK ABOVE"
+            ],
+            "candidate_codepoints": [
+              "U+1EE7 LATIN SMALL LETTER U WITH HOOK ABOVE",
+              "U+0079 LATIN SMALL LETTER Y"
+            ],
+            "original_context": "họvềsanlấpmặtbằngthicôngcôngtrìnhthuỷlợiNgànTrươi–Cẩm(thuộcxãĐứcLong).Kh",
+            "candidate_context": "họvềsanlấpmặtbằngthicôngcôngtrìnhthủylợiNgànTrươi–Cẩm(thuộcxãĐứcLong).Kh"
+          },
+          {
+            "operation": "replace",
+            "original_fragment": "oả",
+            "candidate_fragment": "ỏa",
+            "original_codepoints": [
+              "U+006F LATIN SMALL LETTER O",
+              "U+1EA3 LATIN SMALL LETTER A WITH HOOK ABOVE"
+            ],
+            "candidate_codepoints": [
+              "U+1ECF LATIN SMALL LETTER O WITH HOOK ABOVE",
+              "U+0061 LATIN SMALL LETTER A"
+            ],
+            "original_context": "etảiđổđấttạicôngtrìnhthìmọingườitáhoảpháthiệnmộtthithểnamgiớitrôitừtrênx",
+            "candidate_context": "etảiđổđấttạicôngtrìnhthìmọingườitáhỏapháthiệnmộtthithểnamgiớitrôitừtrênx"
+          }
+        ]
+      },
+      {
+        "variant_id": "00170ab4db819bcae4b2_noisy_0",
+        "label": 1,
+        "original_visible_length": 2219,
+        "candidate_visible_length": 2219,
+        "change_count": 2,
+        "first_changes": [
+          {
+            "operation": "replace",
+            "original_fragment": "oả",
+            "candidate_fragment": "ỏa",
+            "original_codepoints": [
+              "U+006F LATIN SMALL LETTER O",
+              "U+1EA3 LATIN SMALL LETTER A WITH HOOK ABOVE"
+            ],
+            "candidate_codepoints": [
+              "U+1ECF LATIN SMALL LETTER O WITH HOOK ABOVE",
+              "U+0061 LATIN SMALL LETTER A"
+            ],
+            "original_context": "iíchkháccủangườilaođộngđểđổilấysựthoảthuậnvềtìnhdụcđềubịquylà\"quấyrốitìn",
+            "candidate_context": "iíchkháccủangườilaođộngđểđổilấysựthỏathuậnvềtìnhdụcđềubịquylà\"quấyrốitìn"
+          },
+          {
+            "operation": "replace",
+            "original_fragment": "oá",
+            "candidate_fragment": "óa",
+            "original_codepoints": [
+              "U+006F LATIN SMALL LETTER O",
+              "U+00E1 LATIN SMALL LETTER A WITH ACUTE"
+            ],
+            "candidate_codepoints": [
+              "U+00F3 LATIN SMALL LETTER O WITH ACUTE",
+              "U+0061 LATIN SMALL LETTER A"
+            ],
+            "original_context": "ưavàotrongnộiquy,quychếcụthể,cụthểhoáđểngườilaođộngnhậnrõhànhviquấyrốitì",
+            "candidate_context": "ưavàotrongnộiquy,quychếcụthể,cụthểhóađểngườilaođộngnhậnrõhànhviquấyrốitì"
+          }
+        ]
+      }
+    ]
+  },
+  "notes": [
+    "Visible surface means NFC Unicode with underscores and whitespace removed, identical to steps 12/13.",
+    "This diagnoses character changes but does not correct or infer the original word boundaries.",
+    "No model inference or test data was used."
+  ]
+}

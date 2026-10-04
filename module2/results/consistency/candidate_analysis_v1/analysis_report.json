@@ -1,0 +1,57 @@
+{
+  "module": "module2_headline_integrity",
+  "task": "headline_consistency",
+  "stage": "06_analyze_candidate_quality",
+  "analysis_split": "train",
+  "test_used": false,
+  "validation_used": false,
+  "candidate_rows": 1835464,
+  "anchors_with_candidates": 185769,
+  "similarity_percentiles": {
+    "0": 0.1000002846121788,
+    "1": 0.1058969771116972,
+    "5": 0.11955149918794632,
+    "10": 0.1306091621518135,
+    "25": 0.15596258640289307,
+    "50": 0.19768022000789642,
+    "75": 0.26192884147167206,
+    "90": 0.34627454280853265,
+    "95": 0.4100597292184827,
+    "99": 0.6133190393447876,
+    "100": 1.0
+  },
+  "similarity_bin_counts": {
+    "0.15-0.20": 550349,
+    "0.10-0.15": 389595,
+    "0.70-1.00": 11144,
+    "0.20-0.25": 373936,
+    "0.40-0.55": 74794,
+    "0.30-0.40": 202466,
+    "0.25-0.30": 217128,
+    "0.55-0.70": 16052
+  },
+  "rank_counts": {
+    "1": 185769,
+    "2": 185663,
+    "3": 185458,
+    "4": 185052,
+    "5": 184565,
+    "6": 183870,
+    "7": 182988,
+    "8": 181966,
+    "9": 180732,
+    "10": 179401
+  },
+  "manual_review_rows": 240,
+  "manual_review_instruction": {
+    "VALID_NEGATIVE": "candidate headline is clearly not supported by anchor article",
+    "FALSE_NEGATIVE": "candidate headline is actually compatible with anchor article",
+    "AMBIGUOUS": "cannot confidently determine from the article/context"
+  },
+  "outputs": {
+    "similarity_distribution": "results\\consistency\\candidate_analysis_v1\\similarity_distribution.csv",
+    "rank_distribution": "results\\consistency\\candidate_analysis_v1\\rank_distribution.csv",
+    "category_distribution": "results\\consistency\\candidate_analysis_v1\\category_distribution.csv",
+    "manual_review": "results\\consistency\\candidate_analysis_v1\\manual_review_sample.csv"
+  }
+}

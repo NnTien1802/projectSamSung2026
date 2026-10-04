@@ -1,0 +1,17 @@
+﻿split,source,n,normal,clickbait,clickbait_rate
+train,Báo Mới,517,408,109,0.21083172147001933
+train,VnExpress,416,364,52,0.125
+train,Thanh Niên,404,284,120,0.297029702970297
+train,24h,401,225,176,0.4389027431421446
+train,VietNamNet,247,169,78,0.3157894736842105
+train,SaoStar,201,73,128,0.6368159203980099
+train,Tuổi Trẻ,167,116,51,0.30538922155688625
+train,Kênh14,37,6,31,0.8378378378378378
+validation,Báo Mới,120,102,18,0.15
+validation,VnExpress,91,76,15,0.16483516483516483
+validation,24h,85,49,36,0.4235294117647059
+validation,Thanh Niên,80,47,33,0.4125
+validation,VietNamNet,58,40,18,0.3103448275862069
+validation,SaoStar,37,11,26,0.7027027027027027
+validation,Tuổi Trẻ,32,24,8,0.25
+validation,Kênh14,9,3,6,0.6666666666666666

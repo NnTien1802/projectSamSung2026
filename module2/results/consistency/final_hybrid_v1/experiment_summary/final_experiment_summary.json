@@ -1,0 +1,190 @@
+{
+  "project": "projectSamSung",
+  "module": "Module 2 - Headline Integrity",
+  "task": "Task 2B - Headline-Article Consistency",
+  "experiment_version": "headline_consistency_v1",
+  "status": "COMPLETED",
+  "dataset": {
+    "train": {
+      "split": "train",
+      "pairs": 306004,
+      "anchors": 153002,
+      "headline_articles": 158025,
+      "label_0": 153002,
+      "label_1": 153002,
+      "duplicate_pair_ids": 0
+    },
+    "validation": {
+      "split": "validation",
+      "pairs": 57426,
+      "anchors": 28713,
+      "headline_articles": 30415,
+      "label_0": 28713,
+      "label_1": 28713,
+      "duplicate_pair_ids": 0
+    },
+    "test": {
+      "split": "test",
+      "pairs": 57376,
+      "anchors": 28688,
+      "headline_articles": 30325,
+      "label_0": 28688,
+      "label_1": 28688,
+      "duplicate_pair_ids": 0
+    },
+    "total_pairs": 420806,
+    "total_anchors": 210403,
+    "construction": {
+      "positive": "Original article title paired with its own article.",
+      "negative": "Synthetic same-category hard negative headline.",
+      "negative_policy": {
+        "PRIMARY": "candidate rank 4-10, 0.20 <= lexical similarity < 0.40",
+        "FALLBACK": "candidate rank 4-10, 0.15 <= lexical similarity < 0.20"
+      }
+    }
+  },
+  "validation_models": {
+    "baseline_a": {
+      "model": "Baseline A",
+      "architecture": "headline + description",
+      "split": "validation",
+      "macro_f1_at_0_5": 0.8960946997843049,
+      "accuracy_at_0_5": 0.8962316720649184,
+      "roc_auc": 0.9658197126429778,
+      "tuned_threshold": 0.43000000000000005,
+      "macro_f1_tuned": 0.8966718738837183,
+      "accuracy_tuned": 0.8966844286560095,
+      "test_used": false
+    },
+    "baseline_b": {
+      "model": "Baseline B",
+      "architecture": "headline + article head",
+      "split": "validation",
+      "macro_f1_at_0_5": 0.8597442927856901,
+      "accuracy_at_0_5": 0.8599240762024171,
+      "roc_auc": 0.9410042717317337,
+      "tuned_threshold": 0.45000000000000007,
+      "macro_f1_tuned": 0.8614223379134691,
+      "accuracy_tuned": 0.8614390694110682,
+      "test_used": false
+    },
+    "max_mil": {
+      "model": "MAX-MIL",
+      "architecture": "headline + full article chunks",
+      "split": "validation",
+      "macro_f1_at_0_5": 0.8974022725648538,
+      "accuracy_at_0_5": 0.897468045832898,
+      "roc_auc": 0.9658074169699808,
+      "tuned_threshold": 0.4100000000000001,
+      "macro_f1_tuned": 0.9002711507054522,
+      "accuracy_tuned": 0.9002716539546547,
+      "test_used": false
+    }
+  },
+  "validation_fusion": {
+    "protocol": "Validation split divided by anchor_article_uid into calibration and holdout subsets.",
+    "description_macro_f1": 0.8971057111714429,
+    "mil_macro_f1": 0.8986813756743509,
+    "fusion_macro_f1": 0.9377979857975571,
+    "description_weight": 0.5,
+    "mil_weight": 0.5,
+    "threshold": 0.45000000000000007
+  },
+  "final_model": {
+    "architecture": "Probability fusion of description mBERT and full-article MAX-MIL mBERT.",
+    "description_weight": 0.5,
+    "mil_weight": 0.5,
+    "decision_threshold": 0.45,
+    "description_checkpoint": "models\\consistency\\baseline_title_description_mbert\\best_model.pt",
+    "mil_checkpoint": "models\\consistency\\full_article_max_mil_mbert\\best_model.pt",
+    "configuration_lock": "results\\consistency\\final_hybrid_v1\\final_model_lock.json"
+  },
+  "official_test": {
+    "pairs": 57376,
+    "anchors": 28688,
+    "accuracy": 0.9395914668153932,
+    "precision_consistent": 0.9372442965120311,
+    "recall_consistent": 0.9422755158951478,
+    "f1_consistent": 0.9397531722579524,
+    "macro_f1": 0.9395910316219684,
+    "roc_auc": 0.9845379930509566,
+    "average_precision": 0.9845682749831874,
+    "confusion_matrix": {
+      "tn": 26878,
+      "fp": 1810,
+      "fn": 1656,
+      "tp": 27032
+    },
+    "configuration_frozen_before_test": true,
+    "test_tuning_performed": false,
+    "negative_tiers": [
+      {
+        "tier": "FALLBACK",
+        "n": 14639,
+        "negative_recall": 0.9571008948698682,
+        "false_positives": 628
+      },
+      {
+        "tier": "PRIMARY",
+        "n": 14049,
+        "negative_recall": 0.9158658979286782,
+        "false_positives": 1182
+      }
+    ],
+    "lowest_5_categories": [
+      {
+        "category": "Giáo dục",
+        "n": 5138,
+        "accuracy": 0.9274036590112884,
+        "macro_f1": 0.92740352426295,
+        "f1_consistent": 0.927502429543246
+      },
+      {
+        "category": "Kinh doanh",
+        "n": 7618,
+        "accuracy": 0.9276713048044106,
+        "macro_f1": 0.9276709446168588,
+        "f1_consistent": 0.9278323510150622
+      },
+      {
+        "category": "Thể thao",
+        "n": 8606,
+        "accuracy": 0.93016500116198,
+        "macro_f1": 0.93015786354338,
+        "f1_consistent": 0.9308639134936156
+      },
+      {
+        "category": "Sức khỏe",
+        "n": 3482,
+        "accuracy": 0.9336588167719702,
+        "macro_f1": 0.933658767526248,
+        "f1_consistent": 0.933715925394548
+      },
+      {
+        "category": "Thế giới",
+        "n": 2960,
+        "accuracy": 0.9344594594594594,
+        "macro_f1": 0.9344589807084056,
+        "f1_consistent": 0.9342818428184282
+      }
+    ]
+  },
+  "methodological_limitations": [
+    "Original positive pairs are presumed consistent rather than individually human-verified.",
+    "Negative pairs are synthetic hard negatives rather than naturally occurring misleading headlines.",
+    "The official test set is an independent split of the same synthetic-negative construction pipeline, not a human-gold real-world benchmark.",
+    "Manual candidate validation covered a limited sample; false-negative synthetic pairs may still exist.",
+    "Reported official TEST performance must not be interpreted as direct real-world deployment accuracy."
+  ],
+  "recommended_next_evaluation": {
+    "name": "human_verified_consistency_eval",
+    "purpose": "Measure transfer from synthetic evaluation to human-verified headline/article consistency.",
+    "suggested_size": "Several hundred to approximately 1,000 pairs"
+  },
+  "artifacts": {
+    "official_test_metrics": "results\\consistency\\final_hybrid_v1\\official_test_metrics.json",
+    "official_test_predictions": "results\\consistency\\final_hybrid_v1\\official_test_predictions.parquet",
+    "official_test_categories": "results\\consistency\\final_hybrid_v1\\official_test_by_category.csv",
+    "official_test_negative_tiers": "results\\consistency\\final_hybrid_v1\\official_test_negative_by_tier.csv"
+  }
+}

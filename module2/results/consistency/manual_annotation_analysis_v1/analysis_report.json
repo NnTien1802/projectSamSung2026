@@ -1,0 +1,62 @@
+{
+  "module": "module2_headline_integrity",
+  "task": "headline_consistency",
+  "stage": "07_analyze_manual_annotations",
+  "rows": 240,
+  "validation": {
+    "empty_annotations": 0,
+    "duplicate_pair_ids": 0,
+    "invalid_labels": [],
+    "passed": true
+  },
+  "overall": {
+    "VALID_NEGATIVE": {
+      "count": 192,
+      "rate": 0.8
+    },
+    "FALSE_NEGATIVE": {
+      "count": 45,
+      "rate": 0.1875
+    },
+    "AMBIGUOUS": {
+      "count": 3,
+      "rate": 0.0125
+    }
+  },
+  "candidate_policy_v1": {
+    "primary": {
+      "rank": "4-10",
+      "similarity_min": 0.2,
+      "similarity_max_exclusive": 0.4,
+      "manual_evidence": {
+        "n": 30,
+        "valid_negative": 28,
+        "false_negative": 2,
+        "ambiguous": 0,
+        "valid_negative_rate": 0.9333333333333333
+      }
+    },
+    "fallback": {
+      "rank": "4-10",
+      "similarity_min": 0.15,
+      "similarity_max_exclusive": 0.2,
+      "manual_evidence": {
+        "n": 10,
+        "valid_negative": 10,
+        "false_negative": 0,
+        "ambiguous": 0,
+        "valid_negative_rate": 1.0
+      }
+    },
+    "forbidden_for_automatic_v1": {
+      "rank_1": true,
+      "rank_2_3": true,
+      "similarity_0_40_0_55": true
+    }
+  },
+  "notes": [
+    "Rules were designed using TRAIN manual annotations only.",
+    "Do not infer category-specific rules because category sample sizes are small and unequal.",
+    "Similarity x rank cells contain only about 10 reviewed examples; avoid overfitting fine-grained thresholds."
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "version": "unified_module2_v1",
+  "pipeline": {
+    "path": "inference\\headline_integrity_pipeline.py",
+    "sha256": "ac3137209f676c2e1e279a967ab642b20b05c8cc64a1c0edb741be052045ace9"
+  },
+  "models": {
+    "clickbait": {
+      "path": "models\\clickbait\\mbert_title_only_v1\\best_model.pt",
+      "sha256": "6c10d84f012cf05a0917e35abee4d8f006688315ab0570a3739bebea737efdf7"
+    },
+    "description_consistency": {
+      "path": "models\\consistency\\baseline_title_description_mbert\\best_model.pt",
+      "sha256": "eaacca14068da526c21a3c417d4b24b5073ac914194bd6d008290df68022d926"
+    },
+    "max_mil_consistency": {
+      "path": "models\\consistency\\full_article_max_mil_mbert\\best_model.pt",
+      "sha256": "eb6eba02e45a3d5fa8d6fa9d2fc5afee2fae3b918ac3ab0c79b477a7e5bbc5ad"
+    }
+  },
+  "source_locks": {
+    "clickbait": "results\\clickbait\\final_title_only_v1\\final_model_lock.json",
+    "consistency": "results\\consistency\\final_hybrid_v1\\final_model_lock.json"
+  },
+  "regression_evidence": "results\\integration\\regression_v1\\regression_report.json"
+}

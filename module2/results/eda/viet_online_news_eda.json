@@ -1,0 +1,156 @@
+{
+  "csv_files_found": 7,
+  "dataset_files_analyzed": [
+    {
+      "file": "processed\\dev.csv",
+      "split": "validation"
+    },
+    {
+      "file": "processed\\test.csv",
+      "split": "test"
+    },
+    {
+      "file": "processed\\train.csv",
+      "split": "train"
+    }
+  ],
+  "records": 265729,
+  "columns": [
+    "id",
+    "title",
+    "description",
+    "content",
+    "category"
+  ],
+  "detected_columns": {
+    "id": "id",
+    "title": "title",
+    "description": "description",
+    "content": "content",
+    "category": "category"
+  },
+  "split_counts": {
+    "validation": 39859,
+    "test": 39860,
+    "train": 186010
+  },
+  "category_distribution": {
+    "Thế giới": 14847,
+    "Giáo dục": 22433,
+    "Kinh doanh": 33242,
+    "Bất động sản": 6636,
+    "Giải trí": 40864,
+    "Sức khỏe": 16666,
+    "Khoa học công nghệ": 21008,
+    "Xe": 18805,
+    "Thời sự": 27399,
+    "Đời sống": 19116,
+    "Du lịch": 9179,
+    "Thể thao": 32278,
+    "Pháp luật": 3256
+  },
+  "missing": {
+    "id": 0,
+    "title": 0,
+    "description": 0,
+    "content": 0,
+    "category": 0
+  },
+  "duplicates": {
+    "id_duplicates_beyond_first": 0,
+    "normalized_title_duplicates_beyond_first": 412,
+    "normalized_content_duplicates_beyond_first": 0,
+    "title_content_duplicates_beyond_first": 0
+  },
+  "cross_split_overlap": {
+    "title": {
+      "test__train": 81,
+      "test__validation": 22,
+      "train__validation": 102
+    },
+    "content": {
+      "test__train": 0,
+      "test__validation": 0,
+      "train__validation": 0
+    },
+    "title_content_pair": {
+      "test__train": 0,
+      "test__validation": 0,
+      "train__validation": 0
+    }
+  },
+  "lengths": {
+    "title_chars": {
+      "count": 265729,
+      "min": 2,
+      "p25": 54.0,
+      "median": 64.0,
+      "mean": 62.92428376278088,
+      "p75": 73.0,
+      "p90": 79.0,
+      "p95": 82.0,
+      "p99": 94.0,
+      "max": 128
+    },
+    "title_words": {
+      "count": 265729,
+      "min": 1,
+      "p25": 12.0,
+      "median": 14.0,
+      "mean": 14.013073469587436,
+      "p75": 16.0,
+      "p90": 18.0,
+      "p95": 19.0,
+      "p99": 21.0,
+      "max": 30
+    },
+    "description_chars": {
+      "count": 265729,
+      "min": 1,
+      "p25": 135.0,
+      "median": 162.0,
+      "mean": 167.92551057656485,
+      "p75": 196.0,
+      "p90": 228.0,
+      "p95": 245.0,
+      "p99": 320.0,
+      "max": 602
+    },
+    "description_words": {
+      "count": 265729,
+      "min": 1,
+      "p25": 29.0,
+      "median": 36.0,
+      "mean": 36.78006916821273,
+      "p75": 43.0,
+      "p90": 50.0,
+      "p95": 54.0,
+      "p99": 70.0,
+      "max": 129
+    },
+    "content_chars": {
+      "count": 265729,
+      "min": 197,
+      "p25": 1950.0,
+      "median": 2794.0,
+      "mean": 3142.5218399196174,
+      "p75": 3931.0,
+      "p90": 5211.0,
+      "p95": 6296.0,
+      "p99": 8633.0,
+      "max": 163370
+    },
+    "content_words": {
+      "count": 265729,
+      "min": 50,
+      "p25": 423.0,
+      "median": 608.0,
+      "mean": 683.963357405477,
+      "p75": 857.0,
+      "p90": 1134.0,
+      "p95": 1375.0,
+      "p99": 1895.0,
+      "max": 36122
+    }
+  }
+}

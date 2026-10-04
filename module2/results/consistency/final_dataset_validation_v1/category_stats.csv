@@ -1,0 +1,79 @@
+﻿split,category,label,label_name,count
+train,Bất động sản,0,INCONSISTENT,3840
+train,Bất động sản,1,CONSISTENT,3840
+train,Du lịch,0,INCONSISTENT,5030
+train,Du lịch,1,CONSISTENT,5030
+train,Giáo dục,0,INCONSISTENT,12865
+train,Giáo dục,1,CONSISTENT,12865
+train,Giải trí,0,INCONSISTENT,23663
+train,Giải trí,1,CONSISTENT,23663
+train,Khoa học công nghệ,0,INCONSISTENT,12699
+train,Khoa học công nghệ,1,CONSISTENT,12699
+train,Kinh doanh,0,INCONSISTENT,19647
+train,Kinh doanh,1,CONSISTENT,19647
+train,Pháp luật,0,INCONSISTENT,1932
+train,Pháp luật,1,CONSISTENT,1932
+train,Sức khỏe,0,INCONSISTENT,9614
+train,Sức khỏe,1,CONSISTENT,9614
+train,Thế giới,0,INCONSISTENT,7903
+train,Thế giới,1,CONSISTENT,7903
+train,Thể thao,0,INCONSISTENT,20715
+train,Thể thao,1,CONSISTENT,20715
+train,Thời sự,0,INCONSISTENT,15990
+train,Thời sự,1,CONSISTENT,15990
+train,Xe,0,INCONSISTENT,10989
+train,Xe,1,CONSISTENT,10989
+train,Đời sống,0,INCONSISTENT,8115
+train,Đời sống,1,CONSISTENT,8115
+validation,Bất động sản,0,INCONSISTENT,746
+validation,Bất động sản,1,CONSISTENT,746
+validation,Du lịch,0,INCONSISTENT,939
+validation,Du lịch,1,CONSISTENT,939
+validation,Giáo dục,0,INCONSISTENT,2590
+validation,Giáo dục,1,CONSISTENT,2590
+validation,Giải trí,0,INCONSISTENT,4034
+validation,Giải trí,1,CONSISTENT,4034
+validation,Khoa học công nghệ,0,INCONSISTENT,2424
+validation,Khoa học công nghệ,1,CONSISTENT,2424
+validation,Kinh doanh,0,INCONSISTENT,3706
+validation,Kinh doanh,1,CONSISTENT,3706
+validation,Pháp luật,0,INCONSISTENT,355
+validation,Pháp luật,1,CONSISTENT,355
+validation,Sức khỏe,0,INCONSISTENT,1740
+validation,Sức khỏe,1,CONSISTENT,1740
+validation,Thế giới,0,INCONSISTENT,1511
+validation,Thế giới,1,CONSISTENT,1511
+validation,Thể thao,0,INCONSISTENT,4271
+validation,Thể thao,1,CONSISTENT,4271
+validation,Thời sự,0,INCONSISTENT,2855
+validation,Thời sự,1,CONSISTENT,2855
+validation,Xe,0,INCONSISTENT,2073
+validation,Xe,1,CONSISTENT,2073
+validation,Đời sống,0,INCONSISTENT,1469
+validation,Đời sống,1,CONSISTENT,1469
+test,Bất động sản,0,INCONSISTENT,749
+test,Bất động sản,1,CONSISTENT,749
+test,Du lịch,0,INCONSISTENT,926
+test,Du lịch,1,CONSISTENT,926
+test,Giáo dục,0,INCONSISTENT,2569
+test,Giáo dục,1,CONSISTENT,2569
+test,Giải trí,0,INCONSISTENT,4002
+test,Giải trí,1,CONSISTENT,4002
+test,Khoa học công nghệ,0,INCONSISTENT,2450
+test,Khoa học công nghệ,1,CONSISTENT,2450
+test,Kinh doanh,0,INCONSISTENT,3809
+test,Kinh doanh,1,CONSISTENT,3809
+test,Pháp luật,0,INCONSISTENT,361
+test,Pháp luật,1,CONSISTENT,361
+test,Sức khỏe,0,INCONSISTENT,1741
+test,Sức khỏe,1,CONSISTENT,1741
+test,Thế giới,0,INCONSISTENT,1480
+test,Thế giới,1,CONSISTENT,1480
+test,Thể thao,0,INCONSISTENT,4303
+test,Thể thao,1,CONSISTENT,4303
+test,Thời sự,0,INCONSISTENT,2904
+test,Thời sự,1,CONSISTENT,2904
+test,Xe,0,INCONSISTENT,2020
+test,Xe,1,CONSISTENT,2020
+test,Đời sống,0,INCONSISTENT,1374
+test,Đời sống,1,CONSISTENT,1374

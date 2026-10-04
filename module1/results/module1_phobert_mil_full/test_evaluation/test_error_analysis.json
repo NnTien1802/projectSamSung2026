@@ -1,0 +1,47 @@
+{
+  "threshold": 0.57,
+  "false_negative_count": 1702,
+  "false_positive_count": 748,
+  "false_negative_by_severity": {
+    "minor": 1406,
+    "moderate": 275,
+    "severe": 21
+  },
+  "false_negative_by_error_count": {
+    "1": 1483,
+    "2": 179,
+    "3": 23,
+    "4": 7,
+    "5": 7,
+    "6": 1,
+    "8": 2
+  },
+  "false_negative_error_types": {
+    "missing_diacritic": 346,
+    "delete_character": 338,
+    "transpose_character": 293,
+    "wrong_tone": 261,
+    "diacritic_confusion": 168,
+    "keyboard_neighbor": 161,
+    "onset_confusion": 134,
+    "duplicate_character": 100,
+    "insert_character": 89,
+    "telex_unconverted": 53
+  },
+  "false_negative_error_sources": {
+    "rule_based": 1025,
+    "mined": 804
+  },
+  "probability_statistics": {
+    "clean": {
+      "mean": 0.118462785496166,
+      "median": 0.05987548828125,
+      "p95": 0.6410888671874995
+    },
+    "noisy": {
+      "mean": 0.8855744066001012,
+      "median": 0.998046875,
+      "p05": 0.0710540771484375
+    }
+  }
+}

@@ -1,0 +1,84 @@
+[
+  {
+    "accuracy": 0.908316528753216,
+    "error_precision": 0.9504449217551396,
+    "error_recall": 0.861553438564773,
+    "error_f1": 0.9038187985556406,
+    "macro_f1": 0.9081155971719977,
+    "roc_auc": 0.9492152339376507,
+    "average_precision": 0.9623412157468804,
+    "confusion_matrix": {
+      "tn": 13735,
+      "fp": 646,
+      "fn": 1991,
+      "tp": 12390
+    },
+    "severity_recall": {
+      "minor": {
+        "count": 7132,
+        "recall": 0.7774817722938867
+      },
+      "moderate": {
+        "count": 5067,
+        "recall": 0.9265837773830669
+      },
+      "severe": {
+        "count": 2182,
+        "recall": 0.9853345554537122
+      }
+    },
+    "validation_loss": 0.268471171381211,
+    "validation_seconds": 175.91592502593994,
+    "epoch": 1,
+    "average_train_loss": 0.3310996303027888,
+    "epoch_training_seconds": 3029.914954185486,
+    "documents_per_second": 75.9440457832446,
+    "pilot_mode": false,
+    "max_length": 256,
+    "stride": 64,
+    "max_chunks_per_document": 3,
+    "document_batch_size": 12,
+    "gradient_accumulation_steps": 1
+  },
+  {
+    "accuracy": 0.9142271052082609,
+    "error_precision": 0.9446849805912213,
+    "error_recall": 0.8799805298657951,
+    "error_f1": 0.9111855131943695,
+    "macro_f1": 0.9141263902409136,
+    "roc_auc": 0.9520655119235859,
+    "average_precision": 0.9650803662450511,
+    "confusion_matrix": {
+      "tn": 13640,
+      "fp": 741,
+      "fn": 1726,
+      "tp": 12655
+    },
+    "severity_recall": {
+      "minor": {
+        "count": 7132,
+        "recall": 0.8037016264722378
+      },
+      "moderate": {
+        "count": 5067,
+        "recall": 0.9398065916716005
+      },
+      "severe": {
+        "count": 2182,
+        "recall": 0.9903758020164987
+      }
+    },
+    "validation_loss": 0.25995274605302016,
+    "validation_seconds": 169.8191568851471,
+    "epoch": 2,
+    "average_train_loss": 0.2552648423489272,
+    "epoch_training_seconds": 3018.289467573166,
+    "documents_per_second": 76.23655798163503,
+    "pilot_mode": false,
+    "max_length": 256,
+    "stride": 64,
+    "max_chunks_per_document": 3,
+    "document_batch_size": 12,
+    "gradient_accumulation_steps": 1
+  }
+]

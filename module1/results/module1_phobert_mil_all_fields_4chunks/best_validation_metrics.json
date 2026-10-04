@@ -1,0 +1,48 @@
+{
+  "accuracy": 0.9484736805507267,
+  "error_precision": 0.9494111908577799,
+  "error_recall": 0.9474306376468952,
+  "error_f1": 0.9484198802728665,
+  "macro_f1": 0.948473624493199,
+  "roc_auc": 0.9875623727834225,
+  "average_precision": 0.9884537120374675,
+  "confusion_matrix": {
+    "tn": 13655,
+    "fp": 726,
+    "fn": 756,
+    "tp": 13625
+  },
+  "severity_recall": {
+    "minor": {
+      "count": 7132,
+      "recall": 0.9061974200785193
+    },
+    "moderate": {
+      "count": 5067,
+      "recall": 0.9830274324057627
+    },
+    "severe": {
+      "count": 2182,
+      "recall": 0.9995417048579285
+    }
+  },
+  "validation_loss": 0.1723101823127754,
+  "validation_seconds": 680.1349186897278,
+  "epoch": 2,
+  "average_train_loss": 0.16844563045630073,
+  "epoch_training_seconds": 3534.329840660095,
+  "documents_per_second": 65.10541188114583,
+  "pilot_mode": false,
+  "input_mode": "title_abstract_article",
+  "text_fields": [
+    "title_segmented",
+    "abstract_segmented",
+    "article_segmented"
+  ],
+  "field_separator": " . ",
+  "max_length": 256,
+  "stride": 64,
+  "max_chunks_per_document": 4,
+  "document_batch_size": 12,
+  "gradient_accumulation_steps": 1
+}

@@ -1,0 +1,38 @@
+{
+  "checkpoint_candidates": [
+    "models/module1_phobert_mil/best_model.pt",
+    "models/module1_phobert_mil_all_fields/best_model.pt",
+    "models/module1_phobert_mil_all_fields_4chunks/best_model.pt",
+    "models/module1_phobert_mil_full/best_model.pt",
+    "models/module1_phobert_word_detector_v1/best_model.pt",
+    "module2_headline_integrity/models/clickbait/mbert_title_lead_v1/best_model.pt",
+    "module2_headline_integrity/models/clickbait/mbert_title_only_v1/best_model.pt",
+    "module2_headline_integrity/models/consistency/baseline_title_article_head_mbert/best_model.pt",
+    "module2_headline_integrity/models/consistency/baseline_title_description_mbert/best_model.pt",
+    "module2_headline_integrity/models/consistency/full_article_max_mil_mbert/best_model.pt"
+  ],
+  "possible_config_and_thresholds": [
+    "models/module1_phobert_mil/tokenizer/tokenizer_config.json",
+    "models/module1_phobert_mil_all_fields/tokenizer/tokenizer_config.json",
+    "models/module1_phobert_mil_all_fields_4chunks/tokenizer/tokenizer_config.json",
+    "models/module1_phobert_mil_full/tokenizer/tokenizer_config.json",
+    "models/module1_phobert_word_detector_v1/tokenizer/tokenizer_config.json"
+  ],
+  "inference_and_regression_scripts": [
+    "module2_headline_integrity/inference/03_map_consistency_regression_sources.py",
+    "module2_headline_integrity/inference/04_regression_check_unified_pipeline.py",
+    "module2_headline_integrity/inference/08_lock_unified_module2_pipeline.py",
+    "module2_headline_integrity/inference/09_smoke_test_locked_module2.py",
+    "module2_headline_integrity/inference/headline_integrity_pipeline.py",
+    "module2_headline_integrity/scripts/clickbait/09_lock_final_clickbait_model.py",
+    "module2_headline_integrity/scripts/clickbait/10_evaluate_final_clickbait_test.py",
+    "module2_headline_integrity/scripts/consistency/21_evaluate_final_hybrid_test.py",
+    "scripts/16_evaluate_phobert_test.py",
+    "scripts/20_evaluate_phobert_all_fields_test.py",
+    "scripts/24_evaluate_phobert_all_fields_4chunks_test.py",
+    "scripts/25_evaluate_mil_chunk_localization.py",
+    "scripts/29_evaluate_word_detector_all_chunks_validation.py",
+    "scripts/32_evaluate_word_detector_all_chunks_test.py",
+    "scripts/37_evaluate_correction_official_test.py"
+  ]
+}

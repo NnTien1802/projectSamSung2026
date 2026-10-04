@@ -1,0 +1,395 @@
+{
+  "module": "module2_headline_integrity",
+  "stage": "raw_eda",
+  "viclickbait_2025": {
+    "records_csv": 3414,
+    "records_jsonl": 3414,
+    "columns": [
+      "id",
+      "url",
+      "title",
+      "lead_paragraph",
+      "category",
+      "publish_datetime",
+      "source",
+      "thumbnail_url",
+      "label"
+    ],
+    "detected_columns": {
+      "title": "title",
+      "lead": "lead_paragraph",
+      "label": "label",
+      "url": "url",
+      "source": "source",
+      "category": "category"
+    },
+    "missing": {
+      "id": 0,
+      "url": 0,
+      "title": 0,
+      "lead_paragraph": 3,
+      "category": 0,
+      "publish_datetime": 31,
+      "source": 0,
+      "thumbnail_url": 4,
+      "label": 0
+    },
+    "label_distribution": {
+      "non-clickbait": 2349,
+      "clickbait": 1065
+    },
+    "source_distribution": {
+      "Báo Mới": 731,
+      "VnExpress": 608,
+      "Thanh Niên": 576,
+      "24h": 564,
+      "VietNamNet": 356,
+      "SaoStar": 286,
+      "Tuổi Trẻ": 241,
+      "Kênh14": 52
+    },
+    "category_distribution": {
+      "Other": 1117,
+      "Thể thao": 325,
+      "Quốc tế": 241,
+      "Giải trí & Showbiz": 238,
+      "Sức khỏe & Đời sống": 228,
+      "Công nghệ & Khoa học": 220,
+      "Kinh doanh & Kinh tế": 204,
+      "Tin tức tổng hợp": 197,
+      "Chính trị & An ninh": 173,
+      "Giáo dục & Học đường": 160,
+      "Xe & Vận tải": 137,
+      "Du lịch & Ẩm thực": 109,
+      "Văn hóa & Nghệ thuật": 65
+    },
+    "lengths": {
+      "title_chars": {
+        "count": 3414,
+        "min": 4,
+        "p25": 52.0,
+        "median": 66.0,
+        "mean": 66.62858816637376,
+        "p75": 79.0,
+        "p90": 93.0,
+        "p95": 104.0,
+        "p99": 126.0,
+        "max": 186
+      },
+      "title_words": {
+        "count": 3414,
+        "min": 1,
+        "p25": 12.0,
+        "median": 15.0,
+        "mean": 14.986233157586408,
+        "p75": 18.0,
+        "p90": 21.0,
+        "p95": 24.0,
+        "p99": 29.0,
+        "max": 41
+      },
+      "lead_chars": {
+        "count": 3411,
+        "min": 5,
+        "p25": 124.0,
+        "median": 151.0,
+        "mean": 162.4793315743184,
+        "p75": 191.0,
+        "p90": 236.0,
+        "p95": 274.5,
+        "p99": 375.7000000000003,
+        "max": 541
+      },
+      "lead_words": {
+        "count": 3411,
+        "min": 1,
+        "p25": 27.0,
+        "median": 33.0,
+        "mean": 35.53825857519789,
+        "p75": 42.0,
+        "p90": 52.0,
+        "p95": 60.0,
+        "p99": 81.90000000000009,
+        "max": 120
+      }
+    },
+    "duplicates": {
+      "normalized_title_duplicates_beyond_first": 0,
+      "url_duplicates_beyond_first": 0,
+      "title_lead_duplicates_beyond_first": 0
+    }
+  },
+  "vianli": {
+    "records": 10012,
+    "splits": [
+      {
+        "split": "validation",
+        "file": "vianli_dev.jsonl",
+        "records": 1000
+      },
+      {
+        "split": "test",
+        "file": "vianli_test.jsonl",
+        "records": 1000
+      },
+      {
+        "split": "train",
+        "file": "vianli_train.jsonl",
+        "records": 8012
+      }
+    ],
+    "columns": [
+      "uid",
+      "premise",
+      "hypothesis",
+      "label"
+    ],
+    "detected_columns": {
+      "premise": "premise",
+      "hypothesis": "hypothesis",
+      "label": "label"
+    },
+    "missing": {
+      "uid": 0,
+      "premise": 0,
+      "hypothesis": 0,
+      "label": 0
+    },
+    "label_distribution": {
+      "neutral": 3590,
+      "entailment": 3283,
+      "contradiction": 3139
+    },
+    "label_by_split": {
+      "test": {
+        "contradiction": 333,
+        "entailment": 334,
+        "neutral": 333
+      },
+      "train": {
+        "contradiction": 2473,
+        "entailment": 2615,
+        "neutral": 2924
+      },
+      "validation": {
+        "contradiction": 333,
+        "entailment": 334,
+        "neutral": 333
+      }
+    },
+    "lengths": {
+      "premise_chars": {
+        "count": 10012,
+        "min": 14,
+        "p25": 98.0,
+        "median": 127.0,
+        "mean": 133.392928485817,
+        "p75": 157.0,
+        "p90": 202.0,
+        "p95": 235.0,
+        "p99": 323.0,
+        "max": 498
+      },
+      "premise_words": {
+        "count": 10012,
+        "min": 4,
+        "p25": 21.0,
+        "median": 27.0,
+        "mean": 28.969336795844985,
+        "p75": 34.0,
+        "p90": 44.0,
+        "p95": 51.0,
+        "p99": 71.0,
+        "max": 106
+      },
+      "hypothesis_chars": {
+        "count": 10012,
+        "min": 11,
+        "p25": 54.0,
+        "median": 71.0,
+        "mean": 75.65311626048741,
+        "p75": 92.0,
+        "p90": 114.0,
+        "p95": 130.0,
+        "p99": 172.88999999999942,
+        "max": 323
+      },
+      "hypothesis_words": {
+        "count": 10012,
+        "min": 3,
+        "p25": 12.0,
+        "median": 16.0,
+        "mean": 16.813423891330405,
+        "p75": 20.0,
+        "p90": 25.0,
+        "p95": 29.0,
+        "p99": 38.0,
+        "max": 68
+      }
+    },
+    "duplicates": {
+      "pair_duplicates_beyond_first": 3,
+      "cross_split_overlap": {
+        "test__train": 2,
+        "test__validation": 0,
+        "train__validation": 0
+      }
+    }
+  },
+  "viet_online_news": {
+    "csv_files_found": 7,
+    "dataset_files_analyzed": [
+      {
+        "file": "processed\\dev.csv",
+        "split": "validation"
+      },
+      {
+        "file": "processed\\test.csv",
+        "split": "test"
+      },
+      {
+        "file": "processed\\train.csv",
+        "split": "train"
+      }
+    ],
+    "records": 265729,
+    "columns": [
+      "id",
+      "title",
+      "description",
+      "content",
+      "category"
+    ],
+    "detected_columns": {
+      "id": "id",
+      "title": "title",
+      "description": "description",
+      "content": "content",
+      "category": "category"
+    },
+    "split_counts": {
+      "validation": 39859,
+      "test": 39860,
+      "train": 186010
+    },
+    "category_distribution": {
+      "Thế giới": 14847,
+      "Giáo dục": 22433,
+      "Kinh doanh": 33242,
+      "Bất động sản": 6636,
+      "Giải trí": 40864,
+      "Sức khỏe": 16666,
+      "Khoa học công nghệ": 21008,
+      "Xe": 18805,
+      "Thời sự": 27399,
+      "Đời sống": 19116,
+      "Du lịch": 9179,
+      "Thể thao": 32278,
+      "Pháp luật": 3256
+    },
+    "missing": {
+      "id": 0,
+      "title": 0,
+      "description": 0,
+      "content": 0,
+      "category": 0
+    },
+    "duplicates": {
+      "id_duplicates_beyond_first": 0,
+      "normalized_title_duplicates_beyond_first": 412,
+      "normalized_content_duplicates_beyond_first": 0,
+      "title_content_duplicates_beyond_first": 0
+    },
+    "cross_split_overlap": {
+      "title": {
+        "test__train": 81,
+        "test__validation": 22,
+        "train__validation": 102
+      },
+      "content": {
+        "test__train": 0,
+        "test__validation": 0,
+        "train__validation": 0
+      },
+      "title_content_pair": {
+        "test__train": 0,
+        "test__validation": 0,
+        "train__validation": 0
+      }
+    },
+    "lengths": {
+      "title_chars": {
+        "count": 265729,
+        "min": 2,
+        "p25": 54.0,
+        "median": 64.0,
+        "mean": 62.92428376278088,
+        "p75": 73.0,
+        "p90": 79.0,
+        "p95": 82.0,
+        "p99": 94.0,
+        "max": 128
+      },
+      "title_words": {
+        "count": 265729,
+        "min": 1,
+        "p25": 12.0,
+        "median": 14.0,
+        "mean": 14.013073469587436,
+        "p75": 16.0,
+        "p90": 18.0,
+        "p95": 19.0,
+        "p99": 21.0,
+        "max": 30
+      },
+      "description_chars": {
+        "count": 265729,
+        "min": 1,
+        "p25": 135.0,
+        "median": 162.0,
+        "mean": 167.92551057656485,
+        "p75": 196.0,
+        "p90": 228.0,
+        "p95": 245.0,
+        "p99": 320.0,
+        "max": 602
+      },
+      "description_words": {
+        "count": 265729,
+        "min": 1,
+        "p25": 29.0,
+        "median": 36.0,
+        "mean": 36.78006916821273,
+        "p75": 43.0,
+        "p90": 50.0,
+        "p95": 54.0,
+        "p99": 70.0,
+        "max": 129
+      },
+      "content_chars": {
+        "count": 265729,
+        "min": 197,
+        "p25": 1950.0,
+        "median": 2794.0,
+        "mean": 3142.5218399196174,
+        "p75": 3931.0,
+        "p90": 5211.0,
+        "p95": 6296.0,
+        "p99": 8633.0,
+        "max": 163370
+      },
+      "content_words": {
+        "count": 265729,
+        "min": 50,
+        "p25": 423.0,
+        "median": 608.0,
+        "mean": 683.963357405477,
+        "p75": 857.0,
+        "p90": 1134.0,
+        "p95": 1375.0,
+        "p99": 1895.0,
+        "max": 36122
+      }
+    }
+  }
+}

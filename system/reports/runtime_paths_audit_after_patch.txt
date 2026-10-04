@@ -1,0 +1,390 @@
+====================================================================================================
+PROJECTSAMSUNG V1 - RUNTIME PATH AUDIT V2
+====================================================================================================
+ROOT: C:\projectSamSung_v1
+
+A. REQUIRED RUNTIME ARTIFACTS
+[OK]      module1\scripts\16_evaluate_phobert_test.py
+[OK]      module1\models\module1_phobert_mil_full\best_model.pt
+[OK]      module1\models\module1_phobert_mil_full\tokenizer
+[OK]      module1\results\module1_phobert_mil_full\threshold_tuning\best_threshold.json
+[OK]      module2\inference\headline_integrity_pipeline.py
+[OK]      module2\models\clickbait\mbert_title_only_v1\best_model.pt
+[OK]      module2\models\consistency\baseline_title_description_mbert\best_model.pt
+[OK]      module2\models\consistency\full_article_max_mil_mbert\best_model.pt
+[OK]      module2\results\clickbait\final_title_only_v1\final_model_lock.json
+[OK]      module2\results\consistency\final_hybrid_v1\final_model_lock.json
+
+B. IMPORTANT SOURCE/PATH LINES
+
+----------------------------------------------------------------------------------------------------
+system\backend\app\adapters\spelling.py
+----------------------------------------------------------------------------------------------------
+0007: from ._source import ROOT, import_original
+0016:         source = ROOT / "module1" / "scripts" / "16_evaluate_phobert_test.py"
+0017:         original = import_original(source, "_project_samsung_original_m1_eval_v1")
+0019:         model_dir = ROOT / "module1" / "models" / "module1_phobert_mil_full"
+0020:         checkpoint_path = model_dir / "best_model.pt"
+0021:         threshold_path = ROOT / "module1" / "results" / "module1_phobert_mil_full" / "threshold_tuning" / "best_threshold.json"
+
+----------------------------------------------------------------------------------------------------
+system\backend\app\adapters\_source.py
+----------------------------------------------------------------------------------------------------
+0001: """Read-only imports from original research scripts; never mutate their code."""
+0006: ROOT = Path(__file__).resolve().parents[4]
+0009: def import_original(path: Path, module_name: str):
+0014:         if Path(cached.__file__).resolve() != path.resolve():
+
+----------------------------------------------------------------------------------------------------
+system\backend\app\adapters\clickbait.py
+----------------------------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------------------------------
+system\backend\app\adapters\headline_consistency.py
+----------------------------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------------------------------
+system\backend\app\services\model_registry.py
+----------------------------------------------------------------------------------------------------
+0002: from ..adapters._source import ROOT, import_original
+0016:             src = ROOT / "module2" / "inference" / "headline_integrity_pipeline.py"
+0017:             original = import_original(src, "_project_samsung_original_headline_pipeline_v1")
+
+----------------------------------------------------------------------------------------------------
+system\backend\app\api\main.py
+----------------------------------------------------------------------------------------------------
+0026:     *, registry: Optional[Any] = None, load_models: bool = True,
+0034:         if load_models:
+0037:                 device=os.environ.get("SAMSUNG_DEVICE", "cuda")
+0091:             raise HTTPException(status_code=503, detail="Models are not ready")
+0096:         return {"status": "ok" if api.state.ready else "initializing", "models_ready": bool(api.state.ready)}
+0098:     @api.get("/api/v1/models", tags=["System"])
+0099:     def models():
+0102:             "models": [
+0114:     @api.post("/api/v1/spelling", tags=["Models"])
+0122:     @api.post("/api/v1/clickbait", tags=["Models"])
+0126:     @api.post("/api/v1/consistency", tags=["Models"])
+0130:     @api.post("/api/v1/analyze", tags=["Models"])
+
+----------------------------------------------------------------------------------------------------
+module1\scripts\16_evaluate_phobert_test.py
+----------------------------------------------------------------------------------------------------
+0038: PROJECT_ROOT = Path(__file__).resolve().parents[1]
+0041:     PROJECT_ROOT
+0053:     PROJECT_ROOT
+0054:     / "models"
+0055:     / "module1_phobert_mil_full"
+0058: BEST_MODEL_PATH = (
+0060:     / "best_model.pt"
+0069:     PROJECT_ROOT
+0070:     / "results"
+0071:     / "module1_phobert_mil_full"
+0077:     PROJECT_ROOT
+0078:     / "results"
+0079:     / "module1_phobert_mil_full"
+0178:         f"{BEST_MODEL_PATH}"
+0184:             BEST_MODEL_PATH,
+0192:             BEST_MODEL_PATH,
+1160:     severity_results = {}
+1185:             severity_results[
+1203:         severity_results[
+1274:             severity_results,
+1606:         "OFFICIAL TEST RESULTS"
+
+----------------------------------------------------------------------------------------------------
+module2\inference\headline_integrity_pipeline.py
+----------------------------------------------------------------------------------------------------
+0020: MODULE_ROOT = Path(__file__).resolve().parents[1]
+0028:     MODULE_ROOT
+0029:     / "results"
+0032:     / "final_model_lock.json"
+0041:     MODULE_ROOT
+0042:     / "results"
+0045:     / "final_model_lock.json"
+0049:     MODULE_ROOT
+0050:     / "models"
+0053:     / "best_model.pt"
+0057:     MODULE_ROOT
+0058:     / "models"
+0061:     / "best_model.pt"
+0381:         # MODELS
+0388:         self._load_models()
+0478:             MODULE_ROOT
+0633:     # LOAD MODELS
+0650:     def _load_models(
+1817:     input_path = Path(
+1910:         output_path = Path(
+
+----------------------------------------------------------------------------------------------------
+Dockerfile
+----------------------------------------------------------------------------------------------------
+0007:     SAMSUNG_DEVICE=cuda \
+
+----------------------------------------------------------------------------------------------------
+.dockerignore
+----------------------------------------------------------------------------------------------------
+0025: module1/data
+0026: module2/data
+0040: module2_headline_integrity
+0046: #   module1/scripts/16_evaluate_phobert_test.py
+0047: #   module1/models/module1_phobert_mil_full/**
+0048: #   module1/results/module1_phobert_mil_full/threshold_tuning/best_threshold.json
+0050: module1/scripts/*
+0051: !module1/scripts/16_evaluate_phobert_test.py
+0053: module1/models/*
+0054: !module1/models/module1_phobert_mil_full
+0055: !module1/models/module1_phobert_mil_full/**
+0057: module1/results/*
+0058: !module1/results/module1_phobert_mil_full
+0059: module1/results/module1_phobert_mil_full/*
+0060: !module1/results/module1_phobert_mil_full/threshold_tuning
+0061: module1/results/module1_phobert_mil_full/threshold_tuning/*
+0062: !module1/results/module1_phobert_mil_full/threshold_tuning/best_threshold.json
+0068: module2/scripts/*
+0070: module2/models/*
+0071: !module2/models/clickbait
+0072: !module2/models/consistency
+0074: module2/models/clickbait/*
+0075: !module2/models/clickbait/mbert_title_only_v1
+0076: module2/models/clickbait/mbert_title_only_v1/*
+0077: !module2/models/clickbait/mbert_title_only_v1/best_model.pt
+0079: module2/models/consistency/*
+0080: !module2/models/consistency/baseline_title_description_mbert
+0081: !module2/models/consistency/full_article_max_mil_mbert
+0083: module2/models/consistency/baseline_title_description_mbert/*
+0084: !module2/models/consistency/baseline_title_description_mbert/best_model.pt
+0086: module2/models/consistency/full_article_max_mil_mbert/*
+0087: !module2/models/consistency/full_article_max_mil_mbert/best_model.pt
+0089: module2/results/*
+0090: !module2/results/clickbait
+0091: !module2/results/consistency
+0093: module2/results/clickbait/*
+0094: !module2/results/clickbait/final_title_only_v1
+0095: module2/results/clickbait/final_title_only_v1/*
+0096: !module2/results/clickbait/final_title_only_v1/final_model_lock.json
+0098: module2/results/consistency/*
+0099: !module2/results/consistency/final_hybrid_v1
+0100: module2/results/consistency/final_hybrid_v1/*
+0101: !module2/results/consistency/final_hybrid_v1/final_model_lock.json
+
+----------------------------------------------------------------------------------------------------
+docker-compose.yml
+----------------------------------------------------------------------------------------------------
+0010:       SAMSUNG_DEVICE: cuda
+
+C. OLD PATH NAME SCAN
+.dockerignore:40: module2_headline_integrity
+.dockerignore:46: #   module1/scripts/16_evaluate_phobert_test.py
+.dockerignore:47: #   module1/models/module1_phobert_mil_full/**
+.dockerignore:51: !module1/scripts/16_evaluate_phobert_test.py
+.dockerignore:54: !module1/models/module1_phobert_mil_full
+.dockerignore:55: !module1/models/module1_phobert_mil_full/**
+README_V1.md:28: C:\1_projectSamSung\.venv\Scripts\python.exe module2_headline_integrity\inference\04_regression_check_unified_pipeline.py
+module2\results\consistency\candidate_analysis_v1\analysis_report.json:2:   "module": "module2_headline_integrity",
+module2\results\consistency\final_dataset_validation_v1\validation_report.json:2:   "module": "module2_headline_integrity",
+module2\results\consistency\manual_annotation_analysis_v1\analysis_report.json:2:   "module": "module2_headline_integrity",
+module2\results\eda\raw_dataset_eda.json:2:   "module": "module2_headline_integrity",
+module2\scripts\01_download_datasets.py:265:             "module2_headline_integrity"
+module2\scripts\02_eda_raw_datasets.py:2793:             "module2_headline_integrity",
+module2\scripts\consistency\03_prepare_articles.py:19: # module2_headline_integrity/scripts/consistency/03_prepare_articles.py
+module2\scripts\consistency\03_prepare_articles.py:23: # parents[2] = module2_headline_integrity
+module2\scripts\consistency\03_prepare_articles.py:1692:             "module2_headline_integrity",
+module2\scripts\consistency\04_build_positive_pairs.py:907:             "module2_headline_integrity",
+module2\scripts\consistency\05_mine_hard_negative_candidates.py:1876:             "module2_headline_integrity",
+module2\scripts\consistency\06_analyze_candidate_quality.py:1329:             "module2_headline_integrity",
+module2\scripts\consistency\07_analyze_manual_annotations.py:558:             "module2_headline_integrity",
+module2\scripts\consistency\08_build_negative_pairs.py:1695:             "module2_headline_integrity",
+module2\scripts\consistency\09_build_consistency_dataset.py:1743:             "module2_headline_integrity",
+module2\scripts\consistency\10_validate_consistency_dataset.py:2259:             "module2_headline_integrity",
+system\release\model_inventory_v1.json:8:     "module2_headline_integrity/models/clickbait/mbert_title_lead_v1/best_model.pt",
+system\release\model_inventory_v1.json:9:     "module2_headline_integrity/models/clickbait/mbert_title_only_v1/best_model.pt",
+system\release\model_inventory_v1.json:10:     "module2_headline_integrity/models/consistency/baseline_title_article_head_mbert/best_model.pt",
+system\release\model_inventory_v1.json:11:     "module2_headline_integrity/models/consistency/baseline_title_description_mbert/best_model.pt",
+system\release\model_inventory_v1.json:12:     "module2_headline_integrity/models/consistency/full_article_max_mil_mbert/best_model.pt"
+system\release\model_inventory_v1.json:22:     "module2_headline_integrity/inference/03_map_consistency_regression_sources.py",
+system\release\model_inventory_v1.json:23:     "module2_headline_integrity/inference/04_regression_check_unified_pipeline.py",
+system\release\model_inventory_v1.json:24:     "module2_headline_integrity/inference/08_lock_unified_module2_pipeline.py",
+system\release\model_inventory_v1.json:25:     "module2_headline_integrity/inference/09_smoke_test_locked_module2.py",
+system\release\model_inventory_v1.json:26:     "module2_headline_integrity/inference/headline_integrity_pipeline.py",
+system\release\model_inventory_v1.json:27:     "module2_headline_integrity/scripts/clickbait/09_lock_final_clickbait_model.py",
+system\release\model_inventory_v1.json:28:     "module2_headline_integrity/scripts/clickbait/10_evaluate_final_clickbait_test.py",
+system\release\model_inventory_v1.json:29:     "module2_headline_integrity/scripts/consistency/21_evaluate_final_hybrid_test.py",
+system\release\model_inventory_v1.json:30:     "scripts/16_evaluate_phobert_test.py",
+system\release\model_lock_config.json:28:       "checkpoint": "module2_headline_integrity/models/clickbait/mbert_title_only_v1/best_model.pt",
+system\release\model_lock_config.json:30:       "inference_entrypoint": "module2_headline_integrity/inference/headline_integrity_pipeline.py",
+system\release\model_lock_config.json:46:       "checkpoint": "module2_headline_integrity/models/consistency/full_article_max_mil_mbert/best_model.pt",
+system\release\model_lock_config.json:48:       "inference_entrypoint": "module2_headline_integrity/inference/headline_integrity_pipeline.py",
+system\release\model_lock_config.json:58:         "module2_headline_integrity/models/consistency/baseline_title_description_mbert/best_model.pt",
+system\release\model_lock_config.json:65:     "module2_headline_integrity/inference/headline_integrity_pipeline.py": "ac3137209f676c2e1e279a967ab642b20b05c8cc64a1c0edb741be052045ace9"
+system\release\model_lock_manifest_v1.json:32:         "checkpoint": "module2_headline_integrity/models/clickbait/mbert_title_only_v1/best_model.pt",
+system\release\model_lock_manifest_v1.json:34:         "inference_entrypoint": "module2_headline_integrity/inference/headline_integrity_pipeline.py",
+system\release\model_lock_manifest_v1.json:50:         "checkpoint": "module2_headline_integrity/models/consistency/full_article_max_mil_mbert/best_model.pt",
+system\release\model_lock_manifest_v1.json:52:         "inference_entrypoint": "module2_headline_integrity/inference/headline_integrity_pipeline.py",
+system\release\model_lock_manifest_v1.json:62:           "module2_headline_integrity/models/consistency/baseline_title_description_mbert/best_model.pt",
+system\release\model_lock_manifest_v1.json:69:       "module2_headline_integrity/inference/headline_integrity_pipeline.py": "ac3137209f676c2e1e279a967ab642b20b05c8cc64a1c0edb741be052045ace9"
+system\release\model_lock_manifest_v1.json:114:       "path": "module2_headline_integrity/inference/headline_integrity_pipeline.py",
+system\release\model_lock_manifest_v1.json:123:       "path": "module2_headline_integrity/models/clickbait/mbert_title_only_v1/best_model.pt",
+system\release\model_lock_manifest_v1.json:131:       "path": "module2_headline_integrity/models/consistency/baseline_title_description_mbert/best_model.pt",
+system\release\model_lock_manifest_v1.json:139:       "path": "module2_headline_integrity/models/consistency/full_article_max_mil_mbert/best_model.pt",
+system\scripts\01_model_release.py:82:     dirs = [root / "models", root / "module2_headline_integrity", root / "scripts"]
+system\scripts\01_model_release.py:125:                 "inference_entrypoint": "module2_headline_integrity/inference/headline_integrity_pipeline.py",
+system\scripts\01_model_release.py:135:                 "inference_entrypoint": "module2_headline_integrity/inference/headline_integrity_pipeline.py",
+system\scripts\01_model_release.py:144:             "module2_headline_integrity/inference/headline_integrity_pipeline.py": EXPECTED_MODULE2_PIPELINE_SHA256
+system\scripts\02_audit_project_structure.py:48:     if p.startswith('module2_headline_integrity/inference/'):
+system\scripts\02_audit_project_structure.py:54:     if p.startswith(('models/', 'module2_headline_integrity/models/')):
+system\scripts\04_backup_module2_before_split.py:28: ROOT_DIRS = ('module2_headline_integrity', 'system/release')
+system\scripts\04_backup_module2_before_split.py:31:     'module2_headline_integrity/inference/headline_integrity_pipeline.py',
+system\scripts\04_backup_module2_before_split.py:32:     'module2_headline_integrity/models/clickbait/mbert_title_only_v1/best_model.pt',
+system\scripts\04_backup_module2_before_split.py:33:     'module2_headline_integrity/models/consistency/baseline_title_description_mbert/best_model.pt',
+system\scripts\04_backup_module2_before_split.py:34:     'module2_headline_integrity/models/consistency/full_article_max_mil_mbert/best_model.pt',
+system\scripts\04_backup_module2_before_split.py:83:         if rel.startswith('module2_headline_integrity/'):
+system\scripts\08_create_project_v1.py:22:     Path("scripts/16_evaluate_phobert_test.py"),
+system\scripts\08_create_project_v1.py:27:     Path("module2_headline_integrity/inference"),
+system\scripts\08_create_project_v1.py:28:     Path("module2_headline_integrity/models/clickbait/mbert_title_only_v1"),
+system\scripts\08_create_project_v1.py:29:     Path("module2_headline_integrity/models/consistency/baseline_title_description_mbert"),
+system\scripts\08_create_project_v1.py:30:     Path("module2_headline_integrity/models/consistency/full_article_max_mil_mbert"),
+system\scripts\08_create_project_v1.py:31:     Path("module2_headline_integrity/results"),
+system\scripts\08_create_project_v1.py:32:     Path("module2_headline_integrity/data/processed"),
+system\scripts\08_create_project_v1.py:166:     readme = f"""# projectSamSung V1\n\nDeployment/integration workspace created from `{source}`.\n\n## Scope\n\n- Module 1: Vietnamese document-level spelling/textual-error detection (PhoBERT MIL).\n- Module 2: clickbait headline classification (mBERT title-only).\n- Module 3: headline-content consistency (description + full-article MAX-MIL fusion
+system\scripts\18_audit_runtime_paths_v2.py:22:     ROOT / "module1/scripts/16_evaluate_phobert_test.py",
+system\scripts\18_audit_runtime_paths_v2.py:32:     "module2_headline_integrity",
+system\scripts\18_audit_runtime_paths_v2.py:49:     ROOT / "module1/scripts/16_evaluate_phobert_test.py",
+system\scripts\18_audit_runtime_paths_v2.py:50:     ROOT / "module1/models/module1_phobert_mil_full/best_model.pt",
+system\scripts\18_audit_runtime_paths_v2.py:51:     ROOT / "module1/models/module1_phobert_mil_full/tokenizer",
+system\scripts\18_audit_runtime_paths_v2.py:85:     "module2_headline_integrity",
+system\scripts\18_audit_runtime_paths_v2.py:86:     "scripts/16_evaluate_phobert_test.py",
+system\scripts\18_audit_runtime_paths_v2.py:87:     r"scripts\16_evaluate_phobert_test.py",
+system\scripts\18_audit_runtime_paths_v2.py:88:     "/models/module1_phobert_mil_full",
+system\scripts\18_audit_runtime_paths_v2.py:89:     r"\models\module1_phobert_mil_full",
+system\scripts\19_patch_refactored_runtime_paths.py:71:     'src = ROOT / "module2_headline_integrity" / "inference" / "headline_integrity_pipeline.py"',
+system\scripts\19_patch_refactored_runtime_paths.py:84:         if "module2_headline_integrity" in text:
+system\scripts\19_patch_refactored_runtime_paths.py:87:                 text.replace("module2_headline_integrity", "module2"),
+system\scripts\19_patch_refactored_runtime_paths.py:99:     old = "module2_headline_integrity.inference.headline_integrity_pipeline"
+system\scripts\19_patch_refactored_runtime_paths.py:146: module2_headline_integrity
+system\scripts\19_patch_refactored_runtime_paths.py:152: #   module1/scripts/16_evaluate_phobert_test.py
+system\scripts\19_patch_refactored_runtime_paths.py:153: #   module1/models/module1_phobert_mil_full/**
+system\scripts\19_patch_refactored_runtime_paths.py:157: !module1/scripts/16_evaluate_phobert_test.py
+system\scripts\19_patch_refactored_runtime_paths.py:160: !module1/models/module1_phobert_mil_full
+system\scripts\19_patch_refactored_runtime_paths.py:161: !module1/models/module1_phobert_mil_full/**
+system\scripts\19_patch_refactored_runtime_paths.py:223:     ROOT / "module1/scripts/16_evaluate_phobert_test.py",
+system\scripts\19_patch_refactored_runtime_paths.py:224:     ROOT / "module1/models/module1_phobert_mil_full/best_model.pt",
+system\scripts\19_patch_refactored_runtime_paths.py:225:     ROOT / "module1/models/module1_phobert_mil_full/tokenizer",
+system\scripts\model_lock_config.template.json:28:       "inference_entrypoint": "module2_headline_integrity/inference/headline_integrity_pipeline.py",
+system\scripts\model_lock_config.template.json:44:       "inference_entrypoint": "module2_headline_integrity/inference/headline_integrity_pipeline.py",
+system\scripts\model_lock_config.template.json:58:     "module2_headline_integrity/inference/headline_integrity_pipeline.py": "ac3137209f676c2e1e279a967ab642b20b05c8cc64a1c0edb741be052045ace9"
+system\scripts\SYSTEM_DESIGN_V1.md:208: ├── module2_headline_integrity/         # unified M2 v1, giữ nguyên
+OLD PATH HITS: 100
+
+D. DOCKERIGNORE FULL CONTENT
+# ------------------------------------------------------------------
+# Local/dev environments
+# ------------------------------------------------------------------
+.venv
+venv
+__pycache__
+**/__pycache__
+*.py[cod]
+.pytest_cache
+.mypy_cache
+.ipynb_checkpoints
+.git
+.gitignore
+
+# ------------------------------------------------------------------
+# Frontend is deployed separately
+# ------------------------------------------------------------------
+frontend/node_modules
+frontend/dist
+
+# ------------------------------------------------------------------
+# Datasets are not required for inference
+# ------------------------------------------------------------------
+data
+module1/data
+module2/data
+
+# ------------------------------------------------------------------
+# Documentation / reports / local tools are not runtime dependencies
+# ------------------------------------------------------------------
+docs
+tools
+*.docx
+*.pdf
+system/reports
+
+# ------------------------------------------------------------------
+# Old branches, if any remain
+# ------------------------------------------------------------------
+module2_headline_integrity
+module3_plagiarism_detection
+
+# ------------------------------------------------------------------
+# MODULE 1
+# Keep:
+#   module1/scripts/16_evaluate_phobert_test.py
+#   module1/models/module1_phobert_mil_full/**
+#   module1/results/module1_phobert_mil_full/threshold_tuning/best_threshold.json
+# ------------------------------------------------------------------
+module1/scripts/*
+!module1/scripts/16_evaluate_phobert_test.py
+
+module1/models/*
+!module1/models/module1_phobert_mil_full
+!module1/models/module1_phobert_mil_full/**
+
+module1/results/*
+!module1/results/module1_phobert_mil_full
+module1/results/module1_phobert_mil_full/*
+!module1/results/module1_phobert_mil_full/threshold_tuning
+module1/results/module1_phobert_mil_full/threshold_tuning/*
+!module1/results/module1_phobert_mil_full/threshold_tuning/best_threshold.json
+
+# ------------------------------------------------------------------
+# MODULE 2 / logical M2+M3
+# Keep runtime inference code, three final checkpoints, and two locks.
+# ------------------------------------------------------------------
+module2/scripts/*
+
+module2/models/*
+!module2/models/clickbait
+!module2/models/consistency
+
+module2/models/clickbait/*
+!module2/models/clickbait/mbert_title_only_v1
+module2/models/clickbait/mbert_title_only_v1/*
+!module2/models/clickbait/mbert_title_only_v1/best_model.pt
+
+module2/models/consistency/*
+!module2/models/consistency/baseline_title_description_mbert
+!module2/models/consistency/full_article_max_mil_mbert
+
+module2/models/consistency/baseline_title_description_mbert/*
+!module2/models/consistency/baseline_title_description_mbert/best_model.pt
+
+module2/models/consistency/full_article_max_mil_mbert/*
+!module2/models/consistency/full_article_max_mil_mbert/best_model.pt
+
+module2/results/*
+!module2/results/clickbait
+!module2/results/consistency
+
+module2/results/clickbait/*
+!module2/results/clickbait/final_title_only_v1
+module2/results/clickbait/final_title_only_v1/*
+!module2/results/clickbait/final_title_only_v1/final_model_lock.json
+
+module2/results/consistency/*
+!module2/results/consistency/final_hybrid_v1
+module2/results/consistency/final_hybrid_v1/*
+!module2/results/consistency/final_hybrid_v1/final_model_lock.json
+
+# ------------------------------------------------------------------
+# Misc
+# ------------------------------------------------------------------
+*.log
+npm-debug.log*
+
+
+E. RESULT
+RESULT: ARTIFACTS_PRESENT
+Next: update backend path references and .dockerignore to the new module1/module2 layout, then rebuild Docker.

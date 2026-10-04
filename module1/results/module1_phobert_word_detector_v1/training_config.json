@@ -1,0 +1,18 @@
+{
+  "model_name": "vinai/phobert-base-v2",
+  "task": "word_error_detection",
+  "source_checkpoint": "C:\\1_projectSamSung\\models\\module1_phobert_mil_all_fields_4chunks\\best_model.pt",
+  "epochs": 2,
+  "max_length": 256,
+  "stride": 64,
+  "max_chunks": 4,
+  "train_batch_size": 12,
+  "validation_batch_size": 16,
+  "encoder_lr": 2e-05,
+  "head_lr": 0.0001,
+  "freeze_bottom_layers": 6,
+  "positive_weight_method": "sqrt_negative_positive_ratio",
+  "positive_weight": 13.942424625148824,
+  "checkpoint_selection_metric": "validation_average_precision",
+  "random_seed": 20260922
+}

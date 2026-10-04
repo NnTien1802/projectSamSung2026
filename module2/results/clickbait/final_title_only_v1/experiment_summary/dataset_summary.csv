@@ -1,0 +1,4 @@
+﻿split,rows,normal,clickbait,clickbait_rate,empty_title,empty_lead,unique_sources,unique_categories,duplicate_sample_ids
+train,2390,1645,745,0.3117154811715481,0,2,8,13,0
+validation,512,352,160,0.3125,0,0,8,13,0
+test,512,352,160,0.3125,0,1,8,13,0

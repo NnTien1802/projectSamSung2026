@@ -1,0 +1,55 @@
+{
+  "stage": "07_train_mbert_title_lead",
+  "task": "2A_clickbait_detection",
+  "dataset": "viclickbait_v1",
+  "model": "bert-base-multilingual-cased",
+  "input": "title_plus_lead",
+  "truncation": "only_second",
+  "test_used": false,
+  "best_epoch": 5,
+  "total_training_seconds": 246.7133469581604,
+  "validation_loss": 1.0258033621321374,
+  "metrics_at_0_5": {
+    "threshold": 0.5,
+    "accuracy": 0.818359375,
+    "precision_clickbait": 0.7161290322580646,
+    "recall_clickbait": 0.69375,
+    "f1_clickbait": 0.7047619047619048,
+    "macro_f1": 0.7867956209282021,
+    "roc_auc": 0.8896750710227275,
+    "average_precision": 0.764046008488936,
+    "confusion_matrix": {
+      "tn": 308,
+      "fp": 44,
+      "fn": 49,
+      "tp": 111
+    }
+  },
+  "best_validation_threshold": 0.23000000000000004,
+  "metrics_at_tuned_threshold": {
+    "threshold": 0.23000000000000004,
+    "accuracy": 0.8203125,
+    "precision_clickbait": 0.7048192771084337,
+    "recall_clickbait": 0.73125,
+    "f1_clickbait": 0.7177914110429447,
+    "macro_f1": 0.7929931267249108,
+    "roc_auc": 0.8896750710227275,
+    "average_precision": 0.764046008488936,
+    "confusion_matrix": {
+      "tn": 303,
+      "fp": 49,
+      "fn": 43,
+      "tp": 117
+    }
+  },
+  "controlled_comparison_step06": {
+    "same_model": true,
+    "same_max_length": true,
+    "same_batch_size": true,
+    "same_learning_rate": true,
+    "same_class_weight_policy": true,
+    "same_checkpoint_policy": true,
+    "changed_variable": "lead_added_as_second_sequence"
+  },
+  "note": "Checkpoint selected using validation Macro-F1 @0.5. Threshold tuned on validation after checkpoint selection. TEST remains untouched."
+}

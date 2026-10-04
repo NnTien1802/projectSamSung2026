@@ -1,0 +1,17 @@
+{
+  "stage": "13_baseline_title_article_head",
+  "model_name": "bert-base-multilingual-cased",
+  "input": "headline_used_in_pair + beginning_of_anchor_article",
+  "max_length": 160,
+  "article_char_limit": 3000,
+  "train_rows": 306004,
+  "validation_rows": 57426,
+  "test_loaded": false,
+  "batch_size": 8,
+  "grad_accum": 4,
+  "effective_batch": 32,
+  "epochs": 1,
+  "learning_rate": 2e-05,
+  "seed": 20260920,
+  "smoke_test": false
+}

@@ -1,0 +1,95 @@
+{
+  "stage": "integration_step_04_mil_aggregation_diagnostic",
+  "validation_only": true,
+  "training_performed": false,
+  "test_used": false,
+  "tolerance": 0.005,
+  "samples": 24,
+  "current_pipeline_recompute_max_error": 0.00018209218978881836,
+  "variants": {
+    "current_max_logit_difference": {
+      "mean_abs_error": 0.01540965944392761,
+      "median_abs_error": 7.739663124084473e-05,
+      "p95_abs_error": 0.046285414695739664,
+      "max_abs_error": 0.2949603497982025,
+      "within_tolerance": 20,
+      "total": 24,
+      "pass": false
+    },
+    "elementwise_max_logits": {
+      "mean_abs_error": 0.1893419782524385,
+      "median_abs_error": 0.04066361207515001,
+      "p95_abs_error": 0.578638295829296,
+      "max_abs_error": 0.5973507463932037,
+      "within_tolerance": 8,
+      "total": 24,
+      "pass": false
+    },
+    "max_chunk_probability": {
+      "mean_abs_error": 0.015409663300185146,
+      "median_abs_error": 7.739663124084473e-05,
+      "p95_abs_error": 0.046285414695739664,
+      "max_abs_error": 0.2949604094028473,
+      "within_tolerance": 20,
+      "total": 24,
+      "pass": false
+    },
+    "mean_chunk_probability": {
+      "mean_abs_error": 0.18773473662440665,
+      "median_abs_error": 0.040468012914061546,
+      "p95_abs_error": 0.6150430396199226,
+      "max_abs_error": 0.6225093007087708,
+      "within_tolerance": 8,
+      "total": 24,
+      "pass": false
+    },
+    "mean_logits": {
+      "mean_abs_error": 0.22675102036252306,
+      "median_abs_error": 0.04801737773232162,
+      "p95_abs_error": 0.848344415426254,
+      "max_abs_error": 0.8685162216424942,
+      "within_tolerance": 8,
+      "total": 24,
+      "pass": false
+    }
+  },
+  "ranking": [
+    {
+      "rank": 1,
+      "variant": "current_max_logit_difference",
+      "mean_abs_error": 0.01540965944392761,
+      "max_abs_error": 0.2949603497982025,
+      "pass": false
+    },
+    {
+      "rank": 2,
+      "variant": "max_chunk_probability",
+      "mean_abs_error": 0.015409663300185146,
+      "max_abs_error": 0.2949604094028473,
+      "pass": false
+    },
+    {
+      "rank": 3,
+      "variant": "mean_chunk_probability",
+      "mean_abs_error": 0.18773473662440665,
+      "max_abs_error": 0.6225093007087708,
+      "pass": false
+    },
+    {
+      "rank": 4,
+      "variant": "elementwise_max_logits",
+      "mean_abs_error": 0.1893419782524385,
+      "max_abs_error": 0.5973507463932037,
+      "pass": false
+    },
+    {
+      "rank": 5,
+      "variant": "mean_logits",
+      "mean_abs_error": 0.22675102036252306,
+      "max_abs_error": 0.8685162216424942,
+      "pass": false
+    }
+  ],
+  "best_variant": "current_max_logit_difference",
+  "aggregation_only_fix_supported": false
+}

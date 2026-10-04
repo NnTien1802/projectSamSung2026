@@ -1,0 +1,33 @@
+﻿sample_id,title,label,saved_label,saved_probability,saved_prediction,new_probability,new_prediction,abs_error,prediction_match
+vcb_00002,Quy hoạch 9 khu chức năng phía đông TP HCM,0,0,0.0019454956,0,0.00194549560546875,0,0.0,True
+vcb_00204,Sancho gật đầu với Napoli - Tạp chí Tri thức,0,0,0.9824219,1,0.982421875,1,0.0,True
+vcb_00385,Hai trận động đất liên tiếp ở Iran giữa lúc xung đột với Israel leo thang,0,0,0.005088806,0,0.005100250244140625,0,1.1444091796875e-05,True
+vcb_00531,"Ưu đãi dành cho hộ kinh doanh, tiểu thương sử dụng Loa TingTing PVcomBank",0,0,0.0020542145,0,0.0020542144775390625,0,0.0,True
+vcb_00695,Campuchia ngừng nhập khẩu xăng dầu từ Thái Lan,0,0,0.002866745,0,0.0028667449951171875,0,0.0,True
+vcb_00924,Sabah – thiên đường bí mật của Malaysia dành cho người yêu thiên nhiên,0,0,0.6088867,0,0.60791015625,0,0.0009765625,True
+vcb_01047,20 mỹ phẩm chăm sóc da bị thu hồi do sai phạm ghi nhãn,0,0,0.008491516,0,0.00849151611328125,0,0.0,True
+vcb_01201,Lịch thi tốt nghiệp THPT năm 2025 chính thức - Báo VietnamNet,0,0,0.0017137527,0,0.0017108917236328125,0,2.86102294921875e-06,True
+vcb_01417,FIFA Club World Cup: Man City vùi dập Al Ain - Báo Xây Dựng,0,0,0.006679535,0,0.00669097900390625,0,1.1444091796875e-05,True
+vcb_01633,Sách kết hợp thiên văn và nội tâm - hướng đi mới của dòng chữa lành,0,0,0.0020313263,0,0.0020313262939453125,0,0.0,True
+vcb_01749,Điểm chuẩn lớp 10 chuyên Sư phạm cao nhất 21/30,0,0,0.0018825531,0,0.0018825531005859375,0,0.0,True
+vcb_01900,Bệnh viện Chợ Rẫy lên tiếng về lò cyclotron duy nhất ở miền Nam ngừng hoạt động - Báo Sài Gòn Giải Phóng,0,0,0.0024147034,0,0.002414703369140625,0,0.0,True
+vcb_02071,Tiêu thụ ôtô tại Việt Nam tăng trưởng trở lại,0,0,0.0021076202,0,0.0021076202392578125,0,0.0,True
+vcb_02275,Nhiều khách sạn ở Hà Nội kín phòng trước đêm diễn của G-Dragon,0,0,0.0025558472,0,0.00255584716796875,0,0.0,True
+vcb_02455,"Bắt Viện trưởng Pháp y tâm thần Trung ương ăn hối lộ trong nhiều vụ ""chạy"" kết luận giám định",0,0,0.22595215,0,0.2283935546875,0,0.00244140625,True
+vcb_03349,Honda giới thiệu xe đạp điện bốn bánh chở hàng - Đài Phát thanh và truyền hình Hà Nội,0,0,0.0019226074,0,0.001926422119140625,0,3.814697265625e-06,True
+vcb_00135,Tuyên bố dậy sóng của tân Hoa hậu Hoàn vũ Việt Nam ngoài vụ góp hết tiền thưởng,1,1,0.0020713806,0,0.002071380615234375,0,0.0,True
+vcb_00566,"Bị dẫn dụ vào ""chiếc bẫy cũ”, người phụ nữ ở Quảng Ngãi ""bay màu” 2,7 tỉ đồng",1,1,0.9926758,1,0.99267578125,1,0.0,True
+vcb_00961,"Lisa (BLACKPINK) bí mật kết hôn với bạn trai tài phiệt, hơn 200.000 người sốc?",1,1,0.99365234,1,0.99365234375,1,0.0,True
+vcb_01523,Con có 3 dấu hiệu sau chứng tỏ EQ cao khi lớn lên,1,1,0.9897461,1,0.98974609375,1,0.0,True
+vcb_02466,"'Món ăn quốc dân' có trong mọi kỳ thi, giúp sĩ tử thêm phần may mắn",1,1,0.9560547,1,0.95556640625,1,0.00048828125,True
+vcb_02581,Nhiều quốc gia sẵn sàng cung cấp vũ khí hạt nhân cho Iran? - Chuyên trang Sài Gòn Đầu Tư Tài Chính - Báo Sài Gòn Giải Phóng,1,1,0.05496216,0,0.054901123046875,0,6.103515625e-05,True
+vcb_02734,Bạn trẻ khởi nghiệp thời 4.0 và câu hỏi dữ liệu lấy từ đâu,1,1,0.7290039,1,0.7275390625,1,0.00146484375,True
+vcb_02802,"Nóng nhất trong ngày: Giá vàng miếng chững lại, vàng nhẫn lùi sâu; Cả ngàn chai nước mắm bị vứt bỏ trong bụi rậm",1,1,0.3322754,0,0.33154296875,0,0.000732421875,True
+vcb_02873,"Inter Milan nhận bàn thua lịch sử ở Club World Cup, CLB Nhật Bản hiên ngang rời giải",1,1,0.0038776398,0,0.0038852691650390625,0,7.62939453125e-06,True
+vcb_02972,"Bị giáo viên chê không dạy nổi', cô gái nghèo vay 3,3 tỷ đi du học và cái kết",1,1,0.7368164,1,0.73828125,1,0.00146484375,True
+vcb_03081,Quang Tuấn tiết lộ ngày đầu ghi hình cùng dàn cast 'Running Man Vietnam',1,1,0.6567383,1,0.65771484375,1,0.0009765625,True
+vcb_03141,Thoát chết nhờ túi độn ngực,1,1,0.69921875,1,0.69970703125,1,0.00048828125,True
+vcb_03220,Số người trên Trái Đất có thể bị đếm thiếu rất nhiều? - Báo Giáo Dục & Thời Đại,1,1,0.9916992,1,0.99169921875,1,0.0,True
+vcb_03244,"Đất có sổ đỏ nhưng chưa rõ mốc giới, đừng vội xây nhà",1,1,0.9604492,1,0.96044921875,1,0.0,True
+vcb_03308,4 quán cơm gà khách nên thử khi đến Hội An,1,1,0.9921875,1,0.9921875,1,0.0,True
+vcb_03400,"Vương quốc kem với vị cá thu, than củi",1,1,0.0055122375,0,0.00550079345703125,0,1.1444091796875e-05,True

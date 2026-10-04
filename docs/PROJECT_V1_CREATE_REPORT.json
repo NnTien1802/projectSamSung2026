@@ -1,0 +1,14 @@
+{
+  "created_utc": "2026-09-23T18:40:25.579513+00:00",
+  "source": "C:\\1_projectSamSung",
+  "destination": "C:\\projectSamSung_v1",
+  "scope": "V1 runtime + regression evidence; excludes old plagiarism research branch and training-scale datasets",
+  "file_count": 201,
+  "total_bytes": 2961546756,
+  "copied_count": 201,
+  "reused_count": 0,
+  "locked_manifest_path_count": 12,
+  "locked_hashes_verified": 12,
+  "failures": [],
+  "status": "PASS"
+}

@@ -1,0 +1,45 @@
+{
+  "stage": "10_evaluate_final_clickbait_test",
+  "task": "2A_clickbait_detection",
+  "dataset": "viclickbait_v1",
+  "evaluation_status": "OFFICIAL_TEST_COMPLETE",
+  "configuration_frozen_before_test": true,
+  "test_tuning_performed": false,
+  "test_samples": 512,
+  "test_class_distribution": {
+    "normal": 352,
+    "clickbait": 160,
+    "clickbait_rate": 0.3125
+  },
+  "frozen_configuration": {
+    "architecture": "bert-base-multilingual-cased",
+    "input": "title_only",
+    "max_length": 160,
+    "decision_threshold": 0.6100000000000001,
+    "checkpoint": "models\\clickbait\\mbert_title_only_v1\\best_model.pt",
+    "checkpoint_sha256": "6c10d84f012cf05a0917e35abee4d8f006688315ab0570a3739bebea737efdf7",
+    "best_epoch": 4
+  },
+  "official_final_metrics": {
+    "threshold": 0.6100000000000001,
+    "accuracy": 0.83203125,
+    "precision_clickbait": 0.7569444444444444,
+    "recall_clickbait": 0.68125,
+    "f1_clickbait": 0.7171052631578947,
+    "macro_f1": 0.7988304093567251,
+    "roc_auc": 0.8674183238636364,
+    "average_precision": 0.8028530848536526,
+    "confusion_matrix": {
+      "tn": 317,
+      "fp": 35,
+      "fn": 51,
+      "tp": 109
+    }
+  },
+  "inference": {
+    "batch_size": 32,
+    "device": "cuda",
+    "seconds": 0.480712890625
+  },
+  "methodology_note": "TEST was evaluated using the checkpoint, architecture, input representation, max length and decision threshold frozen in Step 09. No TEST-based search or tuning was performed."
+}

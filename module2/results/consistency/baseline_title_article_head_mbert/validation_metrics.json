@@ -1,0 +1,40 @@
+{
+  "baseline": "B_title_plus_article_head",
+  "model": "bert-base-multilingual-cased",
+  "dataset": "headline_consistency_v1",
+  "test_used": false,
+  "validation_loss": 0.31843424432932743,
+  "metrics_at_0_5": {
+    "threshold": 0.5,
+    "accuracy": 0.8599240762024171,
+    "precision_consistent": 0.8876842855535132,
+    "recall_consistent": 0.8241214780761328,
+    "f1_consistent": 0.8547227740653783,
+    "macro_f1": 0.8597442927856901,
+    "roc_auc": 0.9410042717317337,
+    "average_precision": 0.9439782284798034,
+    "confusion_matrix": {
+      "tn": 25719,
+      "fp": 2994,
+      "fn": 5050,
+      "tp": 23663
+    }
+  },
+  "best_validation_threshold": 0.45000000000000007,
+  "metrics_at_tuned_threshold": {
+    "threshold": 0.45000000000000007,
+    "accuracy": 0.8614390694110682,
+    "precision_consistent": 0.8695605726087885,
+    "recall_consistent": 0.850451015219587,
+    "f1_consistent": 0.8598996390527335,
+    "macro_f1": 0.8614223379134691,
+    "roc_auc": 0.9410042717317337,
+    "average_precision": 0.9439782284798034,
+    "confusion_matrix": {
+      "tn": 25050,
+      "fp": 3663,
+      "fn": 4294,
+      "tp": 24419
+    }
+  }
+}

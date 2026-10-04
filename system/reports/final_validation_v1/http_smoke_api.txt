@@ -1,0 +1,6 @@
+HEALTH: {'status': 'ok', 'models_ready': True}
+module1_spelling: NO_ERROR threshold=0.57
+module2_clickbait: NORMAL threshold=0.61
+module3_consistency: CONSISTENT threshold=0.45
+HTTP SMOKE PASS: all three endpoints completed through the real API
+NOTE: API routing check only, not a numerical regression or accuracy benchmark.

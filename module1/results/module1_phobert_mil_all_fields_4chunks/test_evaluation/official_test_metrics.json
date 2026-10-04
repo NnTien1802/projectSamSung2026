@@ -1,0 +1,51 @@
+{
+  "threshold": 0.59,
+  "accuracy": 0.9463217911277987,
+  "error_precision": 0.9479413817166783,
+  "error_recall": 0.9445139758030872,
+  "error_f1": 0.9462245750905545,
+  "macro_f1": 0.9463216156963045,
+  "specificity": 0.9481296064525101,
+  "roc_auc": 0.9857275089937763,
+  "average_precision": 0.9866628387104877,
+  "confusion_matrix": {
+    "tn": 13636,
+    "fp": 746,
+    "fn": 798,
+    "tp": 13584
+  },
+  "severity_recall": {
+    "minor": {
+      "count": 7133,
+      "recall": 0.9018645731108931
+    },
+    "moderate": {
+      "count": 5067,
+      "recall": 0.9812512334714821
+    },
+    "severe": {
+      "count": 2182,
+      "recall": 0.9986251145737856
+    }
+  },
+  "test_loss": 0.18590241336137847,
+  "inference_seconds": 204.39815998077393,
+  "test_records": 28764,
+  "clean_records": 14382,
+  "noisy_records": 14382,
+  "model_name": "vinai/phobert-base-v2",
+  "checkpoint_epoch": 2,
+  "input_mode": "title_abstract_article",
+  "text_fields": [
+    "title_segmented",
+    "abstract_segmented",
+    "article_segmented"
+  ],
+  "field_separator": " . ",
+  "max_length": 256,
+  "stride": 64,
+  "max_chunks_per_document": 4,
+  "threshold_selection_rule": "maximum_validation_macro_f1",
+  "threshold_selected_on": "validation",
+  "threshold_tuned_on_test": false
+}

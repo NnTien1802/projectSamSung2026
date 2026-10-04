@@ -1,0 +1,118 @@
+{
+  "records_csv": 3414,
+  "records_jsonl": 3414,
+  "columns": [
+    "id",
+    "url",
+    "title",
+    "lead_paragraph",
+    "category",
+    "publish_datetime",
+    "source",
+    "thumbnail_url",
+    "label"
+  ],
+  "detected_columns": {
+    "title": "title",
+    "lead": "lead_paragraph",
+    "label": "label",
+    "url": "url",
+    "source": "source",
+    "category": "category"
+  },
+  "missing": {
+    "id": 0,
+    "url": 0,
+    "title": 0,
+    "lead_paragraph": 3,
+    "category": 0,
+    "publish_datetime": 31,
+    "source": 0,
+    "thumbnail_url": 4,
+    "label": 0
+  },
+  "label_distribution": {
+    "non-clickbait": 2349,
+    "clickbait": 1065
+  },
+  "source_distribution": {
+    "Báo Mới": 731,
+    "VnExpress": 608,
+    "Thanh Niên": 576,
+    "24h": 564,
+    "VietNamNet": 356,
+    "SaoStar": 286,
+    "Tuổi Trẻ": 241,
+    "Kênh14": 52
+  },
+  "category_distribution": {
+    "Other": 1117,
+    "Thể thao": 325,
+    "Quốc tế": 241,
+    "Giải trí & Showbiz": 238,
+    "Sức khỏe & Đời sống": 228,
+    "Công nghệ & Khoa học": 220,
+    "Kinh doanh & Kinh tế": 204,
+    "Tin tức tổng hợp": 197,
+    "Chính trị & An ninh": 173,
+    "Giáo dục & Học đường": 160,
+    "Xe & Vận tải": 137,
+    "Du lịch & Ẩm thực": 109,
+    "Văn hóa & Nghệ thuật": 65
+  },
+  "lengths": {
+    "title_chars": {
+      "count": 3414,
+      "min": 4,
+      "p25": 52.0,
+      "median": 66.0,
+      "mean": 66.62858816637376,
+      "p75": 79.0,
+      "p90": 93.0,
+      "p95": 104.0,
+      "p99": 126.0,
+      "max": 186
+    },
+    "title_words": {
+      "count": 3414,
+      "min": 1,
+      "p25": 12.0,
+      "median": 15.0,
+      "mean": 14.986233157586408,
+      "p75": 18.0,
+      "p90": 21.0,
+      "p95": 24.0,
+      "p99": 29.0,
+      "max": 41
+    },
+    "lead_chars": {
+      "count": 3411,
+      "min": 5,
+      "p25": 124.0,
+      "median": 151.0,
+      "mean": 162.4793315743184,
+      "p75": 191.0,
+      "p90": 236.0,
+      "p95": 274.5,
+      "p99": 375.7000000000003,
+      "max": 541
+    },
+    "lead_words": {
+      "count": 3411,
+      "min": 1,
+      "p25": 27.0,
+      "median": 33.0,
+      "mean": 35.53825857519789,
+      "p75": 42.0,
+      "p90": 52.0,
+      "p95": 60.0,
+      "p99": 81.90000000000009,
+      "max": 120
+    }
+  },
+  "duplicates": {
+    "normalized_title_duplicates_beyond_first": 0,
+    "url_duplicates_beyond_first": 0,
+    "title_lead_duplicates_beyond_first": 0
+  }
+}

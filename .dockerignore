@@ -1,0 +1,107 @@
+# ------------------------------------------------------------------
+# Local/dev environments
+# ------------------------------------------------------------------
+.venv
+venv
+__pycache__
+**/__pycache__
+*.py[cod]
+.pytest_cache
+.mypy_cache
+.ipynb_checkpoints
+.git
+.gitignore
+
+# ------------------------------------------------------------------
+# Frontend is deployed separately
+# ------------------------------------------------------------------
+frontend/node_modules
+frontend/dist
+
+# ------------------------------------------------------------------
+# Datasets are not required for inference
+# ------------------------------------------------------------------
+data
+module1/data
+module2/data
+
+# ------------------------------------------------------------------
+# Documentation / reports / local tools are not runtime dependencies
+# ------------------------------------------------------------------
+docs
+tools
+*.docx
+*.pdf
+system/reports
+
+# ------------------------------------------------------------------
+# Old branches, if any remain
+# ------------------------------------------------------------------
+module2_headline_integrity
+module3_plagiarism_detection
+
+# ------------------------------------------------------------------
+# MODULE 1
+# Keep:
+#   module1/scripts/16_evaluate_phobert_test.py
+#   module1/models/module1_phobert_mil_full/**
+#   module1/results/module1_phobert_mil_full/threshold_tuning/best_threshold.json
+# ------------------------------------------------------------------
+module1/scripts/*
+!module1/scripts/16_evaluate_phobert_test.py
+
+module1/models/*
+!module1/models/module1_phobert_mil_full
+!module1/models/module1_phobert_mil_full/**
+
+module1/results/*
+!module1/results/module1_phobert_mil_full
+module1/results/module1_phobert_mil_full/*
+!module1/results/module1_phobert_mil_full/threshold_tuning
+module1/results/module1_phobert_mil_full/threshold_tuning/*
+!module1/results/module1_phobert_mil_full/threshold_tuning/best_threshold.json
+
+# ------------------------------------------------------------------
+# MODULE 2 / logical M2+M3
+# Keep runtime inference code, three final checkpoints, and two locks.
+# ------------------------------------------------------------------
+module2/scripts/*
+
+module2/models/*
+!module2/models/clickbait
+!module2/models/consistency
+
+module2/models/clickbait/*
+!module2/models/clickbait/mbert_title_only_v1
+module2/models/clickbait/mbert_title_only_v1/*
+!module2/models/clickbait/mbert_title_only_v1/best_model.pt
+
+module2/models/consistency/*
+!module2/models/consistency/baseline_title_description_mbert
+!module2/models/consistency/full_article_max_mil_mbert
+
+module2/models/consistency/baseline_title_description_mbert/*
+!module2/models/consistency/baseline_title_description_mbert/best_model.pt
+
+module2/models/consistency/full_article_max_mil_mbert/*
+!module2/models/consistency/full_article_max_mil_mbert/best_model.pt
+
+module2/results/*
+!module2/results/clickbait
+!module2/results/consistency
+
+module2/results/clickbait/*
+!module2/results/clickbait/final_title_only_v1
+module2/results/clickbait/final_title_only_v1/*
+!module2/results/clickbait/final_title_only_v1/final_model_lock.json
+
+module2/results/consistency/*
+!module2/results/consistency/final_hybrid_v1
+module2/results/consistency/final_hybrid_v1/*
+!module2/results/consistency/final_hybrid_v1/final_model_lock.json
+
+# ------------------------------------------------------------------
+# Misc
+# ------------------------------------------------------------------
+*.log
+npm-debug.log*

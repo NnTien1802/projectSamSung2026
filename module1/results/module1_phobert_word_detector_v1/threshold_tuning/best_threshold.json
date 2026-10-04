@@ -1,0 +1,120 @@
+{
+  "dataset": "validation",
+  "test_used": false,
+  "checkpoint_selection_metric": "validation_average_precision",
+  "threshold_selection_metric": "maximum_validation_word_f1",
+  "selected_threshold": 0.93,
+  "selected_metrics": {
+    "threshold": 0.93,
+    "precision": 0.9417298847141747,
+    "recall": 0.9295695754716982,
+    "f1": 0.9356102192813269,
+    "specificity": 0.9997011899715005,
+    "covered_error_recall": 0.9636024692867184,
+    "tp": 31531,
+    "fp": 1951,
+    "fn": 2389,
+    "tn": 6527281,
+    "predicted_error_words": 33482
+  },
+  "default_threshold_metrics": {
+    "threshold": 0.5,
+    "precision": 0.855492093711989,
+    "recall": 0.9538030660377359,
+    "f1": 0.9019766372076166,
+    "specificity": 0.9991629949739878,
+    "covered_error_recall": 0.9887231831795122,
+    "tp": 32353,
+    "fp": 5465,
+    "fn": 1567,
+    "tn": 6523767,
+    "predicted_error_words": 37818
+  },
+  "recall_operating_points": {
+    "recall_at_least_94": {
+      "threshold": 0.87,
+      "precision": 0.9232038441498293,
+      "recall": 0.9402417452830188,
+      "f1": 0.9316449040399615,
+      "specificity": 0.9995936734978937,
+      "covered_error_recall": 0.974665362752888,
+      "tp": 31893,
+      "fp": 2653,
+      "fn": 2027,
+      "tn": 6526579,
+      "predicted_error_words": 34546
+    },
+    "recall_at_least_95": {
+      "threshold": 0.68,
+      "precision": 0.8876311658266546,
+      "recall": 0.9501474056603774,
+      "f1": 0.9178259693289097,
+      "specificity": 0.9993751179311747,
+      "covered_error_recall": 0.9849336837601613,
+      "tp": 32229,
+      "fp": 4080,
+      "fn": 1691,
+      "tn": 6525152,
+      "predicted_error_words": 36309
+    },
+    "recall_at_least_96": {
+      "threshold": 0.13,
+      "precision": 0.7485233619084829,
+      "recall": 0.9601709905660377,
+      "f1": 0.8412392969224212,
+      "specificity": 0.9983241520595377,
+      "covered_error_recall": 0.9953242466841881,
+      "tp": 32569,
+      "fp": 10942,
+      "fn": 1351,
+      "tn": 6518290,
+      "predicted_error_words": 43511
+    }
+  },
+  "precision_operating_points": {
+    "precision_at_least_90": {
+      "threshold": 0.76,
+      "precision": 0.9014250448833034,
+      "recall": 0.9473466981132076,
+      "f1": 0.9238155473781049,
+      "specificity": 0.9994618050024873,
+      "covered_error_recall": 0.9820304382372715,
+      "tp": 32134,
+      "fp": 3514,
+      "fn": 1786,
+      "tn": 6525718,
+      "predicted_error_words": 35648
+    },
+    "precision_at_least_92": {
+      "threshold": 0.86,
+      "precision": 0.9207383905393712,
+      "recall": 0.9410966981132075,
+      "f1": 0.930806239976673,
+      "specificity": 0.9995791235477618,
+      "covered_error_recall": 0.9755516166493491,
+      "tp": 31922,
+      "fp": 2748,
+      "fn": 1998,
+      "tn": 6526484,
+      "predicted_error_words": 34670
+    },
+    "precision_at_least_95": {
+      "threshold": 0.96,
+      "precision": 0.9540095787793197,
+      "recall": 0.9160966981132076,
+      "f1": 0.9346688323407327,
+      "specificity": 0.9997705702600245,
+      "covered_error_recall": 0.949636330297659,
+      "tp": 31074,
+      "fp": 1498,
+      "fn": 2846,
+      "tn": 6527734,
+      "predicted_error_words": 32572
+    }
+  },
+  "word_positions": 6563152,
+  "error_words": 33920,
+  "covered_error_words": 32722,
+  "uncovered_error_words": 1198,
+  "maximum_recall_from_current_coverage": 0.9646816037735849
+}

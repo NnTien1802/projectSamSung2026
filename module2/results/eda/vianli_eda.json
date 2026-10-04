@@ -1,0 +1,117 @@
+{
+  "records": 10012,
+  "splits": [
+    {
+      "split": "validation",
+      "file": "vianli_dev.jsonl",
+      "records": 1000
+    },
+    {
+      "split": "test",
+      "file": "vianli_test.jsonl",
+      "records": 1000
+    },
+    {
+      "split": "train",
+      "file": "vianli_train.jsonl",
+      "records": 8012
+    }
+  ],
+  "columns": [
+    "uid",
+    "premise",
+    "hypothesis",
+    "label"
+  ],
+  "detected_columns": {
+    "premise": "premise",
+    "hypothesis": "hypothesis",
+    "label": "label"
+  },
+  "missing": {
+    "uid": 0,
+    "premise": 0,
+    "hypothesis": 0,
+    "label": 0
+  },
+  "label_distribution": {
+    "neutral": 3590,
+    "entailment": 3283,
+    "contradiction": 3139
+  },
+  "label_by_split": {
+    "test": {
+      "contradiction": 333,
+      "entailment": 334,
+      "neutral": 333
+    },
+    "train": {
+      "contradiction": 2473,
+      "entailment": 2615,
+      "neutral": 2924
+    },
+    "validation": {
+      "contradiction": 333,
+      "entailment": 334,
+      "neutral": 333
+    }
+  },
+  "lengths": {
+    "premise_chars": {
+      "count": 10012,
+      "min": 14,
+      "p25": 98.0,
+      "median": 127.0,
+      "mean": 133.392928485817,
+      "p75": 157.0,
+      "p90": 202.0,
+      "p95": 235.0,
+      "p99": 323.0,
+      "max": 498
+    },
+    "premise_words": {
+      "count": 10012,
+      "min": 4,
+      "p25": 21.0,
+      "median": 27.0,
+      "mean": 28.969336795844985,
+      "p75": 34.0,
+      "p90": 44.0,
+      "p95": 51.0,
+      "p99": 71.0,
+      "max": 106
+    },
+    "hypothesis_chars": {
+      "count": 10012,
+      "min": 11,
+      "p25": 54.0,
+      "median": 71.0,
+      "mean": 75.65311626048741,
+      "p75": 92.0,
+      "p90": 114.0,
+      "p95": 130.0,
+      "p99": 172.88999999999942,
+      "max": 323
+    },
+    "hypothesis_words": {
+      "count": 10012,
+      "min": 3,
+      "p25": 12.0,
+      "median": 16.0,
+      "mean": 16.813423891330405,
+      "p75": 20.0,
+      "p90": 25.0,
+      "p95": 29.0,
+      "p99": 38.0,
+      "max": 68
+    }
+  },
+  "duplicates": {
+    "pair_duplicates_beyond_first": 3,
+    "cross_split_overlap": {
+      "test__train": 2,
+      "test__validation": 0,
+      "train__validation": 0
+    }
+  }
+}

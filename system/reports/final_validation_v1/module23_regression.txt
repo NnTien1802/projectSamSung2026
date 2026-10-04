@@ -1,0 +1,220 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+================================================================================
+MODULE 2 - HEADLINE INTEGRITY
+INTEGRATION STEP 03
+UNIFIED PIPELINE REGRESSION CHECK
+================================================================================
+
+NO TRAINING.
+NO THRESHOLD SEARCH.
+NO MODEL SELECTION.
+VALIDATION ARTIFACTS ONLY.
+
+Probability tolerance: 0.005000
+
+================================================================================
+LOAD UNIFIED PIPELINE
+================================================================================
+Device: cuda
+GPU   : NVIDIA GeForce RTX 4060 Laptop GPU
+
+Loading final model locks...
+Clickbait lock: VERIFIED
+Consistency lock: VERIFIED
+
+Loading shared mBERT tokenizer...
+
+Loading Clickbait model...
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|##########| 199/199 [00:00<00:00, 8912.90it/s]
+[transformers] [1mBertForSequenceClassification LOAD REPORT[0m from: bert-base-multilingual-cased
+Key                                        | Status     | 
+-------------------------------------------+------------+-
+cls.predictions.bias                       | UNEXPECTED | 
+cls.predictions.transform.dense.weight     | UNEXPECTED | 
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED | 
+cls.seq_relationship.bias                  | UNEXPECTED | 
+cls.predictions.transform.dense.bias       | UNEXPECTED | 
+cls.seq_relationship.weight                | UNEXPECTED | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED | 
+classifier.weight                          | MISSING    | 
+classifier.bias                            | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+Loading Consistency Description model...
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|##########| 199/199 [00:00<00:00, 7643.82it/s]
+[transformers] [1mBertForSequenceClassification LOAD REPORT[0m from: bert-base-multilingual-cased
+Key                                        | Status     | 
+-------------------------------------------+------------+-
+cls.predictions.bias                       | UNEXPECTED | 
+cls.predictions.transform.dense.weight     | UNEXPECTED | 
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED | 
+cls.seq_relationship.bias                  | UNEXPECTED | 
+cls.predictions.transform.dense.bias       | UNEXPECTED | 
+cls.seq_relationship.weight                | UNEXPECTED | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED | 
+classifier.weight                          | MISSING    | 
+classifier.bias                            | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+Loading Consistency MAX-MIL model...
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|##########| 199/199 [00:00<00:00, 11656.38it/s]
+[transformers] [1mBertForSequenceClassification LOAD REPORT[0m from: bert-base-multilingual-cased
+Key                                        | Status     | 
+-------------------------------------------+------------+-
+cls.predictions.bias                       | UNEXPECTED | 
+cls.predictions.transform.dense.weight     | UNEXPECTED | 
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED | 
+cls.seq_relationship.bias                  | UNEXPECTED | 
+cls.predictions.transform.dense.bias       | UNEXPECTED | 
+cls.seq_relationship.weight                | UNEXPECTED | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED | 
+classifier.weight                          | MISSING    | 
+classifier.bias                            | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+
+HeadlineIntegrityPipeline READY.
+
+================================================================================
+TASK 2A REGRESSION
+================================================================================
+
+Samples: 32
+  [01/32] vcb_00002
+  [02/32] vcb_00204
+  [03/32] vcb_00385
+  [04/32] vcb_00531
+  [05/32] vcb_00695
+  [06/32] vcb_00924
+  [07/32] vcb_01047
+  [08/32] vcb_01201
+  [09/32] vcb_01417
+  [10/32] vcb_01633
+  [11/32] vcb_01749
+  [12/32] vcb_01900
+  [13/32] vcb_02071
+  [14/32] vcb_02275
+  [15/32] vcb_02455
+  [16/32] vcb_03349
+  [17/32] vcb_00135
+  [18/32] vcb_00566
+  [19/32] vcb_00961
+  [20/32] vcb_01523
+  [21/32] vcb_02466
+  [22/32] vcb_02581
+  [23/32] vcb_02734
+  [24/32] vcb_02802
+  [25/32] vcb_02873
+  [26/32] vcb_02972
+  [27/32] vcb_03081
+  [28/32] vcb_03141
+  [29/32] vcb_03220
+  [30/32] vcb_03244
+  [31/32] vcb_03308
+  [32/32] vcb_03400
+
+Mean abs error : 0.000285715
+P95 abs error  : 0.001464844
+Max abs error  : 0.002441406
+Prediction mismatch: 0
+Tolerance      : 0.005000
+RESULT         : PASS
+
+================================================================================
+TASK 2B REGRESSION
+================================================================================
+
+Samples: 24
+
+Original chunk-count coverage:
+original_chunk_count
+1     2
+4     2
+5     2
+6    18
+  [01/24] pair_4c185ee5c00eb61223acd8bc | label=0 | original_chunks=1
+  [02/24] pair_f21bc3ad62e74e9f97f25f66 | label=0 | original_chunks=4
+  [03/24] pair_3757aaa153da101fa1b092da | label=0 | original_chunks=5
+  [04/24] pair_bb02247b6547bcd9533f0e53 | label=0 | original_chunks=6
+  [05/24] pair_a22e77afe6502e320b1c36dd | label=0 | original_chunks=6
+  [06/24] pair_9d5c7bb2ec9c3843047a4ac1 | label=0 | original_chunks=6
+  [07/24] pair_4db764fc2c9846d5a5986dae | label=0 | original_chunks=6
+  [08/24] pair_865af7343e876b18ce301f14 | label=0 | original_chunks=6
+  [09/24] pair_385243eb10ffb87f939bc062 | label=0 | original_chunks=6
+  [10/24] pair_46617a7a3a0024e529e7c428 | label=0 | original_chunks=6
+  [11/24] pair_9c48b25d3af51263f7e1a2f0 | label=0 | original_chunks=6
+  [12/24] pair_f89054217d47e15cbb5a0884 | label=0 | original_chunks=6
+  [13/24] pair_69a3f4582d08376283401c9f | label=1 | original_chunks=1
+  [14/24] pair_e985c3d21f3072b507213f49 | label=1 | original_chunks=4
+  [15/24] pair_3cc1d5fb343900eb8c06883a | label=1 | original_chunks=5
+  [16/24] pair_bd3570a59f35493e3d36e7e4 | label=1 | original_chunks=6
+  [17/24] pair_ad743dd45ead85b5a900b6a8 | label=1 | original_chunks=6
+  [18/24] pair_b8ffc98b3a5a2c3478be0d03 | label=1 | original_chunks=6
+  [19/24] pair_72678ef389a85207dce053e6 | label=1 | original_chunks=6
+  [20/24] pair_a6b48866c4f0f80c014dfc95 | label=1 | original_chunks=6
+  [21/24] pair_6c284e240f090271e93f0f29 | label=1 | original_chunks=6
+  [22/24] pair_19356b40b153045416bfed69 | label=1 | original_chunks=6
+  [23/24] pair_9f2a50e5fccf4009dee106a7 | label=1 | original_chunks=6
+  [24/24] pair_8a1f819866fa3b45c3536acd | label=1 | original_chunks=6
+
+================================================================================
+DESCRIPTION BRANCH
+================================================================================
+
+Mean abs error : 0.000044743
+P95 abs error  : 0.000244141
+Max abs error  : 0.000488281
+RESULT         : PASS
+
+================================================================================
+MAX-MIL BRANCH
+================================================================================
+
+Mean abs error : 0.000083288
+P95 abs error  : 0.000488281
+Max abs error  : 0.000488281
+
+Token-count mismatches : 0
+Chunk-count mismatches : 0
+RESULT                 : PASS
+
+================================================================================
+FINAL FUSION
+================================================================================
+
+Mean abs error : 0.000062108
+P95 abs error  : 0.000244141
+Max abs error  : 0.000335693
+Prediction mismatches: 0
+RESULT               : PASS
+
+================================================================================
+REGRESSION SUMMARY
+================================================================================
+
+Task 2A Clickbait    : PASS
+Task 2B Description  : PASS
+Task 2B MAX-MIL      : PASS
+Task 2B Fusion       : PASS
+
+UNIFIED PIPELINE:
+  PASS
+
+Outputs:
+  Clickbait detail:
+    C:\projectSamSung_v1\module2_headline_integrity\results\integration\regression_v1\clickbait_regression_samples.csv
+  Consistency detail:
+    C:\projectSamSung_v1\module2_headline_integrity\results\integration\regression_v1\consistency_regression_samples.csv
+  Report:
+    C:\projectSamSung_v1\module2_headline_integrity\results\integration\regression_v1\regression_report.json
+
+INTEGRATION REGRESSION PASSED.
+Unified Module 2 inference is behaviorally consistent with saved validation artifacts.
+
+INTEGRATION STEP 03 FINISHED

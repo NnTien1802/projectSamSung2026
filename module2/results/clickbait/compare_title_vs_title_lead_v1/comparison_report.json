@@ -1,0 +1,125 @@
+{
+  "stage": "08_compare_mbert_title_vs_title_lead",
+  "task": "2A_clickbait_detection",
+  "dataset": "viclickbait_v1",
+  "split": "validation",
+  "test_used": false,
+  "models": {
+    "A_title_only": {
+      "threshold": 0.6100000000000001,
+      "metrics_at_0_5": {
+        "threshold": 0.5,
+        "accuracy": 0.8203125,
+        "precision_clickbait": 0.7207792207792207,
+        "recall_clickbait": 0.69375,
+        "f1_clickbait": 0.7070063694267515,
+        "macro_f1": 0.7887144523190095,
+        "roc_auc": 0.8832563920454547,
+        "average_precision": 0.7554753254554589,
+        "confusion_matrix": {
+          "tn": 309,
+          "fp": 43,
+          "fn": 49,
+          "tp": 111
+        }
+      },
+      "metrics_at_saved_tuned_threshold": {
+        "threshold": 0.6100000000000001,
+        "accuracy": 0.82421875,
+        "precision_clickbait": 0.7302631578947368,
+        "recall_clickbait": 0.69375,
+        "f1_clickbait": 0.7115384615384616,
+        "macro_f1": 0.7925669835782195,
+        "roc_auc": 0.8832563920454547,
+        "average_precision": 0.7554753254554589,
+        "confusion_matrix": {
+          "tn": 311,
+          "fp": 41,
+          "fn": 49,
+          "tp": 111
+        }
+      }
+    },
+    "B_title_plus_lead": {
+      "threshold": 0.23000000000000004,
+      "metrics_at_0_5": {
+        "threshold": 0.5,
+        "accuracy": 0.818359375,
+        "precision_clickbait": 0.7161290322580646,
+        "recall_clickbait": 0.69375,
+        "f1_clickbait": 0.7047619047619048,
+        "macro_f1": 0.7867956209282021,
+        "roc_auc": 0.8896750710227275,
+        "average_precision": 0.764046008488936,
+        "confusion_matrix": {
+          "tn": 308,
+          "fp": 44,
+          "fn": 49,
+          "tp": 111
+        }
+      },
+      "metrics_at_saved_tuned_threshold": {
+        "threshold": 0.23000000000000004,
+        "accuracy": 0.8203125,
+        "precision_clickbait": 0.7048192771084337,
+        "recall_clickbait": 0.73125,
+        "f1_clickbait": 0.7177914110429447,
+        "macro_f1": 0.7929931267249108,
+        "roc_auc": 0.8896750710227275,
+        "average_precision": 0.764046008488936,
+        "confusion_matrix": {
+          "tn": 303,
+          "fp": 49,
+          "fn": 43,
+          "tp": 117
+        }
+      }
+    }
+  },
+  "deltas_b_minus_a": {
+    "macro_f1_at_0_5": -0.0019188313908073962,
+    "macro_f1_tuned": 0.0004261431466913157,
+    "accuracy_tuned": -0.00390625,
+    "precision_clickbait_tuned": -0.025443880786303108,
+    "recall_clickbait_tuned": 0.03749999999999998,
+    "f1_clickbait_tuned": 0.006252949504483185,
+    "roc_auc": 0.006418678977272774,
+    "average_precision": 0.008570683033477078
+  },
+  "paired_error_overlap": {
+    "BOTH_CORRECT": {
+      "count": 390,
+      "rate": 0.76171875
+    },
+    "TITLE_ONLY_CORRECT": {
+      "count": 32,
+      "rate": 0.0625
+    },
+    "TITLE_LEAD_CORRECT": {
+      "count": 30,
+      "rate": 0.05859375
+    },
+    "BOTH_WRONG": {
+      "count": 60,
+      "rate": 0.1171875
+    }
+  },
+  "mcnemar_exact": {
+    "title_only_correct_title_lead_wrong": 32,
+    "title_lead_correct_title_only_wrong": 30,
+    "discordant_samples": 62,
+    "two_sided_p_value": 0.8990763136528589
+  },
+  "paired_bootstrap": {
+    "iterations": 10000,
+    "metric": "Macro-F1",
+    "thresholds_reoptimized_per_bootstrap": false,
+    "mean_delta_b_minus_a": 0.0006206081849212814,
+    "median_delta_b_minus_a": 0.0008655270742222165,
+    "ci95_low": -0.0346898374069771,
+    "ci95_high": 0.0353566535572874,
+    "fraction_delta_greater_than_zero": 0.5191,
+    "warning": "Thresholds were already tuned on this validation set. Bootstrap therefore measures sample stability, not performance on an untouched external population."
+  },
+  "interpretation_note": "Primary comparison remains Macro-F1. Subgroup and bootstrap analyses are diagnostic only. TEST remains untouched."
+}

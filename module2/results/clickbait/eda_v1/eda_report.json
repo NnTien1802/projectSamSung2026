@@ -1,0 +1,169 @@
+{
+  "stage": "04_eda_clickbait_processed",
+  "task": "2A_clickbait_detection",
+  "dataset": "viclickbait_v1",
+  "test_loaded": false,
+  "development_rows": 2902,
+  "train_rows": 2390,
+  "validation_rows": 512,
+  "train": {
+    "normal": 1645,
+    "clickbait": 745,
+    "clickbait_rate": 0.3117154811715481,
+    "empty_lead": 2,
+    "title_words_median": 15.0,
+    "lead_words_median": 33.0
+  },
+  "validation": {
+    "normal": 352,
+    "clickbait": 160,
+    "clickbait_rate": 0.3125,
+    "empty_lead": 0,
+    "title_words_median": 15.0,
+    "lead_words_median": 33.0
+  },
+  "train_validation_drift": {
+    "clickbait_rate_delta": 0.0007845188284518745,
+    "title_words_median_delta": 0.0,
+    "lead_words_median_delta": 0.0
+  },
+  "strongest_train_surface_feature_gaps": [
+    {
+      "split": "train",
+      "feature": "title_has_quote",
+      "normal_rate": 0.11246200607902736,
+      "clickbait_rate": 0.33422818791946307,
+      "absolute_rate_gap": 0.22176618184043573,
+      "signed_rate_gap_clickbait_minus_normal": 0.22176618184043573
+    },
+    {
+      "split": "train",
+      "feature": "title_has_question",
+      "normal_rate": 0.03282674772036474,
+      "clickbait_rate": 0.20134228187919462,
+      "absolute_rate_gap": 0.16851553415882986,
+      "signed_rate_gap_clickbait_minus_normal": 0.16851553415882986
+    },
+    {
+      "split": "train",
+      "feature": "title_has_dash",
+      "normal_rate": 0.3264437689969605,
+      "clickbait_rate": 0.2,
+      "absolute_rate_gap": 0.12644376899696047,
+      "signed_rate_gap_clickbait_minus_normal": -0.12644376899696047
+    },
+    {
+      "split": "train",
+      "feature": "title_has_number",
+      "normal_rate": 0.40364741641337387,
+      "clickbait_rate": 0.3087248322147651,
+      "absolute_rate_gap": 0.09492258419860877,
+      "signed_rate_gap_clickbait_minus_normal": -0.09492258419860877
+    },
+    {
+      "split": "train",
+      "feature": "title_has_exclamation",
+      "normal_rate": 0.00303951367781155,
+      "clickbait_rate": 0.0174496644295302,
+      "absolute_rate_gap": 0.01441015075171865,
+      "signed_rate_gap_clickbait_minus_normal": 0.01441015075171865
+    }
+  ],
+  "strongest_train_fixed_lexical_cues": [
+    {
+      "cue": "bất ngờ",
+      "normal_count": 5,
+      "clickbait_count": 29,
+      "normal_rate": 0.00303951367781155,
+      "clickbait_rate": 0.038926174496644296,
+      "absolute_rate_gap": 0.035886660818832745,
+      "signed_rate_gap_clickbait_minus_normal": 0.035886660818832745
+    },
+    {
+      "cue": "vì sao",
+      "normal_count": 4,
+      "clickbait_count": 18,
+      "normal_rate": 0.0024316109422492403,
+      "clickbait_rate": 0.024161073825503355,
+      "absolute_rate_gap": 0.021729462883254114,
+      "signed_rate_gap_clickbait_minus_normal": 0.021729462883254114
+    },
+    {
+      "cue": "bí mật",
+      "normal_count": 1,
+      "clickbait_count": 12,
+      "normal_rate": 0.0006079027355623101,
+      "clickbait_rate": 0.016107382550335572,
+      "absolute_rate_gap": 0.015499479814773263,
+      "signed_rate_gap_clickbait_minus_normal": 0.015499479814773263
+    },
+    {
+      "cue": "sốc",
+      "normal_count": 1,
+      "clickbait_count": 11,
+      "normal_rate": 0.0006079027355623101,
+      "clickbait_rate": 0.01476510067114094,
+      "absolute_rate_gap": 0.01415719793557863,
+      "signed_rate_gap_clickbait_minus_normal": 0.01415719793557863
+    },
+    {
+      "cue": "hé lộ",
+      "normal_count": 3,
+      "clickbait_count": 11,
+      "normal_rate": 0.00182370820668693,
+      "clickbait_rate": 0.01476510067114094,
+      "absolute_rate_gap": 0.01294139246445401,
+      "signed_rate_gap_clickbait_minus_normal": 0.01294139246445401
+    },
+    {
+      "cue": "tiết lộ",
+      "normal_count": 3,
+      "clickbait_count": 11,
+      "normal_rate": 0.00182370820668693,
+      "clickbait_rate": 0.01476510067114094,
+      "absolute_rate_gap": 0.01294139246445401,
+      "signed_rate_gap_clickbait_minus_normal": 0.01294139246445401
+    },
+    {
+      "cue": "lý do",
+      "normal_count": 1,
+      "clickbait_count": 9,
+      "normal_rate": 0.0006079027355623101,
+      "clickbait_rate": 0.012080536912751677,
+      "absolute_rate_gap": 0.011472634177189368,
+      "signed_rate_gap_clickbait_minus_normal": 0.011472634177189368
+    },
+    {
+      "cue": "ai cũng",
+      "normal_count": 0,
+      "clickbait_count": 6,
+      "normal_rate": 0.0,
+      "clickbait_rate": 0.008053691275167786,
+      "absolute_rate_gap": 0.008053691275167786,
+      "signed_rate_gap_clickbait_minus_normal": 0.008053691275167786
+    },
+    {
+      "cue": "sự thật",
+      "normal_count": 2,
+      "clickbait_count": 6,
+      "normal_rate": 0.0012158054711246201,
+      "clickbait_rate": 0.008053691275167786,
+      "absolute_rate_gap": 0.0068378858040431655,
+      "signed_rate_gap_clickbait_minus_normal": 0.0068378858040431655
+    },
+    {
+      "cue": "cái kết",
+      "normal_count": 0,
+      "clickbait_count": 5,
+      "normal_rate": 0.0,
+      "clickbait_rate": 0.006711409395973154,
+      "absolute_rate_gap": 0.006711409395973154,
+      "signed_rate_gap_clickbait_minus_normal": 0.006711409395973154
+    }
+  ],
+  "notes": [
+    "Surface and lexical features are diagnostics only and are not automatically used as classifier inputs.",
+    "Lexical cue analysis is restricted to TRAIN to reduce adaptive use of VALIDATION.",
+    "TEST remains locked and was not loaded."
+  ]
+}

@@ -1,0 +1,415 @@
+{
+  "created_utc": "2026-09-23T19:46:38.369598+00:00",
+  "validation_path": "C:\\projectSamSung_v1\\data\\processed\\vn_newsspell_v1\\validation.jsonl",
+  "sample_count": 60,
+  "scanned": 60,
+  "candidate": "underthesea_original_surface_restored",
+  "threshold_unchanged": 0.57,
+  "limitations": [
+    "60 selected validation rows, not official accuracy or generalization.",
+    "Tone-insensitive alignment is only accepted if tone-mark identities match per original whitespace token.",
+    "Underlying segmenter remains different from the source segmenter.",
+    "This script does not change API, model, checkpoint, thresholds or validation rows."
+  ],
+  "restoration": {
+    "accepted": 54,
+    "rejected": 6,
+    "reasons": {
+      "restored": 54,
+      "candidate_join_not_on_single_source_space": 6
+    },
+    "rejected_examples": [
+      {
+        "variant_id": "002a47e78506876ff713_clean",
+        "label": 0,
+        "reason": "candidate_join_not_on_single_source_space",
+        "source_excerpt": "Chiến đấu cơ F -16 của Mỹ . Vụ va chạm xảy ra tối 7/5 , trong hoạt động huấn luyện ban đêm tại một khu quân sự ở hạt Jefferson , Georgia , phát ngôn viên của Vệ",
+        "candidate_excerpt": "Chiến_đấu cơ_F - 16 của Mỹ . Vụ va_chạm xảy ra tối_7/5 , trong hoạt_động huấn_luyện ban_đêm tại một khu quân_sự ở hạt Jefferson , Georgia , phát_ngôn_viên của V"
+      },
+      {
+        "variant_id": "002a47e78506876ff713_noisy_0",
+        "label": 1,
+        "reason": "candidate_join_not_on_single_source_space",
+        "source_excerpt": "Chiến đấu cơ F -16 của Mỹ . Vụ va chạm xảy ra tối 7/5 , trong hoạt động huấn luyện ban đêm tại một khu quân sự ở hạt Jefferson , Georgia , phát ngôn viên của Vệ",
+        "candidate_excerpt": "Chiến_đấu cơ_F - 16 của Mỹ . Vụ va_chạm xảy ra tối_7/5 , trong hoạt_động huấn_luyện ban_đêm tại một khu quân_sự ở hạt Jefferson , Georgia , phát_ngôn_viên của V"
+      },
+      {
+        "variant_id": "004509a99c89cb9f76f4_clean",
+        "label": 0,
+        "reason": "candidate_join_not_on_single_source_space",
+        "source_excerpt": "Tàu sân bay khiến giới quân sự cả thế giới dè chừng Tuần trước , Trung Quốc đã làm lễ hạ thuỷ con tàu sân bay nội địa đầu tiên mang mã số 001A tại xưởng đóng tà",
+        "candidate_excerpt": "Tàu sân_bay khiến giới quân_sự cả thế_giới dè_chừng Tuần trước , Trung_Quốc đã làm lễ hạ_thủy con tàu sân_bay nội_địa đầu_tiên mang mã_số 001A tại xưởng đóng_tà"
+      },
+      {
+        "variant_id": "004509a99c89cb9f76f4_noisy_0",
+        "label": 1,
+        "reason": "candidate_join_not_on_single_source_space",
+        "source_excerpt": "Tàu sân bay khiến giới quân sự cả thế giới dè chừng Tuần trước , Trung Quốc đã làm lễ hạ thuỳ con tàu sân bay nội địa đầu tiên mang mã số 001A tại xưởng đóng tà",
+        "candidate_excerpt": "Tàu sân_bay khiến giới quân_sự cả thế_giới dè_chừng Tuần trước , Trung_Quốc đã làm lễ hạ_thùy con tàu sân_bay nội_địa đầu_tiên mang mã_số 001A tại xưởng đóng_tà"
+      },
+      {
+        "variant_id": "005b1e92f0e80bc1b8f3_clean",
+        "label": 0,
+        "reason": "candidate_join_not_on_single_source_space",
+        "source_excerpt": "UBND TP Đà Nẵng vừa đồng ý phương án thiết kế của Holiday Beach Hotel & Resort ( công ty cổ phần HoaKy ) để bắt đầu lắp đặt đồng hồ đếm ngược chuẩn bị đón Đại h",
+        "candidate_excerpt": "UBND TP Đà_Nẵng vừa đồng_ý phương_án thiết_kế của Holiday Beach_Hotel & Resort ( công_ty cổ_phần HoaKy ) để bắt_đầu lắp_đặt đồng_hồ đếm_ngược chuẩn_bị đón Đại_h"
+      },
+      {
+        "variant_id": "005b1e92f0e80bc1b8f3_noisy_0",
+        "label": 1,
+        "reason": "candidate_join_not_on_single_source_space",
+        "source_excerpt": "UBND TP Đà Nẵng vừa đồng ý phương án thiết kế của Holiday Beach Hotel & Resort ( công ty cổ phần HoaKy ) để bắt đầu lắp đặt đồng hồ đếm ngược chuẩn bị đón Đại h",
+        "candidate_excerpt": "UBND TP Đà_Nẵng vừa đồng_ý phương_án thiết_kế của Holiday Beach_Hotel & Resort ( công_ty cổ_phần HoaKy ) để bắt_đầu lắp_đặt đồng_hồ đếm_ngược chuẩn_bị đón Đại_h"
+      }
+    ],
+    "mean_segmentation_seconds_per_document": 0.0264,
+    "overall": {
+      "n": 54,
+      "precision": 0.96021,
+      "recall": 0.96168,
+      "f1": 0.96094,
+      "exact_join_boundaries": 0,
+      "exact_segmented_text": 0,
+      "unexpected_joins": 0
+    },
+    "by_label": {
+      "0": {
+        "n": 27,
+        "precision": 0.96093,
+        "recall": 0.96307,
+        "f1": 0.962,
+        "exact_join_boundaries": 0,
+        "exact_segmented_text": 0,
+        "unexpected_joins": 0
+      },
+      "1": {
+        "n": 27,
+        "precision": 0.95949,
+        "recall": 0.96029,
+        "f1": 0.95989,
+        "exact_join_boundaries": 0,
+        "exact_segmented_text": 0,
+        "unexpected_joins": 0
+      }
+    },
+    "mismatch_examples": [
+      {
+        "variant_id": "0000e2af609a08cda405_clean",
+        "reference_excerpt": "Công_ty CP Đầu_tư Năm_Bảy_Bảy ( công_ty 577 , mã CK : NBB ) vừa công_bố nội_dung tờ_trình của hội_đồng_quản_trị gửi đại_hội_đồng cổ_đông ( ĐHĐCĐ ) thường_niên dự_kiến diễn ra ngày ",
+        "restored_excerpt": "Công_ty CP Đầu_tư Năm_Bảy Bảy ( công_ty 577 , mã_CK : NBB ) vừa công_bố nội_dung tờ_trình của hội_đồng_quản_trị gửi đại_hội_đồng cổ_đông ( ĐHĐCĐ ) thường_niên dự_kiến diễn ra ngày "
+      },
+      {
+        "variant_id": "0000e2af609a08cda405_noisy_0",
+        "reference_excerpt": "Công_ty CP Đầu_tư Năm_Bảy_Bảy ( công_ty 577 , mã CK : NBB ) vừa công_bố nội_dung tờ_trình của hội_đồng_quản_trị gửi đại_hội_đồng cổ_đông ( ĐHĐCĐ ) thường_niên dự_kiến diễn ra ngày ",
+        "restored_excerpt": "Công_ty CP Đầu_tư Năm_Bảy Bảy ( công_ty 577 , mã_CK : NBB ) vừa công_bố nội_dung tờ_trình của hội_đồng_quản_trị gửi đại_hội_đồng cổ_đông ( ĐHĐCĐ ) thường_niên dự_kiến diễn ra ngày "
+      },
+      {
+        "variant_id": "00095cb1403c8d31b245_clean",
+        "reference_excerpt": "Vụ đình_công bắt_đầu từ sáng 26/3 khi hàng nghìn công_nhân diễu_hành trong khuôn_viên của Công_ty Pouyuen ( Khu_công_nghiệp Tân_Tạo , phường Tân_Tạo , quận Bình_Tân ) bày_tỏ không ",
+        "restored_excerpt": "Vụ đình_công bắt_đầu từ sáng 26/3 khi hàng nghìn công_nhân diễu_hành trong khuôn_viên của Công_ty Pouyuen ( Khu công_nghiệp Tân_Tạo , phường Tân_Tạo , quận Bình_Tân ) bày_tỏ không "
+      },
+      {
+        "variant_id": "00095cb1403c8d31b245_noisy_0",
+        "reference_excerpt": "Vụ đình_công bắt_đầu từ sáng 26/3 khi hàng nghìn công_nhân diễu_hành trong khuôn_viên của Công_ty Pouyuen ( Khu_công_nghiệp Tân_Tạo , phường Tân_Tạo , quận Bình_Tân ) bày_tỏ không ",
+        "restored_excerpt": "Vụ đình_công bắt_đầu từ sáng 26/3 khi hàng nghìn công_nhân diễu_hành trong khuôn_viên của Công_ty Pouyuen ( Khu công_nghiệp Tân_Tạo , phường Tân_Tạo , quận Bình_Tân ) bày_tỏ không "
+      },
+      {
+        "variant_id": "000d0f7fd068da45a652_clean",
+        "reference_excerpt": "Ngày 19/7 , Cơ_quan CSĐT Công_an huyện Quỳnh_Phụ , tỉnh Thái_Bình cho biết , đơn_vị vừa tiến_hành bắt_giữ , ra quyết_định tạm giữ hình_sự đối_với Nguyễn_Văn_Ca ( SN 1989 , trú tại ",
+        "restored_excerpt": "Ngày 19/7 , Cơ_quan CSĐT Công_an huyện Quỳnh_Phụ , tỉnh Thái_Bình cho biết , đơn_vị vừa tiến_hành bắt_giữ , ra quyết_định tạm giữ hình_sự đối_với Nguyễn_Văn_Ca ( SN 1989 , trú tại "
+      },
+      {
+        "variant_id": "000d0f7fd068da45a652_noisy_0",
+        "reference_excerpt": "Ngày 19/7 , Cơ_quan CSĐT Công_an huyện Quỳnh_Phụ , tỉnh Thái_Bình cho biết , đơn_vị vừa tiến_hành bắt_giữ , ra quyết_định tạm giữ hình_sự đối_với Nguyễn_Văn_Ca ( SN 1989 , trú tại ",
+        "restored_excerpt": "Ngày 19/7 , Cơ_quan CSĐT Công_an huyện Quỳnh_Phụ , tỉnh Thái_Bình cho biết , đơn_vị vừa tiến_hành bắt_giữ , ra quyết_định tạm giữ hình_sự đối_với Nguyễn_Văn_Ca ( SN 1989 , trú tại "
+      },
+      {
+        "variant_id": "000e710c24356edaaa19_clean",
+        "reference_excerpt": "Máy_bay Boeing 747-200 của IranAir . Farhad_Parvaresh , Chủ_tịch hãng hàng_không quốc_gia Iran , cho_biết thoả_thuận kéo_dài 10 năm bao_gồm 50 máy_bay Boeing 737 và 30 chiếc 777 , ",
+        "restored_excerpt": "Máy_bay Boeing 747-200 của IranAir . Farhad_Parvaresh , Chủ_tịch hãng hàng_không quốc_gia Iran , cho biết thoả_thuận kéo_dài 10 năm bao_gồm 50 máy_bay Boeing 737 và 30 chiếc 777 , "
+      },
+      {
+        "variant_id": "000e710c24356edaaa19_noisy_0",
+        "reference_excerpt": "Máy_bay Boeing 747-200 của IranAir . Farhad_Parvaresh , Chủ_tịch hãng hàng_không quốc_gia Iran , cho_biết thoả_thuận kéo_dài 10 năm bao_gồm 50 máy_bay Boeing 737 và 30 chiếc 777 , ",
+        "restored_excerpt": "Máy_bay Boeing 747-200 của IranAir . Farhad_Parvaresh , Chủ_tịch hãng hàng_không quốc_gia Iran , cho biết thoả_thuận kéo_dài 10 năm bao_gồm 50 máy_bay Boeing 737 và 30 chiếc 777 , "
+      },
+      {
+        "variant_id": "0014e4941ce07ee64a6e_clean",
+        "reference_excerpt": "Ngày 25/6 , theo thông_tin từ cơ_quan Công_an xã Đức_Long , huyện Đức_Thọ , tỉnh Hà_Tĩnh xác_nhận , trên địa_bàn vừa phát_hiện một thi_thể tại công_trường thi_công hệ_thống kênh th",
+        "restored_excerpt": "Ngày 25/6 , theo thông_tin từ cơ_quan Công_an xã Đức_Long , huyện Đức_Thọ , tỉnh Hà_Tĩnh xác_nhận , trên địa_bàn vừa phát_hiện một thi_thể tại công_trường thi_công hệ_thống kênh th"
+      },
+      {
+        "variant_id": "0014e4941ce07ee64a6e_noisy_0",
+        "reference_excerpt": "Ngày 25/6 , theo thông_tin từ cơ_quan Công_an xã Đức_Long , huyện Đức_Thọ , tỉnh Hà_Tĩnh xác_nhận , trên địa_bàn vừa phát_hiện một thi_thể tại công_trường thi_công hệ_thống kênh th",
+        "restored_excerpt": "Ngày 25/6 , theo thông_tin từ cơ_quan Công_an xã Đức_Long , huyện Đức_Thọ , tỉnh Hà_Tĩnh xác_nhận , trên địa_bàn vừa phát_hiện một thi_thể tại công_trường thi_công hệ_thống kênh th"
+      }
+    ]
+  },
+  "inference": {
+    "device": "cuda",
+    "overall": {
+      "n": 54,
+      "prediction_flips": 8,
+      "mean_absolute_probability_difference": 0.146254,
+      "p95_absolute_probability_difference": 0.908264,
+      "max_absolute_probability_difference": 0.921814,
+      "chunk_count_changes": 0
+    },
+    "by_label": {
+      "0": {
+        "n": 27,
+        "prediction_flips": 5,
+        "mean_absolute_probability_difference": 0.196719,
+        "p95_absolute_probability_difference": 0.910706,
+        "max_absolute_probability_difference": 0.921814,
+        "chunk_count_changes": 0
+      },
+      "1": {
+        "n": 27,
+        "prediction_flips": 3,
+        "mean_absolute_probability_difference": 0.095789,
+        "p95_absolute_probability_difference": 0.821167,
+        "max_absolute_probability_difference": 0.873108,
+        "chunk_count_changes": 0
+      }
+    },
+    "largest_drifts": [
+      {
+        "variant_id": "0000e2af609a08cda405_clean",
+        "label": 0,
+        "reference_probability_error": 0.065979,
+        "candidate_probability_error": 0.987793,
+        "absolute_probability_difference": 0.92181396484375,
+        "reference_prediction": 0,
+        "candidate_prediction": 1,
+        "prediction_changed": true,
+        "reference_chunks": 2,
+        "candidate_chunks": 2,
+        "chunk_count_changed": false
+      },
+      {
+        "variant_id": "00547c33a7d9dcc668d4_clean",
+        "label": 0,
+        "reference_probability_error": 0.0507202,
+        "candidate_probability_error": 0.9614258,
+        "absolute_probability_difference": 0.91070556640625,
+        "reference_prediction": 0,
+        "candidate_prediction": 1,
+        "prediction_changed": true,
+        "reference_chunks": 3,
+        "candidate_chunks": 3,
+        "chunk_count_changed": false
+      },
+      {
+        "variant_id": "00736df79e8189b0543b_clean",
+        "label": 0,
+        "reference_probability_error": 0.062439,
+        "candidate_probability_error": 0.9707031,
+        "absolute_probability_difference": 0.90826416015625,
+        "reference_prediction": 0,
+        "candidate_prediction": 1,
+        "prediction_changed": true,
+        "reference_chunks": 3,
+        "candidate_chunks": 3,
+        "chunk_count_changed": false
+      },
+      {
+        "variant_id": "003df1e906ea6943dd58_noisy_0",
+        "label": 1,
+        "reference_probability_error": 0.0985718,
+        "candidate_probability_error": 0.9716797,
+        "absolute_probability_difference": 0.87310791015625,
+        "reference_prediction": 0,
+        "candidate_prediction": 1,
+        "prediction_changed": true,
+        "reference_chunks": 3,
+        "candidate_chunks": 3,
+        "chunk_count_changed": false
+      },
+      {
+        "variant_id": "00170ab4db819bcae4b2_clean",
+        "label": 0,
+        "reference_probability_error": 0.0880127,
+        "candidate_probability_error": 0.9091797,
+        "absolute_probability_difference": 0.8211669921875,
+        "reference_prediction": 0,
+        "candidate_prediction": 1,
+        "prediction_changed": true,
+        "reference_chunks": 3,
+        "candidate_chunks": 3,
+        "chunk_count_changed": false
+      },
+      {
+        "variant_id": "00170ab4db819bcae4b2_noisy_0",
+        "label": 1,
+        "reference_probability_error": 0.0880127,
+        "candidate_probability_error": 0.9091797,
+        "absolute_probability_difference": 0.8211669921875,
+        "reference_prediction": 0,
+        "candidate_prediction": 1,
+        "prediction_changed": true,
+        "reference_chunks": 3,
+        "candidate_chunks": 3,
+        "chunk_count_changed": false
+      },
+      {
+        "variant_id": "0000e2af609a08cda405_noisy_0",
+        "label": 1,
+        "reference_probability_error": 0.1673584,
+        "candidate_probability_error": 0.987793,
+        "absolute_probability_difference": 0.8204345703125,
+        "reference_prediction": 0,
+        "candidate_prediction": 1,
+        "prediction_changed": true,
+        "reference_chunks": 2,
+        "candidate_chunks": 2,
+        "chunk_count_changed": false
+      },
+      {
+        "variant_id": "004176c0cac6eaa55423_clean",
+        "label": 0,
+        "reference_probability_error": 0.0417786,
+        "candidate_probability_error": 0.8466797,
+        "absolute_probability_difference": 0.804901123046875,
+        "reference_prediction": 0,
+        "candidate_prediction": 1,
+        "prediction_changed": true,
+        "reference_chunks": 3,
+        "candidate_chunks": 3,
+        "chunk_count_changed": false
+      },
+      {
+        "variant_id": "0020f1a90afeb7fcfb65_clean",
+        "label": 0,
+        "reference_probability_error": 0.0462036,
+        "candidate_probability_error": 0.5083008,
+        "absolute_probability_difference": 0.46209716796875,
+        "reference_prediction": 0,
+        "candidate_prediction": 0,
+        "prediction_changed": false,
+        "reference_chunks": 3,
+        "candidate_chunks": 3,
+        "chunk_count_changed": false
+      },
+      {
+        "variant_id": "001c3f89fcde4ad99a52_clean",
+        "label": 0,
+        "reference_probability_error": 0.0735474,
+        "candidate_probability_error": 0.1680908,
+        "absolute_probability_difference": 0.09454345703125,
+        "reference_prediction": 0,
+        "candidate_prediction": 0,
+        "prediction_changed": false,
+        "reference_chunks": 1,
+        "candidate_chunks": 1,
+        "chunk_count_changed": false
+      }
+    ],
+    "prediction_flips": [
+      {
+        "variant_id": "0000e2af609a08cda405_clean",
+        "label": 0,
+        "reference_probability_error": 0.065979,
+        "candidate_probability_error": 0.987793,
+        "absolute_probability_difference": 0.92181396484375,
+        "reference_prediction": 0,
+        "candidate_prediction": 1,
+        "prediction_changed": true,
+        "reference_chunks": 2,
+        "candidate_chunks": 2,
+        "chunk_count_changed": false
+      },
+      {
+        "variant_id": "0000e2af609a08cda405_noisy_0",
+        "label": 1,
+        "reference_probability_error": 0.1673584,
+        "candidate_probability_error": 0.987793,
+        "absolute_probability_difference": 0.8204345703125,
+        "reference_prediction": 0,
+        "candidate_prediction": 1,
+        "prediction_changed": true,
+        "reference_chunks": 2,
+        "candidate_chunks": 2,
+        "chunk_count_changed": false
+      },
+      {
+        "variant_id": "00170ab4db819bcae4b2_clean",
+        "label": 0,
+        "reference_probability_error": 0.0880127,
+        "candidate_probability_error": 0.9091797,
+        "absolute_probability_difference": 0.8211669921875,
+        "reference_prediction": 0,
+        "candidate_prediction": 1,
+        "prediction_changed": true,
+        "reference_chunks": 3,
+        "candidate_chunks": 3,
+        "chunk_count_changed": false
+      },
+      {
+        "variant_id": "00170ab4db819bcae4b2_noisy_0",
+        "label": 1,
+        "reference_probability_error": 0.0880127,
+        "candidate_probability_error": 0.9091797,
+        "absolute_probability_difference": 0.8211669921875,
+        "reference_prediction": 0,
+        "candidate_prediction": 1,
+        "prediction_changed": true,
+        "reference_chunks": 3,
+        "candidate_chunks": 3,
+        "chunk_count_changed": false
+      },
+      {
+        "variant_id": "003df1e906ea6943dd58_noisy_0",
+        "label": 1,
+        "reference_probability_error": 0.0985718,
+        "candidate_probability_error": 0.9716797,
+        "absolute_probability_difference": 0.87310791015625,
+        "reference_prediction": 0,
+        "candidate_prediction": 1,
+        "prediction_changed": true,
+        "reference_chunks": 3,
+        "candidate_chunks": 3,
+        "chunk_count_changed": false
+      },
+      {
+        "variant_id": "004176c0cac6eaa55423_clean",
+        "label": 0,
+        "reference_probability_error": 0.0417786,
+        "candidate_probability_error": 0.8466797,
+        "absolute_probability_difference": 0.804901123046875,
+        "reference_prediction": 0,
+        "candidate_prediction": 1,
+        "prediction_changed": true,
+        "reference_chunks": 3,
+        "candidate_chunks": 3,
+        "chunk_count_changed": false
+      },
+      {
+        "variant_id": "00547c33a7d9dcc668d4_clean",
+        "label": 0,
+        "reference_probability_error": 0.0507202,
+        "candidate_probability_error": 0.9614258,
+        "absolute_probability_difference": 0.91070556640625,
+        "reference_prediction": 0,
+        "candidate_prediction": 1,
+        "prediction_changed": true,
+        "reference_chunks": 3,
+        "candidate_chunks": 3,
+        "chunk_count_changed": false
+      },
+      {
+        "variant_id": "00736df79e8189b0543b_clean",
+        "label": 0,
+        "reference_probability_error": 0.062439,
+        "candidate_probability_error": 0.9707031,
+        "absolute_probability_difference": 0.90826416015625,
+        "reference_prediction": 0,
+        "candidate_prediction": 1,
+        "prediction_changed": true,
+        "reference_chunks": 3,
+        "candidate_chunks": 3,
+        "chunk_count_changed": false
+      }
+    ]
+  }
+}

@@ -1,0 +1,4 @@
+﻿__split,contradiction,entailment,neutral
+test,333,334,333
+train,2473,2615,2924
+validation,333,334,333

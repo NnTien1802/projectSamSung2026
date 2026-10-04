@@ -1,0 +1,2 @@
+﻿epoch,train_loss,validation_loss,validation_accuracy_05,validation_macro_f1_05,validation_f1_consistent_05,validation_roc_auc,elapsed_seconds
+1,0.4359997275003388,0.31843424432932743,0.8599240762024171,0.8597442927856901,0.8547227740653783,0.9410042717317337,2887.745434522629

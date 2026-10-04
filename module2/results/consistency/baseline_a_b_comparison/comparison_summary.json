@@ -1,0 +1,38 @@
+{
+  "split": "validation",
+  "test_used": false,
+  "baseline_a": {
+    "input": "headline + description",
+    "threshold": 0.43000000000000005,
+    "macro_f1": 0.8966718738837183
+  },
+  "baseline_b": {
+    "input": "headline + article head",
+    "threshold": 0.45000000000000007,
+    "macro_f1": 0.8614223379134691
+  },
+  "macro_f1_delta_b_minus_a": -0.03524953597024916,
+  "error_overlap": {
+    "BOTH_CORRECT": {
+      "count": 45725,
+      "rate": 0.7962421202939435
+    },
+    "A_ONLY_CORRECT": {
+      "count": 5768,
+      "rate": 0.10044230836206597
+    },
+    "B_ONLY_CORRECT": {
+      "count": 3744,
+      "rate": 0.06519694911712465
+    },
+    "BOTH_WRONG": {
+      "count": 2189,
+      "rate": 0.03811862222686588
+    }
+  },
+  "a_only_correct": 5768,
+  "b_only_correct": 3744,
+  "both_wrong": 2189,
+  "oracle_either_model_correct_rate": 0.9618813777731341,
+  "oracle_note": "This is not a deployable model score. It measures prediction complementarity only."
+}

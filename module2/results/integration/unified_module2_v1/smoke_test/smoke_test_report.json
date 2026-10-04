@@ -1,0 +1,43 @@
+{
+  "stage": "integration_step_09_smoke_test",
+  "module": "Module 2 - Headline Integrity",
+  "version": "unified_module2_v1",
+  "fixed_synthetic_cases": true,
+  "training_performed": false,
+  "dataset_test_evaluation_performed": false,
+  "threshold_search_performed": false,
+  "model_selection_performed": false,
+  "locked_artifact_verification": {
+    "pipeline_sha256": "ac3137209f676c2e1e279a967ab642b20b05c8cc64a1c0edb741be052045ace9",
+    "clickbait_checkpoint_sha256": "6c10d84f012cf05a0917e35abee4d8f006688315ab0570a3739bebea737efdf7",
+    "description_checkpoint_sha256": "eaacca14068da526c21a3c417d4b24b5073ac914194bd6d008290df68022d926",
+    "mil_checkpoint_sha256": "eb6eba02e45a3d5fa8d6fa9d2fc5afee2fae3b918ac3ab0c79b477a7e5bbc5ad"
+  },
+  "cases": [
+    {
+      "case_id": "short_consistent_article",
+      "expected_chunk_policy": "short",
+      "passed": true,
+      "failures": []
+    },
+    {
+      "case_id": "missing_optional_lead",
+      "expected_chunk_policy": "short",
+      "passed": true,
+      "failures": []
+    },
+    {
+      "case_id": "very_long_article_six_chunk_sampling",
+      "expected_chunk_policy": "six_chunks",
+      "passed": true,
+      "failures": []
+    }
+  ],
+  "summary": {
+    "total_cases": 3,
+    "passed_cases": 3,
+    "failed_cases": 0,
+    "overall_pass": true,
+    "elapsed_seconds": 0.3904118537902832
+  }
+}

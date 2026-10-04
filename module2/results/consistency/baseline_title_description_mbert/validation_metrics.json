@@ -1,0 +1,42 @@
+{
+  "dataset": "headline_consistency_v1",
+  "model": "bert-base-multilingual-cased",
+  "baseline": "A_title_plus_description",
+  "test_used": false,
+  "checkpoint_selection": "best validation Macro-F1 at threshold 0.5",
+  "validation_loss": 0.240290025975875,
+  "metrics_at_0_5": {
+    "threshold": 0.5,
+    "accuracy": 0.8962316720649184,
+    "precision_consistent": 0.9272570226828902,
+    "recall_consistent": 0.8599240762024171,
+    "f1_consistent": 0.8923221481361017,
+    "macro_f1": 0.8960946997843049,
+    "roc_auc": 0.9658197126429778,
+    "average_precision": 0.9693584653833434,
+    "confusion_matrix": {
+      "tn": 26776,
+      "fp": 1937,
+      "fn": 4022,
+      "tp": 24691
+    }
+  },
+  "best_validation_threshold": 0.43000000000000005,
+  "metrics_at_tuned_threshold": {
+    "threshold": 0.43000000000000005,
+    "accuracy": 0.8966844286560095,
+    "precision_consistent": 0.9056267806267806,
+    "recall_consistent": 0.8856615470344443,
+    "f1_consistent": 0.8955329001813603,
+    "macro_f1": 0.8966718738837183,
+    "roc_auc": 0.9658197126429778,
+    "average_precision": 0.9693584653833434,
+    "confusion_matrix": {
+      "tn": 26063,
+      "fp": 2650,
+      "fn": 3283,
+      "tp": 25430
+    }
+  },
+  "important_note": "Threshold was tuned on validation only. Do not tune on test."
+}

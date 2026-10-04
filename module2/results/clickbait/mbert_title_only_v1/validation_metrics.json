@@ -1,0 +1,45 @@
+{
+  "stage": "06_train_mbert_title_only",
+  "task": "2A_clickbait_detection",
+  "dataset": "viclickbait_v1",
+  "model": "bert-base-multilingual-cased",
+  "input": "title_only",
+  "test_used": false,
+  "best_epoch": 4,
+  "total_training_seconds": 221.47967052459717,
+  "validation_loss": 0.7689522467553616,
+  "metrics_at_0_5": {
+    "threshold": 0.5,
+    "accuracy": 0.8203125,
+    "precision_clickbait": 0.7207792207792207,
+    "recall_clickbait": 0.69375,
+    "f1_clickbait": 0.7070063694267515,
+    "macro_f1": 0.7887144523190095,
+    "roc_auc": 0.8832563920454547,
+    "average_precision": 0.7554753254554589,
+    "confusion_matrix": {
+      "tn": 309,
+      "fp": 43,
+      "fn": 49,
+      "tp": 111
+    }
+  },
+  "best_validation_threshold": 0.6100000000000001,
+  "metrics_at_tuned_threshold": {
+    "threshold": 0.6100000000000001,
+    "accuracy": 0.82421875,
+    "precision_clickbait": 0.7302631578947368,
+    "recall_clickbait": 0.69375,
+    "f1_clickbait": 0.7115384615384616,
+    "macro_f1": 0.7925669835782195,
+    "roc_auc": 0.8832563920454547,
+    "average_precision": 0.7554753254554589,
+    "confusion_matrix": {
+      "tn": 311,
+      "fp": 41,
+      "fn": 49,
+      "tp": 111
+    }
+  },
+  "note": "Checkpoint selected on validation Macro-F1 @0.5. Threshold tuned on validation after checkpoint selection. TEST remains untouched."
+}

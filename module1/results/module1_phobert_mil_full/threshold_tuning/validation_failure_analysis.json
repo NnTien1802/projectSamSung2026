@@ -1,0 +1,77 @@
+{
+  "threshold": 0.57,
+  "false_negative_count": 1758,
+  "false_negative_by_severity": {
+    "minor": 1420,
+    "moderate": 315,
+    "severe": 23
+  },
+  "false_negative_by_error_count": {
+    "1": 1530,
+    "2": 187,
+    "3": 26,
+    "4": 11,
+    "5": 3,
+    "6": 1
+  },
+  "false_negative_fields": {
+    "article": 906,
+    "abstract": 667,
+    "title": 288
+  },
+  "single_error_false_negative_fields": {
+    "article": 718,
+    "abstract": 562,
+    "title": 250
+  },
+  "false_negatives_with_article_error": 906,
+  "false_negatives_without_article_error": 852,
+  "single_error_field_statistics": {
+    "abstract": {
+      "total": 586,
+      "false_negative": 562,
+      "detected": 24,
+      "recall": 0.040955631399317405
+    },
+    "article": {
+      "total": 6365,
+      "false_negative": 718,
+      "detected": 5647,
+      "recall": 0.8871956009426551
+    },
+    "title": {
+      "total": 265,
+      "false_negative": 250,
+      "detected": 15,
+      "recall": 0.05660377358490566
+    }
+  },
+  "false_negative_error_types": {
+    "delete_character": 363,
+    "missing_diacritic": 354,
+    "transpose_character": 299,
+    "wrong_tone": 280,
+    "diacritic_confusion": 218,
+    "keyboard_neighbor": 155,
+    "onset_confusion": 143,
+    "insert_character": 105,
+    "duplicate_character": 76,
+    "telex_unconverted": 54
+  },
+  "article_false_negative_error_types": {
+    "missing_diacritic": 220,
+    "wrong_tone": 204,
+    "delete_character": 195,
+    "diacritic_confusion": 110,
+    "transpose_character": 89,
+    "keyboard_neighbor": 83,
+    "onset_confusion": 71,
+    "insert_character": 39,
+    "duplicate_character": 32,
+    "telex_unconverted": 15
+  },
+  "false_negative_error_sources": {
+    "mined": 938,
+    "rule_based": 1109
+  }
+}

@@ -1,0 +1,2 @@
+VERIFY PASS: 12 files unchanged (SHA-256)
+NOTE: Environment versions recorded, not compared to current; run regression separately.

@@ -1,0 +1,4 @@
+﻿split,pairs,anchors,headline_articles,label_0,label_1,duplicate_pair_ids
+train,306004,153002,158025,153002,153002,0
+validation,57426,28713,30415,28713,28713,0
+test,57376,28688,30325,28688,28688,0

@@ -1,0 +1,298 @@
+{
+  "created_utc": "2026-09-23T19:36:41.502443+00:00",
+  "validation_path": "C:\\projectSamSung_v1\\data\\processed\\vn_newsspell_v1\\validation.jsonl",
+  "scanned": 60,
+  "paired_sample_count": 60,
+  "per_label": 30,
+  "device": "cuda",
+  "locked_threshold": 0.57,
+  "notes": [
+    "Resource and compatibility experiment on a small validation sample; not an official accuracy benchmark.",
+    "Longer input or different segmentation can change selected chunks as well as model probabilities.",
+    "No training, threshold search, test access, modification to checkpoint or API integration.",
+    "Natural and candidate texts must preserve all visible Unicode characters; spaces/underscores ignored in surface check."
+  ],
+  "candidates": [
+    {
+      "candidate": "underthesea",
+      "overall": {
+        "n": 14,
+        "prediction_flips": 3,
+        "reference_predicted_error": 5,
+        "candidate_predicted_error": 8,
+        "mean_absolute_probability_difference": 0.1828,
+        "p95_absolute_probability_difference": 0.913147,
+        "max_absolute_probability_difference": 0.913147,
+        "chunk_count_changes": 0,
+        "changed_predictions_near_frozen_threshold": 0
+      },
+      "by_label": {
+        "0": {
+          "n": 7,
+          "prediction_flips": 2,
+          "reference_predicted_error": 1,
+          "candidate_predicted_error": 3,
+          "mean_absolute_probability_difference": 0.253645,
+          "p95_absolute_probability_difference": 0.913147,
+          "max_absolute_probability_difference": 0.913147,
+          "chunk_count_changes": 0,
+          "changed_predictions_near_frozen_threshold": 0
+        },
+        "1": {
+          "n": 7,
+          "prediction_flips": 1,
+          "reference_predicted_error": 4,
+          "candidate_predicted_error": 5,
+          "mean_absolute_probability_difference": 0.111956,
+          "p95_absolute_probability_difference": 0.767273,
+          "max_absolute_probability_difference": 0.767273,
+          "chunk_count_changes": 0,
+          "changed_predictions_near_frozen_threshold": 0
+        }
+      },
+      "refused_surface_change": 46,
+      "refused_examples": [
+        {
+          "variant_id": "0000e2af609a08cda405_clean",
+          "reason": "candidate_changed_visible_characters"
+        },
+        {
+          "variant_id": "0000e2af609a08cda405_noisy_0",
+          "reason": "candidate_changed_visible_characters"
+        },
+        {
+          "variant_id": "00095cb1403c8d31b245_clean",
+          "reason": "candidate_changed_visible_characters"
+        },
+        {
+          "variant_id": "00095cb1403c8d31b245_noisy_0",
+          "reason": "candidate_changed_visible_characters"
+        },
+        {
+          "variant_id": "000d0f7fd068da45a652_clean",
+          "reason": "candidate_changed_visible_characters"
+        },
+        {
+          "variant_id": "000d0f7fd068da45a652_noisy_0",
+          "reason": "candidate_changed_visible_characters"
+        },
+        {
+          "variant_id": "000e710c24356edaaa19_clean",
+          "reason": "candidate_changed_visible_characters"
+        },
+        {
+          "variant_id": "000e710c24356edaaa19_noisy_0",
+          "reason": "candidate_changed_visible_characters"
+        },
+        {
+          "variant_id": "0014e4941ce07ee64a6e_clean",
+          "reason": "candidate_changed_visible_characters"
+        },
+        {
+          "variant_id": "0014e4941ce07ee64a6e_noisy_0",
+          "reason": "candidate_changed_visible_characters"
+        }
+      ],
+      "mean_segmentation_seconds_per_document": 0.0186,
+      "largest_drift_examples": [
+        {
+          "variant_id": "00547c33a7d9dcc668d4_clean",
+          "label": 0,
+          "reference_probability_error": 0.0507202,
+          "candidate_probability_error": 0.9638672,
+          "absolute_probability_difference": 0.91314697265625,
+          "reference_prediction": 0,
+          "candidate_prediction": 1,
+          "prediction_changed": true,
+          "reference_chunks": 3,
+          "candidate_chunks": 3,
+          "chunk_count_changed": false,
+          "reference_excerpt": "Nghề đặc_biệt Chiều nay 5/10 , tại Hà_Nội , trường cao_đẳng Y_dược Hà_Nội chính_thức tổ_chức lễ khai_giảng năm_học 2018-2019 . Tại đây , Thiếu_tướng , GS . TS Bác_sỹ Lê_Trung_Hải ,",
+          "candidate_excerpt": "Nghề đặc_biệt Chiều nay 5/10 , tại Hà_Nội , trường cao_đẳng Y_dược Hà_Nội chính_thức tổ_chức lễ khai_giảng năm_học 2018 - 2019 . Tại đây , Thiếu_tướng , GS . TS Bác_sỹ Lê_Trung_Hải"
+        },
+        {
+          "variant_id": "005b1e92f0e80bc1b8f3_clean",
+          "label": 0,
+          "reference_probability_error": 0.1243286,
+          "candidate_probability_error": 0.8916016,
+          "absolute_probability_difference": 0.76727294921875,
+          "reference_prediction": 0,
+          "candidate_prediction": 1,
+          "prediction_changed": true,
+          "reference_chunks": 2,
+          "candidate_chunks": 2,
+          "chunk_count_changed": false,
+          "reference_excerpt": "UBND TP Đà_Nẵng vừa đồng_ý phương_án thiết_kế của Holiday_Beach_Hotel & Resort ( công_ty_cổ_phần HoaKy ) để bắt_đầu lắp_đặt đồng_hồ đếm ngược chuẩn_bị đón Đại_hội thể_thao bãi biển",
+          "candidate_excerpt": "UBND TP Đà_Nẵng vừa đồng_ý phương_án thiết_kế của Holiday Beach_Hotel & Resort ( công_ty cổ_phần HoaKy ) để bắt_đầu lắp_đặt đồng_hồ đếm_ngược chuẩn_bị đón Đại_hội thể_thao bãi biển"
+        },
+        {
+          "variant_id": "005b1e92f0e80bc1b8f3_noisy_0",
+          "label": 1,
+          "reference_probability_error": 0.1243286,
+          "candidate_probability_error": 0.8916016,
+          "absolute_probability_difference": 0.76727294921875,
+          "reference_prediction": 0,
+          "candidate_prediction": 1,
+          "prediction_changed": true,
+          "reference_chunks": 2,
+          "candidate_chunks": 2,
+          "chunk_count_changed": false,
+          "reference_excerpt": "UBND TP Đà_Nẵng vừa đồng_ý phương_án thiết_kế của Holiday_Beach_Hotel & Resort ( công_ty_cổ_phần HoaKy ) để bắt_đầu lắp_đặt đồng_hồ đếm ngược chuẩn_bị đón Đại_hội thể_thao bãi biển",
+          "candidate_excerpt": "UBND TP Đà_Nẵng vừa đồng_ý phương_án thiết_kế của Holiday Beach_Hotel & Resort ( công_ty cổ_phần HoaKy ) để bắt_đầu lắp_đặt đồng_hồ đếm_ngược chuẩn_bị đón Đại_hội thể_thao bãi biển"
+        },
+        {
+          "variant_id": "006f0526be2d6aba4371_clean",
+          "label": 0,
+          "reference_probability_error": 0.9331055,
+          "candidate_probability_error": 0.8666992,
+          "absolute_probability_difference": 0.06640625,
+          "reference_prediction": 1,
+          "candidate_prediction": 1,
+          "prediction_changed": false,
+          "reference_chunks": 3,
+          "candidate_chunks": 3,
+          "chunk_count_changed": false,
+          "reference_excerpt": "Theo Đài RT , ở một phương_diện nào đó , rõ_ràng Công_ty Delivery_Club đang có chiến_lược quảng_cáo thành_công khi ảnh chụp các poster của họ dán trên các đường_phố ở Matxcơva và g",
+          "candidate_excerpt": "Theo Đài_RT , ở một phương_diện nào đó , rõ_ràng Công_ty Delivery_Club đang có chiến_lược quảng_cáo thành_công khi ảnh chụp các poster của họ dán trên các đường_phố ở Matxcơva và g"
+        },
+        {
+          "variant_id": "002a47e78506876ff713_clean",
+          "label": 0,
+          "reference_probability_error": 0.0828247,
+          "candidate_probability_error": 0.1021118,
+          "absolute_probability_difference": 0.019287109375,
+          "reference_prediction": 0,
+          "candidate_prediction": 0,
+          "prediction_changed": false,
+          "reference_chunks": 1,
+          "candidate_chunks": 1,
+          "chunk_count_changed": false,
+          "reference_excerpt": "Chiến_đấu cơ F -16 của Mỹ . Vụ va_chạm xảy ra tối 7/5 , trong hoạt_động huấn_luyện ban_đêm tại một khu quân_sự ở hạt Jefferson , Georgia , phát_ngôn_viên của Vệ_binh Quốc_gia Mỹ ch",
+          "candidate_excerpt": "Chiến_đấu cơ_F - 16 của Mỹ . Vụ va_chạm xảy ra tối_7/5 , trong hoạt_động huấn_luyện ban_đêm tại một khu quân_sự ở hạt Jefferson , Georgia , phát_ngôn_viên của Vệ_binh_Quốc_gia Mỹ c"
+        },
+        {
+          "variant_id": "00547c33a7d9dcc668d4_noisy_0",
+          "label": 1,
+          "reference_probability_error": 0.9702148,
+          "candidate_probability_error": 0.9638672,
+          "absolute_probability_difference": 0.00634765625,
+          "reference_prediction": 1,
+          "candidate_prediction": 1,
+          "prediction_changed": false,
+          "reference_chunks": 3,
+          "candidate_chunks": 3,
+          "chunk_count_changed": false,
+          "reference_excerpt": "Nghề đặc_biệt Chiều nay 5/10 , tại Hà_Nội , trường cao_đẳng Y_dược Hà_Nội chính_thức tổ_chức lễ khai_giảng năm_học 2018-2019 . Tại đây , Thiếu_tướng , GS . TS Bác_sỹ Lê_Trung_Hải ,",
+          "candidate_excerpt": "Nghề đặc_biệt Chiều nay 5/10 , tại Hà_Nội , trường cao_đẳng Y_dược Hà_Nội chính_thức tổ_chức lễ khai_giảng năm_học 2018 - 2019 . Tại đây , Thiếu_tướng , GS . TS Bác_sỹ Lê_Trung_Hải"
+        },
+        {
+          "variant_id": "00488bdf4b6c52e6010d_clean",
+          "label": 0,
+          "reference_probability_error": 0.044342,
+          "candidate_probability_error": 0.0483093,
+          "absolute_probability_difference": 0.00396728515625,
+          "reference_prediction": 0,
+          "candidate_prediction": 0,
+          "prediction_changed": false,
+          "reference_chunks": 2,
+          "candidate_chunks": 2,
+          "chunk_count_changed": false,
+          "reference_excerpt": "Dự_án mở_rộng đường Lê_Trọng_Tấn được thi_công trong chưa đầy 4 tháng . Sáng 7/5 , dự_án xây_dựng , mở_rộng đường Lê_Trọng_Tấn đoạn từ đường Tôn_Thất_Tùng tới sông Lừ ( Thanh_Xuân ",
+          "candidate_excerpt": "Dự_án mở_rộng đường Lê_Trọng_Tấn được thi_công trong chưa đầy 4 tháng . Sáng 7/5 , dự_án xây_dựng , mở_rộng đường Lê_Trọng_Tấn đoạn từ đường Tôn_Thất_Tùng tới sông Lừ ( Thanh_Xuân "
+        },
+        {
+          "variant_id": "00488bdf4b6c52e6010d_noisy_0",
+          "label": 1,
+          "reference_probability_error": 0.0775146,
+          "candidate_probability_error": 0.0738525,
+          "absolute_probability_difference": 0.003662109375,
+          "reference_prediction": 0,
+          "candidate_prediction": 0,
+          "prediction_changed": false,
+          "reference_chunks": 2,
+          "candidate_chunks": 2,
+          "chunk_count_changed": false,
+          "reference_excerpt": "Dự_án mở_rộng đường Lê_Trọng_Tấn được thi_công trong chưa đầy 4 tháng . Sáng 7/5 , dự_án xây_dựng , mở_rộng đường Lê_Trọng_Tấn đoạn từ đường Tôn_Thất_Tùng tới sông Lừ ( Thanh_Xuân ",
+          "candidate_excerpt": "Dự_án mở_rộng đường Lê_Trọng_Tấn được thi_công trong chưa đầy 4 tháng . Sáng 7/5 , dự_án xây_dựng , mở_rộng đường Lê_Trọng_Tấn đoạn từ đường Tôn_Thất_Tùng tới sông Lừ ( Thanh_Xuân "
+        },
+        {
+          "variant_id": "00258b5e920e1aa079dc_clean",
+          "label": 0,
+          "reference_probability_error": 0.0817871,
+          "candidate_probability_error": 0.0847778,
+          "absolute_probability_difference": 0.00299072265625,
+          "reference_prediction": 0,
+          "candidate_prediction": 0,
+          "prediction_changed": false,
+          "reference_chunks": 1,
+          "candidate_chunks": 1,
+          "chunk_count_changed": false,
+          "reference_excerpt": "Otto_Warmbier , sinh_viên Mỹ tử_vong sau khi được Triều_Tiên thả . Ảnh : Reuters Katherine_Dettwyler , nữ giáo_sư nhân học 62 tuổi , gọi Otto_Warmbier là \" một sinh_viên Mỹ da trắn",
+          "candidate_excerpt": "Otto Warmbier , sinh_viên Mỹ tử_vong sau khi được Triều_Tiên_thả . Ảnh : Reuters Katherine_Dettwyler , nữ giáo_sư nhân_học 62 tuổi , gọi Otto_Warmbier là \" một sinh_viên Mỹ da trắn"
+        },
+        {
+          "variant_id": "00258b5e920e1aa079dc_noisy_0",
+          "label": 1,
+          "reference_probability_error": 0.0817871,
+          "candidate_probability_error": 0.0847778,
+          "absolute_probability_difference": 0.00299072265625,
+          "reference_prediction": 0,
+          "candidate_prediction": 0,
+          "prediction_changed": false,
+          "reference_chunks": 1,
+          "candidate_chunks": 1,
+          "chunk_count_changed": false,
+          "reference_excerpt": "Otto_Warmbier , sinh_viên Mỹ tử_vong sau khi được Triều_Tiên thả . Ảnh : Reuters Katherine_Dettwyler , nữ giáo_sư nhân học 62 tuổi , gọi Otto_Warmbier là \" một sinh_viên Mỹ da trắn",
+          "candidate_excerpt": "Otto Warmbier , sinh_viên Mỹ tử_vong sau khi được Triều_Tiên_thả . Ảnh : Reuters Katherine_Dettwyler , nữ giáo_sư nhân_học 62 tuổi , gọi Otto_Warmbier là \" một sinh_viên Mỹ da trắn"
+        }
+      ],
+      "prediction_flip_examples": [
+        {
+          "variant_id": "00547c33a7d9dcc668d4_clean",
+          "label": 0,
+          "reference_probability_error": 0.0507202,
+          "candidate_probability_error": 0.9638672,
+          "absolute_probability_difference": 0.91314697265625,
+          "reference_prediction": 0,
+          "candidate_prediction": 1,
+          "prediction_changed": true,
+          "reference_chunks": 3,
+          "candidate_chunks": 3,
+          "chunk_count_changed": false,
+          "reference_excerpt": "Nghề đặc_biệt Chiều nay 5/10 , tại Hà_Nội , trường cao_đẳng Y_dược Hà_Nội chính_thức tổ_chức lễ khai_giảng năm_học 2018-2019 . Tại đây , Thiếu_tướng , GS . TS Bác_sỹ Lê_Trung_Hải ,",
+          "candidate_excerpt": "Nghề đặc_biệt Chiều nay 5/10 , tại Hà_Nội , trường cao_đẳng Y_dược Hà_Nội chính_thức tổ_chức lễ khai_giảng năm_học 2018 - 2019 . Tại đây , Thiếu_tướng , GS . TS Bác_sỹ Lê_Trung_Hải"
+        },
+        {
+          "variant_id": "005b1e92f0e80bc1b8f3_clean",
+          "label": 0,
+          "reference_probability_error": 0.1243286,
+          "candidate_probability_error": 0.8916016,
+          "absolute_probability_difference": 0.76727294921875,
+          "reference_prediction": 0,
+          "candidate_prediction": 1,
+          "prediction_changed": true,
+          "reference_chunks": 2,
+          "candidate_chunks": 2,
+          "chunk_count_changed": false,
+          "reference_excerpt": "UBND TP Đà_Nẵng vừa đồng_ý phương_án thiết_kế của Holiday_Beach_Hotel & Resort ( công_ty_cổ_phần HoaKy ) để bắt_đầu lắp_đặt đồng_hồ đếm ngược chuẩn_bị đón Đại_hội thể_thao bãi biển",
+          "candidate_excerpt": "UBND TP Đà_Nẵng vừa đồng_ý phương_án thiết_kế của Holiday Beach_Hotel & Resort ( công_ty cổ_phần HoaKy ) để bắt_đầu lắp_đặt đồng_hồ đếm_ngược chuẩn_bị đón Đại_hội thể_thao bãi biển"
+        },
+        {
+          "variant_id": "005b1e92f0e80bc1b8f3_noisy_0",
+          "label": 1,
+          "reference_probability_error": 0.1243286,
+          "candidate_probability_error": 0.8916016,
+          "absolute_probability_difference": 0.76727294921875,
+          "reference_prediction": 0,
+          "candidate_prediction": 1,
+          "prediction_changed": true,
+          "reference_chunks": 2,
+          "candidate_chunks": 2,
+          "chunk_count_changed": false,
+          "reference_excerpt": "UBND TP Đà_Nẵng vừa đồng_ý phương_án thiết_kế của Holiday_Beach_Hotel & Resort ( công_ty_cổ_phần HoaKy ) để bắt_đầu lắp_đặt đồng_hồ đếm ngược chuẩn_bị đón Đại_hội thể_thao bãi biển",
+          "candidate_excerpt": "UBND TP Đà_Nẵng vừa đồng_ý phương_án thiết_kế của Holiday Beach_Hotel & Resort ( công_ty cổ_phần HoaKy ) để bắt_đầu lắp_đặt đồng_hồ đếm_ngược chuẩn_bị đón Đại_hội thể_thao bãi biển"
+        }
+      ]
+    }
+  ]
+}

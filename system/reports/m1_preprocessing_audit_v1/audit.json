@@ -1,0 +1,235 @@
+{
+  "timestamp_utc": "2026-09-23T19:11:01.913745+00:00",
+  "project_root": "C:\\projectSamSung_v1",
+  "validation_path": "C:\\projectSamSung_v1\\data\\processed\\vn_newsspell_v1\\validation.jsonl",
+  "validation_rows_inspected": 50,
+  "rows_with_segmented_text": 50,
+  "field_names": [
+    "abstract_natural",
+    "abstract_segmented",
+    "article_natural",
+    "article_segmented",
+    "error_count",
+    "error_sources",
+    "error_types",
+    "errors",
+    "generation_method",
+    "has_error",
+    "label",
+    "language",
+    "project_split",
+    "severity",
+    "source_dataset",
+    "source_guid",
+    "source_id",
+    "source_split",
+    "title_natural",
+    "title_segmented",
+    "variant_id"
+  ],
+  "segmented_character_length": {
+    "min": 717,
+    "median": 1853.5,
+    "max": 4899
+  },
+  "space_delimited_units": {
+    "median": 328.0,
+    "max": 824
+  },
+  "underscore_joined_units": {
+    "median": 98.0,
+    "max": 303
+  },
+  "possible_parallel_raw_fields": {},
+  "available_packages": {
+    "underthesea": false,
+    "pyvi": false,
+    "py_vncorenlp": false,
+    "vncorenlp": false,
+    "transformers": true
+  },
+  "research_source_root": "C:\\1_projectSamSung",
+  "possible_preprocessing_code_matches": [
+    {
+      "file": "scripts\\04_generate_spelling_dataset.py",
+      "line": 1110,
+      "snippet": "\"article_segmented\":"
+    },
+    {
+      "file": "scripts\\04_generate_spelling_dataset_v02.py",
+      "line": 1303,
+      "snippet": "\"article_segmented\":"
+    },
+    {
+      "file": "scripts\\05_validate_spelling_dataset.py",
+      "line": 782,
+      "snippet": "\"article_segmented\","
+    },
+    {
+      "file": "scripts\\05_validate_spelling_dataset.py",
+      "line": 787,
+      "snippet": "\"article_segmented\","
+    },
+    {
+      "file": "scripts\\05_validate_spelling_dataset.py",
+      "line": 840,
+      "snippet": "\"article_segmented\","
+    },
+    {
+      "file": "scripts\\05_validate_spelling_dataset.py",
+      "line": 850,
+      "snippet": "\"article_segmented\","
+    },
+    {
+      "file": "scripts\\05_validate_spelling_dataset.py",
+      "line": 989,
+      "snippet": "\"article_segmented\","
+    },
+    {
+      "file": "scripts\\09_generate_hybrid_spelling_dataset.py",
+      "line": 1780,
+      "snippet": "\"article_segmented\":"
+    },
+    {
+      "file": "scripts\\13_train_classical_baselines.py",
+      "line": 94,
+      "snippet": "# article_segmented"
+    },
+    {
+      "file": "scripts\\14_train_phobert_mil.py",
+      "line": 62,
+      "snippet": "TEXT_FIELD = \"article_segmented\""
+    },
+    {
+      "file": "scripts\\18_train_phobert_mil_all_fields.py",
+      "line": 82,
+      "snippet": "\"article_segmented\","
+    },
+    {
+      "file": "scripts\\18_train_phobert_mil_all_fields.py",
+      "line": 295,
+      "snippet": "article_segmented"
+    },
+    {
+      "file": "scripts\\22_train_phobert_mil_all_fields_4chunks.py",
+      "line": 82,
+      "snippet": "\"article_segmented\","
+    },
+    {
+      "file": "scripts\\22_train_phobert_mil_all_fields_4chunks.py",
+      "line": 295,
+      "snippet": "article_segmented"
+    },
+    {
+      "file": "scripts\\26_build_word_localization_dataset.py",
+      "line": 59,
+      "snippet": "\"article_segmented\","
+    },
+    {
+      "file": "scripts\\26_build_word_localization_dataset.py",
+      "line": 65,
+      "snippet": "\"article_segmented\": \"article\","
+    },
+    {
+      "file": "scripts\\31_build_word_localization_test.py",
+      "line": 58,
+      "snippet": "\"article_segmented\","
+    },
+    {
+      "file": "scripts\\31_build_word_localization_test.py",
+      "line": 64,
+      "snippet": "\"article_segmented\": \"article\","
+    },
+    {
+      "file": "scripts\\33_predict_spelling_errors.py",
+      "line": 69,
+      "snippet": "WORD_TOKENIZER_DIR = ("
+    },
+    {
+      "file": "scripts\\33_predict_spelling_errors.py",
+      "line": 122,
+      "snippet": "\"article_segmented\","
+    },
+    {
+      "file": "scripts\\33_predict_spelling_errors.py",
+      "line": 128,
+      "snippet": "\"article_segmented\": \"article\","
+    },
+    {
+      "file": "scripts\\33_predict_spelling_errors.py",
+      "line": 1347,
+      "snippet": "\"word_segmented\":"
+    },
+    {
+      "file": "scripts\\33_predict_spelling_errors.py",
+      "line": 1444,
+      "snippet": "# to already be word-segmented."
+    },
+    {
+      "file": "scripts\\33_predict_spelling_errors.py",
+      "line": 1449,
+      "snippet": "\"article\": \"article_segmented\","
+    },
+    {
+      "file": "scripts\\33_predict_spelling_errors.py",
+      "line": 1785,
+      "snippet": "word_tokenizer = ("
+    },
+    {
+      "file": "scripts\\33_predict_spelling_errors.py",
+      "line": 1788,
+      "snippet": "WORD_TOKENIZER_DIR,"
+    },
+    {
+      "file": "scripts\\33_predict_spelling_errors.py",
+      "line": 1838,
+      "snippet": "word_tokenizer,"
+    },
+    {
+      "file": "scripts\\33_predict_spelling_errors.py",
+      "line": 1932,
+      "snippet": "f\"{item['word_segmented']}\""
+    },
+    {
+      "file": "scripts\\33_predict_spelling_errors.py",
+      "line": 1997,
+      "snippet": "f\"{item['word_segmented']} \""
+    },
+    {
+      "file": "scripts\\36_predict_spelling_errors_with_correction.py",
+      "line": 73,
+      "snippet": "WORD_TOKENIZER_DIR = ("
+    },
+    {
+      "file": "scripts\\36_predict_spelling_errors_with_correction.py",
+      "line": 157,
+      "snippet": "\"article_segmented\","
+    },
+    {
+      "file": "scripts\\36_predict_spelling_errors_with_correction.py",
+      "line": 163,
+      "snippet": "\"article_segmented\": \"article\","
+    },
+    {
+      "file": "scripts\\36_predict_spelling_errors_with_correction.py",
+      "line": 1540,
+      "snippet": "\"word_segmented\":"
+    },
+    {
+      "file": "scripts\\36_predict_spelling_errors_with_correction.py",
+      "line": 2242,
+      "snippet": "\"word_segmented\""
+    },
+    {
+      "file": "scripts\\36_predict_spelling_errors_with_correction.py",
+      "line": 2502,
+      "snippet": "\"article_segmented\","
+    }
+  ],
+  "limitations": [
+    "An underscore is a word-segmentation convention, not proof of a specific tokenizer.",
+    "Matching text after underscore removal does not establish identical segmentation.",
+    "This is a schema and source audit only. Do not auto-segment production requests until parity is validated.",
+    "No model checkpoint, threshold, or test split was accessed."
+  ]
+}

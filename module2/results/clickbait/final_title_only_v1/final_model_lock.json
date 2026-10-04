@@ -1,0 +1,59 @@
+{
+  "stage": "09_lock_final_clickbait_model",
+  "task": "2A_clickbait_detection",
+  "dataset": "viclickbait_v1",
+  "status": "LOCKED_BEFORE_TEST",
+  "test_opened": false,
+  "test_metrics_computed": false,
+  "final_model": {
+    "architecture": "bert-base-multilingual-cased",
+    "input": "title_only",
+    "input_description": "headline/title only",
+    "max_length": 160,
+    "checkpoint": "models\\clickbait\\mbert_title_only_v1\\best_model.pt",
+    "checkpoint_sha256": "6c10d84f012cf05a0917e35abee4d8f006688315ab0570a3739bebea737efdf7",
+    "best_epoch": 4,
+    "decision_threshold": 0.6100000000000001,
+    "label_mapping": {
+      "0": "NORMAL",
+      "1": "CLICKBAIT"
+    }
+  },
+  "validation_reference": {
+    "threshold_0_5": {
+      "accuracy": 0.8203125,
+      "macro_f1": 0.7887144523190095,
+      "precision_clickbait": 0.7207792207792207,
+      "recall_clickbait": 0.69375,
+      "f1_clickbait": 0.7070063694267515,
+      "roc_auc": 0.8832563920454547,
+      "average_precision": 0.7554753254554589
+    },
+    "frozen_threshold": {
+      "threshold": 0.6100000000000001,
+      "accuracy": 0.82421875,
+      "macro_f1": 0.7925669835782195,
+      "precision_clickbait": 0.7302631578947368,
+      "recall_clickbait": 0.69375,
+      "f1_clickbait": 0.7115384615384616,
+      "roc_auc": 0.8832563920454547,
+      "average_precision": 0.7554753254554589
+    }
+  },
+  "model_selection_evidence": {
+    "compared_against": "mBERT title + lead",
+    "title_lead_minus_title_macro_f1": 0.0004261431466913157,
+    "mcnemar_exact_p_value": 0.8990763136528589,
+    "paired_bootstrap_macro_f1_delta_ci95": [
+      -0.0346898374069771,
+      0.0353566535572874
+    ],
+    "reason_for_title_only_selection": "Title+lead produced essentially the same validation Macro-F1. Paired McNemar and bootstrap analyses did not show reliable superiority. Title-only is therefore retained as the simpler final architecture."
+  },
+  "frozen_test_protocol": {
+    "checkpoint_selection": "No checkpoint may be selected using TEST.",
+    "threshold_selection": "Decision threshold is frozen at 0.61 before TEST.",
+    "architecture_selection": "Architecture is frozen as mBERT title-only before TEST.",
+    "test_evaluation": "Run once using the frozen checkpoint and threshold."
+  }
+}

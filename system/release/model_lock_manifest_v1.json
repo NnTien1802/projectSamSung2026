@@ -1,0 +1,177 @@
+{
+  "release_id": "news_quality_models_v1",
+  "created_utc": "2026-09-23T14:23:20.692070+00:00",
+  "root_relative": true,
+  "config": {
+    "release_id": "news_quality_models_v1",
+    "notes": "Three logical modules, with the existing frozen Module 2 unified pipeline retained and wrapped, not edited.",
+    "models": {
+      "spelling": {
+        "model_family": "vinai/phobert-base-v2; MIL",
+        "checkpoint": "models/module1_phobert_mil_full/best_model.pt",
+        "threshold_file": "results/module1_phobert_mil_full/threshold_tuning/best_threshold.json",
+        "inference_entrypoint": null,
+        "tokenizer_snapshot_or_revision": "vinai/phobert-base-v2",
+        "locked_parameters": {
+          "max_length": 256,
+          "stride": 64,
+          "max_chunks": 3,
+          "threshold": 0.57
+        },
+        "test_reference": {
+          "macro_f1": 0.91473,
+          "accuracy": 0.914824,
+          "test_n": 28764
+        },
+        "additional_files": [
+          "models/module1_phobert_mil_full/tokenizer"
+        ]
+      },
+      "clickbait": {
+        "model_family": "mBERT title-only",
+        "checkpoint": "module2_headline_integrity/models/clickbait/mbert_title_only_v1/best_model.pt",
+        "threshold_file": null,
+        "inference_entrypoint": "module2_headline_integrity/inference/headline_integrity_pipeline.py",
+        "tokenizer_snapshot_or_revision": "bert-base-multilingual-cased",
+        "locked_parameters": {
+          "threshold": 0.61
+        },
+        "test_reference": {
+          "macro_f1": 0.79883,
+          "accuracy": 0.832031,
+          "test_n": 512
+        },
+        "additional_files": [
+          "system/release/tokenizers/mbert_v1"
+        ]
+      },
+      "headline_consistency": {
+        "model_family": "mBERT description + full article MAX-MIL",
+        "checkpoint": "module2_headline_integrity/models/consistency/full_article_max_mil_mbert/best_model.pt",
+        "threshold_file": null,
+        "inference_entrypoint": "module2_headline_integrity/inference/headline_integrity_pipeline.py",
+        "tokenizer_snapshot_or_revision": "bert-base-multilingual-cased",
+        "locked_parameters": {
+          "threshold": 0.45
+        },
+        "test_reference": {
+          "macro_f1": 0.939591,
+          "accuracy": 0.939591
+        },
+        "additional_files": [
+          "module2_headline_integrity/models/consistency/baseline_title_description_mbert/best_model.pt",
+          "system/release/tokenizers/mbert_v1"
+        ]
+      }
+    },
+    "shared_files": [],
+    "expected_sha256": {
+      "module2_headline_integrity/inference/headline_integrity_pipeline.py": "ac3137209f676c2e1e279a967ab642b20b05c8cc64a1c0edb741be052045ace9"
+    }
+  },
+  "files": [
+    {
+      "path": "models/module1_phobert_mil_full/best_model.pt",
+      "size": 540081242,
+      "sha256": "abe5b00f7cfb5dda18dde5975519a1b064ebf5d6b3961e2cf4f868722dca4a90",
+      "roles": [
+        "spelling.checkpoint"
+      ]
+    },
+    {
+      "path": "models/module1_phobert_mil_full/tokenizer/added_tokens.json",
+      "size": 25,
+      "sha256": "6887f87ac991379ea91aedb4dd5e1af4f6ee38693ec0ca1c2b6209559ce283d8",
+      "roles": [
+        "spelling.additional_files"
+      ]
+    },
+    {
+      "path": "models/module1_phobert_mil_full/tokenizer/bpe.codes",
+      "size": 1135173,
+      "sha256": "9dfe53fb8abbddd3387da99641c36e00bee757a3679aad9cf0a7cdc4b30f6ef8",
+      "roles": [
+        "spelling.additional_files"
+      ]
+    },
+    {
+      "path": "models/module1_phobert_mil_full/tokenizer/tokenizer_config.json",
+      "size": 1261,
+      "sha256": "e16b59f51a947719a68bdb13ac0e41cde2d18bdd19578359cf1f72b5e74f50d2",
+      "roles": [
+        "spelling.additional_files"
+      ]
+    },
+    {
+      "path": "models/module1_phobert_mil_full/tokenizer/vocab.txt",
+      "size": 895321,
+      "sha256": "dffd7543c401fb6567253ae7c3313004532c33d062525250049c616544bad777",
+      "roles": [
+        "spelling.additional_files"
+      ]
+    },
+    {
+      "path": "module2_headline_integrity/inference/headline_integrity_pipeline.py",
+      "size": 41129,
+      "sha256": "ac3137209f676c2e1e279a967ab642b20b05c8cc64a1c0edb741be052045ace9",
+      "roles": [
+        "clickbait.inference_entrypoint",
+        "headline_consistency.inference_entrypoint"
+      ]
+    },
+    {
+      "path": "module2_headline_integrity/models/clickbait/mbert_title_only_v1/best_model.pt",
+      "size": 711502810,
+      "sha256": "6c10d84f012cf05a0917e35abee4d8f006688315ab0570a3739bebea737efdf7",
+      "roles": [
+        "clickbait.checkpoint"
+      ]
+    },
+    {
+      "path": "module2_headline_integrity/models/consistency/baseline_title_description_mbert/best_model.pt",
+      "size": 711502746,
+      "sha256": "eaacca14068da526c21a3c417d4b24b5073ac914194bd6d008290df68022d926",
+      "roles": [
+        "headline_consistency.additional_files"
+      ]
+    },
+    {
+      "path": "module2_headline_integrity/models/consistency/full_article_max_mil_mbert/best_model.pt",
+      "size": 711502810,
+      "sha256": "eb6eba02e45a3d5fa8d6fa9d2fc5afee2fae3b918ac3ab0c79b477a7e5bbc5ad",
+      "roles": [
+        "headline_consistency.checkpoint"
+      ]
+    },
+    {
+      "path": "results/module1_phobert_mil_full/threshold_tuning/best_threshold.json",
+      "size": 3774,
+      "sha256": "cd7ebdb5cbea61c11e8c505b9046ca175ef5d75d0296926382136b3a370f634e",
+      "roles": [
+        "spelling.threshold_file"
+      ]
+    },
+    {
+      "path": "system/release/tokenizers/mbert_v1/tokenizer.json",
+      "size": 2919362,
+      "sha256": "bf1b59b7b11c95f194f51708d918eea378e09d05f84c0e1656dc5180e8117088",
+      "roles": [
+        "clickbait.additional_files",
+        "headline_consistency.additional_files"
+      ]
+    },
+    {
+      "path": "system/release/tokenizers/mbert_v1/tokenizer_config.json",
+      "size": 367,
+      "sha256": "55f686f3c1111e477bcd12bd9736d6b554fa2e3f94f1c3fbd2c16c467cdbf0eb",
+      "roles": [
+        "clickbait.additional_files",
+        "headline_consistency.additional_files"
+      ]
+    }
+  ],
+  "environment_file": "system/release/environment_v1.json",
+  "environment_sha256": "c3f5eacbe727fbc0905a6e3efc29fa693b3c0ee89b990eaff3c55a1cadd05d5c",
+  "status": "HASH_LOCKED_ONLY_REGRESSION_REQUIRED",
+  "important": "Hash verification does not establish end-to-end inference regression or real-world validity."
+}

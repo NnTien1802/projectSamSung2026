@@ -1,0 +1,51 @@
+{
+  "threshold": 0.83,
+  "false_negative_count": 1132,
+  "false_positive_count": 590,
+  "false_negative_by_severity": {
+    "minor": 995,
+    "moderate": 132,
+    "severe": 5
+  },
+  "false_negative_by_error_count": {
+    "1": 949,
+    "2": 152,
+    "3": 21,
+    "4": 7,
+    "5": 2,
+    "6": 1
+  },
+  "false_negative_fields": {
+    "article": 1040,
+    "title": 44,
+    "abstract": 63
+  },
+  "false_negative_error_types": {
+    "missing_diacritic": 271,
+    "delete_character": 250,
+    "wrong_tone": 249,
+    "diacritic_confusion": 133,
+    "transpose_character": 115,
+    "keyboard_neighbor": 102,
+    "onset_confusion": 82,
+    "duplicate_character": 64,
+    "insert_character": 37,
+    "telex_unconverted": 18
+  },
+  "false_negative_error_sources": {
+    "mined": 473,
+    "rule_based": 760
+  },
+  "probability_statistics": {
+    "clean": {
+      "mean": 0.06882155108992272,
+      "median": 0.0078125,
+      "p95": 0.6385742187499979
+    },
+    "noisy": {
+      "mean": 0.9292531065873884,
+      "median": 0.99853515625,
+      "p05": 0.13159790039062502
+    }
+  }
+}

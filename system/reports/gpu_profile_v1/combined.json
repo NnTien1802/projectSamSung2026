@@ -1,0 +1,149 @@
+{
+  "stage": "combined",
+  "timestamp_utc": "2026-09-23T16:02:57.119176+00:00",
+  "device": "cuda",
+  "gpu_name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "notes": [
+    "torch peak tracks allocations through this process only; free VRAM also reflects other processes",
+    "warm-up excluded from timing; CUDA synchronized after calls",
+    "long inputs derived by repeating validation/demo text; resource testing only"
+  ],
+  "initial": {
+    "gpu": {
+      "allocated_mb": 0.0,
+      "reserved_mb": 0.0,
+      "peak_allocated_mb": 0.0,
+      "free_vram_mb": 7451.18,
+      "total_vram_mb": 8585.22
+    },
+    "process_ram_mb": 657.18
+  },
+  "loads": [
+    {
+      "name": "M1_PhoBERT",
+      "load_seconds": 4.51,
+      "memory_after_load": {
+        "gpu": {
+          "allocated_mb": 540.52,
+          "reserved_mb": 597.69,
+          "peak_allocated_mb": 540.52,
+          "free_vram_mb": 6853.49,
+          "total_vram_mb": 8585.22
+        },
+        "process_ram_mb": 1955.74
+      }
+    },
+    {
+      "name": "M2_M3_shared_mBERT_pipeline",
+      "load_seconds": 5.7,
+      "memory_after_load": {
+        "gpu": {
+          "allocated_mb": 2684.82,
+          "reserved_mb": 2841.64,
+          "peak_allocated_mb": 2684.82,
+          "free_vram_mb": 4578.08,
+          "total_vram_mb": 8585.22
+        },
+        "process_ram_mb": 3358.02
+      }
+    }
+  ],
+  "calls": [
+    {
+      "name": "M1_short",
+      "repeat_count": 3,
+      "latency_mean_ms": 11.23,
+      "latency_min_ms": 10.58,
+      "latency_max_ms": 12.48,
+      "memory_after_calls": {
+        "gpu": {
+          "allocated_mb": 549.04,
+          "reserved_mb": 601.88,
+          "peak_allocated_mb": 564.13,
+          "free_vram_mb": 6817.84,
+          "total_vram_mb": 8585.22
+        },
+        "process_ram_mb": 2534.17
+      },
+      "prediction": 0,
+      "chunk_count": 2
+    },
+    {
+      "name": "M1_long",
+      "repeat_count": 3,
+      "latency_mean_ms": 13.55,
+      "latency_min_ms": 13.01,
+      "latency_max_ms": 14.02,
+      "memory_after_calls": {
+        "gpu": {
+          "allocated_mb": 549.04,
+          "reserved_mb": 622.85,
+          "peak_allocated_mb": 568.53,
+          "free_vram_mb": 6796.87,
+          "total_vram_mb": 8585.22
+        },
+        "process_ram_mb": 2534.56
+      },
+      "prediction": 0,
+      "chunk_count": 3
+    },
+    {
+      "name": "M2_clickbait",
+      "repeat_count": 3,
+      "latency_mean_ms": 9.79,
+      "latency_min_ms": 9.41,
+      "latency_max_ms": 10.02,
+      "memory_after_calls": {
+        "gpu": {
+          "allocated_mb": 2684.82,
+          "reserved_mb": 2862.61,
+          "peak_allocated_mb": 2689.81,
+          "free_vram_mb": 4557.11,
+          "total_vram_mb": 8585.22
+        },
+        "process_ram_mb": 3463.95
+      },
+      "prediction": 0,
+      "chunk_count": null
+    },
+    {
+      "name": "M3_short",
+      "repeat_count": 3,
+      "latency_mean_ms": 21.39,
+      "latency_min_ms": 20.51,
+      "latency_max_ms": 22.53,
+      "memory_after_calls": {
+        "gpu": {
+          "allocated_mb": 2684.82,
+          "reserved_mb": 2864.71,
+          "peak_allocated_mb": 2692.27,
+          "free_vram_mb": 4555.01,
+          "total_vram_mb": 8585.22
+        },
+        "process_ram_mb": 3442.64
+      },
+      "prediction": 1,
+      "chunk_count": 1
+    },
+    {
+      "name": "M3_long",
+      "repeat_count": 3,
+      "latency_mean_ms": 25.91,
+      "latency_min_ms": 25.52,
+      "latency_max_ms": 26.4,
+      "memory_after_calls": {
+        "gpu": {
+          "allocated_mb": 2684.82,
+          "reserved_mb": 2885.68,
+          "peak_allocated_mb": 2708.07,
+          "free_vram_mb": 4534.04,
+          "total_vram_mb": 8585.22
+        },
+        "process_ram_mb": 3443.79
+      },
+      "prediction": 1,
+      "chunk_count": 6
+    }
+  ],
+  "status": "PASS"
+}

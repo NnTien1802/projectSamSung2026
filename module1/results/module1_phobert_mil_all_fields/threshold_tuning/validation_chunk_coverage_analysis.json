@@ -1,0 +1,144 @@
+{
+  "dataset": "validation",
+  "test_used": false,
+  "method": "clean_noisy_token_sequence_diff_using_model_tokenizer",
+  "locked_threshold": 0.83,
+  "model_config": {
+    "text_fields": [
+      "title_segmented",
+      "abstract_segmented",
+      "article_segmented"
+    ],
+    "field_separator": " . ",
+    "max_length": 256,
+    "special_tokens": 2,
+    "content_length": 254,
+    "stride": 64,
+    "step_size": 190,
+    "max_chunks": 3
+  },
+  "sanity": {
+    "noisy_documents": 14381,
+    "identical_clean_noisy_text": 0,
+    "identical_clean_noisy_tokens": 0,
+    "total_change_spans": 33752,
+    "visible_change_spans": 30469,
+    "invisible_change_spans": 3283,
+    "opcode_distribution": {
+      "replace": 31898,
+      "insert": 1854
+    }
+  },
+  "current_coverage": {
+    "visible_documents": 14140,
+    "invisible_documents": 241,
+    "visible_percentage": 98.32417773451081,
+    "invisible_percentage": 1.675822265489187,
+    "recall_when_visible": 0.9344413012729844,
+    "recall_when_not_visible": 0.04149377593360996
+  },
+  "false_negatives": {
+    "total": 1158,
+    "visible": 927,
+    "not_visible": 231,
+    "visible_percentage": 80.05181347150258,
+    "not_visible_percentage": 19.94818652849741,
+    "visible_severity": {
+      "minor": 791,
+      "moderate": 134,
+      "severe": 2
+    },
+    "not_visible_severity": {
+      "minor": 229,
+      "moderate": 2
+    },
+    "visible_fields": {
+      "article": 824,
+      "abstract": 68,
+      "title": 49
+    },
+    "not_visible_fields": {
+      "article": 231
+    },
+    "visible_error_types": {
+      "onset_confusion": 87,
+      "delete_character": 207,
+      "keyboard_neighbor": 86,
+      "missing_diacritic": 228,
+      "wrong_tone": 218,
+      "transpose_character": 68,
+      "duplicate_character": 37,
+      "telex_unconverted": 16,
+      "diacritic_confusion": 100,
+      "insert_character": 21
+    },
+    "not_visible_error_types": {
+      "insert_character": 25,
+      "delete_character": 49,
+      "diacritic_confusion": 29,
+      "keyboard_neighbor": 25,
+      "onset_confusion": 15,
+      "missing_diacritic": 39,
+      "transpose_character": 61,
+      "duplicate_character": 13,
+      "wrong_tone": 22,
+      "telex_unconverted": 4
+    }
+  },
+  "single_error_documents": {
+    "total": 7216,
+    "visible": 7029,
+    "not_visible": 187,
+    "false_negative": 989,
+    "fn_visible": 810,
+    "fn_not_visible": 179
+  },
+  "simulated_chunk_coverage": {
+    "3": {
+      "all_noisy_visible": 14140,
+      "all_noisy_visible_percentage": 98.32417773451081,
+      "current_fn_visible": 927,
+      "current_fn_visible_percentage": 80.05181347150258
+    },
+    "4": {
+      "all_noisy_visible": 14342,
+      "all_noisy_visible_percentage": 99.72880884500383,
+      "current_fn_visible": 1125,
+      "current_fn_visible_percentage": 97.15025906735751
+    },
+    "5": {
+      "all_noisy_visible": 14374,
+      "all_noisy_visible_percentage": 99.95132466448786,
+      "current_fn_visible": 1152,
+      "current_fn_visible_percentage": 99.48186528497409
+    },
+    "6": {
+      "all_noisy_visible": 14380,
+      "all_noisy_visible_percentage": 99.99304638064113,
+      "current_fn_visible": 1157,
+      "current_fn_visible_percentage": 99.91364421416235
+    },
+    "8": {
+      "all_noisy_visible": 14381,
+      "all_noisy_visible_percentage": 100.0,
+      "current_fn_visible": 1158,
+      "current_fn_visible_percentage": 100.0
+    }
+  },
+  "selected_chunk_distribution": {
+    "1": 1743,
+    "2": 6055,
+    "3": 6583
+  },
+  "total_chunk_distribution": {
+    "1": 1743,
+    "2": 6055,
+    "3": 3289,
+    "4": 1866,
+    "5": 1035,
+    "6": 307,
+    "7": 68,
+    "8": 17,
+    "10": 1
+  }
+}
